@@ -28,7 +28,7 @@ def parse(p):
     d = p["description"]
     hook = d.split(f" {en}")[0].strip() if f" {en}" in d else d.split(". ")[0] + "."
     heat = next((h for h in HEAT[::-1] if f"is a {h.replace('no chili','no-chili')}" in d or f"is an {h}" in d), "")
-    tm = re.search(r"Time: ([^.]+)\.", d); tm = tm.group(1) if tm else ""
+    tm = re.search(r"Time: (.+?)\. Recipe", d); tm = tm.group(1) if tm else ""
     return dict(id=p["id"], en=en, ko=ko, hook=hook, heat=heat, time=tm, pin=os.path.join(ROOT, p["image"]), pin_url=p["image_url"])
 
 
