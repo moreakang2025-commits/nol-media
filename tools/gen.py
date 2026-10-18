@@ -117,11 +117,45 @@ def beat_frame(b,t,bt):
     # corner tag
     return arr
 
+def make_audio(beats,path,sr=44100):
+    """Original synthesized soundtrack (no licensing): sub drone + hit on every beat cut + 8th-note hats."""
+    import wave
+    total=sum(b['d'] for b in beats); n=int(total*sr)
+    t=np.arange(n)/sr; rng=np.random.default_rng(7)
+    out=0.10*np.sin(2*np.pi*55*t)*(0.7+0.3*np.sin(2*np.pi*0.5*t))
+    out+=0.04*np.sin(2*np.pi*110.5*t)
+    def hit(at,amp=0.9):
+        i=int(at*sr); m=int(0.35*sr); m=min(m,n-i)
+        if m<=0: return
+        tt=np.arange(m)/sr; f=45+110*np.exp(-tt*28)
+        k=np.sin(2*np.pi*np.cumsum(f)/sr)*np.exp(-tt*9)*amp
+        c=rng.standard_normal(m)*np.exp(-tt*60)*0.25*amp
+        out[i:i+m]+=k+c
+    def hat(at,amp=0.12):
+        i=int(at*sr); m=min(int(0.05*sr),n-i)
+        if m<=0: return
+        tt=np.arange(m)/sr
+        out[i:i+m]+=np.diff(np.r_[0,rng.standard_normal(m)])*np.exp(-tt*90)*amp
+    at=0.0
+    for b in beats:
+        hit(at); at+=b['d']
+    step=0.25
+    x=0.0
+    while x<total:
+        hat(x); x+=step
+    out=np.tanh(out*1.6)*0.7
+    pcm=(out*32767).astype('<i2')
+    with wave.open(path,'wb') as w:
+        w.setnchannels(1); w.setsampwidth(2); w.setframerate(sr); w.writeframes(pcm.tobytes())
+
 def render(beats,out):
-    p=subprocess.Popen(['ffmpeg','-y','-loglevel','error','-f','rawvideo','-pix_fmt','rgb24','-s',f'{W}x{H}','-r',str(FPS),'-i','-','-f','lavfi','-i','anullsrc=r=44100:cl=stereo','-shortest','-c:v','libx264','-preset','veryfast','-crf','27','-pix_fmt','yuv420p','-c:a','aac','-b:a','32k','-movflags','+faststart',out],stdin=subprocess.PIPE)
+    import tempfile,os
+    wav=tempfile.mktemp(suffix='.wav'); make_audio(beats,wav)
+    p=subprocess.Popen(['ffmpeg','-y','-loglevel','error','-f','rawvideo','-pix_fmt','rgb24','-s',f'{W}x{H}','-r',str(FPS),'-i','-','-i',wav,'-shortest','-c:v','libx264','-preset','veryfast','-crf','27','-pix_fmt','yuv420p','-c:a','aac','-b:a','96k','-movflags','+faststart',out],stdin=subprocess.PIPE)
     for b in beats:
         n=int(round(b['d']*FPS))
         for i in range(n):
             fr=beat_frame(b,i/FPS,b['d'])
             p.stdin.write(fr.tobytes())
-    p.stdin.close(); p.wait()
+    p.stdin.close(); p.wait(); os.remove(wav)
+
