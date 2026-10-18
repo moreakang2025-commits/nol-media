@@ -76,7 +76,7 @@ def cover(cw=600, ch=857):
     d.rectangle([14 * k, 14 * k, cw - 14 * k, ch - 14 * k], outline=GOLD, width=max(2, int(2 * k)))
     y = ctext(d, 60 * k, ["KOREAN ROYAL"], F(INTER, 20 * k), GOLD2, cx=cw / 2, track=4 * k)
     y = ctext(d, y + 4 * k, ["GRANDMA LEE'S"], F(SERIF, 44 * k), PAPER, cx=cw / 2)
-    y = ctext(d, y - 6 * k, ["101"], F(SERIFB, 170 * k), GOLD2, lh=1.08, cx=cw / 2)
+    y = ctext(d, y - 6 * k, ["101"], F(SERIFB, 170 * k), GOLD2, lh=1.2, cx=cw / 2)
     y = ctext(d, y + 4 * k, ["KIMCHI RECIPES"], F(SERIF, 46 * k), PAPER, cx=cw / 2)
     y = ctext(d, y + 10 * k, ["From the King's Table", "to Seoul's Hottest Kitchens"], F(SERIFR, 22 * k), GOLD2, cx=cw / 2)
     jar(d, cw / 2, y + 40 * k, 150 * k, DEEP2, GOLD)
