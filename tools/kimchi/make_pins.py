@@ -37,7 +37,7 @@ def chili(d, x, y, s, on):
     col = RED if on else (217, 205, 184)
     d.polygon([(x, y + s * .55), (x + s * .35, y + s * .9), (x + s * .8, y + s * .55), (x + s, y), (x + s * .55, y + s * .3), (x + s * .15, y + s * .3)], fill=col)
 
-def pin(r):
+def pin(r, link=None):
     im = Image.new("RGB", (W, H), PAPER); d = ImageDraw.Draw(im)
     # header block
     d.rectangle([0, 0, W, 560], fill=DEEP)
@@ -76,18 +76,20 @@ def pin(r):
     d.rectangle([24, H - 230, W - 24, H - 24], fill=DEEP)
     center(d, H - 205, ["FULL STEP-BY-STEP RECIPE"], F("Playfair-700.ttf", 30), GOLD)
     center(d, H - 160, ["Grandma Lee's 101 Kimchi Recipes"], F("Playfair-900.ttf", 46), PAPER)
-    center(d, H - 95, ["5 recipes free  →  link on this pin"], F("PlayfairItalic-400.ttf", 32), (220, 200, 170))
+    foot = "All 101 recipes  →  link on this pin" if link == FULL else "5 recipes free  →  link on this pin"
+    center(d, H - 95, [foot], F("PlayfairItalic-400.ttf", 32), (220, 200, 170))
     return im
 
-def seo(r):
+def seo(r, link):
     heat = ["no-chili", "mild", "spicy", "extra spicy"][r["heat"]]
     kind = "Easy Korean Kimchi Recipe" if "kimchi" in r["en"].lower() else "Easy Korean Recipe"
     title = f"{r['en']} ({r['ko']}) | {kind}"
-    if len(title) > 100: title = f"{r['en']} | Korean Kimchi Recipe"[:100]
-    tags = " ".join(f"#{t.replace('-', '').replace(' ', '')}" for t in r.get("tags", [])[:3])
-    desc = (f"{r['hook']} {r['en']} ({r['rom']}) is a {heat} Korean recipe, {r['time']}. "
+    if len(title) > 100: title = f"{r['en']} | {kind}"
+    name = r["en"] if r["rom"].lower() == r["en"].lower() else f"{r['en']} ({r['rom']})"
+    cta = "Get 5 kimchi recipes free at the link." if link == FREE else "Get all 101 recipes at the link."
+    desc = (f"{r['hook']} {name} is a {heat} Korean recipe. Time: {r['time']}. "
             f"Recipe {r['id']} of Grandma Lee's 101 Kimchi Recipes, from royal palace kimchi to Seoul street food. "
-            f"Get 5 recipes free. #kimchi #koreanfood #koreanrecipes #kfood {tags}")
+            f"{cta} #kimchi #koreanfood #koreanrecipes #kfood")
     return title[:100], desc[:500]
 
 def main():
@@ -97,10 +99,11 @@ def main():
     os.makedirs(f"{out}/pins", exist_ok=True); rows = []
     for r in recipes():
         if ids and r["id"] not in ids: continue
-        p = f"{out}/pins/p{r['id']:03d}.png"; pin(r).save(p, optimize=True)
-        t, dsc = seo(r)
+        link = FREE if r["id"] % 3 else FULL
+        p = f"{out}/pins/p{r['id']:03d}.png"; pin(r, link).save(p, optimize=True)
+        t, dsc = seo(r, link)
         rows.append({"id": r["id"], "image": p, "title": t, "description": dsc,
-                     "link": FREE if r["id"] % 3 else FULL, "board": r["_ch"]["en"]})
+                     "link": link, "board": r["_ch"]["en"]})
     json.dump(rows, open(f"{out}/pins.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print(len(rows), "pins ->", out)
 
