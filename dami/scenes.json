@@ -1,22 +1,142 @@
 [
-  {"id": "s001", "kind": "life", "scene": "She sits by the window of a small minimalist Seoul cafe holding an iced latte, afternoon sun"},
-  {"id": "s002", "kind": "product", "product": "ice roller", "scene": "In front of a white bathroom mirror she rolls a plain unbranded facial ice roller under her eye, morning light, close-up"},
-  {"id": "s003", "kind": "life", "scene": "Full-body mirror selfie in a bright apartment hallway, oversized beige knit cardigan, wide jeans, white sneakers"},
-  {"id": "s004", "kind": "product", "product": "EMS facial massager", "scene": "She glides a sleek plain white handheld facial massager device along her cheek toward her ear, white bathroom, close-up"},
-  {"id": "s005", "kind": "life", "scene": "Evening walk along the Han River in Seoul, city lights behind her, light trench coat, candid laugh"},
-  {"id": "s006", "kind": "product", "product": "large handle tumbler", "scene": "She holds a large pastel lilac tumbler with a handle and straw on a Seoul street, crosswalk behind her"},
-  {"id": "s007", "kind": "life", "scene": "At a Korean convenience store table she opens a cup of instant ramen and a banana milk, night, fluorescent light"},
-  {"id": "s008", "kind": "product", "product": "LED facial wand", "scene": "She holds a plain unbranded small LED facial wand glowing soft red near her cheek, dim cozy bedroom, close-up"},
-  {"id": "s009", "kind": "life", "scene": "Browsing shelves in a cozy independent bookstore in Seoul, holding an open book, warm light"},
-  {"id": "s010", "kind": "product", "product": "gua sha", "scene": "She uses a pale pink stone gua sha tool along her jawline at a white vanity, soft daylight, close-up"},
-  {"id": "s011", "kind": "life", "scene": "Sitting on a subway seat in Seoul with wired earphones, looking out the window, casual hoodie"},
-  {"id": "s012", "kind": "product", "product": "mini makeup pouch", "scene": "Top-down shot of her hands opening a small clear pouch full of mini lip tints and a compact mirror on a cafe table, no brand names"},
-  {"id": "s013", "kind": "life", "scene": "Outfit of the day on a quiet alley in Seongsu, Seoul, black blazer, white tee, pleated skirt, loafers"},
-  {"id": "s014", "kind": "product", "product": "silicone cleansing brush", "scene": "She washes her face with a small plain pastel silicone facial cleansing brush and foam at a white sink, close-up"},
-  {"id": "s015", "kind": "life", "scene": "Picnic on a mat in a Seoul park, strawberries and a thermos, spring sunlight, sitting cross-legged"},
-  {"id": "s016", "kind": "product", "product": "desk organizer", "scene": "At a tidy white desk with a laptop, she places pens into a cute pastel acrylic desk organizer, morning light"},
-  {"id": "s017", "kind": "life", "scene": "Rainy day in Seoul, she holds a clear umbrella on a street with neon reflections, puffer jacket"},
-  {"id": "s018", "kind": "product", "product": "hair claw clips", "scene": "Close-up of her clipping her hair up with a glossy tortoiseshell claw clip in a bright bedroom mirror"},
-  {"id": "s019", "kind": "life", "scene": "Making a simple Korean breakfast at home: rice, egg, kimchi on a small wooden tray, apron, kitchen window light"},
-  {"id": "s020", "kind": "product", "product": "sun stick", "scene": "She applies a small unbranded sun stick to her cheek before going out, apartment doorway, daylight"}
+  {
+    "id": "s001",
+    "kind": "life",
+    "scene": "She sits by the window of a small minimalist Seoul cafe holding an iced latte, afternoon sun"
+  },
+  {
+    "id": "s002",
+    "kind": "product",
+    "product": "ice roller",
+    "scene": "In front of a white bathroom mirror she rolls a plain unbranded facial ice roller under her eye, morning light, close-up"
+  },
+  {
+    "id": "s003",
+    "kind": "life",
+    "scene": "Full-body mirror selfie in a bright apartment hallway, oversized beige knit cardigan, wide jeans, white sneakers"
+  },
+  {
+    "id": "l101",
+    "kind": "look",
+    "scene": "Full-body shot walking on a sunny cafe street in Seongsu, Seoul: cream cropped knit cardigan over a white lace-trim blouse, pale pink pleated midi skirt, white socks and black mary jane flats, small ivory shoulder bag"
+  },
+  {
+    "id": "l102",
+    "kind": "look",
+    "scene": "Half-body shot inside a bright Seoul cafe, smiling, wearing a cream cropped knit cardigan over a white lace-trim blouse and a pale pink pleated midi skirt, holding a small ivory shoulder bag, iced latte on the table"
+  },
+  {
+    "id": "l201",
+    "kind": "look",
+    "scene": "Full-body shot at Han River park at golden hour: oversized beige blazer, fitted white t-shirt, light blue straight-leg jeans, white sneakers, thin gold necklace, city skyline behind"
+  },
+  {
+    "id": "l202",
+    "kind": "look",
+    "scene": "Close half-body shot at Han River park at golden hour, oversized beige blazer over a fitted white t-shirt, light blue jeans, laughing and tucking hair behind her ear"
+  },
+  {
+    "id": "l301",
+    "kind": "look",
+    "scene": "Full-body shot on a traditional hanok alley in Bukchon, Seoul: navy cable-knit vest over a crisp white shirt, grey pleated midi skirt, black loafers with white socks, small black crossbody bag"
+  },
+  {
+    "id": "l302",
+    "kind": "look",
+    "scene": "Half-body shot in front of a hanok wooden door in Bukchon, wearing a navy cable-knit vest over a crisp white shirt and grey pleated midi skirt, holding a small black crossbody bag, soft smile"
+  },
+  {
+    "id": "s004",
+    "kind": "product",
+    "product": "EMS facial massager",
+    "scene": "She glides a sleek plain white handheld facial massager device along her cheek toward her ear, white bathroom, close-up"
+  },
+  {
+    "id": "s005",
+    "kind": "life",
+    "scene": "Evening walk along the Han River in Seoul, city lights behind her, light trench coat, candid laugh"
+  },
+  {
+    "id": "s006",
+    "kind": "product",
+    "product": "large handle tumbler",
+    "scene": "She holds a large pastel lilac tumbler with a handle and straw on a Seoul street, crosswalk behind her"
+  },
+  {
+    "id": "s007",
+    "kind": "life",
+    "scene": "At a Korean convenience store table she opens a cup of instant ramen and a banana milk, night, fluorescent light"
+  },
+  {
+    "id": "s008",
+    "kind": "product",
+    "product": "LED facial wand",
+    "scene": "She holds a plain unbranded small LED facial wand glowing soft red near her cheek, dim cozy bedroom, close-up"
+  },
+  {
+    "id": "s009",
+    "kind": "life",
+    "scene": "Browsing shelves in a cozy independent bookstore in Seoul, holding an open book, warm light"
+  },
+  {
+    "id": "s010",
+    "kind": "product",
+    "product": "gua sha",
+    "scene": "She uses a pale pink stone gua sha tool along her jawline at a white vanity, soft daylight, close-up"
+  },
+  {
+    "id": "s011",
+    "kind": "life",
+    "scene": "Sitting on a subway seat in Seoul with wired earphones, looking out the window, casual hoodie"
+  },
+  {
+    "id": "s012",
+    "kind": "product",
+    "product": "mini makeup pouch",
+    "scene": "Top-down shot of her hands opening a small clear pouch full of mini lip tints and a compact mirror on a cafe table, no brand names"
+  },
+  {
+    "id": "s013",
+    "kind": "life",
+    "scene": "Outfit of the day on a quiet alley in Seongsu, Seoul, black blazer, white tee, pleated skirt, loafers"
+  },
+  {
+    "id": "s014",
+    "kind": "product",
+    "product": "silicone cleansing brush",
+    "scene": "She washes her face with a small plain pastel silicone facial cleansing brush and foam at a white sink, close-up"
+  },
+  {
+    "id": "s015",
+    "kind": "life",
+    "scene": "Picnic on a mat in a Seoul park, strawberries and a thermos, spring sunlight, sitting cross-legged"
+  },
+  {
+    "id": "s016",
+    "kind": "product",
+    "product": "desk organizer",
+    "scene": "At a tidy white desk with a laptop, she places pens into a cute pastel acrylic desk organizer, morning light"
+  },
+  {
+    "id": "s017",
+    "kind": "life",
+    "scene": "Rainy day in Seoul, she holds a clear umbrella on a street with neon reflections, puffer jacket"
+  },
+  {
+    "id": "s018",
+    "kind": "product",
+    "product": "hair claw clips",
+    "scene": "Close-up of her clipping her hair up with a glossy tortoiseshell claw clip in a bright bedroom mirror"
+  },
+  {
+    "id": "s019",
+    "kind": "life",
+    "scene": "Making a simple Korean breakfast at home: rice, egg, kimchi on a small wooden tray, apron, kitchen window light"
+  },
+  {
+    "id": "s020",
+    "kind": "product",
+    "product": "sun stick",
+    "scene": "She applies a small unbranded sun stick to her cheek before going out, apartment doorway, daylight"
+  }
 ]

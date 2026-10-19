@@ -1,5 +1,5 @@
 {
-  "name": "Dami",
+  "name": "Suyeong",
   "handle_ideas": [
     "dami",
     "dami.daily",
@@ -7,11 +7,12 @@
     "dami.zip",
     "heydami"
   ],
-  "bio": "Dami | Seoul\nAI character · real life, real finds\ndaily outfits, cafes & little things I love\nTemu code alr737830 #affiliate",
+  "bio": "☕ cafes · 👗 daily fits · ✨ little finds\n📍 Seoul\n🤖 AI character, real products\n🛍️ Temu code alr737830 ↓ #affiliate",
   "bio_ko": "다미 | 서울 / AI 캐릭터 · 진짜 일상, 진짜 아이템 / 데일리룩, 카페, 좋아하는 소소한 것들 / 테무 코드 alr737830 #제휴",
   "identity": "an original fictional Korean K-pop idol style woman, age 22, polished idol visual: long glossy dark brown hair with soft curtain bangs, flawless luminous glass skin, subtle aegyo-sal under the eyes, soft gradient coral-pink lips, delicate natural lashes, small face, a thin silver hair pin as her signature, elegant warm smile",
   "style": "photorealistic, high-end K-pop magazine and idol fan-photo aesthetic, soft beauty lighting, clean background, shallow depth of field, vertical 9:16, no text, no watermark, no brand names, no logos",
   "safety": "She is an original character and must not resemble any real celebrity or idol. Tasteful, non-revealing outfit.",
   "reference_prompt": "Photorealistic close-up portrait of {identity}. Bright minimal studio-like room with soft window light, looking at the camera, shoulders up, cream knit top. {style}. {safety}",
-  "scene_prompt": "Same woman as the reference image: same face, same long dark brown hair with curtain bangs, same silver hair pin. {scene}. {style}. {safety}"
+  "scene_prompt": "Same woman as the reference image: same face, same long dark brown hair with curtain bangs, same silver hair pin. {scene}. {style}. {safety}",
+  "name_ko": "수영"
 }
