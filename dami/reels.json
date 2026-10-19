@@ -1,0 +1,15 @@
+[
+  {
+    "id": "r001",
+    "product": "ice roller",
+    "link": "temu",
+    "shots": [
+      {"img": "s002", "dur": 3.0, "text": "my 30-second morning in Seoul", "zoom": [1.0, 1.08], "pan": [0.5, 0.5, 0.5, 0.45]},
+      {"img": "s002", "dur": 3.0, "text": "ice roller, straight from the freezer", "zoom": [1.25, 1.45], "pan": [0.45, 0.35, 0.42, 0.3]},
+      {"img": "s002", "dur": 3.0, "text": "under the eyes, then out to the ears", "zoom": [1.6, 1.75], "pan": [0.4, 0.28, 0.48, 0.27]},
+      {"img": "s002", "dur": 3.0, "text": "that's it. link in bio", "zoom": [1.1, 1.0], "pan": [0.5, 0.42, 0.5, 0.48]}
+    ],
+    "caption": "my 30-second morning in Seoul ❄️ ice roller from the freezer, under the eyes and out to the ears. that's the whole routine.\n\nTemu code alr737830 (link in bio)\n\nAI character · real product · #affiliate\n#morningroutine #seoul #skincareroutine #iceroller #kbeauty",
+    "caption_ko": "서울에서의 30초 아침 루틴. 냉동실에서 꺼낸 아이스 롤러로 눈 밑에서 귀 쪽으로. 이게 루틴 전부. / 테무 코드 alr737830 (프로필 링크) / AI 캐릭터 · 실제 상품 · #제휴"
+  }
+]
