@@ -27,7 +27,7 @@ jobs:
       - name: Generate images with Gemini
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          DAMI_PER_RUN: "6"
+          DAMI_PER_RUN: "4"
         run: python tools/dami/gen_images.py
       - name: Commit new images
         run: |

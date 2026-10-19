@@ -46,6 +46,210 @@
     "scene": "Half-body shot in front of a hanok wooden door in Bukchon, wearing a navy cable-knit vest over a crisp white shirt and grey pleated midi skirt, holding a small black crossbody bag, soft smile"
   },
   {
+    "id": "l401",
+    "kind": "look",
+    "look": {
+      "title": "cozy fall look",
+      "place": "Yeonnam-dong",
+      "items": [
+        "beige trench + striped knit",
+        "wide slacks + loafers"
+      ],
+      "drink": [
+        "pumpkin spice latte",
+        "hot chocolate"
+      ]
+    },
+    "scene": "Full-body shot standing in a tree-lined Yeonnam-dong street with autumn leaves, wearing a beige trench coat over a navy-white striped knit, cream wide slacks and brown loafers"
+  },
+  {
+    "id": "l402",
+    "kind": "look",
+    "look": {
+      "title": "cozy fall look",
+      "place": "Yeonnam-dong",
+      "items": [
+        "beige trench + striped knit",
+        "wide slacks + loafers"
+      ],
+      "drink": [
+        "pumpkin spice latte",
+        "hot chocolate"
+      ]
+    },
+    "scene": "Half-body shot in a tree-lined Yeonnam-dong street with autumn leaves, smiling, wearing a beige trench coat over a navy-white striped knit, cream wide slacks and brown loafers"
+  },
+  {
+    "id": "l501",
+    "kind": "look",
+    "look": {
+      "title": "Seoul street look",
+      "place": "Hongdae",
+      "items": [
+        "grey hoodie under a black bomber",
+        "cargo midi skirt + chunky sneakers"
+      ],
+      "drink": [
+        "bubble tea",
+        "iced americano"
+      ]
+    },
+    "scene": "Full-body shot standing in a colourful Hongdae street with shop signs (no readable brand names), wearing a grey hoodie layered under a black bomber jacket, khaki cargo midi skirt and chunky white sneakers"
+  },
+  {
+    "id": "l502",
+    "kind": "look",
+    "look": {
+      "title": "Seoul street look",
+      "place": "Hongdae",
+      "items": [
+        "grey hoodie under a black bomber",
+        "cargo midi skirt + chunky sneakers"
+      ],
+      "drink": [
+        "bubble tea",
+        "iced americano"
+      ]
+    },
+    "scene": "Half-body shot in a colourful Hongdae street with shop signs (no readable brand names), smiling, wearing a grey hoodie layered under a black bomber jacket, khaki cargo midi skirt and chunky white sneakers"
+  },
+  {
+    "id": "l601",
+    "kind": "look",
+    "look": {
+      "title": "library date look",
+      "place": "a Seoul bookstore",
+      "items": [
+        "brown cardigan + cream turtleneck",
+        "plaid midi + mary janes"
+      ],
+      "drink": [
+        "vanilla latte",
+        "earl grey"
+      ]
+    },
+    "scene": "Full-body shot standing in a warm wooden bookstore in Seoul with tall shelves, wearing a brown knit cardigan over a cream turtleneck, brown plaid midi skirt and black mary jane shoes"
+  },
+  {
+    "id": "l602",
+    "kind": "look",
+    "look": {
+      "title": "library date look",
+      "place": "a Seoul bookstore",
+      "items": [
+        "brown cardigan + cream turtleneck",
+        "plaid midi + mary janes"
+      ],
+      "drink": [
+        "vanilla latte",
+        "earl grey"
+      ]
+    },
+    "scene": "Half-body shot in a warm wooden bookstore in Seoul with tall shelves, smiling, wearing a brown knit cardigan over a cream turtleneck, brown plaid midi skirt and black mary jane shoes"
+  },
+  {
+    "id": "l701",
+    "kind": "look",
+    "look": {
+      "title": "night date look",
+      "place": "Namsan",
+      "items": [
+        "black leather jacket + white knit",
+        "black wide trousers + ankle boots"
+      ],
+      "drink": [
+        "hot citron tea",
+        "warm cocoa"
+      ]
+    },
+    "scene": "Full-body shot standing in Namsan park at night with soft city lights below, wearing a black leather jacket over a white knit top, black wide trousers and black ankle boots"
+  },
+  {
+    "id": "l702",
+    "kind": "look",
+    "look": {
+      "title": "night date look",
+      "place": "Namsan",
+      "items": [
+        "black leather jacket + white knit",
+        "black wide trousers + ankle boots"
+      ],
+      "drink": [
+        "hot citron tea",
+        "warm cocoa"
+      ]
+    },
+    "scene": "Half-body shot in Namsan park at night with soft city lights below, smiling, wearing a black leather jacket over a white knit top, black wide trousers and black ankle boots"
+  },
+  {
+    "id": "l801",
+    "kind": "look",
+    "look": {
+      "title": "market day look",
+      "place": "Gwangjang Market",
+      "items": [
+        "navy cardigan + white tee",
+        "denim midi skirt + sneakers"
+      ],
+      "drink": [
+        "sikhye",
+        "banana milk"
+      ]
+    },
+    "scene": "Full-body shot standing in a lively traditional Seoul food market with warm lights, wearing a navy cardigan over a white tee, a denim midi skirt and white sneakers"
+  },
+  {
+    "id": "l802",
+    "kind": "look",
+    "look": {
+      "title": "market day look",
+      "place": "Gwangjang Market",
+      "items": [
+        "navy cardigan + white tee",
+        "denim midi skirt + sneakers"
+      ],
+      "drink": [
+        "sikhye",
+        "banana milk"
+      ]
+    },
+    "scene": "Half-body shot in a lively traditional Seoul food market with warm lights, smiling, wearing a navy cardigan over a white tee, a denim midi skirt and white sneakers"
+  },
+  {
+    "id": "l901",
+    "kind": "look",
+    "look": {
+      "title": "rainy day look",
+      "place": "Gangnam",
+      "items": [
+        "beige trench + black knit",
+        "straight jeans + rain boots"
+      ],
+      "drink": [
+        "hot latte",
+        "yuja tea"
+      ]
+    },
+    "scene": "Full-body shot standing in a rainy Gangnam street at dusk with neon reflections, wearing a beige trench coat over a black knit, straight jeans and black rain boots, holding a clear umbrella"
+  },
+  {
+    "id": "l902",
+    "kind": "look",
+    "look": {
+      "title": "rainy day look",
+      "place": "Gangnam",
+      "items": [
+        "beige trench + black knit",
+        "straight jeans + rain boots"
+      ],
+      "drink": [
+        "hot latte",
+        "yuja tea"
+      ]
+    },
+    "scene": "Half-body shot in a rainy Gangnam street at dusk with neon reflections, smiling, wearing a beige trench coat over a black knit, straight jeans and black rain boots, holding a clear umbrella"
+  },
+  {
     "id": "s004",
     "kind": "product",
     "product": "EMS facial massager",
