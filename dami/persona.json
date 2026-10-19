@@ -1,0 +1,11 @@
+{
+  "name": "Dami",
+  "handle_ideas": ["dami", "dami.daily", "itsdami", "dami.zip", "heydami"],
+  "bio": "Dami | Seoul\nAI character · real life, real finds\ndaily outfits, cafes & little things I love\nTemu code alr737830 #affiliate",
+  "bio_ko": "다미 | 서울 / AI 캐릭터 · 진짜 일상, 진짜 아이템 / 데일리룩, 카페, 좋아하는 소소한 것들 / 테무 코드 alr737830 #제휴",
+  "identity": "an original fictional Korean woman, age 24, soft natural makeup, black bob haircut with bangs, a small lilac hair clip on the left side of her hair, slim build, warm friendly calm expression",
+  "style": "photorealistic smartphone photo, natural light, candid lifestyle influencer aesthetic, vertical 9:16, no text, no watermark, no brand names, no logos",
+  "safety": "She is an original character and must not resemble any real celebrity or idol. Modest everyday clothing.",
+  "reference_prompt": "Photorealistic portrait of {identity}. White tiled bathroom, soft morning daylight, looking at the camera, shoulders up. {style}. {safety}",
+  "scene_prompt": "Same woman as the reference image: same face, same black bob with bangs, same lilac hair clip. {scene}. {style}. {safety}"
+}

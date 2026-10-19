@@ -1,0 +1,37 @@
+name: Dami images
+
+on:
+  schedule:
+    - cron: "17 3 * * *"   # every day 12:17 KST
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dami-images
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Generate images with Gemini
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          DAMI_PER_RUN: "3"
+        run: python tools/dami/gen_images.py
+      - name: Commit new images
+        run: |
+          git config user.name "dami-bot"
+          git config user.email "dami-bot@users.noreply.github.com"
+          git add dami
+          if git diff --cached --quiet; then echo "nothing new"; exit 0; fi
+          git commit -m "dami: new images $(date -u +%F)"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push
