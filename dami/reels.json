@@ -70,13 +70,30 @@
   },
   {
     "id": "r101",
-    "product": "date look",
-    "link": "temu",
+    "format": "vote 1/2/3 beat-drop",
+    "music": "disco",
     "shots": [
       {
         "img": "l101",
-        "dur": 2.5,
-        "text": "Korean date look #1 💕 soft & sweet",
+        "beats": 2,
+        "text": "which Seoul date look would you pick?",
+        "pos": "top",
+        "zoom": [
+          1.0,
+          1.05
+        ],
+        "pan": [
+          0.5,
+          0.5,
+          0.5,
+          0.48
+        ]
+      },
+      {
+        "img": "l101",
+        "beats": 2,
+        "num": 1,
+        "text": "soft & sweet",
         "zoom": [
           1.0,
           1.06
@@ -85,66 +102,29 @@
           0.5,
           0.5,
           0.5,
-          0.47
-        ]
-      },
-      {
-        "img": "l101",
-        "dur": 2.5,
-        "text": "cream cardigan + lace blouse",
-        "zoom": [
-          1.25,
-          1.4
-        ],
-        "pan": [
-          0.5,
-          0.42,
-          0.5,
-          0.4
+          0.48
         ]
       },
       {
         "img": "l102",
-        "dur": 3.0,
-        "text": "pink pleated midi + mary janes",
+        "beats": 2,
+        "num": 1,
         "zoom": [
           1.05,
-          1.18
+          1.15
         ],
         "pan": [
           0.5,
           0.45,
           0.5,
-          0.4
+          0.42
         ]
       },
       {
-        "img": "l101",
-        "dur": 3.0,
-        "text": "save this for your next date 💌",
-        "zoom": [
-          1.12,
-          1.0
-        ],
-        "pan": [
-          0.5,
-          0.45,
-          0.5,
-          0.5
-        ]
-      }
-    ],
-    "caption": "Korean date look #1: soft & sweet 💕 cream cropped cardigan, lace blouse, pink pleated midi, mary janes. a Seongsu cafe date classic.\n\nall pieces are easy to find on Temu → Temu code alr737830 (link in bio)\nAI character · AI-styled look · #affiliate\n#koreanfashion #datelook #ootd #seoulstyle #kfashion #outfitideas"
-  },
-  {
-    "id": "r102",
-    "product": "date look",
-    "link": "temu",
-    "shots": [
-      {
         "img": "l201",
-        "dur": 2.5,
-        "text": "Korean date look #2 🌇 Han River sunset",
+        "beats": 2,
+        "num": 2,
+        "text": "Han River sunset",
         "zoom": [
           1.0,
           1.06
@@ -153,45 +133,62 @@
           0.5,
           0.5,
           0.5,
-          0.47
-        ]
-      },
-      {
-        "img": "l201",
-        "dur": 2.5,
-        "text": "oversized blazer + white tee",
-        "zoom": [
-          1.25,
-          1.4
-        ],
-        "pan": [
-          0.5,
-          0.42,
-          0.5,
-          0.4
+          0.48
         ]
       },
       {
         "img": "l202",
-        "dur": 3.0,
-        "text": "straight jeans + white sneakers",
+        "beats": 2,
+        "num": 2,
         "zoom": [
           1.05,
-          1.18
+          1.15
         ],
         "pan": [
           0.5,
           0.45,
           0.5,
-          0.4
+          0.42
         ]
       },
       {
-        "img": "l201",
-        "dur": 3.0,
-        "text": "save this for your next date 💌",
+        "img": "l301",
+        "beats": 2,
+        "num": 3,
+        "text": "hanok walk",
         "zoom": [
-          1.12,
+          1.0,
+          1.06
+        ],
+        "pan": [
+          0.5,
+          0.5,
+          0.5,
+          0.48
+        ]
+      },
+      {
+        "img": "l302",
+        "beats": 2,
+        "num": 3,
+        "zoom": [
+          1.05,
+          1.15
+        ],
+        "pan": [
+          0.5,
+          0.45,
+          0.5,
+          0.42
+        ]
+      },
+      {
+        "img": "l101",
+        "beats": 4,
+        "text": "comment 1, 2 or 3",
+        "pos": "top",
+        "zoom": [
+          1.1,
           1.0
         ],
         "pan": [
@@ -202,17 +199,18 @@
         ]
       }
     ],
-    "caption": "Korean date look #2: Han River sunset 🌇 oversized beige blazer, white tee, straight jeans, white sneakers. easy, clean, works for any date.\n\nall pieces are easy to find on Temu → Temu code alr737830 (link in bio)\nAI character · AI-styled look · #affiliate\n#koreanfashion #datelook #ootd #seoulstyle #kfashion #outfitideas"
+    "caption": "which Seoul date look are you picking? 1, 2 or 3 👇\n\n1 · soft & sweet in Seongsu\n2 · Han River sunset\n3 · hanok village walk\n\nAI character · AI-styled looks\n#koreanfashion #datelook #seoulstyle #outfitideas #kfashion"
   },
   {
-    "id": "r103",
-    "product": "date look",
-    "link": "temu",
+    "id": "r102",
+    "format": "serialised diary",
+    "music": "lofi",
     "shots": [
       {
-        "img": "l301",
-        "dur": 2.5,
-        "text": "Korean date look #3 🏯 hanok village walk",
+        "img": "l101",
+        "beats": 4,
+        "text": "Seoul outfit diary · day 1",
+        "pos": "top",
         "zoom": [
           1.0,
           1.06
@@ -225,51 +223,193 @@
         ]
       },
       {
-        "img": "l301",
-        "dur": 2.5,
-        "text": "knit vest + crisp white shirt",
+        "img": "l102",
+        "beats": 4,
+        "text": "cream cardigan + lace blouse",
         "zoom": [
-          1.25,
-          1.4
-        ],
-        "pan": [
-          0.5,
-          0.42,
-          0.5,
-          0.4
-        ]
-      },
-      {
-        "img": "l302",
-        "dur": 3.0,
-        "text": "grey pleated midi + loafers",
-        "zoom": [
-          1.05,
-          1.18
+          1.02,
+          1.12
         ],
         "pan": [
           0.5,
           0.45,
           0.5,
-          0.4
+          0.42
         ]
       },
       {
-        "img": "l301",
-        "dur": 3.0,
-        "text": "save this for your next date 💌",
+        "img": "l101",
+        "beats": 4,
+        "text": "pink pleats for a cafe date",
+        "zoom": [
+          1.3,
+          1.45
+        ],
+        "pan": [
+          0.5,
+          0.62,
+          0.5,
+          0.66
+        ]
+      },
+      {
+        "img": "l102",
+        "beats": 4,
+        "text": "would you wear this? 🤍",
+        "pos": "top",
         "zoom": [
           1.12,
           1.0
         ],
         "pan": [
           0.5,
-          0.45,
+          0.42,
           0.5,
-          0.5
+          0.46
         ]
       }
     ],
-    "caption": "Korean date look #3: Bukchon hanok walk 🏯 navy knit vest, white shirt, grey pleated midi, loafers. preppy but soft.\n\nall pieces are easy to find on Temu → Temu code alr737830 (link in bio)\nAI character · AI-styled look · #affiliate\n#koreanfashion #datelook #ootd #seoulstyle #kfashion #outfitideas"
+    "caption": "Seoul outfit diary · day 1 🤍 cream cardigan, lace blouse, pink pleated midi. a Seongsu cafe kind of day.\n\nwould you wear it? yes or no 👇 (follow for day 2)\n\nAI character · AI-styled looks\n#seoulstyle #ootd #koreanfashion #outfitdiary"
+  },
+  {
+    "id": "r103",
+    "format": "after-dark fit check",
+    "music": "moody",
+    "shots": [
+      {
+        "img": "l201",
+        "beats": 4,
+        "text": "fit check · Han River, golden hour",
+        "pos": "top",
+        "zoom": [
+          1.0,
+          1.07
+        ],
+        "pan": [
+          0.5,
+          0.5,
+          0.5,
+          0.46
+        ]
+      },
+      {
+        "img": "l202",
+        "beats": 4,
+        "text": "oversized blazer + white tee",
+        "zoom": [
+          1.0,
+          1.12
+        ],
+        "pan": [
+          0.5,
+          0.45,
+          0.5,
+          0.4
+        ]
+      },
+      {
+        "img": "l201",
+        "beats": 4,
+        "text": "straight jeans + white sneakers",
+        "zoom": [
+          1.35,
+          1.5
+        ],
+        "pan": [
+          0.5,
+          0.7,
+          0.5,
+          0.75
+        ]
+      },
+      {
+        "img": "l202",
+        "beats": 4,
+        "text": "rate it 1-10",
+        "pos": "top",
+        "zoom": [
+          1.15,
+          1.0
+        ],
+        "pan": [
+          0.5,
+          0.4,
+          0.5,
+          0.45
+        ]
+      }
+    ],
+    "caption": "fit check at the Han River 🌇 beige blazer, white tee, straight jeans. simple works.\n\nrate it 1-10, be honest 👇\n\nAI character · AI-styled looks\n#fitcheck #seoul #koreanfashion #ootd"
+  },
+  {
+    "id": "r104",
+    "format": "outfit + drink pairing vote",
+    "music": "lofi",
+    "shots": [
+      {
+        "img": "l301",
+        "beats": 4,
+        "text": "pairing my outfit with a drink",
+        "pos": "top",
+        "zoom": [
+          1.0,
+          1.06
+        ],
+        "pan": [
+          0.5,
+          0.5,
+          0.5,
+          0.47
+        ]
+      },
+      {
+        "img": "l302",
+        "beats": 4,
+        "text": "knit vest + pleated midi",
+        "zoom": [
+          1.02,
+          1.12
+        ],
+        "pan": [
+          0.5,
+          0.45,
+          0.5,
+          0.42
+        ]
+      },
+      {
+        "img": "l301",
+        "beats": 4,
+        "text": "matcha latte or yuja tea?",
+        "pos": "top",
+        "zoom": [
+          1.3,
+          1.42
+        ],
+        "pan": [
+          0.5,
+          0.35,
+          0.5,
+          0.32
+        ]
+      },
+      {
+        "img": "l302",
+        "beats": 4,
+        "text": "comment your pick",
+        "pos": "top",
+        "zoom": [
+          1.12,
+          1.0
+        ],
+        "pan": [
+          0.5,
+          0.42,
+          0.5,
+          0.46
+        ]
+      }
+    ],
+    "caption": "hanok walk in Bukchon 🏯 navy knit vest, white shirt, grey pleats.\n\nwhich drink goes with this fit, matcha latte 🍵 or yuja tea 🍯? 👇\n\nAI character · AI-styled looks\n#bukchon #koreanfashion #seoulstyle #ootd"
   }
 ]
