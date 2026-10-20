@@ -411,5 +411,149 @@
       }
     ],
     "caption": "hanok walk in Bukchon 🏯 navy knit vest, white shirt, grey pleats.\n\nwhich drink goes with this fit, matcha latte 🍵 or yuja tea 🍯? 👇\n\nAI character · AI-styled looks\n#bukchon #koreanfashion #seoulstyle #ootd"
+  },
+  {
+    "id": "r40",
+    "format": "fitcheck",
+    "music": "moody",
+    "shots": [
+      {
+        "img": "l401",
+        "beats": 4,
+        "text": "fit check · Yeonnam-dong",
+        "pos": "top",
+        "zoom": [
+          1.0,
+          1.08
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l402",
+        "beats": 4,
+        "text": "beige trench + striped knit",
+        "pos": "bottom",
+        "zoom": [
+          1.0,
+          1.12
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l401",
+        "beats": 4,
+        "text": "wide slacks + loafers",
+        "pos": "bottom",
+        "zoom": [
+          1.35,
+          1.5
+        ],
+        "pan": [
+          0.5,
+          0.7,
+          0.5,
+          0.75
+        ]
+      },
+      {
+        "img": "l402",
+        "beats": 4,
+        "text": "rate it 1-10",
+        "pos": "top",
+        "zoom": [
+          1.15,
+          1.0
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      }
+    ],
+    "caption": "fit check in Yeonnam-dong 🌙 beige trench + striped knit, wide slacks + loafers.\n\nrate it 1-10, be honest 👇\n\nAI character · AI-styled looks\n#fitcheck #seoul #koreanfashion #ootd"
+  },
+  {
+    "id": "r50",
+    "format": "drink",
+    "music": "lofi",
+    "shots": [
+      {
+        "img": "l501",
+        "beats": 4,
+        "text": "pairing my outfit with a drink",
+        "pos": "top",
+        "zoom": [
+          1.0,
+          1.08
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l502",
+        "beats": 4,
+        "text": "grey hoodie under a black bomber",
+        "pos": "bottom",
+        "zoom": [
+          1.02,
+          1.12
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l501",
+        "beats": 4,
+        "text": "bubble tea or iced americano?",
+        "pos": "top",
+        "zoom": [
+          1.3,
+          1.42
+        ],
+        "pan": [
+          0.5,
+          0.35,
+          0.5,
+          0.32
+        ]
+      },
+      {
+        "img": "l502",
+        "beats": 4,
+        "text": "comment your pick",
+        "pos": "top",
+        "zoom": [
+          1.12,
+          1.0
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      }
+    ],
+    "caption": "Seoul street look in Hongdae ☕ grey hoodie under a black bomber, cargo midi skirt + chunky sneakers.\n\nwhich drink goes with this fit, bubble tea or iced americano? 👇\n\nAI character · AI-styled looks\n#koreanfashion #seoulstyle #ootd #cafeoutfit"
   }
 ]
