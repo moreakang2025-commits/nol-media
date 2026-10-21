@@ -555,5 +555,181 @@
       }
     ],
     "caption": "Seoul street look in Hongdae ☕ grey hoodie under a black bomber, cargo midi skirt + chunky sneakers.\n\nwhich drink goes with this fit, bubble tea or iced americano? 👇\n\nAI character · AI-styled looks\n#koreanfashion #seoulstyle #ootd #cafeoutfit"
+  },
+  {
+    "id": "r60",
+    "format": "rate",
+    "music": "disco",
+    "shots": [
+      {
+        "img": "l601",
+        "beats": 2,
+        "text": "library date look in Seoul",
+        "pos": "top",
+        "zoom": [
+          1.0,
+          1.08
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l602",
+        "beats": 2,
+        "text": "",
+        "pos": "bottom",
+        "zoom": [
+          1.05,
+          1.15
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l601",
+        "beats": 2,
+        "text": "brown cardigan + cream turtleneck",
+        "pos": "bottom",
+        "zoom": [
+          1.2,
+          1.3
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l602",
+        "beats": 2,
+        "text": "plaid midi + mary janes",
+        "pos": "bottom",
+        "zoom": [
+          1.1,
+          1.2
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l601",
+        "beats": 4,
+        "text": "1-10? comment below",
+        "pos": "top",
+        "zoom": [
+          1.1,
+          1.0
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      }
+    ],
+    "caption": "library date look 💫 brown cardigan + cream turtleneck, plaid midi + mary janes. a Seoul bookstore.\n\nscore it 1-10 👇\n\nAI character · AI-styled looks\n#koreanfashion #outfitideas #seoulstyle #kfashion"
+  },
+  {
+    "id": "r70",
+    "format": "keepswap",
+    "music": "disco",
+    "shots": [
+      {
+        "img": "l701",
+        "beats": 2,
+        "text": "keep or swap?",
+        "pos": "top",
+        "zoom": [
+          1.0,
+          1.08
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l701",
+        "beats": 2,
+        "text": "black leather jacket + white knit",
+        "pos": "bottom",
+        "zoom": [
+          1.15,
+          1.25
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l702",
+        "beats": 2,
+        "text": "black wide trousers + ankle boots",
+        "pos": "bottom",
+        "zoom": [
+          1.05,
+          1.15
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l702",
+        "beats": 2,
+        "text": "",
+        "pos": "bottom",
+        "zoom": [
+          1.2,
+          1.3
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l701",
+        "beats": 4,
+        "text": "keep or swap? 👇",
+        "pos": "top",
+        "zoom": [
+          1.1,
+          1.0
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      }
+    ],
+    "caption": "keep or swap? 🤔 night date look: black leather jacket + white knit, black wide trousers + ankle boots.\n\ntell me what you'd change 👇\n\nAI character · AI-styled looks\n#koreanfashion #ootd #seoulstyle #outfitideas"
   }
 ]
