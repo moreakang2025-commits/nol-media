@@ -250,6 +250,108 @@
     "scene": "Half-body shot in a rainy Gangnam street at dusk with neon reflections, smiling, wearing a beige trench coat over a black knit, straight jeans and black rain boots, holding a clear umbrella"
   },
   {
+    "id": "l911",
+    "kind": "look",
+    "look": {
+      "title": "autumn leaves look",
+      "place": "Deoksugung Stonewall Walkway",
+      "items": [
+        "camel coat + cream turtleneck",
+        "brown pleated skirt + loafers"
+      ],
+      "drink": [
+        "hot chocolate",
+        "daechu tea"
+      ]
+    },
+    "scene": "Full-body shot standing in an autumn stone-wall walkway beside a Seoul palace lined with golden ginkgo trees, wearing a camel wool coat over a cream turtleneck, a brown pleated midi skirt and brown loafers"
+  },
+  {
+    "id": "l912",
+    "kind": "look",
+    "look": {
+      "title": "autumn leaves look",
+      "place": "Deoksugung Stonewall Walkway",
+      "items": [
+        "camel coat + cream turtleneck",
+        "brown pleated skirt + loafers"
+      ],
+      "drink": [
+        "hot chocolate",
+        "daechu tea"
+      ]
+    },
+    "scene": "Half-body shot in an autumn stone-wall walkway beside a Seoul palace lined with golden ginkgo trees, smiling, wearing a camel wool coat over a cream turtleneck, a brown pleated midi skirt and brown loafers"
+  },
+  {
+    "id": "l921",
+    "kind": "look",
+    "look": {
+      "title": "river night look",
+      "place": "Banpo Hangang Park",
+      "items": [
+        "black puffer vest + grey hoodie",
+        "wide jogger pants + sneakers"
+      ],
+      "drink": [
+        "hot americano",
+        "ramyeon broth"
+      ]
+    },
+    "scene": "Full-body shot standing in a Han River park at night with the city skyline and bridge lights behind, wearing a black puffer vest over a grey hoodie, wide grey jogger pants and white sneakers"
+  },
+  {
+    "id": "l922",
+    "kind": "look",
+    "look": {
+      "title": "river night look",
+      "place": "Banpo Hangang Park",
+      "items": [
+        "black puffer vest + grey hoodie",
+        "wide jogger pants + sneakers"
+      ],
+      "drink": [
+        "hot americano",
+        "ramyeon broth"
+      ]
+    },
+    "scene": "Half-body shot in a Han River park at night with the city skyline and bridge lights behind, smiling, wearing a black puffer vest over a grey hoodie, wide grey jogger pants and white sneakers"
+  },
+  {
+    "id": "l931",
+    "kind": "look",
+    "look": {
+      "title": "hanok alley look",
+      "place": "Ikseon-dong",
+      "items": [
+        "olive knit cardigan + white blouse",
+        "cream wide slacks + ankle boots"
+      ],
+      "drink": [
+        "omija ade",
+        "hojicha latte"
+      ]
+    },
+    "scene": "Full-body shot standing in a narrow hanok alley with tiled roofs and warm lanterns in late afternoon, wearing an olive knit cardigan over a white blouse, cream wide-leg slacks and brown ankle boots"
+  },
+  {
+    "id": "l932",
+    "kind": "look",
+    "look": {
+      "title": "hanok alley look",
+      "place": "Ikseon-dong",
+      "items": [
+        "olive knit cardigan + white blouse",
+        "cream wide slacks + ankle boots"
+      ],
+      "drink": [
+        "omija ade",
+        "hojicha latte"
+      ]
+    },
+    "scene": "Half-body shot in a narrow hanok alley with tiled roofs and warm lanterns in late afternoon, smiling, wearing an olive knit cardigan over a white blouse, cream wide-leg slacks and brown ankle boots"
+  },
+  {
     "id": "s004",
     "kind": "product",
     "product": "EMS facial massager",

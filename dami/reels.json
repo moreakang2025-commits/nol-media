@@ -731,5 +731,149 @@
       }
     ],
     "caption": "keep or swap? 🤔 night date look: black leather jacket + white knit, black wide trousers + ankle boots.\n\ntell me what you'd change 👇\n\nAI character · AI-styled looks\n#koreanfashion #ootd #seoulstyle #outfitideas"
+  },
+  {
+    "id": "r80",
+    "format": "diary",
+    "music": "lofi",
+    "shots": [
+      {
+        "img": "l801",
+        "beats": 4,
+        "text": "Seoul outfit diary · day 2",
+        "pos": "top",
+        "zoom": [
+          1.0,
+          1.08
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l802",
+        "beats": 4,
+        "text": "navy cardigan + white tee",
+        "pos": "bottom",
+        "zoom": [
+          1.02,
+          1.12
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l801",
+        "beats": 4,
+        "text": "denim midi skirt + sneakers",
+        "pos": "bottom",
+        "zoom": [
+          1.3,
+          1.45
+        ],
+        "pan": [
+          0.5,
+          0.62,
+          0.5,
+          0.66
+        ]
+      },
+      {
+        "img": "l802",
+        "beats": 4,
+        "text": "would you wear this?",
+        "pos": "top",
+        "zoom": [
+          1.12,
+          1.0
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      }
+    ],
+    "caption": "Seoul outfit diary · day 2 🤍 market day look, Gwangjang Market.\n\nwould you wear it? yes or no 👇 (follow for day 3)\n\nAI character · AI-styled looks\n#seoulstyle #ootd #koreanfashion #outfitdiary"
+  },
+  {
+    "id": "r90",
+    "format": "fitcheck",
+    "music": "moody",
+    "shots": [
+      {
+        "img": "l901",
+        "beats": 4,
+        "text": "fit check · Gangnam",
+        "pos": "top",
+        "zoom": [
+          1.0,
+          1.08
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l902",
+        "beats": 4,
+        "text": "beige trench + black knit",
+        "pos": "bottom",
+        "zoom": [
+          1.0,
+          1.12
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l901",
+        "beats": 4,
+        "text": "straight jeans + rain boots",
+        "pos": "bottom",
+        "zoom": [
+          1.35,
+          1.5
+        ],
+        "pan": [
+          0.5,
+          0.7,
+          0.5,
+          0.75
+        ]
+      },
+      {
+        "img": "l902",
+        "beats": 4,
+        "text": "rate it 1-10",
+        "pos": "top",
+        "zoom": [
+          1.15,
+          1.0
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      }
+    ],
+    "caption": "fit check in Gangnam 🌙 beige trench + black knit, straight jeans + rain boots.\n\nrate it 1-10, be honest 👇\n\nAI character · AI-styled looks\n#fitcheck #seoul #koreanfashion #ootd"
   }
 ]
