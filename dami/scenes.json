@@ -363,6 +363,108 @@
     "scene": "Evening walk along the Han River in Seoul, city lights behind her, light trench coat, candid laugh"
   },
   {
+    "id": "l941",
+    "kind": "look",
+    "look": {
+      "title": "bookstore cafe look",
+      "place": "Seochon",
+      "items": [
+        "burgundy knit + white collar",
+        "grey wool skirt + loafers"
+      ],
+      "drink": [
+        "cinnamon latte",
+        "yuja tea"
+      ]
+    },
+    "scene": "Full-body shot standing in a cozy Seoul bookstore cafe with wooden shelves and warm lamps, wearing a burgundy knit sweater over a white collared shirt, a grey wool midi skirt and black loafers"
+  },
+  {
+    "id": "l942",
+    "kind": "look",
+    "look": {
+      "title": "bookstore cafe look",
+      "place": "Seochon",
+      "items": [
+        "burgundy knit + white collar",
+        "grey wool skirt + loafers"
+      ],
+      "drink": [
+        "cinnamon latte",
+        "yuja tea"
+      ]
+    },
+    "scene": "Half-body shot in a cozy Seoul bookstore cafe with wooden shelves and warm lamps, smiling, wearing a burgundy knit sweater over a white collared shirt, a grey wool midi skirt and black loafers"
+  },
+  {
+    "id": "l951",
+    "kind": "look",
+    "look": {
+      "title": "Seongsu cafe street look",
+      "place": "Seongsu-dong",
+      "items": [
+        "oatmeal cardigan + striped tee",
+        "wide jeans + sneakers"
+      ],
+      "drink": [
+        "iced oat latte",
+        "hot vanilla latte"
+      ]
+    },
+    "scene": "Full-body shot standing in a red-brick cafe street in Seoul with converted warehouse cafes in soft autumn daylight, wearing an oatmeal cable-knit cardigan over a striped long-sleeve tee, light wide-leg jeans and white sneakers"
+  },
+  {
+    "id": "l952",
+    "kind": "look",
+    "look": {
+      "title": "Seongsu cafe street look",
+      "place": "Seongsu-dong",
+      "items": [
+        "oatmeal cardigan + striped tee",
+        "wide jeans + sneakers"
+      ],
+      "drink": [
+        "iced oat latte",
+        "hot vanilla latte"
+      ]
+    },
+    "scene": "Half-body shot in a red-brick cafe street in Seoul with converted warehouse cafes in soft autumn daylight, smiling, wearing an oatmeal cable-knit cardigan over a striped long-sleeve tee, light wide-leg jeans and white sneakers"
+  },
+  {
+    "id": "l961",
+    "kind": "look",
+    "look": {
+      "title": "palace autumn look",
+      "place": "Gyeongbokgung",
+      "items": [
+        "charcoal coat + pink knit",
+        "black trousers + ankle boots"
+      ],
+      "drink": [
+        "hot sikhye",
+        "matcha latte"
+      ]
+    },
+    "scene": "Full-body shot standing in a Seoul royal palace courtyard with colorful autumn maple trees and traditional rooftops, wearing a long charcoal wool coat over a soft pink knit, black straight trousers and black ankle boots"
+  },
+  {
+    "id": "l962",
+    "kind": "look",
+    "look": {
+      "title": "palace autumn look",
+      "place": "Gyeongbokgung",
+      "items": [
+        "charcoal coat + pink knit",
+        "black trousers + ankle boots"
+      ],
+      "drink": [
+        "hot sikhye",
+        "matcha latte"
+      ]
+    },
+    "scene": "Half-body shot in a Seoul royal palace courtyard with colorful autumn maple trees and traditional rooftops, smiling, wearing a long charcoal wool coat over a soft pink knit, black straight trousers and black ankle boots"
+  },
+  {
     "id": "s006",
     "kind": "product",
     "product": "large handle tumbler",
