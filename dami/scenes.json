@@ -476,6 +476,108 @@
     "scene": "At a Korean convenience store table she opens a cup of instant ramen and a banana milk, night, fluorescent light"
   },
   {
+    "id": "l971",
+    "kind": "look",
+    "look": {
+      "title": "Namsan autumn walk look",
+      "place": "Namsan",
+      "items": [
+        "camel trench + cream turtleneck",
+        "brown corduroy pants + loafers"
+      ],
+      "drink": [
+        "hot cocoa",
+        "yuja tea"
+      ]
+    },
+    "scene": "Full-body shot standing on a Namsan park trail in Seoul with golden ginkgo trees and the city skyline behind, wearing a camel trench coat over a cream turtleneck, brown corduroy straight pants and dark brown loafers"
+  },
+  {
+    "id": "l972",
+    "kind": "look",
+    "look": {
+      "title": "Namsan autumn walk look",
+      "place": "Namsan",
+      "items": [
+        "camel trench + cream turtleneck",
+        "brown corduroy pants + loafers"
+      ],
+      "drink": [
+        "hot cocoa",
+        "yuja tea"
+      ]
+    },
+    "scene": "Half-body shot on a Namsan park trail in Seoul with golden ginkgo trees and the city skyline behind, smiling, wearing a camel trench coat over a cream turtleneck, brown corduroy straight pants and dark brown loafers"
+  },
+  {
+    "id": "l981",
+    "kind": "look",
+    "look": {
+      "title": "Gwangjang market cozy look",
+      "place": "Gwangjang Market",
+      "items": [
+        "navy quilted jacket + gray hoodie",
+        "black wide jeans + chunky sneakers"
+      ],
+      "drink": [
+        "sikhye",
+        "barley tea"
+      ]
+    },
+    "scene": "Full-body shot standing in a lively traditional Seoul food market alley with warm lantern lights and food stalls, wearing a navy quilted jacket over a heather gray hoodie, black wide-leg jeans and chunky white sneakers"
+  },
+  {
+    "id": "l982",
+    "kind": "look",
+    "look": {
+      "title": "Gwangjang market cozy look",
+      "place": "Gwangjang Market",
+      "items": [
+        "navy quilted jacket + gray hoodie",
+        "black wide jeans + chunky sneakers"
+      ],
+      "drink": [
+        "sikhye",
+        "barley tea"
+      ]
+    },
+    "scene": "Half-body shot in a lively traditional Seoul food market alley with warm lantern lights and food stalls, smiling, wearing a navy quilted jacket over a heather gray hoodie, black wide-leg jeans and chunky white sneakers"
+  },
+  {
+    "id": "l991",
+    "kind": "look",
+    "look": {
+      "title": "Hangang sunset date look",
+      "place": "Hangang Park",
+      "items": [
+        "burgundy knit cardigan + white tee",
+        "long pleated skirt + boots"
+      ],
+      "drink": [
+        "hot americano",
+        "banana milk"
+      ]
+    },
+    "scene": "Full-body shot standing on the Han River riverside path in Seoul at golden-hour sunset with a bridge in the background, wearing a burgundy knit cardigan over a white tee, a long beige pleated midi skirt and brown knee-high boots"
+  },
+  {
+    "id": "l992",
+    "kind": "look",
+    "look": {
+      "title": "Hangang sunset date look",
+      "place": "Hangang Park",
+      "items": [
+        "burgundy knit cardigan + white tee",
+        "long pleated skirt + boots"
+      ],
+      "drink": [
+        "hot americano",
+        "banana milk"
+      ]
+    },
+    "scene": "Half-body shot on the Han River riverside path in Seoul at golden-hour sunset with a bridge in the background, smiling, wearing a burgundy knit cardigan over a white tee, a long beige pleated midi skirt and brown knee-high boots"
+  },
+  {
     "id": "s008",
     "kind": "product",
     "product": "LED facial wand",

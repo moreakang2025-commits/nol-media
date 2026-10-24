@@ -1123,5 +1123,221 @@
       }
     ],
     "caption": "keep or swap? 🤔 hanok alley look: olive knit cardigan + white blouse, cream wide slacks + ankle boots.\n\ntell me what you'd change 👇\n\nAI character · AI-styled looks\n#koreanfashion #ootd #seoulstyle #outfitideas"
+  },
+  {
+    "id": "r94",
+    "format": "diary",
+    "music": "lofi",
+    "shots": [
+      {
+        "img": "l941",
+        "beats": 4,
+        "text": "Seoul outfit diary · day 3",
+        "pos": "top",
+        "zoom": [
+          1.0,
+          1.08
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l942",
+        "beats": 4,
+        "text": "burgundy knit + white collar",
+        "pos": "bottom",
+        "zoom": [
+          1.02,
+          1.12
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l941",
+        "beats": 4,
+        "text": "grey wool skirt + loafers",
+        "pos": "bottom",
+        "zoom": [
+          1.3,
+          1.45
+        ],
+        "pan": [
+          0.5,
+          0.62,
+          0.5,
+          0.66
+        ]
+      },
+      {
+        "img": "l942",
+        "beats": 4,
+        "text": "would you wear this?",
+        "pos": "top",
+        "zoom": [
+          1.12,
+          1.0
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      }
+    ],
+    "caption": "Seoul outfit diary · day 3 🤍 bookstore cafe look, Seochon.\n\nwould you wear it? yes or no 👇 (follow for day 4)\n\nAI character · AI-styled looks\n#seoulstyle #ootd #koreanfashion #outfitdiary"
+  },
+  {
+    "id": "r95",
+    "format": "fitcheck",
+    "music": "moody",
+    "shots": [
+      {
+        "img": "l951",
+        "beats": 4,
+        "text": "fit check · Seongsu-dong",
+        "pos": "top",
+        "zoom": [
+          1.0,
+          1.08
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l952",
+        "beats": 4,
+        "text": "oatmeal cardigan + striped tee",
+        "pos": "bottom",
+        "zoom": [
+          1.0,
+          1.12
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l951",
+        "beats": 4,
+        "text": "wide jeans + sneakers",
+        "pos": "bottom",
+        "zoom": [
+          1.35,
+          1.5
+        ],
+        "pan": [
+          0.5,
+          0.7,
+          0.5,
+          0.75
+        ]
+      },
+      {
+        "img": "l952",
+        "beats": 4,
+        "text": "rate it 1-10",
+        "pos": "top",
+        "zoom": [
+          1.15,
+          1.0
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      }
+    ],
+    "caption": "fit check in Seongsu-dong 🌙 oatmeal cardigan + striped tee, wide jeans + sneakers.\n\nrate it 1-10, be honest 👇\n\nAI character · AI-styled looks\n#fitcheck #seoul #koreanfashion #ootd"
+  },
+  {
+    "id": "r96",
+    "format": "drink",
+    "music": "lofi",
+    "shots": [
+      {
+        "img": "l961",
+        "beats": 4,
+        "text": "pairing my outfit with a drink",
+        "pos": "top",
+        "zoom": [
+          1.0,
+          1.08
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l962",
+        "beats": 4,
+        "text": "charcoal coat + pink knit",
+        "pos": "bottom",
+        "zoom": [
+          1.02,
+          1.12
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l961",
+        "beats": 4,
+        "text": "hot sikhye or matcha latte?",
+        "pos": "top",
+        "zoom": [
+          1.3,
+          1.42
+        ],
+        "pan": [
+          0.5,
+          0.35,
+          0.5,
+          0.32
+        ]
+      },
+      {
+        "img": "l962",
+        "beats": 4,
+        "text": "comment your pick",
+        "pos": "top",
+        "zoom": [
+          1.12,
+          1.0
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      }
+    ],
+    "caption": "palace autumn look in Gyeongbokgung ☕ charcoal coat + pink knit, black trousers + ankle boots.\n\nwhich drink goes with this fit, hot sikhye or matcha latte? 👇\n\nAI character · AI-styled looks\n#koreanfashion #seoulstyle #ootd #cafeoutfit"
   }
 ]
