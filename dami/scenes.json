@@ -589,6 +589,108 @@
     "scene": "Browsing shelves in a cozy independent bookstore in Seoul, holding an open book, warm light"
   },
   {
+    "id": "l1101",
+    "kind": "look",
+    "look": {
+      "title": "Bukchon hanok autumn look",
+      "place": "Bukchon Hanok Village",
+      "items": [
+        "oatmeal cable knit + white collar shirt",
+        "brown wool midi skirt + loafers"
+      ],
+      "drink": [
+        "yuja tea",
+        "hot latte"
+      ]
+    },
+    "scene": "Full-body shot standing in a quiet alley of Bukchon Hanok Village in Seoul with traditional tiled hanok roofs and autumn light, wearing an oatmeal cable knit sweater over a white collared shirt, a brown wool midi skirt and dark brown loafers"
+  },
+  {
+    "id": "l1102",
+    "kind": "look",
+    "look": {
+      "title": "Bukchon hanok autumn look",
+      "place": "Bukchon Hanok Village",
+      "items": [
+        "oatmeal cable knit + white collar shirt",
+        "brown wool midi skirt + loafers"
+      ],
+      "drink": [
+        "yuja tea",
+        "hot latte"
+      ]
+    },
+    "scene": "Half-body shot in a quiet alley of Bukchon Hanok Village in Seoul with traditional tiled hanok roofs and autumn light, smiling, wearing an oatmeal cable knit sweater over a white collared shirt, a brown wool midi skirt and dark brown loafers"
+  },
+  {
+    "id": "l1111",
+    "kind": "look",
+    "look": {
+      "title": "Seoul Forest ginkgo date look",
+      "place": "Seoul Forest",
+      "items": [
+        "butter yellow cardigan + ivory tee",
+        "straight denim + white sneakers"
+      ],
+      "drink": [
+        "iced vanilla latte",
+        "hot chocolate"
+      ]
+    },
+    "scene": "Full-body shot standing on a path lined with golden ginkgo trees in Seoul Forest park with fallen yellow leaves on the ground, wearing a butter yellow knit cardigan over an ivory tee, light straight-leg jeans and plain white sneakers"
+  },
+  {
+    "id": "l1112",
+    "kind": "look",
+    "look": {
+      "title": "Seoul Forest ginkgo date look",
+      "place": "Seoul Forest",
+      "items": [
+        "butter yellow cardigan + ivory tee",
+        "straight denim + white sneakers"
+      ],
+      "drink": [
+        "iced vanilla latte",
+        "hot chocolate"
+      ]
+    },
+    "scene": "Half-body shot on a path lined with golden ginkgo trees in Seoul Forest park with fallen yellow leaves on the ground, smiling, wearing a butter yellow knit cardigan over an ivory tee, light straight-leg jeans and plain white sneakers"
+  },
+  {
+    "id": "l1121",
+    "kind": "look",
+    "look": {
+      "title": "Cheonggyecheon night walk look",
+      "place": "Cheonggyecheon Stream",
+      "items": [
+        "black wool coat + gray knit",
+        "charcoal wide slacks + ankle boots"
+      ],
+      "drink": [
+        "hot americano",
+        "warm barley tea"
+      ]
+    },
+    "scene": "Full-body shot standing beside Cheonggyecheon Stream in downtown Seoul at night with soft city lights reflecting on the water, wearing a long black wool coat over a gray crewneck knit, charcoal wide-leg slacks and black ankle boots"
+  },
+  {
+    "id": "l1122",
+    "kind": "look",
+    "look": {
+      "title": "Cheonggyecheon night walk look",
+      "place": "Cheonggyecheon Stream",
+      "items": [
+        "black wool coat + gray knit",
+        "charcoal wide slacks + ankle boots"
+      ],
+      "drink": [
+        "hot americano",
+        "warm barley tea"
+      ]
+    },
+    "scene": "Half-body shot beside Cheonggyecheon Stream in downtown Seoul at night with soft city lights reflecting on the water, smiling, wearing a long black wool coat over a gray crewneck knit, charcoal wide-leg slacks and black ankle boots"
+  },
+  {
     "id": "s010",
     "kind": "product",
     "product": "gua sha",
