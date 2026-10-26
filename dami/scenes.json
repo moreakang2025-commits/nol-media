@@ -702,6 +702,108 @@
     "scene": "Sitting on a subway seat in Seoul with wired earphones, looking out the window, casual hoodie"
   },
   {
+    "id": "l1131",
+    "kind": "look",
+    "look": {
+      "title": "Deoksugung stone wall walk look",
+      "place": "Deoksugung Doldam-gil",
+      "items": [
+        "camel trench coat + cream turtleneck",
+        "brown pleated midi skirt + loafers"
+      ],
+      "drink": [
+        "hot cafe latte",
+        "warm citron tea"
+      ]
+    },
+    "scene": "Full-body shot standing on the Deoksugung stone wall road in Seoul with autumn maple and ginkgo leaves overhead, wearing a camel trench coat over a cream turtleneck knit, a brown pleated midi skirt and dark brown loafers"
+  },
+  {
+    "id": "l1132",
+    "kind": "look",
+    "look": {
+      "title": "Deoksugung stone wall walk look",
+      "place": "Deoksugung Doldam-gil",
+      "items": [
+        "camel trench coat + cream turtleneck",
+        "brown pleated midi skirt + loafers"
+      ],
+      "drink": [
+        "hot cafe latte",
+        "warm citron tea"
+      ]
+    },
+    "scene": "Half-body shot on the Deoksugung stone wall road in Seoul with autumn maple and ginkgo leaves overhead, smiling, wearing a camel trench coat over a cream turtleneck knit, a brown pleated midi skirt and dark brown loafers"
+  },
+  {
+    "id": "l1141",
+    "kind": "look",
+    "look": {
+      "title": "Gwangjang Market foodie date look",
+      "place": "Gwangjang Market",
+      "items": [
+        "navy quilted jacket + white hoodie",
+        "black jogger pants + gray sneakers"
+      ],
+      "drink": [
+        "hot sikhye",
+        "warm corn tea"
+      ]
+    },
+    "scene": "Full-body shot standing in the busy food alley of Gwangjang Market in Seoul with warm lanterns and steaming food stalls in the background, wearing a navy quilted jacket over a white hoodie, black jogger pants and plain gray sneakers"
+  },
+  {
+    "id": "l1142",
+    "kind": "look",
+    "look": {
+      "title": "Gwangjang Market foodie date look",
+      "place": "Gwangjang Market",
+      "items": [
+        "navy quilted jacket + white hoodie",
+        "black jogger pants + gray sneakers"
+      ],
+      "drink": [
+        "hot sikhye",
+        "warm corn tea"
+      ]
+    },
+    "scene": "Half-body shot in the busy food alley of Gwangjang Market in Seoul with warm lanterns and steaming food stalls in the background, smiling, wearing a navy quilted jacket over a white hoodie, black jogger pants and plain gray sneakers"
+  },
+  {
+    "id": "l1151",
+    "kind": "look",
+    "look": {
+      "title": "Naksan Park night view look",
+      "place": "Naksan Park city wall",
+      "items": [
+        "oatmeal long coat + ribbed knit dress",
+        "knee boots + knit scarf"
+      ],
+      "drink": [
+        "hot chocolate",
+        "warm yuja tea"
+      ]
+    },
+    "scene": "Full-body shot standing beside the old stone city wall at Naksan Park in Seoul at night with glowing city lights below, wearing an oatmeal long wool coat over a ribbed knit midi dress, brown knee-high boots and a soft beige knit scarf"
+  },
+  {
+    "id": "l1152",
+    "kind": "look",
+    "look": {
+      "title": "Naksan Park night view look",
+      "place": "Naksan Park city wall",
+      "items": [
+        "oatmeal long coat + ribbed knit dress",
+        "knee boots + knit scarf"
+      ],
+      "drink": [
+        "hot chocolate",
+        "warm yuja tea"
+      ]
+    },
+    "scene": "Half-body shot beside the old stone city wall at Naksan Park in Seoul at night with glowing city lights below, smiling, wearing an oatmeal long wool coat over a ribbed knit midi dress, brown knee-high boots and a soft beige knit scarf"
+  },
+  {
     "id": "s012",
     "kind": "product",
     "product": "mini makeup pouch",
