@@ -16,7 +16,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 D = ROOT / "dami"
-FORMATS = ["diary", "fitcheck", "drink", "rate", "keepswap"]
+FORMATS = ["rate", "diary", "fitcheck", "drink", "keepswap"]
 AI = "\n\nAI character · AI-styled looks"
 
 
