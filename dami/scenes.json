@@ -705,69 +705,69 @@
     "id": "l1131",
     "kind": "look",
     "look": {
-      "title": "Haneul Park silver grass look",
-      "place": "Haneul Park",
+      "title": "Deoksugung stone wall walk look",
+      "place": "Deoksugung Doldam-gil",
       "items": [
-        "beige suede jacket + white knit",
-        "light wash wide jeans + brown boots"
+        "camel trench coat + cream turtleneck",
+        "brown pleated midi skirt + loafers"
       ],
       "drink": [
-        "iced oat latte",
-        "warm barley tea"
+        "hot cafe latte",
+        "warm citron tea"
       ]
     },
-    "scene": "Full-body shot standing in a field of tall silver eulalia grass at Haneul Park in Seoul at golden hour, wearing a beige suede-look jacket over a white cable knit, light wash wide-leg jeans and brown ankle boots"
+    "scene": "Full-body shot standing on the Deoksugung stone wall road in Seoul with autumn maple and ginkgo leaves overhead, wearing a camel trench coat over a cream turtleneck knit, a brown pleated midi skirt and dark brown loafers"
   },
   {
     "id": "l1132",
     "kind": "look",
     "look": {
-      "title": "Haneul Park silver grass look",
-      "place": "Haneul Park",
+      "title": "Deoksugung stone wall walk look",
+      "place": "Deoksugung Doldam-gil",
       "items": [
-        "beige suede jacket + white knit",
-        "light wash wide jeans + brown boots"
+        "camel trench coat + cream turtleneck",
+        "brown pleated midi skirt + loafers"
       ],
       "drink": [
-        "iced oat latte",
-        "warm barley tea"
+        "hot cafe latte",
+        "warm citron tea"
       ]
     },
-    "scene": "Half-body shot in a field of tall silver eulalia grass at Haneul Park in Seoul at golden hour, smiling, wearing a beige suede-look jacket over a white cable knit, light wash wide-leg jeans and brown ankle boots"
+    "scene": "Half-body shot on the Deoksugung stone wall road in Seoul with autumn maple and ginkgo leaves overhead, smiling, wearing a camel trench coat over a cream turtleneck knit, a brown pleated midi skirt and dark brown loafers"
   },
   {
     "id": "l1141",
     "kind": "look",
     "look": {
-      "title": "Changgyeonggung greenhouse date look",
-      "place": "Changgyeonggung Palace",
+      "title": "Gwangjang Market foodie date look",
+      "place": "Gwangjang Market",
       "items": [
-        "sage green knit vest + white shirt",
-        "gray wool midi skirt + mary janes"
+        "navy quilted jacket + white hoodie",
+        "black jogger pants + gray sneakers"
       ],
       "drink": [
-        "hot honey latte",
-        "warm jujube tea"
+        "hot sikhye",
+        "warm corn tea"
       ]
     },
-    "scene": "Full-body shot standing in front of the white glass botanical greenhouse at Changgyeonggung Palace in Seoul surrounded by autumn trees, wearing a sage green knit vest over a crisp white shirt, a gray wool midi skirt, white socks and black mary jane shoes"
+    "scene": "Full-body shot standing in the busy food alley of Gwangjang Market in Seoul with warm lanterns and steaming food stalls in the background, wearing a navy quilted jacket over a white hoodie, black jogger pants and plain gray sneakers"
   },
   {
     "id": "l1142",
     "kind": "look",
     "look": {
-      "title": "Changgyeonggung greenhouse date look",
-      "place": "Changgyeonggung Palace",
+      "title": "Gwangjang Market foodie date look",
+      "place": "Gwangjang Market",
       "items": [
-        "sage green knit vest + white shirt",
-        "gray wool midi skirt + mary janes"
+        "navy quilted jacket + white hoodie",
+        "black jogger pants + gray sneakers"
       ],
       "drink": [
-        "hot honey latte",
-        "warm jujube tea"
+        "hot sikhye",
+        "warm corn tea"
       ]
     },
-    "scene": "Half-body shot in front of the white glass botanical greenhouse at Changgyeonggung Palace in Seoul surrounded by autumn trees, smiling, wearing a sage green knit vest over a crisp white shirt, a gray wool midi skirt, white socks and black mary jane shoes"
+    "scene": "Half-body shot in the busy food alley of Gwangjang Market in Seoul with warm lanterns and steaming food stalls in the background, smiling, wearing a navy quilted jacket over a white hoodie, black jogger pants and plain gray sneakers"
   },
   {
     "id": "l1151",
@@ -802,6 +802,74 @@
       ]
     },
     "scene": "Half-body shot in a narrow retro alley in Euljiro, Seoul at night with warm vintage shop signs and string lights, smiling, wearing a chocolate brown faux leather jacket over a black turtleneck, black straight-leg jeans and black chelsea boots"
+  },
+  {
+    "id": "l1161",
+    "kind": "look",
+    "look": {
+      "title": "Haneul Park silver grass look",
+      "place": "Haneul Park",
+      "items": [
+        "beige suede jacket + white knit",
+        "light wash wide jeans + brown boots"
+      ],
+      "drink": [
+        "iced oat latte",
+        "warm barley tea"
+      ]
+    },
+    "scene": "Full-body shot standing in a field of tall silver eulalia grass at Haneul Park in Seoul at golden hour, wearing a beige suede-look jacket over a white cable knit, light wash wide-leg jeans and brown ankle boots"
+  },
+  {
+    "id": "l1162",
+    "kind": "look",
+    "look": {
+      "title": "Haneul Park silver grass look",
+      "place": "Haneul Park",
+      "items": [
+        "beige suede jacket + white knit",
+        "light wash wide jeans + brown boots"
+      ],
+      "drink": [
+        "iced oat latte",
+        "warm barley tea"
+      ]
+    },
+    "scene": "Half-body shot in a field of tall silver eulalia grass at Haneul Park in Seoul at golden hour, smiling, wearing a beige suede-look jacket over a white cable knit, light wash wide-leg jeans and brown ankle boots"
+  },
+  {
+    "id": "l1171",
+    "kind": "look",
+    "look": {
+      "title": "Changgyeonggung greenhouse date look",
+      "place": "Changgyeonggung Palace",
+      "items": [
+        "sage green knit vest + white shirt",
+        "gray wool midi skirt + mary janes"
+      ],
+      "drink": [
+        "hot honey latte",
+        "warm jujube tea"
+      ]
+    },
+    "scene": "Full-body shot standing in front of the white glass botanical greenhouse at Changgyeonggung Palace in Seoul surrounded by autumn trees, wearing a sage green knit vest over a crisp white shirt, a gray wool midi skirt, white socks and black mary jane shoes"
+  },
+  {
+    "id": "l1172",
+    "kind": "look",
+    "look": {
+      "title": "Changgyeonggung greenhouse date look",
+      "place": "Changgyeonggung Palace",
+      "items": [
+        "sage green knit vest + white shirt",
+        "gray wool midi skirt + mary janes"
+      ],
+      "drink": [
+        "hot honey latte",
+        "warm jujube tea"
+      ]
+    },
+    "scene": "Half-body shot in front of the white glass botanical greenhouse at Changgyeonggung Palace in Seoul surrounded by autumn trees, smiling, wearing a sage green knit vest over a crisp white shirt, a gray wool midi skirt, white socks and black mary jane shoes"
   },
   {
     "id": "s012",
