@@ -705,103 +705,103 @@
     "id": "l1131",
     "kind": "look",
     "look": {
-      "title": "Deoksugung stone wall walk look",
-      "place": "Deoksugung Doldam-gil",
+      "title": "Haneul Park silver grass look",
+      "place": "Haneul Park",
       "items": [
-        "camel trench coat + cream turtleneck",
-        "brown pleated midi skirt + loafers"
+        "beige suede jacket + white knit",
+        "light wash wide jeans + brown boots"
       ],
       "drink": [
-        "hot cafe latte",
-        "warm citron tea"
+        "iced oat latte",
+        "warm barley tea"
       ]
     },
-    "scene": "Full-body shot standing on the Deoksugung stone wall road in Seoul with autumn maple and ginkgo leaves overhead, wearing a camel trench coat over a cream turtleneck knit, a brown pleated midi skirt and dark brown loafers"
+    "scene": "Full-body shot standing in a field of tall silver eulalia grass at Haneul Park in Seoul at golden hour, wearing a beige suede-look jacket over a white cable knit, light wash wide-leg jeans and brown ankle boots"
   },
   {
     "id": "l1132",
     "kind": "look",
     "look": {
-      "title": "Deoksugung stone wall walk look",
-      "place": "Deoksugung Doldam-gil",
+      "title": "Haneul Park silver grass look",
+      "place": "Haneul Park",
       "items": [
-        "camel trench coat + cream turtleneck",
-        "brown pleated midi skirt + loafers"
+        "beige suede jacket + white knit",
+        "light wash wide jeans + brown boots"
       ],
       "drink": [
-        "hot cafe latte",
-        "warm citron tea"
+        "iced oat latte",
+        "warm barley tea"
       ]
     },
-    "scene": "Half-body shot on the Deoksugung stone wall road in Seoul with autumn maple and ginkgo leaves overhead, smiling, wearing a camel trench coat over a cream turtleneck knit, a brown pleated midi skirt and dark brown loafers"
+    "scene": "Half-body shot in a field of tall silver eulalia grass at Haneul Park in Seoul at golden hour, smiling, wearing a beige suede-look jacket over a white cable knit, light wash wide-leg jeans and brown ankle boots"
   },
   {
     "id": "l1141",
     "kind": "look",
     "look": {
-      "title": "Gwangjang Market foodie date look",
-      "place": "Gwangjang Market",
+      "title": "Changgyeonggung greenhouse date look",
+      "place": "Changgyeonggung Palace",
       "items": [
-        "navy quilted jacket + white hoodie",
-        "black jogger pants + gray sneakers"
+        "sage green knit vest + white shirt",
+        "gray wool midi skirt + mary janes"
       ],
       "drink": [
-        "hot sikhye",
-        "warm corn tea"
+        "hot honey latte",
+        "warm jujube tea"
       ]
     },
-    "scene": "Full-body shot standing in the busy food alley of Gwangjang Market in Seoul with warm lanterns and steaming food stalls in the background, wearing a navy quilted jacket over a white hoodie, black jogger pants and plain gray sneakers"
+    "scene": "Full-body shot standing in front of the white glass botanical greenhouse at Changgyeonggung Palace in Seoul surrounded by autumn trees, wearing a sage green knit vest over a crisp white shirt, a gray wool midi skirt, white socks and black mary jane shoes"
   },
   {
     "id": "l1142",
     "kind": "look",
     "look": {
-      "title": "Gwangjang Market foodie date look",
-      "place": "Gwangjang Market",
+      "title": "Changgyeonggung greenhouse date look",
+      "place": "Changgyeonggung Palace",
       "items": [
-        "navy quilted jacket + white hoodie",
-        "black jogger pants + gray sneakers"
+        "sage green knit vest + white shirt",
+        "gray wool midi skirt + mary janes"
       ],
       "drink": [
-        "hot sikhye",
-        "warm corn tea"
+        "hot honey latte",
+        "warm jujube tea"
       ]
     },
-    "scene": "Half-body shot in the busy food alley of Gwangjang Market in Seoul with warm lanterns and steaming food stalls in the background, smiling, wearing a navy quilted jacket over a white hoodie, black jogger pants and plain gray sneakers"
+    "scene": "Half-body shot in front of the white glass botanical greenhouse at Changgyeonggung Palace in Seoul surrounded by autumn trees, smiling, wearing a sage green knit vest over a crisp white shirt, a gray wool midi skirt, white socks and black mary jane shoes"
   },
   {
     "id": "l1151",
     "kind": "look",
     "look": {
-      "title": "Naksan Park night view look",
-      "place": "Naksan Park city wall",
+      "title": "Euljiro night alley look",
+      "place": "Euljiro",
       "items": [
-        "oatmeal long coat + ribbed knit dress",
-        "knee boots + knit scarf"
+        "chocolate leather jacket + black turtleneck",
+        "black straight jeans + chelsea boots"
       ],
       "drink": [
-        "hot chocolate",
+        "hot americano",
         "warm yuja tea"
       ]
     },
-    "scene": "Full-body shot standing beside the old stone city wall at Naksan Park in Seoul at night with glowing city lights below, wearing an oatmeal long wool coat over a ribbed knit midi dress, brown knee-high boots and a soft beige knit scarf"
+    "scene": "Full-body shot standing in a narrow retro alley in Euljiro, Seoul at night with warm vintage shop signs and string lights, wearing a chocolate brown faux leather jacket over a black turtleneck, black straight-leg jeans and black chelsea boots"
   },
   {
     "id": "l1152",
     "kind": "look",
     "look": {
-      "title": "Naksan Park night view look",
-      "place": "Naksan Park city wall",
+      "title": "Euljiro night alley look",
+      "place": "Euljiro",
       "items": [
-        "oatmeal long coat + ribbed knit dress",
-        "knee boots + knit scarf"
+        "chocolate leather jacket + black turtleneck",
+        "black straight jeans + chelsea boots"
       ],
       "drink": [
-        "hot chocolate",
+        "hot americano",
         "warm yuja tea"
       ]
     },
-    "scene": "Half-body shot beside the old stone city wall at Naksan Park in Seoul at night with glowing city lights below, smiling, wearing an oatmeal long wool coat over a ribbed knit midi dress, brown knee-high boots and a soft beige knit scarf"
+    "scene": "Half-body shot in a narrow retro alley in Euljiro, Seoul at night with warm vintage shop signs and string lights, smiling, wearing a chocolate brown faux leather jacket over a black turtleneck, black straight-leg jeans and black chelsea boots"
   },
   {
     "id": "s012",
