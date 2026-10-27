@@ -838,6 +838,108 @@
     "scene": "Half-body shot in a field of tall silver eulalia grass at Haneul Park in Seoul at golden hour, smiling, wearing a beige suede-look jacket over a white cable knit, light wash wide-leg jeans and brown ankle boots"
   },
   {
+    "id": "l1181",
+    "kind": "look",
+    "look": {
+      "title": "Sejong-ro autumn ginkgo look",
+      "place": "Gwanghwamun Square",
+      "items": [
+        "camel wool coat + cream turtleneck",
+        "dark straight jeans + brown loafers"
+      ],
+      "drink": [
+        "hot vanilla latte",
+        "warm yuja tea"
+      ]
+    },
+    "scene": "Full-body shot standing in the golden ginkgo-lined Gwanghwamun Square in Seoul with autumn leaves on the ground, wearing a long camel wool coat over a cream turtleneck sweater, dark straight-leg jeans and brown leather loafers"
+  },
+  {
+    "id": "l1182",
+    "kind": "look",
+    "look": {
+      "title": "Sejong-ro autumn ginkgo look",
+      "place": "Gwanghwamun Square",
+      "items": [
+        "camel wool coat + cream turtleneck",
+        "dark straight jeans + brown loafers"
+      ],
+      "drink": [
+        "hot vanilla latte",
+        "warm yuja tea"
+      ]
+    },
+    "scene": "Half-body shot in the golden ginkgo-lined Gwanghwamun Square in Seoul with autumn leaves on the ground, smiling, wearing a long camel wool coat over a cream turtleneck sweater, dark straight-leg jeans and brown leather loafers"
+  },
+  {
+    "id": "l1191",
+    "kind": "look",
+    "look": {
+      "title": "Seoullo 7017 sunset walk look",
+      "place": "Seoullo 7017",
+      "items": [
+        "burgundy cardigan + striped tee",
+        "beige wide trousers + white sneakers"
+      ],
+      "drink": [
+        "iced americano",
+        "hot chocolate"
+      ]
+    },
+    "scene": "Full-body shot standing in the elevated Seoullo 7017 skywalk in Seoul at golden-hour sunset with planters and city buildings behind, wearing a burgundy knit cardigan over a navy striped long-sleeve tee, beige wide-leg trousers and plain white sneakers"
+  },
+  {
+    "id": "l1192",
+    "kind": "look",
+    "look": {
+      "title": "Seoullo 7017 sunset walk look",
+      "place": "Seoullo 7017",
+      "items": [
+        "burgundy cardigan + striped tee",
+        "beige wide trousers + white sneakers"
+      ],
+      "drink": [
+        "iced americano",
+        "hot chocolate"
+      ]
+    },
+    "scene": "Half-body shot in the elevated Seoullo 7017 skywalk in Seoul at golden-hour sunset with planters and city buildings behind, smiling, wearing a burgundy knit cardigan over a navy striped long-sleeve tee, beige wide-leg trousers and plain white sneakers"
+  },
+  {
+    "id": "l1201",
+    "kind": "look",
+    "look": {
+      "title": "Mangwon Market cozy weekend look",
+      "place": "Mangwon Market",
+      "items": [
+        "oatmeal fleece jacket + gray hoodie",
+        "black jogger pants + chunky sneakers"
+      ],
+      "drink": [
+        "warm sikhye",
+        "hot cocoa"
+      ]
+    },
+    "scene": "Full-body shot standing in the busy covered walkway of Mangwon Market in Seoul with warm lights and food stalls, wearing an oatmeal fleece zip jacket over a light gray hoodie, black jogger pants and chunky gray sneakers"
+  },
+  {
+    "id": "l1202",
+    "kind": "look",
+    "look": {
+      "title": "Mangwon Market cozy weekend look",
+      "place": "Mangwon Market",
+      "items": [
+        "oatmeal fleece jacket + gray hoodie",
+        "black jogger pants + chunky sneakers"
+      ],
+      "drink": [
+        "warm sikhye",
+        "hot cocoa"
+      ]
+    },
+    "scene": "Half-body shot in the busy covered walkway of Mangwon Market in Seoul with warm lights and food stalls, smiling, wearing an oatmeal fleece zip jacket over a light gray hoodie, black jogger pants and chunky gray sneakers"
+  },
+  {
     "id": "l1171",
     "kind": "look",
     "look": {
