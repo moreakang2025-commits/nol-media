@@ -974,6 +974,108 @@
     "scene": "Half-body shot in front of the white glass botanical greenhouse at Changgyeonggung Palace in Seoul surrounded by autumn trees, smiling, wearing a sage green knit vest over a crisp white shirt, a gray wool midi skirt, white socks and black mary jane shoes"
   },
   {
+    "id": "l1211",
+    "kind": "look",
+    "look": {
+      "title": "Olympic Park autumn picnic look",
+      "place": "Olympic Park",
+      "items": [
+        "cream cable knit cardigan + brown corduroy pants",
+        "tan suede loafers + plaid scarf"
+      ],
+      "drink": [
+        "iced americano",
+        "warm yuja tea"
+      ]
+    },
+    "scene": "Full-body shot standing on the grassy hill path of Olympic Park in Seoul with golden autumn trees and the lone tree behind, wearing a cream cable knit cardigan over a white tee, brown corduroy wide pants, a beige-brown plaid scarf and tan suede loafers"
+  },
+  {
+    "id": "l1212",
+    "kind": "look",
+    "look": {
+      "title": "Olympic Park autumn picnic look",
+      "place": "Olympic Park",
+      "items": [
+        "cream cable knit cardigan + brown corduroy pants",
+        "tan suede loafers + plaid scarf"
+      ],
+      "drink": [
+        "iced americano",
+        "warm yuja tea"
+      ]
+    },
+    "scene": "Half-body shot on the autumn walking path of Olympic Park in Seoul with orange and yellow leaves, smiling, wearing a cream cable knit cardigan over a white tee and a beige-brown plaid scarf"
+  },
+  {
+    "id": "l1221",
+    "kind": "look",
+    "look": {
+      "title": "Changdeokgung autumn palace look",
+      "place": "Changdeokgung Palace",
+      "items": [
+        "burgundy wool coat + ivory turtleneck",
+        "black pleated midi skirt + ankle boots"
+      ],
+      "drink": [
+        "hot jujube latte",
+        "warm omija tea"
+      ]
+    },
+    "scene": "Full-body shot standing on the stone path inside Changdeokgung Palace in Seoul with red maple leaves and traditional wooden eaves behind, wearing a burgundy wool knee-length coat, an ivory turtleneck, a black pleated midi skirt and black leather ankle boots"
+  },
+  {
+    "id": "l1222",
+    "kind": "look",
+    "look": {
+      "title": "Changdeokgung autumn palace look",
+      "place": "Changdeokgung Palace",
+      "items": [
+        "burgundy wool coat + ivory turtleneck",
+        "black pleated midi skirt + ankle boots"
+      ],
+      "drink": [
+        "hot jujube latte",
+        "warm omija tea"
+      ]
+    },
+    "scene": "Half-body shot in front of a traditional palace pavilion at Changdeokgung Palace in Seoul with red maple leaves, smiling, wearing a burgundy wool coat over an ivory turtleneck"
+  },
+  {
+    "id": "l1231",
+    "kind": "look",
+    "look": {
+      "title": "Naksan Park city wall night look",
+      "place": "Naksan Park",
+      "items": [
+        "charcoal puffer vest + gray hoodie",
+        "straight blue jeans + white sneakers"
+      ],
+      "drink": [
+        "hot chocolate",
+        "warm barley tea"
+      ]
+    },
+    "scene": "Full-body shot standing beside the lit stone fortress wall of Naksan Park in Seoul at night with city lights below, wearing a charcoal puffer vest over a soft gray hoodie, straight blue jeans and clean white sneakers"
+  },
+  {
+    "id": "l1232",
+    "kind": "look",
+    "look": {
+      "title": "Naksan Park city wall night look",
+      "place": "Naksan Park",
+      "items": [
+        "charcoal puffer vest + gray hoodie",
+        "straight blue jeans + white sneakers"
+      ],
+      "drink": [
+        "hot chocolate",
+        "warm barley tea"
+      ]
+    },
+    "scene": "Half-body shot by the glowing old city wall at Naksan Park in Seoul at night with twinkling skyline bokeh, smiling, wearing a charcoal puffer vest over a soft gray hoodie"
+  },
+  {
     "id": "s012",
     "kind": "product",
     "product": "mini makeup pouch",

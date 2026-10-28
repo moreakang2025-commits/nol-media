@@ -2139,5 +2139,325 @@
       }
     ],
     "caption": "fit check in Haneul Park 🌙 beige suede jacket + white knit, light wash wide jeans + brown boots.\n\nrate it 1-10, be honest 👇\n\nAI character · AI-styled looks\n#fitcheck #seoul #koreanfashion #ootd"
+  },
+  {
+    "id": "r117",
+    "format": "drink",
+    "music": "lofi",
+    "shots": [
+      {
+        "img": "l1171",
+        "beats": 4,
+        "text": "pairing my outfit with a drink",
+        "pos": "top",
+        "zoom": [
+          1.0,
+          1.08
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l1172",
+        "beats": 4,
+        "text": "sage green knit vest + white shirt",
+        "pos": "bottom",
+        "zoom": [
+          1.02,
+          1.12
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l1171",
+        "beats": 4,
+        "text": "hot honey latte or warm jujube tea?",
+        "pos": "top",
+        "zoom": [
+          1.3,
+          1.42
+        ],
+        "pan": [
+          0.5,
+          0.35,
+          0.5,
+          0.32
+        ]
+      },
+      {
+        "img": "l1172",
+        "beats": 4,
+        "text": "comment your pick",
+        "pos": "top",
+        "zoom": [
+          1.12,
+          1.0
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      }
+    ],
+    "caption": "Changgyeonggung greenhouse date look in Changgyeonggung Palace ☕ sage green knit vest + white shirt, gray wool midi skirt + mary janes.\n\nwhich drink goes with this fit, hot honey latte or warm jujube tea? 👇\n\nAI character · AI-styled looks\n#koreanfashion #seoulstyle #ootd #cafeoutfit"
+  },
+  {
+    "id": "r118",
+    "format": "keepswap",
+    "music": "disco",
+    "shots": [
+      {
+        "img": "l1181",
+        "beats": 2,
+        "text": "keep or swap?",
+        "pos": "top",
+        "zoom": [
+          1.0,
+          1.08
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l1181",
+        "beats": 2,
+        "text": "camel wool coat + cream turtleneck",
+        "pos": "bottom",
+        "zoom": [
+          1.15,
+          1.25
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l1182",
+        "beats": 2,
+        "text": "dark straight jeans + brown loafers",
+        "pos": "bottom",
+        "zoom": [
+          1.05,
+          1.15
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l1182",
+        "beats": 2,
+        "text": "",
+        "pos": "bottom",
+        "zoom": [
+          1.2,
+          1.3
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l1181",
+        "beats": 4,
+        "text": "keep or swap? 👇",
+        "pos": "top",
+        "zoom": [
+          1.1,
+          1.0
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      }
+    ],
+    "caption": "keep or swap? 🤔 sejong-ro autumn ginkgo look: camel wool coat + cream turtleneck, dark straight jeans + brown loafers.\n\ntell me what you'd change 👇\n\nAI character · AI-styled looks\n#koreanfashion #ootd #seoulstyle #outfitideas"
+  },
+  {
+    "id": "r119",
+    "format": "rate",
+    "music": "disco",
+    "shots": [
+      {
+        "img": "l1191",
+        "beats": 2,
+        "text": "seoullo 7017 sunset walk look in Seoul",
+        "pos": "top",
+        "zoom": [
+          1.0,
+          1.08
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l1192",
+        "beats": 2,
+        "text": "",
+        "pos": "bottom",
+        "zoom": [
+          1.05,
+          1.15
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l1191",
+        "beats": 2,
+        "text": "burgundy cardigan + striped tee",
+        "pos": "bottom",
+        "zoom": [
+          1.2,
+          1.3
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l1192",
+        "beats": 2,
+        "text": "beige wide trousers + white sneakers",
+        "pos": "bottom",
+        "zoom": [
+          1.1,
+          1.2
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l1191",
+        "beats": 4,
+        "text": "1-10? comment below",
+        "pos": "top",
+        "zoom": [
+          1.1,
+          1.0
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      }
+    ],
+    "caption": "seoullo 7017 sunset walk look 💫 burgundy cardigan + striped tee, beige wide trousers + white sneakers. Seoullo 7017.\n\nscore it 1-10 👇\n\nAI character · AI-styled looks\n#koreanfashion #outfitideas #seoulstyle #kfashion"
+  },
+  {
+    "id": "r120",
+    "format": "diary",
+    "music": "lofi",
+    "shots": [
+      {
+        "img": "l1201",
+        "beats": 4,
+        "text": "Seoul outfit diary · day 6",
+        "pos": "top",
+        "zoom": [
+          1.0,
+          1.08
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l1202",
+        "beats": 4,
+        "text": "oatmeal fleece jacket + gray hoodie",
+        "pos": "bottom",
+        "zoom": [
+          1.02,
+          1.12
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l1201",
+        "beats": 4,
+        "text": "black jogger pants + chunky sneakers",
+        "pos": "bottom",
+        "zoom": [
+          1.3,
+          1.45
+        ],
+        "pan": [
+          0.5,
+          0.62,
+          0.5,
+          0.66
+        ]
+      },
+      {
+        "img": "l1202",
+        "beats": 4,
+        "text": "would you wear this?",
+        "pos": "top",
+        "zoom": [
+          1.12,
+          1.0
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      }
+    ],
+    "caption": "Seoul outfit diary · day 6 🤍 mangwon market cozy weekend look, Mangwon Market.\n\nwould you wear it? yes or no 👇 (follow for day 7)\n\nAI character · AI-styled looks\n#seoulstyle #ootd #koreanfashion #outfitdiary"
   }
 ]
