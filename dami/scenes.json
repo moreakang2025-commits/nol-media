@@ -1087,6 +1087,108 @@
     "scene": "Outfit of the day on a quiet alley in Seongsu, Seoul, black blazer, white tee, pleated skirt, loafers"
   },
   {
+    "id": "l1241",
+    "kind": "look",
+    "look": {
+      "title": "Dongdaemun Design Plaza late autumn look",
+      "place": "Dongdaemun Design Plaza",
+      "items": [
+        "oatmeal wool blazer + black knit top",
+        "gray wide-leg trousers + black loafers"
+      ],
+      "drink": [
+        "iced americano",
+        "warm yuzu tea"
+      ]
+    },
+    "scene": "Full-body shot standing in front of the curved silver architecture of Dongdaemun Design Plaza in Seoul on a crisp late autumn afternoon, wearing an oatmeal wool blazer over a black knit top, gray wide-leg trousers and black leather loafers"
+  },
+  {
+    "id": "l1242",
+    "kind": "look",
+    "look": {
+      "title": "Dongdaemun Design Plaza late autumn look",
+      "place": "Dongdaemun Design Plaza",
+      "items": [
+        "oatmeal wool blazer + black knit top",
+        "gray wide-leg trousers + black loafers"
+      ],
+      "drink": [
+        "iced americano",
+        "warm yuzu tea"
+      ]
+    },
+    "scene": "Half-body shot beside the sleek curved silver walls of Dongdaemun Design Plaza in Seoul in soft autumn light, smiling, wearing an oatmeal wool blazer over a black knit top"
+  },
+  {
+    "id": "l1251",
+    "kind": "look",
+    "look": {
+      "title": "Seokchon Lake autumn walk look",
+      "place": "Seokchon Lake",
+      "items": [
+        "mustard knit cardigan + white collared shirt",
+        "dark denim midi skirt + brown ankle boots"
+      ],
+      "drink": [
+        "hot cinnamon latte",
+        "warm citron tea"
+      ]
+    },
+    "scene": "Full-body shot standing on the lakeside walking path of Seokchon Lake in Seoul with golden autumn trees and calm water behind, wearing a mustard knit cardigan over a white collared shirt, a dark denim midi skirt and brown suede ankle boots"
+  },
+  {
+    "id": "l1252",
+    "kind": "look",
+    "look": {
+      "title": "Seokchon Lake autumn walk look",
+      "place": "Seokchon Lake",
+      "items": [
+        "mustard knit cardigan + white collared shirt",
+        "dark denim midi skirt + brown ankle boots"
+      ],
+      "drink": [
+        "hot cinnamon latte",
+        "warm citron tea"
+      ]
+    },
+    "scene": "Half-body shot by the water at Seokchon Lake in Seoul with orange autumn leaves softly blurred behind, smiling, wearing a mustard knit cardigan over a white collared shirt"
+  },
+  {
+    "id": "l1261",
+    "kind": "look",
+    "look": {
+      "title": "Insadong tea street cozy look",
+      "place": "Insadong",
+      "items": [
+        "cream wool duffle coat + navy knit sweater",
+        "charcoal straight slacks + white sneakers"
+      ],
+      "drink": [
+        "hot ginger tea",
+        "sweet pumpkin latte"
+      ]
+    },
+    "scene": "Full-body shot standing in a quiet traditional alley of Insadong in Seoul with hanok tea house wooden doors and paper lanterns behind, wearing a cream wool duffle coat over a navy knit sweater, charcoal straight slacks and clean white sneakers"
+  },
+  {
+    "id": "l1262",
+    "kind": "look",
+    "look": {
+      "title": "Insadong tea street cozy look",
+      "place": "Insadong",
+      "items": [
+        "cream wool duffle coat + navy knit sweater",
+        "charcoal straight slacks + white sneakers"
+      ],
+      "drink": [
+        "hot ginger tea",
+        "sweet pumpkin latte"
+      ]
+    },
+    "scene": "Half-body shot in a cozy Insadong alley in Seoul with warm paper lanterns and wooden hanok details softly blurred behind, smiling, wearing a cream wool duffle coat over a navy knit sweater"
+  },
+  {
     "id": "s014",
     "kind": "product",
     "product": "silicone cleansing brush",

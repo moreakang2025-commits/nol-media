@@ -2459,5 +2459,237 @@
       }
     ],
     "caption": "Seoul outfit diary · day 6 🤍 mangwon market cozy weekend look, Mangwon Market.\n\nwould you wear it? yes or no 👇 (follow for day 7)\n\nAI character · AI-styled looks\n#seoulstyle #ootd #koreanfashion #outfitdiary"
+  },
+  {
+    "id": "r121",
+    "format": "fitcheck",
+    "music": "moody",
+    "shots": [
+      {
+        "img": "l1211",
+        "beats": 4,
+        "text": "fit check · Olympic Park",
+        "pos": "top",
+        "zoom": [
+          1.0,
+          1.08
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l1212",
+        "beats": 4,
+        "text": "cream cable knit cardigan + brown corduroy pants",
+        "pos": "bottom",
+        "zoom": [
+          1.0,
+          1.12
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l1211",
+        "beats": 4,
+        "text": "tan suede loafers + plaid scarf",
+        "pos": "bottom",
+        "zoom": [
+          1.35,
+          1.5
+        ],
+        "pan": [
+          0.5,
+          0.7,
+          0.5,
+          0.75
+        ]
+      },
+      {
+        "img": "l1212",
+        "beats": 4,
+        "text": "rate it 1-10",
+        "pos": "top",
+        "zoom": [
+          1.15,
+          1.0
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      }
+    ],
+    "caption": "fit check in Olympic Park 🌙 cream cable knit cardigan + brown corduroy pants, tan suede loafers + plaid scarf.\n\nrate it 1-10, be honest 👇\n\nAI character · AI-styled looks\n#fitcheck #seoul #koreanfashion #ootd"
+  },
+  {
+    "id": "r122",
+    "format": "drink",
+    "music": "lofi",
+    "shots": [
+      {
+        "img": "l1221",
+        "beats": 4,
+        "text": "pairing my outfit with a drink",
+        "pos": "top",
+        "zoom": [
+          1.0,
+          1.08
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l1222",
+        "beats": 4,
+        "text": "burgundy wool coat + ivory turtleneck",
+        "pos": "bottom",
+        "zoom": [
+          1.02,
+          1.12
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l1221",
+        "beats": 4,
+        "text": "hot jujube latte or warm omija tea?",
+        "pos": "top",
+        "zoom": [
+          1.3,
+          1.42
+        ],
+        "pan": [
+          0.5,
+          0.35,
+          0.5,
+          0.32
+        ]
+      },
+      {
+        "img": "l1222",
+        "beats": 4,
+        "text": "comment your pick",
+        "pos": "top",
+        "zoom": [
+          1.12,
+          1.0
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      }
+    ],
+    "caption": "Changdeokgung autumn palace look in Changdeokgung Palace ☕ burgundy wool coat + ivory turtleneck, black pleated midi skirt + ankle boots.\n\nwhich drink goes with this fit, hot jujube latte or warm omija tea? 👇\n\nAI character · AI-styled looks\n#koreanfashion #seoulstyle #ootd #cafeoutfit"
+  },
+  {
+    "id": "r123",
+    "format": "keepswap",
+    "music": "disco",
+    "shots": [
+      {
+        "img": "l1231",
+        "beats": 2,
+        "text": "keep or swap?",
+        "pos": "top",
+        "zoom": [
+          1.0,
+          1.08
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l1231",
+        "beats": 2,
+        "text": "charcoal puffer vest + gray hoodie",
+        "pos": "bottom",
+        "zoom": [
+          1.15,
+          1.25
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l1232",
+        "beats": 2,
+        "text": "straight blue jeans + white sneakers",
+        "pos": "bottom",
+        "zoom": [
+          1.05,
+          1.15
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l1232",
+        "beats": 2,
+        "text": "",
+        "pos": "bottom",
+        "zoom": [
+          1.2,
+          1.3
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      },
+      {
+        "img": "l1231",
+        "beats": 4,
+        "text": "keep or swap? 👇",
+        "pos": "top",
+        "zoom": [
+          1.1,
+          1.0
+        ],
+        "pan": [
+          0.5,
+          0.48,
+          0.5,
+          0.44
+        ]
+      }
+    ],
+    "caption": "keep or swap? 🤔 naksan park city wall night look: charcoal puffer vest + gray hoodie, straight blue jeans + white sneakers.\n\ntell me what you'd change 👇\n\nAI character · AI-styled looks\n#koreanfashion #ootd #seoulstyle #outfitideas"
   }
 ]
