@@ -1200,6 +1200,108 @@
     "scene": "Picnic on a mat in a Seoul park, strawberries and a thermos, spring sunlight, sitting cross-legged"
   },
   {
+    "id": "l1271",
+    "kind": "look",
+    "look": {
+      "title": "Yeouido Hangang autumn bike date look",
+      "place": "Yeouido Hangang Park",
+      "items": [
+        "camel quilted vest + ivory turtleneck knit",
+        "light-wash wide denim + brown loafers"
+      ],
+      "drink": [
+        "iced americano",
+        "hot cocoa"
+      ]
+    },
+    "scene": "Full-body shot standing on the riverside path of Yeouido Hangang Park in Seoul with golden autumn trees and the river behind, wearing a camel quilted vest over an ivory turtleneck knit, light-wash wide-leg denim and brown loafers"
+  },
+  {
+    "id": "l1272",
+    "kind": "look",
+    "look": {
+      "title": "Yeouido Hangang autumn bike date look",
+      "place": "Yeouido Hangang Park",
+      "items": [
+        "camel quilted vest + ivory turtleneck knit",
+        "light-wash wide denim + brown loafers"
+      ],
+      "drink": [
+        "iced americano",
+        "hot cocoa"
+      ]
+    },
+    "scene": "Half-body shot at Yeouido Hangang Park in Seoul with the river and soft autumn trees blurred behind, smiling, wearing a camel quilted vest over an ivory turtleneck knit"
+  },
+  {
+    "id": "l1281",
+    "kind": "look",
+    "look": {
+      "title": "Samcheong-dong gallery street look",
+      "place": "Samcheong-dong",
+      "items": [
+        "charcoal long wool coat + grey hoodie",
+        "black pleated midi skirt + white sneakers"
+      ],
+      "drink": [
+        "hot yuja tea",
+        "vanilla latte"
+      ]
+    },
+    "scene": "Full-body shot standing on a quiet gallery street in Samcheong-dong in Seoul with stone walls, small hanok-style shops and fallen leaves behind, wearing a charcoal long wool coat over a grey hoodie, a black pleated midi skirt and white sneakers"
+  },
+  {
+    "id": "l1282",
+    "kind": "look",
+    "look": {
+      "title": "Samcheong-dong gallery street look",
+      "place": "Samcheong-dong",
+      "items": [
+        "charcoal long wool coat + grey hoodie",
+        "black pleated midi skirt + white sneakers"
+      ],
+      "drink": [
+        "hot yuja tea",
+        "vanilla latte"
+      ]
+    },
+    "scene": "Half-body shot on a Samcheong-dong street in Seoul with stone walls and warm shop windows softly blurred behind, smiling, wearing a charcoal long wool coat over a grey hoodie"
+  },
+  {
+    "id": "l1291",
+    "kind": "look",
+    "look": {
+      "title": "Myeongdong cathedral evening look",
+      "place": "Myeong-dong",
+      "items": [
+        "burgundy wool blazer + cream cable knit",
+        "black straight jeans + black ankle boots"
+      ],
+      "drink": [
+        "hot chocolate",
+        "chai latte"
+      ]
+    },
+    "scene": "Full-body shot standing on a brick-paved slope near a red-brick Gothic cathedral in Myeong-dong in Seoul at dusk with warm street lights, wearing a burgundy wool blazer over a cream cable knit sweater, black straight jeans and black ankle boots"
+  },
+  {
+    "id": "l1292",
+    "kind": "look",
+    "look": {
+      "title": "Myeongdong cathedral evening look",
+      "place": "Myeong-dong",
+      "items": [
+        "burgundy wool blazer + cream cable knit",
+        "black straight jeans + black ankle boots"
+      ],
+      "drink": [
+        "hot chocolate",
+        "chai latte"
+      ]
+    },
+    "scene": "Half-body shot in Myeong-dong in Seoul at dusk with warm street lights and red brick softly blurred behind, smiling, wearing a burgundy wool blazer over a cream cable knit sweater"
+  },
+  {
     "id": "s016",
     "kind": "product",
     "product": "desk organizer",
