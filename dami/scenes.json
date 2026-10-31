@@ -1313,6 +1313,108 @@
     "scene": "Rainy day in Seoul, she holds a clear umbrella on a street with neon reflections, puffer jacket"
   },
   {
+    "id": "l1301",
+    "kind": "look",
+    "look": {
+      "title": "Gwangjang Market winter snack date look",
+      "place": "Gwangjang Market",
+      "items": [
+        "oatmeal padded short jacket + striped knit",
+        "black corduroy wide pants + white sneakers"
+      ],
+      "drink": [
+        "hot sikhye",
+        "warm barley tea"
+      ]
+    },
+    "scene": "Full-body shot standing in a busy aisle of Gwangjang Market in Seoul with steaming food stalls, warm hanging bulbs and colorful fabric shops behind, wearing an oatmeal padded short jacket over a navy and white striped knit, black corduroy wide-leg pants and white sneakers"
+  },
+  {
+    "id": "l1302",
+    "kind": "look",
+    "look": {
+      "title": "Gwangjang Market winter snack date look",
+      "place": "Gwangjang Market",
+      "items": [
+        "oatmeal padded short jacket + striped knit",
+        "black corduroy wide pants + white sneakers"
+      ],
+      "drink": [
+        "hot sikhye",
+        "warm barley tea"
+      ]
+    },
+    "scene": "Half-body shot in Gwangjang Market in Seoul with warm stall lights and steam softly blurred behind, smiling, wearing an oatmeal padded short jacket over a navy and white striped knit"
+  },
+  {
+    "id": "l1311",
+    "kind": "look",
+    "look": {
+      "title": "Gwanghwamun bookstore afternoon look",
+      "place": "Gwanghwamun",
+      "items": [
+        "soft grey wool cardigan + white blouse",
+        "beige A-line midi skirt + brown loafers"
+      ],
+      "drink": [
+        "hot earl grey latte",
+        "warm honey milk"
+      ]
+    },
+    "scene": "Full-body shot standing between tall wooden bookshelves in a large calm bookstore near Gwanghwamun in Seoul with warm reading lamps behind, wearing a soft grey wool cardigan over a white collared blouse, a beige A-line midi skirt and brown leather loafers"
+  },
+  {
+    "id": "l1312",
+    "kind": "look",
+    "look": {
+      "title": "Gwanghwamun bookstore afternoon look",
+      "place": "Gwanghwamun",
+      "items": [
+        "soft grey wool cardigan + white blouse",
+        "beige A-line midi skirt + brown loafers"
+      ],
+      "drink": [
+        "hot earl grey latte",
+        "warm honey milk"
+      ]
+    },
+    "scene": "Half-body shot in a cozy bookstore near Gwanghwamun in Seoul with wooden bookshelves and warm lamps softly blurred behind, smiling, wearing a soft grey wool cardigan over a white collared blouse"
+  },
+  {
+    "id": "l1321",
+    "kind": "look",
+    "look": {
+      "title": "Namsan night view date look",
+      "place": "Namsan",
+      "items": [
+        "black wool long coat + ivory turtleneck",
+        "dark grey straight slacks + black ankle boots"
+      ],
+      "drink": [
+        "hot chocolate",
+        "warm cafe latte"
+      ]
+    },
+    "scene": "Full-body shot standing on the Namsan walking path in Seoul at night with the glowing city skyline and the lit Namsan tower behind, wearing a black wool long coat over an ivory turtleneck knit, dark grey straight slacks and black ankle boots"
+  },
+  {
+    "id": "l1322",
+    "kind": "look",
+    "look": {
+      "title": "Namsan night view date look",
+      "place": "Namsan",
+      "items": [
+        "black wool long coat + ivory turtleneck",
+        "dark grey straight slacks + black ankle boots"
+      ],
+      "drink": [
+        "hot chocolate",
+        "warm cafe latte"
+      ]
+    },
+    "scene": "Half-body shot on Namsan in Seoul at night with twinkling city lights softly blurred behind, smiling, wearing a black wool long coat over an ivory turtleneck knit"
+  },
+  {
     "id": "s018",
     "kind": "product",
     "product": "hair claw clips",
