@@ -1426,6 +1426,108 @@
     "scene": "Making a simple Korean breakfast at home: rice, egg, kimchi on a small wooden tray, apron, kitchen window light"
   },
   {
+    "id": "l1331",
+    "kind": "look",
+    "look": {
+      "title": "Seochon hanok alley autumn look",
+      "place": "Seochon",
+      "items": [
+        "camel wool half coat + cream cable knit",
+        "brown pleated midi skirt + burgundy loafers"
+      ],
+      "drink": [
+        "hot yuja tea",
+        "warm cafe mocha"
+      ]
+    },
+    "scene": "Full-body shot standing in a quiet hanok alley in Seochon, Seoul with tiled roofs and yellow ginkgo leaves on the ground behind, wearing a camel wool half coat over a cream cable knit sweater, a brown pleated midi skirt and burgundy leather loafers"
+  },
+  {
+    "id": "l1332",
+    "kind": "look",
+    "look": {
+      "title": "Seochon hanok alley autumn look",
+      "place": "Seochon",
+      "items": [
+        "camel wool half coat + cream cable knit",
+        "brown pleated midi skirt + burgundy loafers"
+      ],
+      "drink": [
+        "hot yuja tea",
+        "warm cafe mocha"
+      ]
+    },
+    "scene": "Half-body shot in a hanok alley in Seochon, Seoul with tiled roofs and golden ginkgo trees softly blurred behind, smiling, wearing a camel wool half coat over a cream cable knit sweater"
+  },
+  {
+    "id": "l1341",
+    "kind": "look",
+    "look": {
+      "title": "Hangang Yeouido sunset picnic look",
+      "place": "Yeouido Hangang Park",
+      "items": [
+        "navy quilted vest + grey hoodie",
+        "light blue straight jeans + white sneakers"
+      ],
+      "drink": [
+        "hot americano",
+        "warm ramyeon broth"
+      ]
+    },
+    "scene": "Full-body shot standing on the riverside lawn of Yeouido Hangang Park in Seoul at sunset with the Han River and city bridges behind, wearing a navy quilted vest over a soft grey hoodie, light blue straight jeans and white sneakers"
+  },
+  {
+    "id": "l1342",
+    "kind": "look",
+    "look": {
+      "title": "Hangang Yeouido sunset picnic look",
+      "place": "Yeouido Hangang Park",
+      "items": [
+        "navy quilted vest + grey hoodie",
+        "light blue straight jeans + white sneakers"
+      ],
+      "drink": [
+        "hot americano",
+        "warm ramyeon broth"
+      ]
+    },
+    "scene": "Half-body shot by the Han River at Yeouido in Seoul at sunset with warm orange sky and bridges softly blurred behind, smiling, wearing a navy quilted vest over a soft grey hoodie"
+  },
+  {
+    "id": "l1351",
+    "kind": "look",
+    "look": {
+      "title": "Ikseon-dong cafe street date look",
+      "place": "Ikseon-dong",
+      "items": [
+        "ivory knit cardigan + light brown corduroy jacket",
+        "charcoal wool wide pants + black loafers"
+      ],
+      "drink": [
+        "hot chestnut latte",
+        "warm jujube tea"
+      ]
+    },
+    "scene": "Full-body shot standing in the narrow cafe street of Ikseon-dong in Seoul with small hanok cafes and warm string lights behind, wearing a light brown corduroy jacket over an ivory knit cardigan, charcoal wool wide pants and black loafers"
+  },
+  {
+    "id": "l1352",
+    "kind": "look",
+    "look": {
+      "title": "Ikseon-dong cafe street date look",
+      "place": "Ikseon-dong",
+      "items": [
+        "ivory knit cardigan + light brown corduroy jacket",
+        "charcoal wool wide pants + black loafers"
+      ],
+      "drink": [
+        "hot chestnut latte",
+        "warm jujube tea"
+      ]
+    },
+    "scene": "Half-body shot in an Ikseon-dong cafe street in Seoul with hanok cafe windows and warm string lights softly blurred behind, smiling, wearing a light brown corduroy jacket over an ivory knit cardigan"
+  },
+  {
     "id": "s020",
     "kind": "product",
     "product": "sun stick",
