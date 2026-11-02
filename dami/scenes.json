@@ -1532,5 +1532,107 @@
     "kind": "product",
     "product": "sun stick",
     "scene": "She applies a small unbranded sun stick to her cheek before going out, apartment doorway, daylight"
+  },
+  {
+    "id": "l1361",
+    "kind": "look",
+    "look": {
+      "title": "Ttukseom Hangang sunset walk look",
+      "place": "Ttukseom Hangang Park",
+      "items": [
+        "camel wool single coat + cream turtleneck knit",
+        "dark denim straight jeans + white sneakers"
+      ],
+      "drink": [
+        "warm honey citron tea",
+        "hot vanilla latte"
+      ]
+    },
+    "scene": "Full-body shot standing in the riverside path of Ttukseom Hangang Park in Seoul at golden-hour sunset with the Han River and city bridges behind, wearing a camel wool single coat over a cream turtleneck knit, dark denim straight jeans and white sneakers"
+  },
+  {
+    "id": "l1362",
+    "kind": "look",
+    "look": {
+      "title": "Ttukseom Hangang sunset walk look",
+      "place": "Ttukseom Hangang Park",
+      "items": [
+        "camel wool single coat + cream turtleneck knit",
+        "dark denim straight jeans + white sneakers"
+      ],
+      "drink": [
+        "warm honey citron tea",
+        "hot vanilla latte"
+      ]
+    },
+    "scene": "Half-body shot in the riverside path of Ttukseom Hangang Park in Seoul at golden-hour sunset with the Han River and city bridges behind, smiling, wearing a camel wool coat over a cream turtleneck knit"
+  },
+  {
+    "id": "l1371",
+    "kind": "look",
+    "look": {
+      "title": "Jongmyo stonewall ginkgo road look",
+      "place": "Jongmyo Stonewall Road",
+      "items": [
+        "mustard knit cardigan + white collared blouse",
+        "brown plaid midi skirt + black ankle boots"
+      ],
+      "drink": [
+        "hot sweet potato latte",
+        "warm cinnamon tea"
+      ]
+    },
+    "scene": "Full-body shot standing in the Jongmyo stonewall road in Seoul with old stone walls and golden ginkgo trees and fallen yellow leaves behind, wearing a mustard knit cardigan over a white collared blouse, a brown plaid midi skirt and black ankle boots"
+  },
+  {
+    "id": "l1372",
+    "kind": "look",
+    "look": {
+      "title": "Jongmyo stonewall ginkgo road look",
+      "place": "Jongmyo Stonewall Road",
+      "items": [
+        "mustard knit cardigan + white collared blouse",
+        "brown plaid midi skirt + black ankle boots"
+      ],
+      "drink": [
+        "hot sweet potato latte",
+        "warm cinnamon tea"
+      ]
+    },
+    "scene": "Half-body shot in the Jongmyo stonewall road in Seoul with old stone walls and golden ginkgo trees and fallen yellow leaves behind, smiling, wearing a mustard knit cardigan over a white collared blouse"
+  },
+  {
+    "id": "l1381",
+    "kind": "look",
+    "look": {
+      "title": "Ihwa mural village evening look",
+      "place": "Ihwa Mural Village",
+      "items": [
+        "olive quilted jacket + ivory hoodie",
+        "beige cargo wide pants + brown suede sneakers"
+      ],
+      "drink": [
+        "hot yuzu tea",
+        "warm hojicha latte"
+      ]
+    },
+    "scene": "Full-body shot standing in the hillside stairs of Ihwa Mural Village in Seoul with colorful painted walls and the evening city lights in the distance, wearing an olive quilted jacket over an ivory hoodie, beige cargo wide pants and brown suede sneakers"
+  },
+  {
+    "id": "l1382",
+    "kind": "look",
+    "look": {
+      "title": "Ihwa mural village evening look",
+      "place": "Ihwa Mural Village",
+      "items": [
+        "olive quilted jacket + ivory hoodie",
+        "beige cargo wide pants + brown suede sneakers"
+      ],
+      "drink": [
+        "hot yuzu tea",
+        "warm hojicha latte"
+      ]
+    },
+    "scene": "Half-body shot in the hillside stairs of Ihwa Mural Village in Seoul with colorful painted walls and the evening city lights in the distance, smiling, wearing an olive quilted jacket over an ivory hoodie"
   }
 ]
