@@ -1634,5 +1634,107 @@
       ]
     },
     "scene": "Half-body shot in the hillside stairs of Ihwa Mural Village in Seoul with colorful painted walls and the evening city lights in the distance, smiling, wearing an olive quilted jacket over an ivory hoodie"
+  },
+  {
+    "id": "l1391",
+    "kind": "look",
+    "look": {
+      "title": "Deoksugung stonewall late autumn look",
+      "place": "Deoksugung Stonewall Road",
+      "items": [
+        "ivory cable knit cardigan + light blue shirt",
+        "charcoal pleated midi skirt + black loafers"
+      ],
+      "drink": [
+        "hot vanilla latte",
+        "warm chestnut latte"
+      ]
+    },
+    "scene": "Full-body shot standing in the Deoksugung stonewall road in Seoul with golden ginkgo leaves on the pavement and old stone walls, wearing an ivory cable knit cardigan over a light blue shirt, a charcoal pleated midi skirt, black tights and black loafers"
+  },
+  {
+    "id": "l1392",
+    "kind": "look",
+    "look": {
+      "title": "Deoksugung stonewall late autumn look",
+      "place": "Deoksugung Stonewall Road",
+      "items": [
+        "ivory cable knit cardigan + light blue shirt",
+        "charcoal pleated midi skirt + black loafers"
+      ],
+      "drink": [
+        "hot vanilla latte",
+        "warm chestnut latte"
+      ]
+    },
+    "scene": "Half-body shot in the Deoksugung stonewall road in Seoul with golden ginkgo leaves on the pavement and old stone walls, smiling, wearing an ivory cable knit cardigan over a light blue shirt"
+  },
+  {
+    "id": "l1401",
+    "kind": "look",
+    "look": {
+      "title": "Bukchon hanok village cozy date look",
+      "place": "Bukchon Hanok Village",
+      "items": [
+        "brown teddy fleece jacket + cream turtleneck",
+        "dark straight denim + white leather sneakers"
+      ],
+      "drink": [
+        "hot omija tea",
+        "warm sweet potato latte"
+      ]
+    },
+    "scene": "Full-body shot standing in a quiet alley of Bukchon Hanok Village in Seoul with traditional tiled roofs and wooden gates in soft afternoon light, wearing a brown teddy fleece jacket over a cream turtleneck, dark straight-leg denim jeans and white leather sneakers"
+  },
+  {
+    "id": "l1402",
+    "kind": "look",
+    "look": {
+      "title": "Bukchon hanok village cozy date look",
+      "place": "Bukchon Hanok Village",
+      "items": [
+        "brown teddy fleece jacket + cream turtleneck",
+        "dark straight denim + white leather sneakers"
+      ],
+      "drink": [
+        "hot omija tea",
+        "warm sweet potato latte"
+      ]
+    },
+    "scene": "Half-body shot in a quiet alley of Bukchon Hanok Village in Seoul with traditional tiled roofs and wooden gates in soft afternoon light, smiling, wearing a brown teddy fleece jacket over a cream turtleneck"
+  },
+  {
+    "id": "l1411",
+    "kind": "look",
+    "look": {
+      "title": "Cheonggyecheon night stream walk look",
+      "place": "Cheonggyecheon Stream",
+      "items": [
+        "navy wool peacoat + grey knit muffler",
+        "ivory wide slacks + black ankle boots"
+      ],
+      "drink": [
+        "hot citron honey tea",
+        "warm black sesame latte"
+      ]
+    },
+    "scene": "Full-body shot standing in the stone walkway along Cheonggyecheon Stream in Seoul at night with warm lights reflecting on the water, wearing a navy wool peacoat with a grey knit muffler, ivory wide slacks and black ankle boots"
+  },
+  {
+    "id": "l1412",
+    "kind": "look",
+    "look": {
+      "title": "Cheonggyecheon night stream walk look",
+      "place": "Cheonggyecheon Stream",
+      "items": [
+        "navy wool peacoat + grey knit muffler",
+        "ivory wide slacks + black ankle boots"
+      ],
+      "drink": [
+        "hot citron honey tea",
+        "warm black sesame latte"
+      ]
+    },
+    "scene": "Half-body shot in the stone walkway along Cheonggyecheon Stream in Seoul at night with warm lights reflecting on the water, smiling, wearing a navy wool peacoat with a grey knit muffler"
   }
 ]
