@@ -1,5 +1,5 @@
 """Shared paths, fonts, colors and small helpers for the Mongki Money pipeline."""
-import os, functools, subprocess
+import os, functools
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
@@ -68,12 +68,9 @@ def paste_left(base, im, x, cy, alpha=1.0):
 
 @functools.lru_cache(maxsize=8)
 def mascot(name, width):
-    """Render an SVG mascot to RGBA at the given width (needs rsvg-convert)."""
-    svg = os.path.join(ASSETS, f"mongki_{name}.svg")
-    out = os.path.join("/tmp", f"mongki_{name}_{width}.png")
-    if not os.path.exists(out):
-        subprocess.run(["rsvg-convert", "-w", str(width), svg, "-o", out], check=True)
-    return Image.open(out).convert("RGBA")
+    """Mascot as RGBA at the given width, from the pre-rendered 1200px PNG (SVG kept as the source)."""
+    im = Image.open(os.path.join(ASSETS, f"mongki_{name}.png")).convert("RGBA")
+    return im.resize((width, int(im.height * width / im.width)), Image.LANCZOS)
 
 def ease_out(t):
     t = max(0.0, min(1.0, t)); return 1 - (1 - t) ** 3

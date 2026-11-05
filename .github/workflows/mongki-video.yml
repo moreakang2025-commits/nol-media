@@ -29,17 +29,19 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: System packages
+      - name: Python packages and ffmpeg
+        timeout-minutes: 5
         run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg librsvg2-bin fonts-dejavu-core
-      - name: Python packages
-        run: pip install -q pillow numpy requests
+          pip install -q pillow numpy requests imageio-ffmpeg
+          FF=$(python3 -c "import imageio_ffmpeg; print(imageio_ffmpeg.get_ffmpeg_exe())")
+          mkdir -p $HOME/bin && ln -sf "$FF" $HOME/bin/ffmpeg && echo "$HOME/bin" >> $GITHUB_PATH
+          "$FF" -version | head -1
       - name: Fonts
+        timeout-minutes: 3
         run: |
           mkdir -p mongki/assets/fonts
-          curl -fsSL -o mongki/assets/fonts/Anton-Regular.ttf https://raw.githubusercontent.com/google/fonts/main/ofl/anton/Anton-Regular.ttf
-          curl -fsSL -o /tmp/inter.zip https://github.com/rsms/inter/releases/download/v4.0/Inter-4.0.zip || true
+          curl -fsSL --max-time 60 -o mongki/assets/fonts/Anton-Regular.ttf https://raw.githubusercontent.com/google/fonts/main/ofl/anton/Anton-Regular.ttf
+          curl -fsSL --max-time 60 -o /tmp/inter.zip https://github.com/rsms/inter/releases/download/v4.0/Inter-4.0.zip || true
           if [ -f /tmp/inter.zip ]; then
             unzip -q -o /tmp/inter.zip -d /tmp/inter
             sudo mkdir -p /usr/share/fonts/opentype/inter
@@ -55,6 +57,7 @@ jobs:
           echo "id=$EP" >> $GITHUB_OUTPUT
           echo "upload=${UP:-true}" >> $GITHUB_OUTPUT
       - name: Build video
+        timeout-minutes: 60
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python3 tools/mongki/build.py mongki/episodes/${{ steps.ep.outputs.id }}.json out/${{ steps.ep.outputs.id }}
