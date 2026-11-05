@@ -85,7 +85,7 @@ jobs:
         if: always()
         run: |
           mkdir -p mongki/results
-          for f in meta.json data.json upload.json thumb_report.json; do
+          for f in meta.json data.json upload.json thumb_report.json audio_qa.json; do
             [ -f out/${{ steps.ep.outputs.id }}/$f ] && cp out/${{ steps.ep.outputs.id }}/$f mongki/results/${{ steps.ep.outputs.id }}_$f || true
           done
           [ -f out/${{ steps.ep.outputs.id }}/thumb.jpg ] && cp out/${{ steps.ep.outputs.id }}/thumb.jpg mongki/results/${{ steps.ep.outputs.id }}_thumb.jpg || true

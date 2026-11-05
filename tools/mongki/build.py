@@ -57,13 +57,14 @@ def main():
               open(os.path.join(outdir, "data.json"), "w"), indent=1, default=str)
     segs = ep["segments"][:max_seg] if max_seg else ep["segments"]
     files, srt, chapters, audio = [], [], [], []
-    plan = []
+    plan = []; qa = []
     for i, seg in enumerate(segs):
         seg["vo_filled"] = D.fill(seg.get("vo", ""), ctx)
         seg["scene"] = D.fill_obj(seg["scene"], ctx)
         if "{" in seg["vo_filled"]: print(f"[warn] unfilled placeholder in segment {i}: {seg['vo_filled']}")
         wav = os.path.join(outdir, f"seg{i:02d}.wav")
-        vd = tts.synth(seg["vo_filled"], wav)
+        vd, ck = tts.synth_clean(seg["vo_filled"], wav)
+        qa.append({"seg": i, "clicks_after_retakes": ck})
         dur = seg["scene"].get("dur") or (vd + PAD + seg["scene"].get("tail", 0.0))
         plan.append((seg, wav, vd, round(dur * FPS) / FPS))
     total = sum(p[3] for p in plan); t0 = 0.0
@@ -83,8 +84,17 @@ def main():
         for x in files: f.write(f"file '{os.path.basename(x)}'\n")
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", os.path.join(outdir, "list.txt"),
                     "-c", "copy", os.path.join(outdir, "silent.mp4")], check=True)
+    raw = os.path.join(outdir, "voice.wav"); clean = os.path.join(outdir, "voice_clean.wav")
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", raw, "-af",
+                    "highpass=f=60,adeclick=w=55:o=75:t=2,adeclip,lowpass=f=13000,alimiter=limit=0.9:level=false",
+                    "-ar", str(tts.RATE), "-ac", "1", "-c:a", "pcm_s16le", clean], check=True)
+    left = tts.clicks(clean)
+    json.dump({"segments": qa, "final_clicks_left": left, "before_master": tts.clicks(raw)},
+              open(os.path.join(outdir, "audio_qa.json"), "w"), indent=1)
+    print("[audio] clicks left after master:", left[:20])
+    os.replace(clean, raw)
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", os.path.join(outdir, "silent.mp4"), "-i", os.path.join(outdir, "voice.wav"),
-                    "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest",
+                    "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "256k", "-ar", "48000", "-shortest",
                     os.path.join(outdir, "video.mp4")], check=True)
     with open(os.path.join(outdir, "transcript.txt"), "w") as f:
         f.write("\n".join(p[0]["vo_filled"] for p in plan if p[0]["vo_filled"]) + "\n")
