@@ -12,9 +12,16 @@ Every episode is written and checked against this file. The daily ideation task 
    - **Global top stories** of the last 24 h (wars and trade, central banks, elections, disasters, big company news in Asia/Europe).
    - **Reddit**: what is most upvoted and discussed in the last 24 h (r/all, r/news, r/worldnews, r/wallstreetbets, r/stocks, r/personalfinance, r/technology, r/economy) and viral memes or trends.
    - Cross-check: a story that shows up in two or more of these lists is the strongest candidate.
-6. Turn the hot issue into a **money angle** with public data: "X happened → what did it do to Y's price / your wallet / the market last time?" Use the hook formulas in the channel plan.
-7. Final pick = highest of (best comment, best hot issue) on fun + data + surprise + freshness. Respect the category rotation and "same ticker not within 14 days" rules from the channel plan (claude/VIEWS_CHANNEL_PLAN.md).
-8. Verify every fact in at least one primary or major source before it goes in the script. Reddit is for **finding** topics, never as the source of a fact.
+   - **Pop & wild topics count too**: space launches and asteroids, weather and hurricanes, celebrities and tours, rumors, UFC and boxing, football transfers, NBA/NFL, K-pop, movies, games, viral memes.
+6. The money angle does **not** have to be a stock. Any money is fair: ticket prices, shirt sales, a city's tourism revenue, insurance losses, salaries, prize money, betting odds, resale prices, ad rates, a country's GDP. The best ideas link two things nobody expects to be connected. Examples:
+   - "If Ronaldo goes back to Man United, this stock moves" → check what Manchester United (MANU) shares did on his past transfer news.
+   - "If Messi returns to Barcelona" → Barcelona isn't listed, so use shirt sales, ticket prices, Inter Miami attendance, MLS TV deals.
+   - "What a Taylor Swift tour stop does to a city" / "What a hurricane does to orange juice prices" / "What a UFC title fight earns".
+   - Hypotheticals ("what if…") are welcome when the answer is built from real numbers about **business, careers, money or events**. Not about a real person's body, health, relationships or private life.
+   - Rumors: say clearly it is a rumor, never present it as fact, and answer "if it's true, here's what happened the last time something like it did."
+7. Turn the hot issue into a **money angle** with public data: "X happened → what did it do to Y's price / your wallet / the market last time?" Use the hook formulas in the channel plan.
+8. Final pick = highest of (best comment, best hot issue) on fun + data + surprise + freshness. Respect the category rotation and "same ticker not within 14 days" rules from the channel plan (claude/VIEWS_CHANNEL_PLAN.md).
+9. Verify every fact in at least one primary or major source before it goes in the script. Reddit is for **finding** topics, never as the source of a fact.
 6. Correlation videos must say clearly: **correlation is not causation**. Show the number (correlation coefficient or simple "moved together X% of the time") and one honest reason it might be a coincidence.
 
 ## 2. Retention structure (8–10 min long form)
