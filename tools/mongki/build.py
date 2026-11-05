@@ -64,7 +64,7 @@ def main():
         if "{" in seg["vo_filled"]: print(f"[warn] unfilled placeholder in segment {i}: {seg['vo_filled']}")
         wav = os.path.join(outdir, f"seg{i:02d}.wav")
         vd, ck = tts.synth_clean(seg["vo_filled"], wav)
-        qa.append({"seg": i, "clicks_after_retakes": ck})
+        qa.append({"seg": i, **ck})
         dur = seg["scene"].get("dur") or (vd + PAD + seg["scene"].get("tail", 0.0))
         plan.append((seg, wav, vd, round(dur * FPS) / FPS))
     total = sum(p[3] for p in plan); t0 = 0.0
@@ -85,17 +85,26 @@ def main():
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", os.path.join(outdir, "list.txt"),
                     "-c", "copy", os.path.join(outdir, "silent.mp4")], check=True)
     raw = os.path.join(outdir, "voice.wav"); clean = os.path.join(outdir, "voice_clean.wav")
+    # Master: drop gain 6 dB first so nothing downstream can clip, repair clipped peaks and clicks,
+    # then loudness-normalise to YouTube's level with a -2 dBTP ceiling (AAC overs are a classic crackle source).
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", raw, "-af",
-                    "highpass=f=60,adeclick=w=55:o=75:t=2,adeclip,lowpass=f=13000,alimiter=limit=0.9:level=false",
-                    "-ar", str(tts.RATE), "-ac", "1", "-c:a", "pcm_s16le", clean], check=True)
-    left = tts.clicks(clean)
-    json.dump({"segments": qa, "final_clicks_left": left, "before_master": tts.clicks(raw)},
-              open(os.path.join(outdir, "audio_qa.json"), "w"), indent=1)
-    print("[audio] clicks left after master:", left[:20])
-    os.replace(clean, raw)
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", os.path.join(outdir, "silent.mp4"), "-i", os.path.join(outdir, "voice.wav"),
+                    "volume=-6dB,adeclip,adeclick,highpass=f=70,lowpass=f=12000,"
+                    "loudnorm=I=-16:TP=-2:LRA=11,aresample=48000",
+                    "-ar", "48000", "-ac", "1", "-c:a", "pcm_s16le", clean], check=True)
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", os.path.join(outdir, "silent.mp4"), "-i", clean,
                     "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "256k", "-ar", "48000", "-shortest",
                     os.path.join(outdir, "video.mp4")], check=True)
+    # QA on what the viewer actually hears: decode the final AAC track back to PCM and measure it.
+    dec = subprocess.run(["ffmpeg", "-v", "error", "-i", os.path.join(outdir, "video.mp4"), "-vn", "-f", "s16le", "-ac", "1",
+                          "-ar", "24000", "-"], capture_output=True).stdout
+    fin = tts.analyze(np.frombuffer(dec, np.int16)); src = tts.analyze(tts._read(raw))
+    peak = int(np.abs(np.frombuffer(dec, np.int16)).max()) if dec else 0
+    json.dump({"segments": qa, "raw_mix": src, "final_decoded": fin, "final_peak": peak},
+              open(os.path.join(outdir, "audio_qa.json"), "w"), indent=1)
+    print("[audio] raw:", src, "final:", fin, "peak:", peak)
+    for name, srcf in (("voice_raw.flac", raw), ("voice_final.flac", os.path.join(outdir, "video.mp4"))):
+        subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", srcf, "-vn", "-ac", "1", "-ar", "24000", "-c:a", "flac",
+                        os.path.join(outdir, name)])
     with open(os.path.join(outdir, "transcript.txt"), "w") as f:
         f.write("\n".join(p[0]["vo_filled"] for p in plan if p[0]["vo_filled"]) + "\n")
     with open(os.path.join(outdir, "captions.srt"), "w") as f:

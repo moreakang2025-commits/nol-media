@@ -75,38 +75,61 @@ def _decode(raw, mime):
         n = int(len(a) * RATE / rate); a = np.interp(np.linspace(0, len(a) - 1, n), np.arange(len(a)), a)
     return np.clip(a, -32767, 32767).astype(np.int16).tobytes()
 
-def clicks(path, thresh=900, win=0.01):
-    """Times (s) of impulsive noise: windows where ffmpeg's adeclick had to change the signal a lot."""
-    import subprocess
-    with wave.open(path) as w: x = np.frombuffer(w.readframes(w.getnframes()), np.int16).astype(np.float32)
-    if len(x) < RATE // 10: return []
-    p = subprocess.run(["ffmpeg", "-v", "error", "-i", path, "-af", "adeclick=w=55:o=75:t=2", "-f", "s16le", "-ac", "1",
-                        "-ar", str(RATE), "-"], capture_output=True)
-    y = np.frombuffer(p.stdout, np.int16).astype(np.float32)[: len(x)]
-    if len(y) < len(x): y = np.pad(y, (0, len(x) - len(y)))
-    n = int(win * RATE); k = len(x) // n
-    d = np.abs(x[: k * n] - y[: k * n]).reshape(k, n).max(axis=1)
-    hits = [h for h in np.where(d > thresh)[0] if 3 <= h < k - 3]   # ignore filter edge effects
-    out = []
-    for h in hits:
-        t = float(round(h * win, 2))
-        if not out or t - out[-1] > 0.05: out.append(t)
-    return out
+CACHE = os.path.join(os.path.dirname(__file__), "..", "..", "mongki", "cache", "tts")
+CALLS = {"n": 0}; BUDGET = int(os.environ.get("MONGKI_TTS_BUDGET", "40"))
 
-def synth_clean(text, path, tries=3):
-    """Synthesize, check for clicks, and regenerate (up to `tries`) keeping the cleanest take."""
+def analyze(x):
+    """Real defects only, measured on raw samples (int16 array):
+    clipped = samples pinned at full scale in runs of 3+ (digital clipping = crackle),
+    jumps  = times where one sample step is huge versus the local signal (a discontinuity/click)."""
+    x = np.asarray(x, np.float32)
+    if len(x) < 100: return {"clipped": 0, "jumps": []}
+    hot = np.abs(x) >= 32000
+    runs = np.convolve(hot.astype(np.int8), np.ones(3, np.int8), "valid") == 3
+    d = np.abs(np.diff(x)); n = 240
+    k = len(d) // n
+    loc = np.median(d[: k * n].reshape(k, n), axis=1).repeat(n)
+    loc = np.pad(loc, (0, len(d) - len(loc)), mode="edge")
+    bad = np.where((d > 12000) & (d > 25 * (loc + 50)))[0]
+    jumps = []
+    for b in bad:
+        t = round(float(b) / RATE, 2)
+        if not jumps or t - jumps[-1] > 0.05: jumps.append(t)
+    return {"clipped": int(runs.sum()), "jumps": jumps}
+
+def _read(path):
+    with wave.open(path) as w: return np.frombuffer(w.readframes(w.getnframes()), np.int16)
+
+def clicks(path):
+    return analyze(_read(path))["jumps"]
+
+def synth_clean(text, path, tries=2):
+    """Synthesize once (cached by text), check for real defects, retake once only if it is actually broken.
+    Returns (duration, report)."""
+    import hashlib, shutil
+    os.makedirs(CACHE, exist_ok=True)
+    h = hashlib.sha1(f"{VOICE}|{STYLE}|{text}".encode()).hexdigest()[:16]
+    cached = os.path.join(CACHE, h + ".wav")
+    live = not (OFFLINE or not os.environ.get("GEMINI_API_KEY"))
+    if live and text.strip() and os.path.exists(cached):
+        shutil.copy(cached, path); x = _read(path); rep = analyze(x)
+        print(f"[tts] cached {h}: {len(x)/RATE:.1f}s {rep}"); return len(x) / RATE, rep
     best = None
     for k in range(tries):
         tmp = path + f".take{k}.wav"
-        d = synth(text, tmp)
-        c = clicks(tmp) if d > 0 else []
-        print(f"[tts] take {k+1}: {d:.1f}s, clicks={c[:8]}")
-        if best is None or len(c) < len(best[2]): best = (tmp, d, c)
-        if not c or OFFLINE or not os.environ.get("GEMINI_API_KEY"): break
+        if live and text.strip():
+            if CALLS["n"] >= BUDGET and best: break
+            CALLS["n"] += 1
+        d = synth(text, tmp); rep = analyze(_read(tmp)) if d > 0 else {"clipped": 0, "jumps": []}
+        score = rep["clipped"] + 50 * len(rep["jumps"])
+        print(f"[tts] take {k+1}: {d:.1f}s {rep}")
+        if best is None or score < best[3]: best = (tmp, d, rep, score)
+        if score == 0 or not live: break
     os.replace(best[0], path)
     for k in range(tries):
         f = path + f".take{k}.wav"
         if os.path.exists(f): os.remove(f)
+    if live and text.strip(): shutil.copy(path, cached)
     return best[1], best[2]
 
 def _trim(pcm):

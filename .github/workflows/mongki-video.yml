@@ -91,6 +91,10 @@ jobs:
           [ -f out/${{ steps.ep.outputs.id }}/thumb.jpg ] && cp out/${{ steps.ep.outputs.id }}/thumb.jpg mongki/results/${{ steps.ep.outputs.id }}_thumb.jpg || true
           git config user.name "mongki-bot"
           git config user.email "mongki-bot@users.noreply.github.com"
-          git add mongki/results
+          mkdir -p mongki/diag
+          for f in voice_raw.flac voice_final.flac; do
+            [ -f out/${{ steps.ep.outputs.id }}/$f ] && cp out/${{ steps.ep.outputs.id }}/$f mongki/diag/${{ steps.ep.outputs.id }}_$f || true
+          done
+          git add mongki/results mongki/diag mongki/cache || true
           git commit -m "mongki: results for ${{ steps.ep.outputs.id }}" || echo "nothing to commit"
           for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done || true
