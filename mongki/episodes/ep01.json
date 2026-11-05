@@ -1,0 +1,359 @@
+{
+ "id": "ep01",
+ "title": "Elon Musk Spent $158 Million on Texas. He Lost. Then Tesla Fell.",
+ "thumb": {
+  "big": "$158M",
+  "sub": "GONE.",
+  "badge": "TSLA ▼",
+  "corner": "TEXAS",
+  "bg_prompt": "Photorealistic cinematic YouTube thumbnail background, 16:9. A gigantic furious muscular gorilla-like monkey with dark brown fur roaring and raising a huge fist, standing in front of the Texas State Capitol building at dusk, a giant red stock-market chart line crashing downward across a dark sky, green dollar bills flying in the wind, a sleek red electric sedan with no logos or badges in the foreground. Dramatic rim lighting, high contrast, saturated reds and blues. Leave the upper-left third of the frame darker and less busy for text. No text, no letters, no logos, no real people."
+ },
+ "description": [
+  "Elon Musk sent $158 million into one Texas Senate race. His side lost. The next day Tesla fell while almost every other EV stock went up. Here's what actually changed in Texas, and what the numbers say.",
+  "",
+  "{chapters}",
+  "",
+  "Sources:",
+  "- FEC filings via KRDO: Musk contributions to Senate Leadership Fund / Texas PAC",
+  "- CBS Texas, NBC DFW, Texas Tribune: 2026 Texas election results",
+  "- 24/7 Wall St.: EV stock moves, Nov 4, 2026",
+  "- Electrek: what a blue Texas means for Tesla",
+  "- CBS News: Talarico on Musk",
+  "- Daily price data: Yahoo Finance",
+  "",
+  "Not financial advice. For education only.",
+  "",
+  "#Tesla #Texas #MongkiMoney"
+ ],
+ "tags": [
+  "tesla stock",
+  "tsla",
+  "elon musk",
+  "texas election 2026",
+  "midterms 2026",
+  "ev stocks",
+  "stock market",
+  "mongki money"
+ ],
+ "data": {
+  "price_tickers": [
+   "TSLA",
+   "SPY",
+   "LCID",
+   "RIVN",
+   "NIO"
+  ],
+  "event_day": "2026-11-03",
+  "elections": [
+   {
+    "key": "e2020",
+    "date": "2020-11-03",
+    "label": "2020 election"
+   },
+   {
+    "key": "e2022",
+    "date": "2022-11-08",
+    "label": "2022 midterms"
+   },
+   {
+    "key": "e2024",
+    "date": "2024-11-05",
+    "label": "2024 election"
+   },
+   {
+    "key": "e2026",
+    "date": "2026-11-03",
+    "label": "2026 midterms"
+   }
+  ],
+  "backtest": {
+   "ticker": "TSLA",
+   "compare": "SPY",
+   "start": "2021-10-07",
+   "daily": 10,
+   "label": "since Tesla said it was moving to Texas"
+  }
+ },
+ "segments": [
+  {
+   "chapter": null,
+   "vo": "",
+   "scene": {
+    "type": "logo",
+    "dur": 2.0
+   }
+  },
+  {
+   "chapter": "Cold open",
+   "vo": "One hundred fifty-eight million dollars. Gone in one night.",
+   "scene": {
+    "type": "smash",
+    "big": "$158,000,000",
+    "sub": "GONE IN ONE NIGHT."
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "According to federal filings, Elon Musk sent one hundred fifty-eight million dollars into the fight for a single Texas Senate seat. His side lost. And the next morning, something weird happened to Tesla.",
+   "scene": {
+    "type": "statcard",
+    "kicker": "FEC filings, Sept 2026",
+    "big": "$158M",
+    "lines": [
+     "$75M on Sept 9",
+     "$83M on Sept 23",
+     "→ Texas Senate race"
+    ]
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "Almost every electric car stock went up. Lucid jumped twelve percent. Rivian, six. Nio, four. One went down. The company that moved its headquarters to Texas. Tesla.",
+   "scene": {
+    "type": "tickers",
+    "title": "Nov 4, 2026",
+    "items": [
+     {
+      "sym": "LCID",
+      "chg": 12.0
+     },
+     {
+      "sym": "RIVN",
+      "chg": 6.0
+     },
+     {
+      "sym": "NIO",
+      "chg": 4.0
+     },
+     {
+      "sym": "TSLA",
+      "chg": -3.3
+     }
+    ],
+    "source": "24/7 Wall St., Nov 4, 2026"
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "So what actually changed in Texas? Is Tesla in trouble? Or is this just noise? Let's run the numbers.",
+   "scene": {
+    "type": "question",
+    "lines": [
+     "What changed?",
+     "Is Tesla in trouble?",
+     "Or is it noise?"
+    ]
+   }
+  },
+  {
+   "chapter": "What actually flipped",
+   "vo": "Headlines are saying Texas turned blue. That's only half true. Here's the scoreboard.",
+   "scene": {
+    "type": "title",
+    "big": "\"TEXAS TURNED BLUE\"",
+    "sub": "Half true."
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "Democrats won the governor's office with Gina Hinojosa. They won a U.S. Senate seat with James Talarico. They won the attorney general's office. And they flipped the Texas House. But Republicans held on to the Texas Senate. So nobody in Austin can pass a law alone. Remember that. It matters for everything next.",
+   "scene": {
+    "type": "tiles",
+    "items": [
+     {
+      "label": "Governor",
+      "value": "DEM",
+      "color": "blue"
+     },
+     {
+      "label": "U.S. Senate seat",
+      "value": "DEM",
+      "color": "blue"
+     },
+     {
+      "label": "Attorney General",
+      "value": "DEM",
+      "color": "blue"
+     },
+     {
+      "label": "Texas House",
+      "value": "DEM",
+      "color": "blue"
+     },
+     {
+      "label": "Texas Senate",
+      "value": "GOP",
+      "color": "red"
+     }
+    ],
+    "source": "AP via CBS Texas, NBC DFW, Texas Tribune"
+   }
+  },
+  {
+   "chapter": "What Tesla has riding on Texas",
+   "vo": "Now, what does Tesla actually have riding on Texas? A lot. In October 2021, Tesla said it was moving its headquarters from California to Austin. In 2022 its giant Texas factory opened. Texas rules let driverless robotaxis run on public roads. And the state set up special business courts, where Tesla, as a Texas company, can take its legal fights.",
+   "scene": {
+    "type": "timeline",
+    "items": [
+     {
+      "when": "Oct 2021",
+      "what": "HQ to Austin"
+     },
+     {
+      "when": "Apr 2022",
+      "what": "Giga Texas opens"
+     },
+     {
+      "when": "Sep 2024",
+      "what": "Business courts open"
+     },
+     {
+      "when": "2025",
+      "what": "Robotaxi rules"
+     }
+    ]
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "Every one of those was built under a Republican government. So the real question on Wall Street was simple. Which of these can a new government actually touch?",
+   "scene": {
+    "type": "question",
+    "lines": [
+     "Which of these",
+     "can a new government",
+     "actually touch?"
+    ]
+   }
+  },
+  {
+   "chapter": "What can change, what probably won't",
+   "vo": "Here's the thing. Anything that needs a brand new law has to get through a Republican state Senate. That's a high wall. What can move faster? Who runs state agencies. What the new attorney general decides to investigate. And the appeals court that hears business cases, where Democrats also won the seats.",
+   "scene": {
+    "type": "twocol",
+    "left_title": "Needs a new law",
+    "left": [
+     "Tax deals",
+     "Robotaxi rules",
+     "Business court law"
+    ],
+    "left_note": "Blocked by a GOP state Senate",
+    "right_title": "Can move fast",
+    "right": [
+     "Agency appointments",
+     "AG investigations",
+     "Appeals court"
+    ],
+    "right_note": "No new law needed"
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "And the new senator? Talarico has said he supports Tesla building cars in Texas. So the fight is less about the factory, and more about Elon Musk's politics.",
+   "scene": {
+    "type": "statcard",
+    "kicker": "The real fight",
+    "big": "Not the factory.",
+    "lines": [
+     "It's the politics."
+    ],
+    "source": "CBS News; Electrek"
+   }
+  },
+  {
+   "chapter": "Has this happened before?",
+   "vo": "So is a three percent drop a big deal for Tesla? Let's check every big election since 2020.",
+   "scene": {
+    "type": "title",
+    "big": "IS -3% A BIG DEAL?",
+    "sub": "Tesla after every big election"
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "After the 2020 election, Tesla was {e2020_1d_words} the next day, and {e2020_30d_words} a month later. After the 2022 midterms: {e2022_1d_words}, then {e2022_30d_words}. After the 2024 election: {e2024_1d_words} in a single day, and {e2024_30d_words} in a month.",
+   "scene": {
+    "type": "election_bars"
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "Tesla moves like this on an ordinary Tuesday. One day after an election tells you about mood. Not about money.",
+   "scene": {
+    "type": "statcard",
+    "kicker": "Lesson",
+    "big": "Mood ≠ Money",
+    "lines": [
+     "One day is not a trend."
+    ]
+   }
+  },
+  {
+   "chapter": "The Mongki backtest",
+   "vo": "Now let's do what we always do. Say you put ten dollars into Tesla every single trading day, starting the day it said it was moving to Texas.",
+   "scene": {
+    "type": "smash",
+    "big": "$10 A DAY",
+    "sub": "IN TESLA. SINCE TEXAS."
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "You'd have put in {bt_invested}. Today that's worth {bt_value}. That's {bt_return_words}. And your worst moment? On {bt_dd_date}, you were {bt_dd_words} from your peak.",
+   "scene": {
+    "type": "backtest",
+    "which": "main"
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "Same ten dollars a day into an S&P 500 fund? You'd have {cmp_value}. That's {cmp_return_words}.",
+   "scene": {
+    "type": "backtest",
+    "which": "compare"
+   }
+  },
+  {
+   "chapter": "Three scenarios",
+   "vo": "So what happens next? We don't predict. But here are three ways this can go.",
+   "scene": {
+    "type": "title",
+    "big": "3 WAYS THIS GOES",
+    "sub": "No predictions. Just what to watch."
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "One. Calm. Split government, few new laws, the factory and the robotaxi rules stay. Two. Friction. New investigations, slower permits for new projects. Three. Repricing. Investors decide Musk's politics cost money, no matter what Texas does. Watch the attorney general's first moves, the first permit fights, and whether the state Senate makes deals.",
+   "scene": {
+    "type": "cards",
+    "items": [
+     {
+      "n": "1",
+      "title": "CALM",
+      "text": "Split government. Little new law."
+     },
+     {
+      "n": "2",
+      "title": "FRICTION",
+      "text": "Investigations. Slower permits."
+     },
+     {
+      "n": "3",
+      "title": "REPRICING",
+      "text": "Politics cost money."
+     }
+    ]
+   }
+  },
+  {
+   "chapter": "Outro",
+   "vo": "If this was worth your time, subscribe. Next up: what if you bought ten dollars of Nvidia every day for twenty years. It's insane. I'm Mongki. This is not financial advice. It's just math.",
+   "scene": {
+    "type": "end",
+    "next": "$10 of NVIDIA a day for 20 years?",
+    "tail": 20.0
+   }
+  }
+ ]
+}

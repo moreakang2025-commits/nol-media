@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <path d="M545 690 C 690 700, 705 560, 628 552 C 580 548, 585 615, 625 608" fill="none" stroke="#8B5A2B" stroke-width="26" stroke-linecap="round"/>
+  <ellipse cx="400" cy="650" rx="175" ry="135" fill="#8B5A2B"/><ellipse cx="400" cy="672" rx="105" ry="85" fill="#F2C894"/>
+  <circle cx="222" cy="325" r="72" fill="#8B5A2B"/><circle cx="222" cy="325" r="44" fill="#F2C894"/>
+  <circle cx="578" cy="325" r="72" fill="#8B5A2B"/><circle cx="578" cy="325" r="44" fill="#F2C894"/>
+  <path d="M372 172 Q 392 118 404 168 Q 428 128 434 176 Z" fill="#8B5A2B"/>
+  <circle cx="400" cy="330" r="172" fill="#8B5A2B"/>
+  <circle cx="347" cy="322" r="76" fill="#F2C894"/><circle cx="453" cy="322" r="76" fill="#F2C894"/>
+  <ellipse cx="400" cy="400" rx="122" ry="88" fill="#F2C894"/>
+  <circle cx="318" cy="382" r="18" fill="#F59E8B" opacity="0.55"/><circle cx="482" cy="382" r="18" fill="#F59E8B" opacity="0.55"/>
+  <circle cx="350" cy="316" r="19" fill="#141414"/><circle cx="357" cy="308" r="6" fill="#FFFFFF"/>
+  <circle cx="450" cy="316" r="19" fill="#141414"/><circle cx="457" cy="308" r="6" fill="#FFFFFF"/>
+  <ellipse cx="388" cy="370" rx="6" ry="4.5" fill="#5A3417"/><ellipse cx="412" cy="370" rx="6" ry="4.5" fill="#5A3417"/>
+  <path d="M350 398 Q 400 452 450 398 Q 400 418 350 398 Z" fill="#5A3417"/>
+  <path d="M372 414 Q 400 430 428 414 Q 400 440 372 414 Z" fill="#F07B7B"/>
+  <g transform="rotate(-7 400 585)">
+    <rect x="220" y="500" width="360" height="170" rx="14" fill="#34D399" stroke="#0B6B4A" stroke-width="6"/>
+    <rect x="238" y="518" width="324" height="134" rx="8" fill="none" stroke="#0B6B4A" stroke-width="3" opacity="0.6"/>
+    <circle cx="400" cy="585" r="50" fill="#0B6B4A"/>
+    <path d="M420 560 Q 400 548 383 558 Q 370 570 390 580 L 410 588 Q 430 598 416 612 Q 398 622 378 610 M400 545 L400 625" fill="none" stroke="#ECFDF5" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  <ellipse cx="232" cy="610" rx="44" ry="50" fill="#8B5A2B"/><ellipse cx="568" cy="566" rx="44" ry="50" fill="#8B5A2B"/>
+</svg>

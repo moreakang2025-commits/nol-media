@@ -1,0 +1,92 @@
+name: mongki-video
+
+on:
+  workflow_dispatch:
+    inputs:
+      episode:
+        description: "episode id (mongki/episodes/<id>.json)"
+        default: "ep01"
+      upload:
+        description: "upload to YouTube as private"
+        default: "true"
+  push:
+    paths:
+      - "mongki/run.txt"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mongki-video
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: System packages
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg librsvg2-bin fonts-dejavu-core
+      - name: Python packages
+        run: pip install -q pillow numpy requests
+      - name: Fonts
+        run: |
+          mkdir -p mongki/assets/fonts
+          curl -fsSL -o mongki/assets/fonts/Anton-Regular.ttf https://raw.githubusercontent.com/google/fonts/main/ofl/anton/Anton-Regular.ttf
+          curl -fsSL -o /tmp/inter.zip https://github.com/rsms/inter/releases/download/v4.0/Inter-4.0.zip || true
+          if [ -f /tmp/inter.zip ]; then
+            unzip -q -o /tmp/inter.zip -d /tmp/inter
+            sudo mkdir -p /usr/share/fonts/opentype/inter
+            sudo cp /tmp/inter/extras/otf/InterDisplay-Bold.otf /tmp/inter/extras/otf/Inter-Regular.otf /usr/share/fonts/opentype/inter/ || true
+          fi
+      - name: Pick episode
+        id: ep
+        run: |
+          EP="${{ github.event.inputs.episode }}"
+          if [ -z "$EP" ]; then EP=$(head -n1 mongki/run.txt | awk '{print $1}'); fi
+          UP="${{ github.event.inputs.upload }}"
+          if [ -z "$UP" ]; then UP=$(head -n1 mongki/run.txt | awk '{print $2}'); fi
+          echo "id=$EP" >> $GITHUB_OUTPUT
+          echo "upload=${UP:-true}" >> $GITHUB_OUTPUT
+      - name: Build video
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python3 tools/mongki/build.py mongki/episodes/${{ steps.ep.outputs.id }}.json out/${{ steps.ep.outputs.id }}
+      - name: Upload to YouTube (private)
+        if: steps.ep.outputs.upload == 'true'
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: python3 tools/mongki/upload.py out/${{ steps.ep.outputs.id }}
+      - name: Keep the files for review
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.ep.outputs.id }}
+          path: |
+            out/${{ steps.ep.outputs.id }}/video.mp4
+            out/${{ steps.ep.outputs.id }}/thumb.jpg
+            out/${{ steps.ep.outputs.id }}/captions.srt
+            out/${{ steps.ep.outputs.id }}/meta.json
+            out/${{ steps.ep.outputs.id }}/data.json
+            out/${{ steps.ep.outputs.id }}/upload.json
+          retention-days: 14
+      - name: Record result in the repo
+        if: always()
+        run: |
+          mkdir -p mongki/results
+          for f in meta.json data.json upload.json; do
+            [ -f out/${{ steps.ep.outputs.id }}/$f ] && cp out/${{ steps.ep.outputs.id }}/$f mongki/results/${{ steps.ep.outputs.id }}_$f || true
+          done
+          [ -f out/${{ steps.ep.outputs.id }}/thumb.jpg ] && cp out/${{ steps.ep.outputs.id }}/thumb.jpg mongki/results/${{ steps.ep.outputs.id }}_thumb.jpg || true
+          git config user.name "mongki-bot"
+          git config user.email "mongki-bot@users.noreply.github.com"
+          git add mongki/results
+          git commit -m "mongki: results for ${{ steps.ep.outputs.id }}" || echo "nothing to commit"
+          git push || true
