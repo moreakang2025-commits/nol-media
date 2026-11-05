@@ -9,6 +9,22 @@ def token():
         "refresh_token": os.environ["YT_REFRESH_TOKEN"], "grant_type": "refresh_token"}, timeout=30)
     r.raise_for_status(); return r.json()["access_token"]
 
+def captions(tok, vid, transcript_path, srt_path=None):
+    """Add an English CC track. With a plain transcript, YouTube syncs the timing itself (sync=true).
+    Needs the youtube.force-ssl scope; with upload-only scope this returns 403."""
+    import uuid
+    use_sync = os.path.exists(transcript_path)
+    path = transcript_path if use_sync else srt_path
+    body = open(path, "rb").read()
+    meta = json.dumps({"snippet": {"videoId": vid, "language": "en", "name": "English", "isDraft": False}}).encode()
+    b = uuid.uuid4().hex
+    data = (f"--{b}\r\nContent-Type: application/json; charset=UTF-8\r\n\r\n").encode() + meta + \
+           (f"\r\n--{b}\r\nContent-Type: {'text/plain' if use_sync else 'application/octet-stream'}\r\n\r\n").encode() + body + \
+           f"\r\n--{b}--".encode()
+    url = "https://www.googleapis.com/upload/youtube/v3/captions?uploadType=multipart&part=snippet" + ("&sync=true" if use_sync else "")
+    r = requests.post(url, headers={"Authorization": f"Bearer {tok}", "Content-Type": f"multipart/related; boundary={b}"}, data=data, timeout=120)
+    return "added" if r.ok else f"failed {r.status_code}: {r.text[:300]}"
+
 def main(outdir):
     meta = json.load(open(os.path.join(outdir, "meta.json")))
     tok = token(); hdr = {"Authorization": f"Bearer {tok}"}
@@ -31,6 +47,10 @@ def main(outdir):
         res["thumbnail"] = "set" if t.ok else f"failed {t.status_code}: {t.text[:300]}"
     except Exception as e:
         res["thumbnail"] = f"failed: {e}"
+    try:
+        res["captions"] = captions(tok, vid, os.path.join(outdir, "transcript.txt"), os.path.join(outdir, "captions.srt"))
+    except Exception as e:
+        res["captions"] = f"failed: {e}"
     print("[upload]", res)
     json.dump(res, open(os.path.join(outdir, "upload.json"), "w"), indent=1)
 

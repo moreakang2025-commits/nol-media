@@ -7,6 +7,7 @@ from common import W, H, FPS
 import data as D, tts, scenes as S, thumb
 
 PAD = 0.35
+BURN = False  # long form: captions go to YouTube as a CC track, not burned in
 
 def chunks(text, dur):
     """Split narration into short caption chunks timed by character share."""
@@ -34,7 +35,7 @@ def render_segment(i, seg, dur, ctx, outdir, voice_dur, t_start=0.0, total=1.0):
         im = fn(t, dur, seg["scene"], ctx)
         k = next((j for j, (a, b, c) in enumerate(caps) if a <= t < b), None)
         if k is not None and seg["scene"]["type"] not in ("logo", "end", "smash"): im = S.punch(im, k)
-        if k is not None and seg["scene"]["type"] not in ("logo",): S.caption_overlay(im, caps[k][2])
+        if BURN and k is not None and seg["scene"]["type"] not in ("logo",): S.caption_overlay(im, caps[k][2])
         if seg["scene"]["type"] not in ("logo", "end"): S.progress(im, (t_start + t) / total)
         p.stdin.write(im.convert("RGB").tobytes())
     p.stdin.close()
@@ -50,6 +51,7 @@ def main():
     max_seg = int(sys.argv[sys.argv.index("--max-seg") + 1]) if "--max-seg" in sys.argv else None
     os.makedirs(outdir, exist_ok=True)
     ep = json.load(open(ep_path))
+    global BURN; BURN = bool(ep.get("burn_captions", False))
     ctx = D.compute(ep)
     json.dump({k: v for k, v in ctx.items() if not k.startswith("_") or k in ("_elections", "_event_moves")},
               open(os.path.join(outdir, "data.json"), "w"), indent=1, default=str)
@@ -67,15 +69,15 @@ def main():
     for i, (seg, wav, vd, dur) in enumerate(plan):
         f, caps = render_segment(i, seg, dur, ctx, outdir, vd, t0, total)
         files.append(f)
-        with wave.open(wav) as w: pcm = np.frombuffer(w.readframes(w.getnframes()), np.int16)
-        clip = np.zeros(int(round(dur * tts.RATE)), np.int16); clip[:min(len(pcm), len(clip))] = pcm[:len(clip)]
+        with wave.open(wav) as w: pcm = tts.fade(np.frombuffer(w.readframes(w.getnframes()), np.int16))
+        clip = np.zeros(int(round(dur * tts.RATE)), np.float32); clip[:min(len(pcm), len(clip))] = pcm[:len(clip)]
         audio.append(clip)
         for a, b, c in caps: srt.append((t0 + a, t0 + b, c))
         if seg.get("chapter"): chapters.append((t0, seg["chapter"]))
         print(f"[build] seg {i} {seg['scene']['type']} {dur:.1f}s", flush=True)
         t0 += dur
     with wave.open(os.path.join(outdir, "voice.wav"), "wb") as w:
-        w.setnchannels(1); w.setsampwidth(2); w.setframerate(tts.RATE); w.writeframes(np.concatenate(audio).tobytes())
+        w.setnchannels(1); w.setsampwidth(2); w.setframerate(tts.RATE); w.writeframes(np.clip(np.concatenate(audio), -32767, 32767).astype(np.int16).tobytes())
     with open(os.path.join(outdir, "list.txt"), "w") as f:
         for x in files: f.write(f"file '{os.path.basename(x)}'\n")
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", os.path.join(outdir, "list.txt"),
@@ -83,6 +85,8 @@ def main():
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", os.path.join(outdir, "silent.mp4"), "-i", os.path.join(outdir, "voice.wav"),
                     "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest",
                     os.path.join(outdir, "video.mp4")], check=True)
+    with open(os.path.join(outdir, "transcript.txt"), "w") as f:
+        f.write("\n".join(p[0]["vo_filled"] for p in plan if p[0]["vo_filled"]) + "\n")
     with open(os.path.join(outdir, "captions.srt"), "w") as f:
         for k, (a, b, c) in enumerate(srt, 1): f.write(f"{k}\n{srt_time(a)} --> {srt_time(b)}\n{c}\n\n")
     def mmss(s): return f"{int(s // 60)}:{int(s % 60):02d}"

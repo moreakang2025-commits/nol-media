@@ -62,8 +62,14 @@ def synth(text, path):
     raise RuntimeError(f"TTS failed: {last}")
 
 def _trim(pcm):
-    a = np.frombuffer(pcm, np.int16)
-    loud = np.where(np.abs(a) > 400)[0]
-    if len(loud) == 0: return pcm
-    s = max(0, loud[0] - int(0.05 * RATE)); e = min(len(a), loud[-1] + int(0.12 * RATE))
-    return a[s:e].tobytes()
+    a = np.frombuffer(pcm, np.int16).astype(np.float32)
+    loud = np.where(np.abs(a) > 300)[0]
+    if len(loud): a = a[max(0, loud[0] - int(0.08 * RATE)): min(len(a), loud[-1] + int(0.20 * RATE))]
+    return fade(a).astype(np.int16).tobytes()
+
+def fade(a, fin=0.015, fout=0.04):
+    """Short fade-in/out so clips never start or stop mid-waveform (that is what makes clicks)."""
+    a = np.asarray(a, np.float32).copy(); n_in, n_out = int(fin * RATE), int(fout * RATE)
+    if len(a) > n_in + n_out:
+        a[:n_in] *= np.linspace(0, 1, n_in); a[-n_out:] *= np.linspace(1, 0, n_out)
+    return a

@@ -76,6 +76,7 @@ jobs:
             out/${{ steps.ep.outputs.id }}/video.mp4
             out/${{ steps.ep.outputs.id }}/thumb.jpg
             out/${{ steps.ep.outputs.id }}/captions.srt
+            out/${{ steps.ep.outputs.id }}/transcript.txt
             out/${{ steps.ep.outputs.id }}/meta.json
             out/${{ steps.ep.outputs.id }}/data.json
             out/${{ steps.ep.outputs.id }}/upload.json
@@ -92,4 +93,4 @@ jobs:
           git config user.email "mongki-bot@users.noreply.github.com"
           git add mongki/results
           git commit -m "mongki: results for ${{ steps.ep.outputs.id }}" || echo "nothing to commit"
-          git push || true
+          for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done || true
