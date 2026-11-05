@@ -72,7 +72,7 @@ def tickers(t, dur, spec, ctx):
         if a <= 0: continue
         y = 300 + i * 175; col = GREEN if chg >= 0 else RED
         d.rounded_rectangle([260, y - 70, 1660, y + 70], 18, fill=PANEL)
-        paste_left(im, text_img(it["sym"], "heavy", 110, FG), 310, y, alpha=a)
+        paste_left(im, fit_text(it.get("label", it["sym"]), "heavy", 110, 440, FG), 310, y, alpha=a)
         bw = int(min(abs(chg), 15) / 15 * 620 * a)
         d.rounded_rectangle([760, y - 34, 760 + max(bw, 8), y + 34], 10, fill=col)
         paste_left(im, text_img(f"{'+' if chg >= 0 else '−'}{abs(chg):.1f}%", "heavy", 100, col), 1420, y, alpha=a)
@@ -206,11 +206,12 @@ def lump(t, dur, spec, ctx):
     im = base(); L = ctx.get("_" + spec["key"])
     if not L: return title(t, dur, {"big": spec.get("kicker", ""), "sub": "data missing"}, ctx)
     paste_center(im, text_img(spec.get("kicker", "").upper(), "bold", 48, DIM), W / 2, 200)
-    paste_center(im, fit_text(f"${L['cost'] / 1e6:,.0f}M in {L['ticker']}", "heavy", 140, 1700, FG), W / 2, 360, scale=ease_back(t / 0.4))
+    def fm(x): return f"${x / 1e6:,.1f}M" if x >= 1e6 else f"${x:,.0f}"
+    paste_center(im, fit_text(f"{fm(L['cost'])} in {spec.get('label', L['ticker'])}", "heavy", 140, 1700, FG), W / 2, 360, scale=ease_back(t / 0.4))
     v = L["value"] * ease_out((t - 0.8) / 1.6)
     col = GREEN if L["value"] >= L["cost"] else RED
     paste_center(im, text_img("WORTH TODAY", "bold", 44, DIM), W / 2, 540)
-    paste_center(im, fit_text(f"${v / 1e6:,.1f}M", "heavy", 220, 1700, col), W / 2, 690)
+    paste_center(im, fit_text(fm(v), "heavy", 220, 1700, col), W / 2, 690)
     paste_left(im, text_img(f"Prices as of {L['asof']} · Yahoo Finance", "reg", 26, DIM), 60, 40)
     return im
 

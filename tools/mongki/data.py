@@ -84,6 +84,7 @@ def compute(ep):
     cache = {t: prices(t) for t in spec.get("price_tickers", [])}
     bt = spec.get("backtest")
     if bt:
+        out["bt_start_words"] = _nice_date(bt["start"])
         main = dca(cache[bt["ticker"]], bt["start"], bt["daily"])
         cmp_ = dca(cache[bt["compare"]], bt["start"], bt["daily"])
         out.update(bt_invested=money(main["invested"]), bt_value=money(main["value"]),
@@ -97,7 +98,7 @@ def compute(ep):
         for b in lump["buys"]:
             i = _idx_on_or_before(ser, b["date"]); shares += b["amount"] / ser[i][1]; cost += b["amount"]
         val = shares * ser[-1][1]; k = lump["key"]
-        out[f"{k}_value"] = f"about {val / 1e6:,.0f} million dollars"; out[f"{k}_change_words"] = pct_words((val / cost - 1) * 100)
+        out[f"{k}_value"] = (f"about {val / 1e6:,.0f} million dollars" if val >= 1e6 else money(val)); out[f"{k}_change_words"] = pct_words((val / cost - 1) * 100)
         out[f"_{k}"] = {"cost": cost, "value": val, "shares": shares, "asof": ser[-1][0], "ticker": lump["ticker"]}
     more = {}
     for t in spec.get("dca_more", []):
@@ -105,7 +106,7 @@ def compute(ep):
         out[f"{t}_dca_value"] = money(r["value"]); out[f"{t}_dca_words"] = pct_words(r["ret"]).replace("up", "a gain of").replace("down", "a loss of")
     if more:
         out["_dca_more"] = more
-        names = {"TSLA": "Tesla", "LCID": "Lucid", "RIVN": "Rivian", "SPY": "the boring S&P 500 fund"}
+        names = {"TSLA": "Tesla", "LCID": "Lucid", "RIVN": "Rivian", "SPY": "the boring S&P 500 fund", **spec.get("names", {})}
         allv = {bt["ticker"]: out["_bt"]["value"], **{t: r["value"] for t, r in more.items()}}
         win = max(allv, key=allv.get); out["dca_winner"] = names.get(win, win)
     els = []
@@ -114,7 +115,32 @@ def compute(ep):
         out[f"{e['key']}_1d_words"] = pct_words(m["d1"]); out[f"{e['key']}_30d_words"] = pct_words(m["d30"])
         els.append({**e, **m})
     out["_elections"] = els
-    if spec.get("event_day") and bt:
+    for mv in spec.get("moves", []):
+        ser = cache[mv["ticker"]]; a = _idx_on_or_before(ser, mv["from"]); b = _idx_on_or_before(ser, mv["to"])
+        ch = (ser[b][1] / ser[a][1] - 1) * 100
+        out[f"{mv['key']}_pct"] = f"{abs(ch):.0f} percent"; out[f"{mv['key']}_words"] = pct_words(ch)
+        out[f"{mv['key']}_from_price"] = f"${ser[a][1]:,.2f}"; out[f"{mv['key']}_to_price"] = f"${ser[b][1]:,.2f}"
+        out[f"_{mv['key']}"] = ch
+    for rk in spec.get("window_rank", []):
+        ser = [x for x in cache[rk["ticker"]] if x[0] >= rk["since"]]; n = rk["days"]
+        e = _idx_on_or_before(ser, rk["end"]); ch = ser[e][1] / ser[e - n][1] - 1
+        last = None
+        for j in range(e - n, n - 1, -1):  # skip windows overlapping this one
+            if ser[j][1] / ser[j - n][1] - 1 <= ch: last = ser[j][0]; break
+        out[f"{rk['key']}_pct"] = f"{abs(ch) * 100:.0f} percent"
+        out[f"{rk['key']}_last"] = _nice_date(last) if last else f"at least {rk['since'][:4]}"
+        out[f"{rk['key']}_last_year"] = last[:4] if last else f"before {rk['since'][:4]}"
+    if spec.get("gas"):
+        g = spec["gas"]; ser = [x for x in cache[g["ticker"]] if x[0] >= g["since"]]
+        pk = max(ser, key=lambda x: x[1]); now = ser[-1]
+        cents = (pk[1] - now[1]) / 42 * 100
+        cw = lambda c: f"{c:.0f} cents" if c < 100 else f"${c / 100:,.2f}"
+        out.update(oil_now=f"${now[1]:,.0f}", oil_peak=f"${pk[1]:,.0f}", oil_peak_date=_nice_date(pk[0]),
+                   gas_cents=cw(cents), tank_saving=f"${cents * 15 / 100:,.2f}",
+                   oil60_cents=cw(max(0, (now[1] - 60) / 42 * 100)),
+                   oil60_tank=f"${max(0, (now[1] - 60) / 42 * 15):,.2f}")
+        out["_gas"] = {"peak": pk, "now": now}
+    if spec.get("event_day") and bt and spec.get("worse_stat", True):
         ser = [x for x in cache[bt["ticker"]] if x[0] >= "2021-01-01"]
         rets = [(ser[i][0], (ser[i][1] / ser[i - 1][1] - 1) * 100) for i in range(1, len(ser))]
         ev = election_moves(cache[bt["ticker"]], spec["event_day"])["d1"]
@@ -127,6 +153,7 @@ def compute(ep):
         moves = {}
         for t, s in cache.items():
             m = election_moves(s, spec["event_day"]); moves[t] = m["d1"]
+            out[f"{t.replace('=', '_')}_d1_words"] = pct_words(m["d1"])
         out["_event_moves"] = moves
     return out
 

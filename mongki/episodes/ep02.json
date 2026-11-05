@@ -1,0 +1,417 @@
+{
+ "id": "ep02",
+ "title": "Oil Just Crashed Like It's 2020. Airlines Went Wild.",
+ "thumb": {
+  "big": "OIL CRASHED",
+  "sub": "AIRLINES +14%",
+  "badge": "BRENT ▼",
+  "corner": "IRAN",
+  "bg_prompt": "Photorealistic cinematic YouTube thumbnail background, 16:9. A gigantic furious muscular monkey with dark brown fur riding on top of a passenger jet with no logos or markings soaring upward, while a huge black oil barrel cracks and spills behind it, a giant red price chart line crashing down across a stormy orange sky, green dollar bills flying. Dramatic rim lighting, high contrast, saturated. Leave the upper-left third darker and less busy for text. No text, no letters, no logos, no real people."
+ },
+ "description": [
+  "Oil just had its worst three days since the pandemic on hopes of an end to the Iran war, and airline stocks exploded. Why did it happen, what does it mean for your gas tank, and who actually won: $10 a day in airlines or $10 a day in oil since the war began?",
+  "",
+  "{chapters}",
+  "",
+  "Sources:",
+  "- Charles Schwab market update, Nov 4, 2026",
+  "- 24/7 Wall St.: airline and cruise stock moves, Nov 2 and Nov 4, 2026",
+  "- Global Oil Shock tracker: Brent prices and Hormuz shipping",
+  "- GlobalSecurity.org: Iran War 2026 timeline",
+  "- Daily price data: Yahoo Finance",
+  "",
+  "Gas math is a rough rule of thumb (42 gallons per barrel), not a forecast.",
+  "Not financial advice. For education only.",
+  "",
+  "#OilPrices #Airlines #MongkiMoney"
+ ],
+ "tags": [
+  "oil prices",
+  "oil crash",
+  "brent crude",
+  "airline stocks",
+  "jetblue stock",
+  "gas prices",
+  "iran war",
+  "stock market",
+  "mongki money"
+ ],
+ "data": {
+  "price_tickers": [
+   "BZ=F",
+   "USO",
+   "JETS",
+   "JBLU",
+   "UAL",
+   "DAL",
+   "AAL",
+   "XOM",
+   "SPY"
+  ],
+  "event_day": "2026-11-03",
+  "backtest": {
+   "ticker": "JETS",
+   "compare": "USO",
+   "start": "2026-03-02",
+   "daily": 10,
+   "label": "since the Iran war began"
+  },
+  "dca_more": [
+   "USO",
+   "XOM",
+   "SPY"
+  ],
+  "names": {
+   "JETS": "the airlines",
+   "USO": "oil",
+   "XOM": "Exxon",
+   "SPY": "the boring S&P 500 fund"
+  },
+  "window_rank": [
+   {
+    "key": "brent3",
+    "ticker": "BZ=F",
+    "days": 3,
+    "since": "2010-01-01",
+    "end": "2026-11-04"
+   }
+  ],
+  "gas": {
+   "ticker": "BZ=F",
+   "since": "2026-01-01"
+  },
+  "lumps": [
+   {
+    "key": "peakuso",
+    "ticker": "USO",
+    "buys": [
+     {
+      "date": "2026-04-29",
+      "amount": 10000
+     }
+    ]
+   },
+   {
+    "key": "peakjblu",
+    "ticker": "JBLU",
+    "buys": [
+     {
+      "date": "2026-04-29",
+      "amount": 10000
+     }
+    ]
+   }
+  ],
+  "worse_stat": false
+ },
+ "segments": [
+  {
+   "chapter": null,
+   "vo": "",
+   "scene": {
+    "type": "logo",
+    "dur": 2.0
+   }
+  },
+  {
+   "chapter": "Cold open",
+   "vo": "Oil just had its worst three days since the pandemic. And airline stocks went absolutely wild.",
+   "scene": {
+    "type": "smash",
+    "big": "OIL −{brent3_pct}",
+    "sub": "IN 3 DAYS."
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "Brent crude, the world's benchmark oil price, fell about {brent3_pct} in three trading days. The last time oil dropped this hard, this fast? {brent3_last}.",
+   "scene": {
+    "type": "statcard",
+    "kicker": "Brent crude, 3-day drop",
+    "big": "−{brent3_pct}",
+    "lines": [
+     "Last time this bad:",
+     "{brent3_last}"
+    ],
+    "source": "Charles Schwab, Nov 4, 2026; Yahoo Finance"
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "And the next day, the stocks that hate expensive oil exploded. JetBlue was {JBLU_d1_words} in one day. United, {UAL_d1_words}. Delta, {DAL_d1_words}. American, {AAL_d1_words}. Meanwhile the oil fund everybody piles into was {USO_d1_words}.",
+   "scene": {
+    "type": "tickers",
+    "title": "Nov 4, 2026",
+    "items": [
+     {
+      "sym": "JBLU",
+      "label": "JETBLUE",
+      "chg": 14.0
+     },
+     {
+      "sym": "UAL",
+      "label": "UNITED",
+      "chg": 8.0
+     },
+     {
+      "sym": "DAL",
+      "label": "DELTA",
+      "chg": 7.0
+     },
+     {
+      "sym": "AAL",
+      "label": "AMERICAN",
+      "chg": 7.0
+     },
+     {
+      "sym": "USO",
+      "label": "OIL FUND",
+      "chg": -8.0
+     }
+    ],
+    "source": "24/7 Wall St., Nov 4, 2026; Yahoo Finance"
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "So why did oil crash? Does this mean cheaper gas for you? And stay to the end, because I'll show you what happened to ten dollars a day in airlines versus ten dollars a day in oil, since the war started. The answer is not what you think.",
+   "scene": {
+    "type": "question",
+    "lines": [
+     "Why did oil crash?",
+     "Cheaper gas for you?",
+     "Airlines vs oil: who won?"
+    ]
+   }
+  },
+  {
+   "chapter": "Why oil was so expensive",
+   "vo": "First, why was oil so expensive in the first place? One word. Iran.",
+   "scene": {
+    "type": "title",
+    "big": "ONE WORD: IRAN",
+    "sub": "Day 251 of the war"
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "The war with Iran started at the end of February. Then shipping through the Strait of Hormuz, the narrow sea lane where a huge share of the world's oil passes, got squeezed hard. Oil climbed for months. Brent hit its 2026 high of {oil_peak} on {oil_peak_date}.",
+   "scene": {
+    "type": "timeline",
+    "items": [
+     {
+      "when": "Late Feb",
+      "what": "Iran war begins"
+     },
+     {
+      "when": "Spring",
+      "what": "Hormuz squeezed"
+     },
+     {
+      "when": "Apr 29",
+      "what": "Oil peaks ~$118"
+     },
+     {
+      "when": "Nov 2-4",
+      "what": "Peace hopes, oil crashes"
+     }
+    ]
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "Then, at the start of November, traders started betting on something they hadn't dared to for months. A deal. Hopes for an end to the fighting, and oil flowing again. And when traders change their minds about oil, they don't do it slowly.",
+   "scene": {
+    "type": "statcard",
+    "kicker": "What changed",
+    "big": "PEACE HOPES",
+    "lines": [
+     "Traders bet oil",
+     "flows again"
+    ],
+    "source": "Charles Schwab; Global Oil Shock tracker"
+   }
+  },
+  {
+   "chapter": "Who wins when oil falls",
+   "vo": "Now here's the part most headlines skip. Why do airlines care so much?",
+   "scene": {
+    "type": "question",
+    "lines": [
+     "Why do airlines",
+     "care so much?"
+    ]
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "Because jet fuel is one of an airline's biggest costs, often second only to paying its people. When oil falls, every flight gets cheaper to fly overnight. The planes don't change. The tickets don't change. But the profit on each seat does. Cruise lines are the same story. Carnival and Royal Caribbean jumped about five percent when the oil slide started.",
+   "scene": {
+    "type": "twocol",
+    "left_title": "Oil down = WIN",
+    "left": [
+     "Airlines",
+     "Cruise lines",
+     "Delivery & trucking"
+    ],
+    "left_note": "Fuel is a huge cost",
+    "right_title": "Oil down = LOSE",
+    "right": [
+     "Oil drillers",
+     "Oil funds",
+     "Oil-rich budgets"
+    ],
+    "right_note": "They sell the oil"
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "And the losers? Anyone who sells oil. Drillers, oil funds, and countries whose budgets run on oil money. The oil giant Exxon was {XOM_d1_words} on the same day.",
+   "scene": {
+    "type": "statcard",
+    "kicker": "Same day, Nov 4",
+    "big": "EXXON {XOM_d1_words}",
+    "lines": [
+     "When oil falls,",
+     "sellers feel it"
+    ],
+    "source": "Yahoo Finance"
+   }
+  },
+  {
+   "chapter": "What it means for your gas tank",
+   "vo": "Okay. Your wallet. Does this mean cheaper gas?",
+   "scene": {
+    "type": "title",
+    "big": "CHEAPER GAS?",
+    "sub": "Let's do the math"
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "A barrel of oil is forty-two gallons. So in theory, every dollar off a barrel takes a bit more than two cents off a gallon. Brent is now around {oil_now}, down from {oil_peak} at the peak. That's about {gas_cents} a gallon in crude costs. On a fifteen-gallon fill-up, about {tank_saving}.",
+   "scene": {
+    "type": "statcard",
+    "kicker": "Peak to now, crude cost per gallon",
+    "big": "−{gas_cents}",
+    "lines": [
+     "42 gallons per barrel",
+     "≈ {tank_saving} per 15-gal tank"
+    ],
+    "source": "Math: (peak − now) ÷ 42. Brent prices: Yahoo Finance"
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "But here's the twist. Gas stations are quick to raise prices and slow to cut them. Economists even have a name for it. Rockets and feathers. Prices shoot up like a rocket, and float down like a feather. So the savings come. Just slowly.",
+   "scene": {
+    "type": "smash",
+    "big": "ROCKETS & FEATHERS",
+    "sub": "Up fast. Down slow."
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "And if oil went all the way back to sixty dollars, where it sat before the war? That would be about {oil60_cents} less per gallon than today. Roughly {oil60_tank} a tank. Not life-changing. But every single week, for every driver, it adds up to billions.",
+   "scene": {
+    "type": "statcard",
+    "kicker": "If Brent fell to $60",
+    "big": "−{oil60_cents}",
+    "lines": [
+     "per gallon vs today",
+     "≈ {oil60_tank} per tank"
+    ],
+    "source": "Math: (now − $60) ÷ 42"
+   }
+  },
+  {
+   "chapter": "The Mongki backtest",
+   "vo": "And now, the moment I promised. Say you put ten dollars every trading day into airlines, through the big airline fund, JETS, starting the first trading day after the war began.",
+   "scene": {
+    "type": "smash",
+    "big": "$10 A DAY",
+    "sub": "IN AIRLINES. SINCE THE WAR."
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "You'd have put in {bt_invested}. Today that's worth {bt_value}. That's {bt_return_words}. And your worst moment? On {bt_dd_date}, you were {bt_dd_words} from your peak.",
+   "scene": {
+    "type": "backtest",
+    "which": "main"
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "Now the same ten dollars a day, same start date, in oil itself, through the oil fund USO. You'd have {USO_dca_value}. That's {USO_dca_words}. Exxon? {XOM_dca_value}, {XOM_dca_words}. And a boring S&P 500 fund? {SPY_dca_value}, {SPY_dca_words}. So which bet paid the most, through a whole war? {dca_winner}.",
+   "scene": {
+    "type": "multibars",
+    "title": "SAME $10 A DAY, 4 BETS"
+   }
+  },
+  {
+   "chapter": "The peak-panic twist",
+   "vo": "One more twist. Picture the scariest day of the year for oil, April twenty-ninth, the peak. Everybody's panicking. Say you had ten thousand dollars. Bet one: you buy oil, because it's going up forever. Today that's {peakuso_value}. That's {peakuso_change_words}.",
+   "scene": {
+    "type": "lump",
+    "key": "peakuso",
+    "label": "the oil fund",
+    "kicker": "Bought oil at the April peak"
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "Bet two: you buy the thing everyone hated that day. JetBlue. Today that's {peakjblu_value}. That's {peakjblu_change_words}. The crowd was loudest exactly at the top.",
+   "scene": {
+    "type": "lump",
+    "key": "peakjblu",
+    "label": "JetBlue",
+    "kicker": "Bought airlines at the April peak"
+   }
+  },
+  {
+   "chapter": "Three scenarios",
+   "vo": "So what happens next? We don't predict. But here are three ways this goes.",
+   "scene": {
+    "type": "title",
+    "big": "3 WAYS THIS GOES",
+    "sub": "No predictions. Just what to watch."
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "One. Deal. A real agreement, ships move freely through Hormuz, and oil keeps sliding. Two. Stall. Talks drag on, and oil bounces around where it is. Three. Snapback. Talks fail, and oil rockets right back up, and the airlines give it all back. Watch the shipping numbers through Hormuz. They'll tell you before the headlines do.",
+   "scene": {
+    "type": "cards",
+    "items": [
+     {
+      "n": "1",
+      "title": "DEAL",
+      "text": "Ships move. Oil keeps sliding."
+     },
+     {
+      "n": "2",
+      "title": "STALL",
+      "text": "Talks drag. Oil drifts."
+     },
+     {
+      "n": "3",
+      "title": "SNAPBACK",
+      "text": "Talks fail. Oil rockets back."
+     }
+    ]
+   }
+  },
+  {
+   "chapter": "Outro",
+   "vo": "If this was worth your time, subscribe. And here's the deal. Drop a comment with any two things you think are connected. Does a Taylor Swift tour move hotel stocks? Do hurricanes move orange juice prices? I'll pick the most interesting one, run the real numbers, and shout you out in the video. I'm Mongki. Not financial advice. Just math.",
+   "scene": {
+    "type": "end",
+    "next": "What a hurricane does to orange juice",
+    "cta": "COMMENT: X vs Y?",
+    "cta_sub": "Two things you think are connected. We run the numbers.",
+    "tail": 20.0
+   }
+  }
+ ]
+}
