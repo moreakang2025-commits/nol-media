@@ -184,6 +184,36 @@ def backtest(t, dur, spec, ctx):
     paste_left(im, text_img(f"Prices as of {bt['asof']} · adjusted closes · Yahoo Finance", "reg", 26, DIM), 60, 40)
     return im
 
+def multibars(t, dur, spec, ctx):
+    """Final value of the same $10/day in several tickers."""
+    im = base(); d = ImageDraw.Draw(im)
+    bt = ctx.get("_bt"); more = ctx.get("_dca_more", {}); bspec = ctx.get("_bt_spec", {})
+    if not bt: return title(t, dur, {"big": "BACKTEST", "sub": "data missing"}, ctx)
+    vals = [(bspec.get("ticker", "TSLA"), bt)] + list(more.items())
+    paste_center(im, text_img(spec.get("title", "SAME $10 A DAY"), "heavy", 90, FG), W / 2, 110)
+    paste_center(im, text_img(f"Invested: ${bt['invested']:,.0f} each", "bold", 40, DIM), W / 2, 200)
+    top = max(v["value"] for _, v in vals) or 1; n = len(vals); bw = 260; gap = (1600 - n * bw) / max(1, n - 1)
+    cols = [YEL, RED, BLUE, GREEN]
+    for i, (sym, v) in enumerate(vals):
+        a = ease_out((t - 0.3 - i * 0.6) / 0.7); x = 160 + i * (bw + gap); hh = 480 * v["value"] / top * a
+        d.rounded_rectangle([x, 820 - hh, x + bw, 820], 16, fill=cols[i % 4])
+        paste_center(im, text_img(f"${v['value'] * a:,.0f}", "heavy", 64, FG), x + bw / 2, 820 - hh - 50)
+        paste_center(im, text_img(sym, "heavy", 60, cols[i % 4]), x + bw / 2, 870)
+    return im
+
+def lump(t, dur, spec, ctx):
+    """What a lump sum would be worth now."""
+    im = base(); L = ctx.get("_" + spec["key"])
+    if not L: return title(t, dur, {"big": spec.get("kicker", ""), "sub": "data missing"}, ctx)
+    paste_center(im, text_img(spec.get("kicker", "").upper(), "bold", 48, DIM), W / 2, 200)
+    paste_center(im, fit_text(f"${L['cost'] / 1e6:,.0f}M in {L['ticker']}", "heavy", 140, 1700, FG), W / 2, 360, scale=ease_back(t / 0.4))
+    v = L["value"] * ease_out((t - 0.8) / 1.6)
+    col = GREEN if L["value"] >= L["cost"] else RED
+    paste_center(im, text_img("WORTH TODAY", "bold", 44, DIM), W / 2, 540)
+    paste_center(im, fit_text(f"${v / 1e6:,.1f}M", "heavy", 220, 1700, col), W / 2, 690)
+    paste_left(im, text_img(f"Prices as of {L['asof']} · Yahoo Finance", "reg", 26, DIM), 60, 40)
+    return im
+
 def cards(t, dur, spec, ctx):
     im = base(); d = ImageDraw.Draw(im); items = spec["items"]; n = len(items)
     cw, gap = 520, 50; x0 = (W - (n * cw + (n - 1) * gap)) / 2
@@ -221,7 +251,7 @@ def end(t, dur, spec, ctx):
     return im
 
 SCENES = {f.__name__: f for f in [logo, smash, statcard, tickers, question, title, tiles, timeline, twocol,
-                                  election_bars, backtest, cards, end]}
+                                  election_bars, backtest, cards, end, multibars, lump]}
 
 def caption_overlay(im, text):
     if not text: return

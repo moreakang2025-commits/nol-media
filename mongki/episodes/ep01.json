@@ -72,7 +72,28 @@
    "start": "2021-10-07",
    "daily": 10,
    "label": "since Tesla said it was moving to Texas"
-  }
+  },
+  "lumps": [
+   {
+    "key": "musk158",
+    "ticker": "TSLA",
+    "buys": [
+     {
+      "date": "2026-09-09",
+      "amount": 75000000
+     },
+     {
+      "date": "2026-09-23",
+      "amount": 83000000
+     }
+    ]
+   }
+  ],
+  "dca_more": [
+   "LCID",
+   "RIVN",
+   "SPY"
+  ]
  },
  "segments": [
   {
@@ -278,6 +299,20 @@
   },
   {
    "chapter": null,
+   "vo": "Here's another way to see it. Since 2021, Tesla has had {trading_days} trading days. On {worse_days} of them, about {worse_share}, it fell as much as it did after this election, or more. The worst? {worst_day}, when it was {worst_day_words} in a single day.",
+   "scene": {
+    "type": "statcard",
+    "kicker": "Tesla days as bad or worse since 2021",
+    "big": "{worse_days} DAYS",
+    "lines": [
+     "out of {trading_days}",
+     "Worst: {worst_day}"
+    ],
+    "source": "Daily closes, Yahoo Finance"
+   }
+  },
+  {
+   "chapter": null,
    "vo": "Tesla moves like this on an ordinary Tuesday. One day after an election tells you about mood. Not about money.",
    "scene": {
     "type": "statcard",
@@ -307,10 +342,19 @@
   },
   {
    "chapter": null,
-   "vo": "Same ten dollars a day into an S&P 500 fund? You'd have {cmp_value}. That's {cmp_return_words}.",
+   "vo": "Now the fun part. Same ten dollars a day, same start date, but in the companies that went up on election night. Lucid? You'd have {LCID_dca_value}. That's {LCID_dca_words}. Rivian? {RIVN_dca_value}, {RIVN_dca_words}. And a boring S&P 500 fund? {SPY_dca_value}. That's {SPY_dca_words}. So which bet paid the most? {dca_winner}.",
    "scene": {
-    "type": "backtest",
-    "which": "compare"
+    "type": "multibars",
+    "title": "SAME $10 A DAY, 4 BETS"
+   }
+  },
+  {
+   "chapter": "The $158 million twist",
+   "vo": "One more twist. What if Musk had put that one hundred fifty-eight million dollars into his own stock instead, on the same days he sent it to Texas? Today it would be worth {musk158_value}. That's {musk158_change_words}. And that's before counting what the election did to the shares he already owns.",
+   "scene": {
+    "type": "lump",
+    "key": "musk158",
+    "kicker": "What if the $158M bought Tesla instead?"
    }
   },
   {
@@ -357,5 +401,6 @@
     "tail": 20.0
    }
   }
- ]
+ ],
+ "burn_captions": false
 }

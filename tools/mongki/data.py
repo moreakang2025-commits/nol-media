@@ -92,18 +92,49 @@ def compute(ep):
                    cmp_value=money(cmp_["value"]),
                    cmp_return_words=pct_words(cmp_["ret"]).replace("up", "a gain of").replace("down", "a loss of"),
                    _bt=main, _cmp=cmp_, _bt_spec=bt, prices_asof=main["asof"])
+    for lump in spec.get("lumps", []):
+        ser = cache[lump["ticker"]]; shares = cost = 0.0
+        for b in lump["buys"]:
+            i = _idx_on_or_before(ser, b["date"]); shares += b["amount"] / ser[i][1]; cost += b["amount"]
+        val = shares * ser[-1][1]; k = lump["key"]
+        out[f"{k}_value"] = f"about {val / 1e6:,.0f} million dollars"; out[f"{k}_change_words"] = pct_words((val / cost - 1) * 100)
+        out[f"_{k}"] = {"cost": cost, "value": val, "shares": shares, "asof": ser[-1][0], "ticker": lump["ticker"]}
+    more = {}
+    for t in spec.get("dca_more", []):
+        r = dca(cache[t], bt["start"], bt["daily"]); more[t] = r
+        out[f"{t}_dca_value"] = money(r["value"]); out[f"{t}_dca_words"] = pct_words(r["ret"]).replace("up", "a gain of").replace("down", "a loss of")
+    if more:
+        out["_dca_more"] = more
+        names = {"TSLA": "Tesla", "LCID": "Lucid", "RIVN": "Rivian", "SPY": "the boring S&P 500 fund"}
+        allv = {bt["ticker"]: out["_bt"]["value"], **{t: r["value"] for t, r in more.items()}}
+        win = max(allv, key=allv.get); out["dca_winner"] = names.get(win, win)
     els = []
     for e in spec.get("elections", []):
         m = election_moves(cache[bt["ticker"] if bt else spec["price_tickers"][0]], e["date"])
         out[f"{e['key']}_1d_words"] = pct_words(m["d1"]); out[f"{e['key']}_30d_words"] = pct_words(m["d30"])
         els.append({**e, **m})
     out["_elections"] = els
+    if spec.get("event_day") and bt:
+        ser = [x for x in cache[bt["ticker"]] if x[0] >= "2021-01-01"]
+        rets = [(ser[i][0], (ser[i][1] / ser[i - 1][1] - 1) * 100) for i in range(1, len(ser))]
+        ev = election_moves(cache[bt["ticker"]], spec["event_day"])["d1"]
+        if ev is not None:
+            worse = sum(1 for _, r in rets if r <= ev)
+            out["worse_days"] = f"{worse:,}"; out["worse_share"] = f"{worse / len(rets) * 100:.0f} percent"
+            out["trading_days"] = f"{len(rets):,}"
+            w = min(rets, key=lambda x: x[1]); out["worst_day"] = _nice_date(w[0]); out["worst_day_words"] = pct_words(w[1])
     if spec.get("event_day"):
         moves = {}
         for t, s in cache.items():
             m = election_moves(s, spec["event_day"]); moves[t] = m["d1"]
         out["_event_moves"] = moves
     return out
+
+def fill_obj(o, vals):
+    if isinstance(o, str): return fill(o, vals)
+    if isinstance(o, list): return [fill_obj(x, vals) for x in o]
+    if isinstance(o, dict): return {k: fill_obj(v, vals) for k, v in o.items()}
+    return o
 
 def fill(text, vals):
     class D(dict):

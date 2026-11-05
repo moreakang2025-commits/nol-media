@@ -60,6 +60,7 @@ def main():
     plan = []
     for i, seg in enumerate(segs):
         seg["vo_filled"] = D.fill(seg.get("vo", ""), ctx)
+        seg["scene"] = D.fill_obj(seg["scene"], ctx)
         if "{" in seg["vo_filled"]: print(f"[warn] unfilled placeholder in segment {i}: {seg['vo_filled']}")
         wav = os.path.join(outdir, f"seg{i:02d}.wav")
         vd = tts.synth(seg["vo_filled"], wav)
