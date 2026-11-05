@@ -202,16 +202,22 @@ def cards(t, dur, spec, ctx):
 
 def end(t, dur, spec, ctx):
     im = base(); d = ImageDraw.Draw(im)
-    m = mascot("baby", 520)
-    bob = 12 * math.sin(t * 3)
-    im.alpha_composite(m, (120, int(330 + bob)))
+    m = mascot("baby", 460)
+    im.alpha_composite(m, (90, int(360 + 12 * math.sin(t * 3))))
     a = ease_back(t / 0.5)
-    d.rounded_rectangle([700, 380, 1180, 520], 70, fill=RED)
-    paste_center(im, text_img("SUBSCRIBE", "heavy", 80, FG), 940, 450, scale=a)
-    d.rounded_rectangle([1260, 300, 1840, 640], 18, outline=YEL, width=6)
-    paste_center(im, text_img("NEXT VIDEO", "heavy", 52, YEL), 1550, 360)
-    paste_center(im, fit_text(spec.get("next", ""), "bold", 40, 540, FG), 1550, 470)
-    paste_center(im, text_img("Not financial advice. For education only.", "bold", 40, DIM), W / 2, 980)
+    d.rounded_rectangle([640, 170, 1180, 310], 70, fill=RED)
+    paste_center(im, text_img("SUBSCRIBE", "heavy", 84, FG), 910, 240, scale=a)
+    if spec.get("cta"):
+        b = ease_out((t - 0.8) / 0.5)
+        d.rounded_rectangle([600, 370, 1220, 700], 26, fill=PANEL, outline=YEL, width=6)
+        paste_center(im, fit_text(spec["cta"], "heavy", 96, 560, YEL), 910, 470, alpha=b, scale=0.9 + 0.1 * b)
+        words = spec.get("cta_sub", "").split(); mid = (len(words) + 1) // 2
+        for j, ln in enumerate([" ".join(words[:mid]), " ".join(words[mid:])]):
+            paste_center(im, fit_text(ln, "bold", 40, 560, FG), 910, 590 + j * 52, alpha=b)
+    d.rounded_rectangle([1290, 300, 1850, 640], 18, outline=YEL, width=6)
+    paste_center(im, text_img("NEXT VIDEO", "heavy", 52, YEL), 1570, 360)
+    paste_center(im, fit_text(spec.get("next", ""), "bold", 38, 520, FG), 1570, 470)
+    paste_center(im, text_img("Not financial advice. For education only.", "bold", 36, DIM), W / 2, 870)
     return im
 
 SCENES = {f.__name__: f for f in [logo, smash, statcard, tickers, question, title, tiles, timeline, twocol,
@@ -225,3 +231,14 @@ def caption_overlay(im, text):
         f = font("heavy", f.size - 4); w = d.textlength(text, font=f)
     x, y = (W - w) / 2, H - 120
     d.text((x, y), text, font=f, fill=FG, stroke_width=6, stroke_fill=(0, 0, 0))
+
+
+def punch(im, k):
+    """Jump-cut feel: alternate caption chunks get a slight zoom (pattern interrupt)."""
+    if k % 2 == 0: return im
+    s = 1.045; cw, ch = int(W / s), int(H / s); x, y = (W - cw) // 2, (H - ch) // 2
+    return im.crop((x, y, x + cw, y + ch)).resize((W, H), Image.BILINEAR)
+
+def progress(im, frac):
+    d = ImageDraw.Draw(im)
+    d.rectangle([0, 0, W, 8], fill=(30, 36, 52)); d.rectangle([0, 0, int(W * max(0, min(1, frac))), 8], fill=YEL)

@@ -21,7 +21,7 @@ def chunks(text, dur):
         d = dur * len(c) / total; res.append((t, t + d, c)); t += d
     return res
 
-def render_segment(i, seg, dur, ctx, outdir, voice_dur):
+def render_segment(i, seg, dur, ctx, outdir, voice_dur, t_start=0.0, total=1.0):
     fn = S.SCENES[seg["scene"]["type"]]
     caps = chunks(seg["vo_filled"], voice_dur) if seg["vo_filled"] else []
     tmp = os.path.join(outdir, f"seg{i:02d}.tmp.mp4"); final = os.path.join(outdir, f"seg{i:02d}.mp4")
@@ -32,8 +32,10 @@ def render_segment(i, seg, dur, ctx, outdir, voice_dur):
     for f in range(n):
         t = f / FPS
         im = fn(t, dur, seg["scene"], ctx)
-        cap = next((c for a, b, c in caps if a <= t < b), None)
-        if cap and seg["scene"]["type"] not in ("logo",): S.caption_overlay(im, cap)
+        k = next((j for j, (a, b, c) in enumerate(caps) if a <= t < b), None)
+        if k is not None and seg["scene"]["type"] not in ("logo", "end", "smash"): im = S.punch(im, k)
+        if k is not None and seg["scene"]["type"] not in ("logo",): S.caption_overlay(im, caps[k][2])
+        if seg["scene"]["type"] not in ("logo", "end"): S.progress(im, (t_start + t) / total)
         p.stdin.write(im.convert("RGB").tobytes())
     p.stdin.close()
     if p.wait() != 0: raise SystemExit(f"render failed at segment {i}")
@@ -53,15 +55,17 @@ def main():
               open(os.path.join(outdir, "data.json"), "w"), indent=1, default=str)
     segs = ep["segments"][:max_seg] if max_seg else ep["segments"]
     files, srt, chapters, audio = [], [], [], []
-    t0 = 0.0
+    plan = []
     for i, seg in enumerate(segs):
         seg["vo_filled"] = D.fill(seg.get("vo", ""), ctx)
         if "{" in seg["vo_filled"]: print(f"[warn] unfilled placeholder in segment {i}: {seg['vo_filled']}")
         wav = os.path.join(outdir, f"seg{i:02d}.wav")
         vd = tts.synth(seg["vo_filled"], wav)
         dur = seg["scene"].get("dur") or (vd + PAD + seg["scene"].get("tail", 0.0))
-        dur = round(dur * FPS) / FPS
-        f, caps = render_segment(i, seg, dur, ctx, outdir, vd)
+        plan.append((seg, wav, vd, round(dur * FPS) / FPS))
+    total = sum(p[3] for p in plan); t0 = 0.0
+    for i, (seg, wav, vd, dur) in enumerate(plan):
+        f, caps = render_segment(i, seg, dur, ctx, outdir, vd, t0, total)
         files.append(f)
         with wave.open(wav) as w: pcm = np.frombuffer(w.readframes(w.getnframes()), np.int16)
         clip = np.zeros(int(round(dur * tts.RATE)), np.int16); clip[:min(len(pcm), len(clip))] = pcm[:len(clip)]

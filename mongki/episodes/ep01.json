@@ -135,7 +135,7 @@
   },
   {
    "chapter": null,
-   "vo": "So what actually changed in Texas? Is Tesla in trouble? Or is this just noise? Let's run the numbers.",
+   "vo": "So what actually changed in Texas? Is Tesla in trouble, or is this just noise? And stick around, because at the end I'll show you what ten dollars a day in Tesla, since it moved to Texas, turned into.",
    "scene": {
     "type": "question",
     "lines": [
@@ -191,7 +191,7 @@
   },
   {
    "chapter": "What Tesla has riding on Texas",
-   "vo": "Now, what does Tesla actually have riding on Texas? A lot. In October 2021, Tesla said it was moving its headquarters from California to Austin. In 2022 its giant Texas factory opened. Texas rules let driverless robotaxis run on public roads. And the state set up special business courts, where Tesla, as a Texas company, can take its legal fights.",
+   "vo": "Now here's the part most headlines skip. What does Tesla actually have riding on Texas? A lot. In October 2021, Tesla said it was moving its headquarters from California to Austin. In 2022 its giant Texas factory opened. Texas rules let driverless robotaxis run on public roads. And the state set up special business courts, where Tesla, as a Texas company, can take its legal fights.",
    "scene": {
     "type": "timeline",
     "items": [
@@ -228,7 +228,7 @@
   },
   {
    "chapter": "What can change, what probably won't",
-   "vo": "Here's the thing. Anything that needs a brand new law has to get through a Republican state Senate. That's a high wall. What can move faster? Who runs state agencies. What the new attorney general decides to investigate. And the appeals court that hears business cases, where Democrats also won the seats.",
+   "vo": "But here's the twist. Anything that needs a brand new law has to get through a Republican state Senate. That's a high wall. What can move faster? Who runs state agencies. What the new attorney general decides to investigate. And the appeals court that hears business cases, where Democrats also won the seats.",
    "scene": {
     "type": "twocol",
     "left_title": "Needs a new law",
@@ -262,7 +262,7 @@
   },
   {
    "chapter": "Has this happened before?",
-   "vo": "So is a three percent drop a big deal for Tesla? Let's check every big election since 2020.",
+   "vo": "Okay. Time for the data. Is a three percent drop a big deal for Tesla? Let's check every big election since 2020.",
    "scene": {
     "type": "title",
     "big": "IS -3% A BIG DEAL?",
@@ -290,7 +290,7 @@
   },
   {
    "chapter": "The Mongki backtest",
-   "vo": "Now let's do what we always do. Say you put ten dollars into Tesla every single trading day, starting the day it said it was moving to Texas.",
+   "vo": "And now, the moment I promised. Say you put ten dollars into Tesla every single trading day, starting the day it said it was moving to Texas.",
    "scene": {
     "type": "smash",
     "big": "$10 A DAY",
@@ -348,10 +348,12 @@
   },
   {
    "chapter": "Outro",
-   "vo": "If this was worth your time, subscribe. Next up: what if you bought ten dollars of Nvidia every day for twenty years. It's insane. I'm Mongki. This is not financial advice. It's just math.",
+   "vo": "If this was worth your time, subscribe. And here's the deal. Drop a comment with any two things you think are connected. Does the price of eggs move with Bitcoin? Do Super Bowl winners move the stock market? I'll pick the most interesting one, run the real numbers, and shout you out in the video. I'm Mongki. Not financial advice. Just math.",
    "scene": {
     "type": "end",
     "next": "$10 of NVIDIA a day for 20 years?",
+    "cta": "COMMENT: X vs Y?",
+    "cta_sub": "Two things you think are connected. We run the numbers.",
     "tail": 20.0
    }
   }
