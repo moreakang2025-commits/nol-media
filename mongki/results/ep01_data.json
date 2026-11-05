@@ -1,0 +1,69 @@
+{
+ "prices_asof": "2026-11-05",
+ "bt_invested": "$12,760",
+ "bt_value": "$16,909",
+ "bt_return_words": "a gain of 32.5 percent",
+ "bt_dd_words": "52 percent down",
+ "bt_dd_date": "March 10, 2025",
+ "cmp_value": "$19,367",
+ "cmp_return_words": "a gain of 51.8 percent",
+ "musk158_value": "about 147 million dollars",
+ "musk158_change_words": "down 6.8 percent",
+ "LCID_dca_value": "$1,897",
+ "LCID_dca_words": "a loss of 85.1 percent",
+ "RIVN_dca_value": "$9,652",
+ "RIVN_dca_words": "a loss of 22.9 percent",
+ "SPY_dca_value": "$19,367",
+ "SPY_dca_words": "a gain of 51.8 percent",
+ "dca_winner": "the boring S&P 500 fund",
+ "e2020_1d_words": "down 0.7 percent",
+ "e2020_30d_words": "up 40.0 percent",
+ "e2022_1d_words": "down 7.2 percent",
+ "e2022_30d_words": "down 9.3 percent",
+ "e2024_1d_words": "up 14.8 percent",
+ "e2024_30d_words": "up 46.9 percent",
+ "e2026_1d_words": "down 3.3 percent",
+ "e2026_30d_words": "still moving",
+ "_elections": [
+  {
+   "key": "e2020",
+   "date": "2020-11-03",
+   "label": "2020 election",
+   "d1": -0.7,
+   "d30": 40.0
+  },
+  {
+   "key": "e2022",
+   "date": "2022-11-08",
+   "label": "2022 midterms",
+   "d1": -7.2,
+   "d30": -9.3
+  },
+  {
+   "key": "e2024",
+   "date": "2024-11-05",
+   "label": "2024 election",
+   "d1": 14.8,
+   "d30": 46.9
+  },
+  {
+   "key": "e2026",
+   "date": "2026-11-03",
+   "label": "2026 midterms",
+   "d1": -3.3,
+   "d30": null
+  }
+ ],
+ "worse_days": "219",
+ "worse_share": "15 percent",
+ "trading_days": "1,467",
+ "worst_day": "March 10, 2025",
+ "worst_day_words": "down 15.4 percent",
+ "_event_moves": {
+  "TSLA": -3.3,
+  "SPY": 1.7,
+  "LCID": 11.6,
+  "RIVN": 5.8,
+  "NIO": 3.4
+ }
+}

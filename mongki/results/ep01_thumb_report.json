@@ -1,0 +1,26 @@
+{
+ "mode": "gemini_bg+code_text",
+ "candidates": [
+  {
+   "ok": false,
+   "text_found": null,
+   "real_person": null,
+   "brand_logo": null,
+   "score": null
+  },
+  {
+   "ok": false,
+   "text_found": null,
+   "real_person": null,
+   "brand_logo": null,
+   "score": null
+  },
+  {
+   "ok": false,
+   "text_found": null,
+   "real_person": null,
+   "brand_logo": null,
+   "score": null
+  }
+ ]
+}

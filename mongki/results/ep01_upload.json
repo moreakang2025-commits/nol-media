@@ -1,0 +1,7 @@
+{
+ "video_id": "LiOvlmMD_pY",
+ "url": "https://youtu.be/LiOvlmMD_pY",
+ "privacy": "private",
+ "thumbnail": "set",
+ "captions": "failed 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Request had insufficient authentication scopes.\",\n    \"errors\": [\n      {\n        \"message\": \"Insufficient Permission\",\n        \"domain\": \"global\",\n        \"reason\": \"insufficientPermissions\"\n      }\n    ],\n    \"status\": \"PERMISSION_DENIED\",\n    \"detai"
+}
