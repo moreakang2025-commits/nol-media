@@ -7,7 +7,14 @@ Every episode is written and checked against this file. The daily ideation task 
 2. Screen out: spam, links, insults, hate, sexual content, anything about a private person, medical/legal advice requests, and anything that cannot be answered with public data.
 3. Score the rest 1–5 on: **fun** (would a stranger click?), **data** (public numbers exist, e.g. prices, CPI, sports results, Google Trends), **surprise** (answer is not obvious), **freshness** (ties to this week's news).
 4. Best comment scoring ≥ 14/20 becomes the episode. Credit the commenter in the video by display name ("Today's question comes from @name"). Mark it `"used": true`.
-5. No good comment? Pick from the news rotation in the channel plan (claude/VIEWS_CHANNEL_PLAN.md): pillars, category rotation, same ticker not within 14 days.
+5. Then scan **what is hottest right now** (search at run time, never from memory), in this order:
+   - **US top stories** of the last 24 h (major outlets' most-read / top headlines; markets, politics, tech, celebrities, sports, consumer prices).
+   - **Global top stories** of the last 24 h (wars and trade, central banks, elections, disasters, big company news in Asia/Europe).
+   - **Reddit**: what is most upvoted and discussed in the last 24 h (r/all, r/news, r/worldnews, r/wallstreetbets, r/stocks, r/personalfinance, r/technology, r/economy) and viral memes or trends.
+   - Cross-check: a story that shows up in two or more of these lists is the strongest candidate.
+6. Turn the hot issue into a **money angle** with public data: "X happened → what did it do to Y's price / your wallet / the market last time?" Use the hook formulas in the channel plan.
+7. Final pick = highest of (best comment, best hot issue) on fun + data + surprise + freshness. Respect the category rotation and "same ticker not within 14 days" rules from the channel plan (claude/VIEWS_CHANNEL_PLAN.md).
+8. Verify every fact in at least one primary or major source before it goes in the script. Reddit is for **finding** topics, never as the source of a fact.
 6. Correlation videos must say clearly: **correlation is not causation**. Show the number (correlation coefficient or simple "moved together X% of the time") and one honest reason it might be a coincidence.
 
 ## 2. Retention structure (8–10 min long form)
