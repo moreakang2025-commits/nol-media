@@ -17,7 +17,9 @@ Every episode is written and checked against this file. The daily ideation task 
    - "If Ronaldo goes back to Man United, this stock moves" → check what Manchester United (MANU) shares did on his past transfer news.
    - "If Messi returns to Barcelona" → Barcelona isn't listed, so use shirt sales, ticket prices, Inter Miami attendance, MLS TV deals.
    - "What a Taylor Swift tour stop does to a city" / "What a hurricane does to orange juice prices" / "What a UFC title fight earns".
-   - Hypotheticals ("what if…") are welcome when the answer is built from real numbers about **business, careers, money or events**. Not about a real person's body, health, relationships or private life.
+   - **Go wild.** The best episodes are what-ifs nobody has imagined: "What if Bruno Mars signed with the UFC? What would TKO stock do, and why Dana White could pay him hundreds of millions and still profit." Build the answer from real numbers (past celebrity crossovers, pay-per-view buys, ticket and sponsorship revenue, the company's market value per extra viewer).
+   - Label every what-if as a what-if on screen and in the title ("What If…", "If … Happened"). Never present it as news, never invent quotes, never imply the person said or agreed to anything.
+   - No swearing, no slurs, nothing sexual, no mocking how someone looks. Playful is fine, cruel is not.
    - Rumors: say clearly it is a rumor, never present it as fact, and answer "if it's true, here's what happened the last time something like it did."
 7. Turn the hot issue into a **money angle** with public data: "X happened → what did it do to Y's price / your wallet / the market last time?" Use the hook formulas in the channel plan.
 8. Final pick = highest of (best comment, best hot issue) on fun + data + surprise + freshness. Respect the category rotation and "same ticker not within 14 days" rules from the channel plan (claude/VIEWS_CHANNEL_PLAN.md).
