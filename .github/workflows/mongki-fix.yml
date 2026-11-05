@@ -15,6 +15,9 @@ on:
       captions:
         description: "add English CC track"
         default: "true"
+  push:
+    paths:
+      - "mongki/fix.txt"
 
 permissions:
   contents: write
@@ -29,31 +32,39 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install -q pillow numpy requests
+      - name: Pick target
+        id: t
+        run: |
+          EP="${{ github.event.inputs.episode }}"; VID="${{ github.event.inputs.video_id }}"
+          TH="${{ github.event.inputs.thumb }}"; CC="${{ github.event.inputs.captions }}"
+          if [ -z "$VID" ]; then read EP VID TH CC < <(head -n1 mongki/fix.txt); fi
+          echo "ep=$EP" >> $GITHUB_OUTPUT; echo "vid=$VID" >> $GITHUB_OUTPUT
+          echo "thumb=${TH:-true}" >> $GITHUB_OUTPUT; echo "cc=${CC:-true}" >> $GITHUB_OUTPUT
       - name: Fonts
         timeout-minutes: 3
         run: |
           mkdir -p mongki/assets/fonts
           curl -fsSL --max-time 60 -o mongki/assets/fonts/Anton-Regular.ttf https://raw.githubusercontent.com/google/fonts/main/ofl/anton/Anton-Regular.ttf || true
       - name: Remake and set thumbnail
-        if: github.event.inputs.thumb == 'true'
+        if: steps.t.outputs.thumb == 'true'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
-        run: python3 tools/mongki/rethumb.py mongki/episodes/${{ github.event.inputs.episode }}.json ${{ github.event.inputs.video_id }}
+        run: python3 tools/mongki/rethumb.py mongki/episodes/${{ steps.t.outputs.ep }}.json ${{ steps.t.outputs.vid }}
       - name: Add captions
-        if: github.event.inputs.captions == 'true'
+        if: steps.t.outputs.cc == 'true'
         env:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
-        run: python3 tools/mongki/addcaptions.py mongki/episodes/${{ github.event.inputs.episode }}.json ${{ github.event.inputs.video_id }}
+        run: python3 tools/mongki/addcaptions.py mongki/episodes/${{ steps.t.outputs.ep }}.json ${{ steps.t.outputs.vid }}
       - name: Save
         if: always()
         run: |
           git config user.name "mongki-bot"
           git config user.email "mongki-bot@users.noreply.github.com"
           git add mongki/results || true
-          git commit -m "mongki: new thumbnail for ${{ github.event.inputs.episode }}" || echo "nothing"
+          git commit -m "mongki: fix results for ${{ steps.t.outputs.ep }}" || echo "nothing"
           for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done || true
