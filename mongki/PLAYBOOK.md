@@ -22,7 +22,7 @@ Every episode is written and checked against this file. The daily ideation task 
 7. Turn the hot issue into a **money angle** with public data: "X happened → what did it do to Y's price / your wallet / the market last time?" Use the hook formulas in the channel plan.
 8. Final pick = highest of (best comment, best hot issue) on fun + data + surprise + freshness. Respect the category rotation and "same ticker not within 14 days" rules from the channel plan (claude/VIEWS_CHANNEL_PLAN.md).
 9. Verify every fact in at least one primary or major source before it goes in the script. Reddit is for **finding** topics, never as the source of a fact.
-6. Correlation videos must say clearly: **correlation is not causation**. Show the number (correlation coefficient or simple "moved together X% of the time") and one honest reason it might be a coincidence.
+10. Correlation videos must say clearly: **correlation is not causation**. Show the number (correlation coefficient or simple "moved together X% of the time") and one honest reason it might be a coincidence.
 
 ## 2. Retention structure (8–10 min long form)
 | Time | Job |
