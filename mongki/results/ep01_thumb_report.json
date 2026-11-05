@@ -1,26 +1,26 @@
 {
- "mode": "gemini_bg+code_text",
+ "mode": "gemini_full",
  "candidates": [
   {
    "ok": false,
-   "text_found": null,
-   "real_person": null,
-   "brand_logo": null,
-   "score": null
+   "text_found": "$158M GONE. TSLA \u25bc",
+   "real_person": false,
+   "brand_logo": true,
+   "score": 8
   },
   {
    "ok": false,
-   "text_found": null,
-   "real_person": null,
-   "brand_logo": null,
-   "score": null
+   "text_found": "$158M GONE. TSLA \u25bc",
+   "real_person": false,
+   "brand_logo": true,
+   "score": 8
   },
   {
-   "ok": false,
-   "text_found": null,
-   "real_person": null,
-   "brand_logo": null,
-   "score": null
+   "ok": true,
+   "text_found": "$158M GONE. TSLA \u25bc",
+   "real_person": false,
+   "brand_logo": false,
+   "score": 8
   }
  ]
 }
