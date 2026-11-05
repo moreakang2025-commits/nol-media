@@ -30,10 +30,13 @@ def _image_model(key):
     return sorted(img)[-1] if img else "gemini-2.5-flash-image"
 
 def _text_model(key):
+    """Stable multimodal Flash model, highest version (e.g. gemini-3.5-flash), never preview/omni/lite."""
     if os.environ.get("MONGKI_TEXT_MODEL"): return os.environ["MONGKI_TEXT_MODEL"]
-    txt = [n for n in _list_models(key) if n.startswith("gemini") and "flash" in n
-           and not any(x in n for x in ("image", "tts", "audio", "live", "embedding", "lite"))]
-    return sorted(txt)[-1] if txt else "gemini-2.5-flash"
+    best = None
+    for n in _list_models(key):
+        m = re.fullmatch(r"gemini-(\d+(?:\.\d+)?)-flash(-latest)?", n)
+        if m and (best is None or float(m.group(1)) > best[0]): best = (float(m.group(1)), n)
+    return best[1] if best else "gemini-2.5-flash"
 
 def _b64(im, fmt="PNG"):
     buf = io.BytesIO(); im.save(buf, fmt); return base64.b64encode(buf.getvalue()).decode()
