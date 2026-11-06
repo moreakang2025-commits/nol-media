@@ -16,14 +16,14 @@
     "bg_prompt": "A huge black oil barrel cracking in half with oil gushing out, a giant red price chart line crashing down behind it, a passenger jet with no logos launching upward like a rocket, dramatic orange stormy sky. Leave the upper-left third darker for text. No text, no logos, no real people."
    },
    {
-    "big": "$4.76",
+    "big": "{tank_saving}",
     "sub": "BACK?",
     "badge": "GAS ▼",
     "emotion": "suspicious, one eyebrow raised",
     "bg_prompt": "A gas station pump nozzle dripping, a giant receipt flying out with the total torn off, green dollar bills floating, neon gas station canopy at night. Leave the upper-left third darker for text. No text on objects, no logos, no real people."
    },
    {
-    "big": "AIRLINES",
+    "big": "JETBLUE",
     "sub": "+14%",
     "badge": "WHY?",
     "emotion": "shocked, jaw dropped",

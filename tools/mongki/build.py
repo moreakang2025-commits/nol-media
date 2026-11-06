@@ -115,6 +115,7 @@ def main():
     meta = {"title": ep["title"], "description": desc, "tags": ep.get("tags", []), "duration": round(t0, 1),
             "prices_asof": ctx.get("prices_asof")}
     json.dump(meta, open(os.path.join(outdir, "meta.json"), "w"), indent=1)
+    ep["thumb"] = D.fill_obj(ep["thumb"], ctx)   # thumbnail words use live numbers too
     thumb.make(ep, os.path.join(outdir, "thumb.jpg"))
     for x in files + [os.path.join(outdir, "silent.mp4")]:
         os.remove(x)

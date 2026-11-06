@@ -27,7 +27,7 @@ Goal: the most clickable, "I have to see this" money video of the day. Do all of
    prefer a number, a symbol (▲▼ $ ?) or a power word (GONE, BROKE, 10X, WHY?, BANNED, SECRET);
    one focal object that tells the story at phone size (cracked oil barrel, giant receipt, burning chart, trophy made of cash);
    strong contrast (yellow/white on dark, red for loss, green for gain); the mascot shows an extreme emotion that matches the hook;
-   no real faces, no logos, no tiny text. The three concepts must differ: shock number vs. question vs. before/after contrast.
+   no real faces, no logos, no tiny text. Computed numbers go in as {placeholders} (filled from live data), never typed from a test run. The three concepts must differ: shock number vs. question vs. before/after contrast.
 6. **Shorts**: 3 different angles of the same story (the shock number, the you-math, the twist), each with its own
    hook in the first 1 second.
 7. **Save the run** to `mongki/ideas/YYYY-MM-DD.json`: all candidates with scores, chosen title, rejected titles, sources.
