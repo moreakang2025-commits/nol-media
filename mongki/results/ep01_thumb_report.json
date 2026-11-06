@@ -1,9 +1,9 @@
 {
- "mode": "gemini_full",
+ "mode": "gemini_bg+code_text",
  "candidates": [
   {
    "ok": false,
-   "text_found": "$158M GONE. TSLA \u25bc",
+   "text_found": "$158M GONE. TSLA\u25bc",
    "real_person": false,
    "brand_logo": true,
    "score": 8
@@ -16,10 +16,10 @@
    "score": 8
   },
   {
-   "ok": true,
+   "ok": false,
    "text_found": "$158M GONE. TSLA \u25bc",
    "real_person": false,
-   "brand_logo": false,
+   "brand_logo": true,
    "score": 8
   }
  ]
