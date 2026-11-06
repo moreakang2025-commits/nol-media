@@ -7,7 +7,7 @@ from common import W, H, FPS
 import data as D, tts, scenes as S, thumb
 
 PAD = 0.35
-MASTER = ("volume=-6dB,adeclip,adeclick,highpass=f=70,lowpass=f=12000,"
+MASTER = ("volume=-6dB,adeclip,adeclick=w=20:o=75:t=1,highpass=f=70,lowpass=f=9000,"
           "loudnorm=I=-16:TP=-2:LRA=11,aresample=48000")
 BURN = False  # long form: captions go to YouTube as a CC track, not burned in
 
@@ -74,6 +74,7 @@ def main():
         f, caps = render_segment(i, seg, dur, ctx, outdir, vd, t0, total)
         files.append(f)
         with wave.open(wav) as w: pcm = tts.fade(np.frombuffer(w.readframes(w.getnframes()), np.int16))
+        pcm, nsm = tts.desmack(pcm); qa[i]["smacks_removed"] = nsm
         clip = np.zeros(int(round(dur * tts.RATE)), np.float32); clip[:min(len(pcm), len(clip))] = pcm[:len(clip)]
         audio.append(clip)
         for a, b, c in caps: srt.append((t0 + a, t0 + b, c))
@@ -89,8 +90,7 @@ def main():
     raw = os.path.join(outdir, "voice.wav"); clean = os.path.join(outdir, "voice_clean.wav")
     # Master: drop gain 6 dB first so nothing downstream can clip, repair clipped peaks and clicks,
     # then loudness-normalise to YouTube's level with a -2 dBTP ceiling (AAC overs are a classic crackle source).
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", raw, "-af", MASTER,
-                    "-ar", "48000", "-ac", "1", "-c:a", "pcm_s16le", clean], check=True)
+    post_ticks = tts.master(raw, clean, MASTER)
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", os.path.join(outdir, "silent.mp4"), "-i", clean,
                     "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "256k", "-ar", "48000", "-shortest",
                     os.path.join(outdir, "video.mp4")], check=True)
@@ -99,7 +99,7 @@ def main():
                           "-ar", "24000", "-"], capture_output=True).stdout
     fin = tts.analyze(np.frombuffer(dec, np.int16)); src = tts.analyze(tts._read(raw))
     peak = int(np.abs(np.frombuffer(dec, np.int16)).max()) if dec else 0
-    json.dump({"segments": qa, "raw_mix": src, "final_decoded": fin, "final_peak": peak},
+    json.dump({"segments": qa, "post_master_ticks_removed": post_ticks, "final_isolated_ticks": tts.desmack(np.frombuffer(dec, np.int16))[1], "raw_mix": src, "final_decoded": fin, "final_peak": peak},
               open(os.path.join(outdir, "audio_qa.json"), "w"), indent=1)
     print("[audio] raw:", src, "final:", fin, "peak:", peak)
     for name, srcf in (("voice_raw.flac", raw), ("voice_final.flac", os.path.join(outdir, "video.mp4"))):

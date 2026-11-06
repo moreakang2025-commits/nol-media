@@ -66,7 +66,7 @@ def build_short(ep, sh, ctx, outdir, max_seg=None):
             im = fn(t, dur, spec, ctx)
             if k is not None and spec["type"] not in ("logo", "end", "smash"): im = S.punch(im, k)
             p.stdin.write(frame(im, hook, caps[k][2] if k is not None else "", (t0 + t) / total, t).tobytes())
-        x = tts.fade(tts._read(wav)) if vd > 0 else np.zeros(0, np.float32)
+        x = tts.desmack(tts.fade(tts._read(wav)))[0] if vd > 0 else np.zeros(0, np.float32)
         clip = np.zeros(int(round(dur * tts.RATE)), np.float32); clip[:min(len(x), len(clip))] = x[:len(clip)]
         audio.append(clip)
         for a, b, c in caps: srt.append((t0 + a, t0 + b, c))
@@ -77,14 +77,13 @@ def build_short(ep, sh, ctx, outdir, max_seg=None):
     with wave.open(raw, "wb") as w:
         w.setnchannels(1); w.setsampwidth(2); w.setframerate(tts.RATE)
         w.writeframes(np.clip(np.concatenate(audio), -32767, 32767).astype(np.int16).tobytes())
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", raw, "-af", B.MASTER,
-                    "-ar", "48000", "-ac", "1", "-c:a", "pcm_s16le", clean], check=True)
+    tts.master(raw, clean, B.MASTER)
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", silent, "-i", clean, "-map", "0:v", "-map", "1:a",
                     "-c:v", "copy", "-c:a", "aac", "-b:a", "256k", "-ar", "48000", "-shortest",
                     os.path.join(outdir, "video.mp4")], check=True)
     dec = subprocess.run(["ffmpeg", "-v", "error", "-i", os.path.join(outdir, "video.mp4"), "-vn", "-f", "s16le", "-ac", "1",
                           "-ar", "24000", "-"], capture_output=True).stdout
-    fin = tts.analyze(np.frombuffer(dec, np.int16))
+    fin = tts.analyze(np.frombuffer(dec, np.int16)); fin["isolated_ticks"] = tts.desmack(np.frombuffer(dec, np.int16))[1]
     json.dump({"segments": qa, "final_decoded": fin}, open(os.path.join(outdir, "audio_qa.json"), "w"), indent=1)
     with open(os.path.join(outdir, "captions.srt"), "w") as f:
         for k, (a, b, c) in enumerate(srt, 1): f.write(f"{k}\n{B.srt_time(a)} --> {B.srt_time(b)}\n{c}\n\n")

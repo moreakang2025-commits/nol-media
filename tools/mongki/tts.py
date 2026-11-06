@@ -132,6 +132,28 @@ def synth_clean(text, path, tries=2):
     if live and text.strip(): shutil.copy(path, cached)
     return best[1], best[2]
 
+def desmack(a, q=None, max_amp=None, fr=60, quiet_need=6, max_len=6):
+    """Remove isolated ticks/lip-smacks inside pauses (the audible 'tsk/chik' crackle): a burst of at most
+    max_len*2.5 ms, quieter than max_amp, with at least quiet_need*2.5 ms of near-silence on both sides.
+    Word onsets are kept because they are followed by continuing sound. Returns (float32 array, count)."""
+    a = np.asarray(a, np.float32).copy(); m = len(a) // fr
+    if m < 3 * quiet_need: return a, 0
+    act = a[np.abs(a) > 0.02 * (np.abs(a).max() + 1)]
+    rms = float(np.sqrt((act ** 2).mean())) if len(act) else 0.0
+    if q is None: q = max(40.0, 0.07 * rms)            # 250 at a typical TTS level (rms ~3600)
+    if max_amp is None: max_amp = max(400.0, 0.8 * rms)
+    env = np.abs(a[: m * fr]).reshape(m, fr).max(axis=1); quiet = env < q
+    i = 0; n = 0
+    while i < m:
+        if quiet[i]: i += 1; continue
+        j = i
+        while j < m and not quiet[j]: j += 1
+        if (j - i) <= max_len and env[i:j].max() < max_amp and i >= quiet_need and j + quiet_need <= m \
+                and quiet[i - quiet_need:i].all() and quiet[j:j + quiet_need].all():
+            a[i * fr:j * fr] = 0.0; n += 1
+        i = j
+    return a, n
+
 def _trim(pcm):
     a = np.frombuffer(pcm, np.int16).astype(np.float32)
     loud = np.where(np.abs(a) > 300)[0]
@@ -144,3 +166,16 @@ def fade(a, fin=0.015, fout=0.04):
     if len(a) > n_in + n_out:
         a[:n_in] *= np.linspace(0, 1, n_in); a[-n_out:] *= np.linspace(1, 0, n_out)
     return a
+
+
+def master(raw_wav, out_wav, chain):
+    """ffmpeg master chain, then remove pause ticks again at the new level (filters can ring into pauses)."""
+    import subprocess
+    p = subprocess.run(["ffmpeg", "-v", "error", "-i", raw_wav, "-af", chain, "-ar", "48000", "-ac", "1",
+                        "-f", "s16le", "-"], capture_output=True, check=True)
+    y = np.frombuffer(p.stdout, np.int16).astype(np.float32)
+    y, n = desmack(y, fr=120)                           # 2.5 ms frames at 48 kHz
+    with wave.open(out_wav, "wb") as w:
+        w.setnchannels(1); w.setsampwidth(2); w.setframerate(48000)
+        w.writeframes(np.clip(y, -32767, 32767).astype(np.int16).tobytes())
+    return n
