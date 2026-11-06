@@ -21,6 +21,13 @@ Goal: the most clickable, "I have to see this" money video of the day. Do all of
 4. **Pick the top 1** (respect the rotation and 14-day ticker rule). Keep #2–#4 as fallbacks.
 5. **Titles**: write 8 variants (≤ 60 chars, number or name in the first 3 words, open loop, no clickbait lie),
    pick the best 1. **Thumbnail**: ≤ 3 words of huge text that are NOT the title, one emotion, one object.
+   **Thumbnail concepts (write 3, the pipeline renders all and an AI judge picks the best):** each =
+   `{"big": 1–2 huge words, "sub": ≤ 2 words, "badge": tiny tag, "emotion": mascot face, "bg_prompt": one focal image}`.
+   Rules: the words are the *hook*, not the title (title says "Oil crashed", thumb says "$4.76 BACK?");
+   prefer a number, a symbol (▲▼ $ ?) or a power word (GONE, BROKE, 10X, WHY?, BANNED, SECRET);
+   one focal object that tells the story at phone size (cracked oil barrel, giant receipt, burning chart, trophy made of cash);
+   strong contrast (yellow/white on dark, red for loss, green for gain); the mascot shows an extreme emotion that matches the hook;
+   no real faces, no logos, no tiny text. The three concepts must differ: shock number vs. question vs. before/after contrast.
 6. **Shorts**: 3 different angles of the same story (the shock number, the you-math, the twist), each with its own
    hook in the first 1 second.
 7. **Save the run** to `mongki/ideas/YYYY-MM-DD.json`: all candidates with scores, chosen title, rejected titles, sources.

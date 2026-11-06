@@ -6,7 +6,30 @@
   "sub": "AIRLINES +14%",
   "badge": "BRENT ▼",
   "corner": "IRAN",
-  "bg_prompt": "Photorealistic cinematic YouTube thumbnail background, 16:9. A gigantic furious muscular monkey with dark brown fur riding on top of a passenger jet with no logos or markings soaring upward, while a huge black oil barrel cracks and spills behind it, a giant red price chart line crashing down across a stormy orange sky, green dollar bills flying. Dramatic rim lighting, high contrast, saturated. Leave the upper-left third darker and less busy for text. No text, no letters, no logos, no real people."
+  "bg_prompt": "Photorealistic cinematic YouTube thumbnail background, 16:9. A gigantic furious muscular monkey with dark brown fur riding on top of a passenger jet with no logos or markings soaring upward, while a huge black oil barrel cracks and spills behind it, a giant red price chart line crashing down across a stormy orange sky, green dollar bills flying. Dramatic rim lighting, high contrast, saturated. Leave the upper-left third darker and less busy for text. No text, no letters, no logos, no real people.",
+  "concepts": [
+   {
+    "big": "OIL −19%",
+    "sub": "IN 3 DAYS",
+    "badge": "BRENT ▼",
+    "emotion": "ecstatic, shouting with joy",
+    "bg_prompt": "A huge black oil barrel cracking in half with oil gushing out, a giant red price chart line crashing down behind it, a passenger jet with no logos launching upward like a rocket, dramatic orange stormy sky. Leave the upper-left third darker for text. No text, no logos, no real people."
+   },
+   {
+    "big": "$4.76",
+    "sub": "BACK?",
+    "badge": "GAS ▼",
+    "emotion": "suspicious, one eyebrow raised",
+    "bg_prompt": "A gas station pump nozzle dripping, a giant receipt flying out with the total torn off, green dollar bills floating, neon gas station canopy at night. Leave the upper-left third darker for text. No text on objects, no logos, no real people."
+   },
+   {
+    "big": "AIRLINES",
+    "sub": "+14%",
+    "badge": "WHY?",
+    "emotion": "shocked, jaw dropped",
+    "bg_prompt": "A passenger jet with no logos bursting through a wall of falling oil barrels, giant green arrow going up, cash raining. Leave the upper-left third darker for text. No text, no logos, no real people."
+   }
+  ]
  },
  "description": [
   "Oil just had its worst three days since the pandemic on hopes of an end to the Iran war, and airline stocks exploded. Why did it happen, what does it mean for your gas tank, and who actually won: $10 a day in airlines or $10 a day in oil since the war began?",

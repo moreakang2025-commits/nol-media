@@ -71,7 +71,9 @@ def _review(im, required_text):
          f'text_correct is true only if the main headline reads exactly "{required_text}" with no spelling mistakes and no extra gibberish text. '
          "real_person is true if any face looks like a specific real, identifiable person (celebrity, politician, athlete). "
          "brand_logo is true if any real company logo or trademark appears. "
-         "score = how likely a curious viewer is to click (bold, readable at small size, clear emotion, strong contrast).")
+         "score = how likely a curious viewer scrolling YouTube on a phone is to click, judged like a top YouTube thumbnail designer: "
+         "huge readable words at 160px wide, one clear focal subject, a strong emotion on the face, a visible curiosity gap "
+         "(something shocking, a contrast or a 'how?'), high contrast and saturated color, not cluttered. Be strict: 9-10 only for elite thumbnails.")
     body = {"contents": [{"parts": [{"inlineData": {"mimeType": "image/jpeg", "data": _b64(im.resize((640, 360)), "JPEG")}}, {"text": q}]}],
             "generationConfig": {"responseMimeType": "application/json"}}
     try:
@@ -81,14 +83,17 @@ def _review(im, required_text):
     except Exception as e:
         print("[thumb] review failed:", e); return None
 
-def _full_prompt(ep):
-    t = ep["thumb"]; headline = f'{t["big"]} {t.get("sub", "")}'.strip()
+def _full_prompt(ep, t=None):
+    t = t or ep["thumb"]; headline = f'{t["big"]} {t.get("sub", "")}'.strip()
     return headline, (
         "Design the single most clickable YouTube thumbnail for a money/finance channel called Mongki Money. "
         f'Video title: "{ep["title"]}". '
         f'Put this headline in huge, bold, perfectly spelled letters, at most two lines: "{headline}". '
         + (f'Add a small red tag that says "{t["badge"]}". ' if t.get("badge") else "")
-        + "Include the attached cartoon monkey mascot as the main character, redrawn bigger, furious and muscular, with a strong emotion. "
+        + "Include the attached cartoon monkey mascot as the main character, redrawn bigger and muscular, with an extreme, readable emotion "
+          f"({t.get('emotion', 'shocked, furious or ecstatic')}). "
+        + "Composition: one huge focal object that tells the story at a glance, the headline in the darker third, "
+          "bold arrows or a red circle only if they point at the key thing. "
         + (f'Scene idea: {t["bg_prompt"]} ' if t.get("bg_prompt") else "")
         + "Style: high contrast, saturated, cinematic lighting, uncluttered, readable on a phone at small size, 16:9. "
         "Rules: no real people or recognizable faces, no company logos or trademarks, no other text besides the headline and tag, "
@@ -132,17 +137,22 @@ def make(ep, out):
         ref = Image.open(os.path.join(ASSETS, "mongki_muscle.png")).convert("RGB")
         parts = [{"inlineData": {"mimeType": "image/png", "data": _b64(ref.resize((600, 600)))}}, {"text": prompt}]
         best = None
-        for k in range(CANDIDATES):
+        concepts = spec.get("concepts") or [spec]
+        per = max(1, CANDIDATES // len(concepts)) if len(concepts) <= CANDIDATES else 1
+        jobs = [(c, j) for c in concepts for j in range(per)][: max(CANDIDATES, len(concepts))]
+        for k, (c, _) in enumerate(jobs):
+            headline, prompt = _full_prompt(ep, {**spec, **c})
+            parts = [{"inlineData": {"mimeType": "image/png", "data": _b64(ref.resize((600, 600)))}}, {"text": prompt}]
             im = _gemini_image(parts)
             if im is None: continue
             rv = _review(im, headline) or {}
             ok = rv.get("text_correct") is True and rv.get("real_person") is False and rv.get("brand_logo") is False
-            report["candidates"].append({"ok": ok, **{x: rv.get(x) for x in ("text_found", "real_person", "brand_logo", "score")}})
+            report["candidates"].append({"ok": ok, "concept": c.get("big"), **{x: rv.get(x) for x in ("text_found", "real_person", "brand_logo", "score")}})
             print(f"[thumb] candidate {k+1}: ok={ok} review={rv}")
             if ok and (best is None or (rv.get("score") or 0) > best[0]):
-                best = ((rv.get("score") or 0), im)
+                best = ((rv.get("score") or 0), im, c)
         if best:
-            _cover(best[1]).save(out, quality=92); report["mode"] = "gemini_full"
+            _cover(best[1]).save(out, quality=92); report["mode"] = "gemini_full"; report["winner"] = best[2].get("big")
         else:
             bg = _gemini_image([{"text": spec["bg_prompt"]}]) if spec.get("bg_prompt") else None
             _overlay(bg if bg else _drawn_bg(), spec).save(out, quality=92)
