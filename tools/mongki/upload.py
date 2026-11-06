@@ -45,7 +45,10 @@ def main(outdir, publish_at=None):
     r = requests.post("https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status",
                       headers={**hdr, "Content-Type": "application/json", "X-Upload-Content-Type": "video/mp4",
                                "X-Upload-Content-Length": str(size)}, data=json.dumps(body), timeout=60)
-    r.raise_for_status(); loc = r.headers["Location"]
+    if not r.ok:
+        res = {"error": f"upload init {r.status_code}: {r.text[:600]}", "publish_at_requested": publish_at}
+        json.dump(res, open(os.path.join(outdir, "upload.json"), "w"), indent=1); print("[upload]", res); sys.exit(1)
+    loc = r.headers["Location"]
     with open(video, "rb") as f:
         r = requests.put(loc, headers={**hdr, "Content-Type": "video/mp4"}, data=f, timeout=3600)
     r.raise_for_status(); vid = r.json()["id"]; print("[upload] video id", vid)
