@@ -2,6 +2,31 @@
 
 Every episode is written and checked against this file. The daily ideation task reads it before writing a script.
 
+## 0. Daily ideation run (every episode, at run time — never from memory, never reused lists)
+Goal: the most clickable, "I have to see this" money video of the day. Do all of this fresh each run.
+1. **Scan wide (live search, last 24–48 h).** At least 12 searches across: US top headlines, world top headlines,
+   markets' biggest movers, crypto, celebrity/music/tours, sports (NFL, NBA, football transfers, UFC/boxing),
+   tech/AI launches, space/science, weather/disasters, viral memes/TikTok trends, Reddit (r/all, r/wallstreetbets,
+   r/news, r/personalfinance), plus viewer comments. Note upcoming dated events in the next 7 days too (launches, earnings, games, releases).
+2. **Generate ≥ 20 candidates.** For each hot item, force a money twist with these lenses:
+   - **What-if collision**: two unrelated worlds smashed together ("What if Taylor Swift bought a NFL team?").
+   - **Shock number**: one absurd figure ("This tweet cost $50 billion").
+   - **You-math**: what it means for the viewer's wallet ("Your Thanksgiving dinner costs $X more because of …").
+   - **Backtest regret**: "$10 a day in X since Y" / "If you bought at the panic".
+   - **Hidden winner/loser**: who quietly made or lost money from today's news.
+   - **Scale-up absurdity**: "If every American did X…", "In Bitcoin terms…".
+3. **Score each 1–5** on: Shock (jaw-drop), Curiosity gap (must click to know), Freshness (today), Data (real public
+   numbers exist), Wildness (nobody else is making this), Breadth (non-finance people care). Max 30.
+   Kill anything < 20, anything that needs fake facts, mocks someone's looks, or is one-sided politics.
+4. **Pick the top 1** (respect the rotation and 14-day ticker rule). Keep #2–#4 as fallbacks.
+5. **Titles**: write 8 variants (≤ 60 chars, number or name in the first 3 words, open loop, no clickbait lie),
+   pick the best 1. **Thumbnail**: ≤ 3 words of huge text that are NOT the title, one emotion, one object.
+6. **Shorts**: 3 different angles of the same story (the shock number, the you-math, the twist), each with its own
+   hook in the first 1 second.
+7. **Save the run** to `mongki/ideas/YYYY-MM-DD.json`: all candidates with scores, chosen title, rejected titles, sources.
+8. **Learn**: before scoring, read `mongki/ideas/performance.json` (views/likes/comments of past uploads, filled by
+   the comments workflow) and boost the lenses/categories that performed best; de-boost the weakest.
+
 ## 1. Topic selection
 1. Read `mongki/ideas/comments.json` (viewer comments, sorted by likes + replies). Skip comments marked `"used": true`.
 2. Screen out: spam, links, insults, hate, sexual content, anything about a private person, medical/legal advice requests, and anything that cannot be answered with public data.

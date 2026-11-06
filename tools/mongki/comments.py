@@ -37,13 +37,31 @@ def comments(vid, limit=200):
         if not tok: break
     return out
 
+def performance(vids):
+    """Public stats of our uploads (1 quota unit per 50 videos) -> mongki/ideas/performance.json, best first."""
+    out = []
+    for i in range(0, len(vids), 50):
+        j = get("videos", part="statistics,snippet,contentDetails", id=",".join(v for v, _ in vids[i:i + 50]))
+        for it in j.get("items", []):
+            st = it.get("statistics", {})
+            out.append({"id": it["id"], "title": it["snippet"]["title"], "published": it["snippet"].get("publishedAt"),
+                        "duration": it["contentDetails"].get("duration"), "views": int(st.get("viewCount", 0)),
+                        "likes": int(st.get("likeCount", 0)), "comments": int(st.get("commentCount", 0))})
+    out.sort(key=lambda x: -x["views"])
+    path = os.path.join(os.path.dirname(OUT), "performance.json")
+    json.dump({"updated": dt.datetime.utcnow().isoformat() + "Z", "videos": out}, open(path, "w"), indent=1, ensure_ascii=False)
+    print(f"[comments] performance for {len(out)} videos")
+
 def main():
     if not os.environ.get("YT_API_KEY"):
         print("[comments] YT_API_KEY not set, skipping"); return
     old = {}
     if os.path.exists(OUT):
         for c in json.load(open(OUT)).get("comments", []): old[c["id"]] = c
-    for vid, title in uploads():
+    ups = uploads()
+    try: performance(ups)
+    except Exception as e: print("[comments] performance failed:", e)
+    for vid, title in ups:
         for c in comments(vid):
             c["video_title"] = title; c["used"] = old.get(c["id"], {}).get("used", False); old[c["id"]] = c
     allc = sorted(old.values(), key=lambda c: (-(c["likes"] + 2 * c["replies"]), c["at"] or ""))
