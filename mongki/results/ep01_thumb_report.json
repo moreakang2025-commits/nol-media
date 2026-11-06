@@ -9,17 +9,17 @@
    "score": 8
   },
   {
-   "ok": true,
-   "text_found": "$158M GONE. TSLA \u25bc",
-   "real_person": false,
-   "brand_logo": false,
-   "score": 8
-  },
-  {
    "ok": false,
    "text_found": "$158M GONE. TSLA \u25bc",
    "real_person": false,
    "brand_logo": true,
+   "score": 8
+  },
+  {
+   "ok": true,
+   "text_found": "$158M GONE. TSLA \u25bc",
+   "real_person": false,
+   "brand_logo": false,
    "score": 8
   }
  ]

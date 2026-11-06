@@ -18,6 +18,7 @@
  ],
  "final_decoded": {
   "clipped": 0,
-  "jumps": []
+  "jumps": [],
+  "isolated_ticks": 3
  }
 }

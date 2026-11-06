@@ -3,124 +3,148 @@
   {
    "seg": 0,
    "clipped": 0,
-   "jumps": []
+   "jumps": [],
+   "smacks_removed": 0
   },
   {
    "seg": 1,
    "clipped": 0,
-   "jumps": []
+   "jumps": [],
+   "smacks_removed": 9
   },
   {
    "seg": 2,
    "clipped": 0,
-   "jumps": []
+   "jumps": [],
+   "smacks_removed": 9
   },
   {
    "seg": 3,
    "clipped": 0,
-   "jumps": []
+   "jumps": [],
+   "smacks_removed": 9
   },
   {
    "seg": 4,
    "clipped": 0,
-   "jumps": []
+   "jumps": [],
+   "smacks_removed": 6
   },
   {
    "seg": 5,
    "clipped": 0,
-   "jumps": []
+   "jumps": [],
+   "smacks_removed": 11
   },
   {
    "seg": 6,
    "clipped": 0,
    "jumps": [
     18.14
-   ]
+   ],
+   "smacks_removed": 9
   },
   {
    "seg": 7,
    "clipped": 0,
-   "jumps": []
+   "jumps": [],
+   "smacks_removed": 16
   },
   {
    "seg": 8,
    "clipped": 0,
    "jumps": [
     10.75
-   ]
+   ],
+   "smacks_removed": 9
   },
   {
    "seg": 9,
    "clipped": 0,
    "jumps": [
     25.84
-   ]
+   ],
+   "smacks_removed": 18
   },
   {
    "seg": 10,
    "clipped": 0,
-   "jumps": []
+   "jumps": [],
+   "smacks_removed": 6
   },
   {
    "seg": 11,
    "clipped": 0,
-   "jumps": []
+   "jumps": [],
+   "smacks_removed": 15
   },
   {
    "seg": 12,
    "clipped": 0,
-   "jumps": []
+   "jumps": [],
+   "smacks_removed": 19
   },
   {
    "seg": 13,
    "clipped": 0,
-   "jumps": []
+   "jumps": [],
+   "smacks_removed": 16
   },
   {
    "seg": 14,
    "clipped": 0,
-   "jumps": []
+   "jumps": [],
+   "smacks_removed": 6
   },
   {
    "seg": 15,
    "clipped": 0,
-   "jumps": []
+   "jumps": [],
+   "smacks_removed": 5
   },
   {
    "seg": 16,
    "clipped": 0,
    "jumps": [
     11.7
-   ]
+   ],
+   "smacks_removed": 14
   },
   {
    "seg": 17,
    "clipped": 0,
    "jumps": [
     34.58
-   ]
+   ],
+   "smacks_removed": 18
   },
   {
    "seg": 18,
    "clipped": 0,
-   "jumps": []
+   "jumps": [],
+   "smacks_removed": 6
   },
   {
    "seg": 19,
    "clipped": 0,
-   "jumps": []
+   "jumps": [],
+   "smacks_removed": 4
   },
   {
    "seg": 20,
    "clipped": 0,
-   "jumps": []
+   "jumps": [],
+   "smacks_removed": 19
   },
   {
    "seg": 21,
    "clipped": 0,
-   "jumps": []
+   "jumps": [],
+   "smacks_removed": 22
   }
  ],
+ "post_master_ticks_removed": 70,
+ "final_isolated_ticks": 10,
  "raw_mix": {
   "clipped": 0,
   "jumps": [
@@ -138,17 +162,12 @@
  "final_decoded": {
   "clipped": 0,
   "jumps": [
-   40.32,
    104.96,
    110.65,
    159.33,
-   213.1,
    231.4,
-   255.96,
-   333.35,
-   368.38,
-   391.44
+   255.96
   ]
  },
- "final_peak": 26369
+ "final_peak": 26385
 }
