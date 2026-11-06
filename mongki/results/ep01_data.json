@@ -1,5 +1,6 @@
 {
  "prices_asof": "2026-11-05",
+ "bt_start_words": "October 7, 2021",
  "bt_invested": "$12,760",
  "bt_value": "$16,662",
  "bt_return_words": "a gain of 30.6 percent",
@@ -59,6 +60,11 @@
  "trading_days": "1,467",
  "worst_day": "March 10, 2025",
  "worst_day_words": "down 15.4 percent",
+ "TSLA_d1_words": "down 3.3 percent",
+ "SPY_d1_words": "up 1.7 percent",
+ "LCID_d1_words": "up 11.6 percent",
+ "RIVN_d1_words": "up 5.8 percent",
+ "NIO_d1_words": "up 3.4 percent",
  "_event_moves": {
   "TSLA": -3.3,
   "SPY": 1.7,

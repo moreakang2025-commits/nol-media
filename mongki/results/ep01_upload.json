@@ -1,7 +1,14 @@
 {
- "video_id": "LiOvlmMD_pY",
- "url": "https://youtu.be/LiOvlmMD_pY",
+ "video_id": "6y5--GwWCvc",
+ "url": "https://youtu.be/6y5--GwWCvc",
  "privacy": "private",
+ "publish_at_requested": null,
+ "held": "audio defects {'clipped': 0, 'jumps': [40.32, 104.96, 110.65, 159.33, 213.1, 231.4, 255.96, 333.35, 368.38, 391.44]}",
  "thumbnail": "set",
- "captions": "failed 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Request had insufficient authentication scopes.\",\n    \"errors\": [\n      {\n        \"message\": \"Insufficient Permission\",\n        \"domain\": \"global\",\n        \"reason\": \"insufficientPermissions\"\n      }\n    ],\n    \"status\": \"PERMISSION_DENIED\",\n    \"detai"
+ "captions": "added",
+ "status_now": {
+  "privacyStatus": "private",
+  "publishAt": null,
+  "uploadStatus": "uploaded"
+ }
 }
