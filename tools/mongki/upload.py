@@ -34,7 +34,7 @@ def main(outdir, publish_at=None):
     if publish_at and os.path.exists(qa_path):   # never auto-publish audio that failed the defect check
         q = json.load(open(qa_path)); fin = q.get("final_decoded", {})
         ticks = q.get("final_isolated_ticks", fin.get("isolated_ticks", 0)); mins = max(0.5, json.load(open(os.path.join(outdir, "meta.json"))).get("duration", 60) / 60)
-        if fin.get("clipped", 0) > 0 or ticks / mins > 3:
+        if fin.get("clipped", 0) > 0 or ticks > max(4, 2 * mins):
             held = f"audio defects: clipped={fin.get('clipped')} isolated_ticks={ticks}"; publish_at = None
     tok = token(); hdr = {"Authorization": f"Bearer {tok}"}
     body = {"snippet": {"title": meta["title"][:100], "description": meta["description"][:4900],

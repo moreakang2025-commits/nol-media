@@ -1,2 +1,2 @@
 ep01 true 2026-11-06
-# v6: pause-tick removal before+after master, gentler lowpass, tick-based publish gate (TTS from cache)
+# v7: pause gate (silence between phrases), tick removal, cached TTS

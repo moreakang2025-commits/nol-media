@@ -74,7 +74,7 @@ def main():
         f, caps = render_segment(i, seg, dur, ctx, outdir, vd, t0, total)
         files.append(f)
         with wave.open(wav) as w: pcm = tts.fade(np.frombuffer(w.readframes(w.getnframes()), np.int16))
-        pcm, nsm = tts.desmack(pcm); qa[i]["smacks_removed"] = nsm
+        pcm, nsm = tts.desmack(pcm); pcm = tts.pause_gate(pcm); qa[i]["smacks_removed"] = nsm
         clip = np.zeros(int(round(dur * tts.RATE)), np.float32); clip[:min(len(pcm), len(clip))] = pcm[:len(clip)]
         audio.append(clip)
         for a, b, c in caps: srt.append((t0 + a, t0 + b, c))

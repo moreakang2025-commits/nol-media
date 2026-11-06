@@ -66,7 +66,7 @@ def build_short(ep, sh, ctx, outdir, max_seg=None):
             im = fn(t, dur, spec, ctx)
             if k is not None and spec["type"] not in ("logo", "end", "smash"): im = S.punch(im, k)
             p.stdin.write(frame(im, hook, caps[k][2] if k is not None else "", (t0 + t) / total, t).tobytes())
-        x = tts.desmack(tts.fade(tts._read(wav)))[0] if vd > 0 else np.zeros(0, np.float32)
+        x = tts.pause_gate(tts.desmack(tts.fade(tts._read(wav)))[0]) if vd > 0 else np.zeros(0, np.float32)
         clip = np.zeros(int(round(dur * tts.RATE)), np.float32); clip[:min(len(x), len(clip))] = x[:len(clip)]
         audio.append(clip)
         for a, b, c in caps: srt.append((t0 + a, t0 + b, c))

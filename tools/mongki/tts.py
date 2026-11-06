@@ -168,6 +168,20 @@ def fade(a, fin=0.015, fout=0.04):
     return a
 
 
+def pause_gate(a, fr=60, reach=24, ramp=4):
+    """Silence the pauses: any 2.5 ms frame with no real speech within +-reach frames (60 ms) is faded to zero.
+    Removes ticks, smacks, clusters of crackle and raised hiss between phrases; speech and its edges stay."""
+    a = np.asarray(a, np.float32).copy(); m = len(a) // fr
+    if m < 4: return a
+    env = np.abs(a[: m * fr]).reshape(m, fr).max(axis=1)
+    act = a[np.abs(a) > 0.02 * (np.abs(a).max() + 1)]
+    rms = float(np.sqrt((act ** 2).mean())) if len(act) else 0.0
+    strong = env > max(300.0, 0.6 * rms)
+    keep = np.convolve(strong.astype(np.float32), np.ones(2 * reach + 1, np.float32), "same") > 0
+    g = np.convolve(keep.astype(np.float32), np.ones(2 * ramp + 1, np.float32) / (2 * ramp + 1), "same")
+    gain = np.repeat(g, fr); gain = np.pad(gain, (0, len(a) - len(gain)), constant_values=float(g[-1]))
+    return a * gain
+
 def master(raw_wav, out_wav, chain):
     """ffmpeg master chain, then remove pause ticks again at the new level (filters can ring into pauses)."""
     import subprocess
@@ -175,6 +189,7 @@ def master(raw_wav, out_wav, chain):
                         "-f", "s16le", "-"], capture_output=True, check=True)
     y = np.frombuffer(p.stdout, np.int16).astype(np.float32)
     y, n = desmack(y, fr=120)                           # 2.5 ms frames at 48 kHz
+    y = pause_gate(y, fr=120)
     with wave.open(out_wav, "wb") as w:
         w.setnchannels(1); w.setsampwidth(2); w.setframerate(48000)
         w.writeframes(np.clip(y, -32767, 32767).astype(np.int16).tobytes())
