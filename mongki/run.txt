@@ -1,2 +1,2 @@
-ep02 true
-# ep02: oil crash on Iran peace hopes, airlines surge
+ep01 true 2026-11-06
+# v5: audio master (headroom+loudnorm), real defect check, TTS cache, 3 Shorts, publishAt
