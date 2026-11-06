@@ -413,5 +413,159 @@
     "tail": 20.0
    }
   }
+ ],
+ "shorts": [
+  {
+   "key": "s1",
+   "title": "Oil Crashed. JetBlue Went +14% in One Day",
+   "hook": "OIL CRASHED. AIRLINES EXPLODED.",
+   "segments": [
+    {
+     "vo": "Oil just had its worst three days since the pandemic.",
+     "scene": {
+      "type": "smash",
+      "big": "OIL −{brent3_pct}",
+      "sub": "IN 3 DAYS."
+     }
+    },
+    {
+     "vo": "And the stocks that hate expensive oil went wild. JetBlue, {JBLU_d1_words} in one day. United, {UAL_d1_words}. Delta, {DAL_d1_words}.",
+     "scene": {
+      "type": "tickers",
+      "title": "Nov 4, 2026",
+      "items": [
+       {
+        "sym": "JBLU",
+        "label": "JETBLUE",
+        "chg": 14.0
+       },
+       {
+        "sym": "UAL",
+        "label": "UNITED",
+        "chg": 8.0
+       },
+       {
+        "sym": "DAL",
+        "label": "DELTA",
+        "chg": 7.0
+       },
+       {
+        "sym": "USO",
+        "label": "OIL FUND",
+        "chg": -8.0
+       }
+      ],
+      "source": "24/7 Wall St.; Yahoo Finance"
+     }
+    },
+    {
+     "vo": "Why? Jet fuel is one of an airline's biggest costs. Oil falls, every flight gets cheaper to fly overnight. Same planes. Same tickets. Fatter profit per seat.",
+     "scene": {
+      "type": "statcard",
+      "kicker": "Why airlines care",
+      "big": "FUEL = $$$",
+      "lines": [
+       "Oil down →",
+       "every flight cheaper"
+      ]
+     }
+    },
+    {
+     "vo": "The full breakdown is on the channel. Follow for more money math.",
+     "scene": {
+      "type": "title",
+      "big": "FULL VIDEO ↗",
+      "sub": "Mongki Money"
+     }
+    }
+   ]
+  },
+  {
+   "key": "s2",
+   "title": "How Much Cheaper Is Your Gas Now? The Math",
+   "hook": "OIL FELL. WHAT DO YOU SAVE?",
+   "segments": [
+    {
+     "vo": "Oil just crashed. So how much cheaper is your gas?",
+     "scene": {
+      "type": "question",
+      "lines": [
+       "Oil crashed.",
+       "Cheaper gas?"
+      ]
+     }
+    },
+    {
+     "vo": "A barrel is forty-two gallons. Brent went from {oil_peak} at the peak to about {oil_now}. That's {gas_cents} a gallon in crude costs. About {tank_saving} a tank.",
+     "scene": {
+      "type": "statcard",
+      "kicker": "Crude cost per gallon, peak to now",
+      "big": "−{gas_cents}",
+      "lines": [
+       "42 gallons per barrel",
+       "≈ {tank_saving} per tank"
+      ],
+      "source": "(peak − now) ÷ 42; Yahoo Finance"
+     }
+    },
+    {
+     "vo": "But gas prices go up like a rocket and down like a feather. So the savings come. Slowly.",
+     "scene": {
+      "type": "smash",
+      "big": "ROCKETS & FEATHERS",
+      "sub": "Up fast. Down slow."
+     }
+    },
+    {
+     "vo": "Full video on the channel. Follow for more money math.",
+     "scene": {
+      "type": "title",
+      "big": "FULL VIDEO ↗",
+      "sub": "Mongki Money"
+     }
+    }
+   ]
+  },
+  {
+   "key": "s3",
+   "title": "$10,000 at the Oil Peak: Oil vs JetBlue",
+   "hook": "$10K AT THE PEAK. WHO WON?",
+   "segments": [
+    {
+     "vo": "April twenty-ninth. Oil hits its 2026 peak. Everyone's panicking. You have ten thousand dollars.",
+     "scene": {
+      "type": "smash",
+      "big": "$10,000",
+      "sub": "AT THE OIL PEAK."
+     }
+    },
+    {
+     "vo": "Bet one. You buy oil. Today that's {peakuso_value}. {peakuso_change_words}.",
+     "scene": {
+      "type": "lump",
+      "key": "peakuso",
+      "label": "the oil fund",
+      "kicker": "Bought oil at the April peak"
+     }
+    },
+    {
+     "vo": "Bet two. You buy the stock everyone hated that day. JetBlue. Today, {peakjblu_value}. {peakjblu_change_words}.",
+     "scene": {
+      "type": "lump",
+      "key": "peakjblu",
+      "label": "JetBlue",
+      "kicker": "Bought airlines at the April peak"
+     }
+    },
+    {
+     "vo": "The crowd is loudest at the top. Not financial advice. Full video on the channel.",
+     "scene": {
+      "type": "title",
+      "big": "LOUDEST AT THE TOP",
+      "sub": "Full video ↗"
+     }
+    }
+   ]
+  }
  ]
 }

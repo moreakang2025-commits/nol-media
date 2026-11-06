@@ -7,6 +7,8 @@ from common import W, H, FPS
 import data as D, tts, scenes as S, thumb
 
 PAD = 0.35
+MASTER = ("volume=-6dB,adeclip,adeclick,highpass=f=70,lowpass=f=12000,"
+          "loudnorm=I=-16:TP=-2:LRA=11,aresample=48000")
 BURN = False  # long form: captions go to YouTube as a CC track, not burned in
 
 def chunks(text, dur):
@@ -87,9 +89,7 @@ def main():
     raw = os.path.join(outdir, "voice.wav"); clean = os.path.join(outdir, "voice_clean.wav")
     # Master: drop gain 6 dB first so nothing downstream can clip, repair clipped peaks and clicks,
     # then loudness-normalise to YouTube's level with a -2 dBTP ceiling (AAC overs are a classic crackle source).
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", raw, "-af",
-                    "volume=-6dB,adeclip,adeclick,highpass=f=70,lowpass=f=12000,"
-                    "loudnorm=I=-16:TP=-2:LRA=11,aresample=48000",
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", raw, "-af", MASTER,
                     "-ar", "48000", "-ac", "1", "-c:a", "pcm_s16le", clean], check=True)
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", os.path.join(outdir, "silent.mp4"), "-i", clean,
                     "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "256k", "-ar", "48000", "-shortest",

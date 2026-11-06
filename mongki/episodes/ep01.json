@@ -402,5 +402,123 @@
    }
   }
  ],
- "burn_captions": false
+ "burn_captions": false,
+ "shorts": [
+  {
+   "key": "s1",
+   "title": "Musk Spent $158 Million on Texas. Then Tesla Fell.",
+   "hook": "$158M. GONE IN ONE NIGHT.",
+   "segments": [
+    {
+     "vo": "Elon Musk sent one hundred fifty-eight million dollars into one Texas Senate race. His side lost.",
+     "scene": {
+      "type": "statcard",
+      "kicker": "FEC filings, Sept 2026",
+      "big": "$158M",
+      "lines": [
+       "$75M on Sept 9",
+       "$83M on Sept 23"
+      ]
+     }
+    },
+    {
+     "vo": "The next day, almost every electric car stock went up. Lucid, Rivian, Nio. One went down. Tesla.",
+     "scene": {
+      "type": "tickers",
+      "title": "Nov 4, 2026",
+      "items": [
+       {
+        "sym": "LCID",
+        "chg": 12.0
+       },
+       {
+        "sym": "RIVN",
+        "chg": 6.0
+       },
+       {
+        "sym": "NIO",
+        "chg": 4.0
+       },
+       {
+        "sym": "TSLA",
+        "chg": -3.3
+       }
+      ],
+      "source": "24/7 Wall St.; Yahoo Finance"
+     }
+    },
+    {
+     "vo": "What actually changed in Texas, and is Tesla in trouble? Full breakdown on the channel.",
+     "scene": {
+      "type": "title",
+      "big": "FULL VIDEO ↗",
+      "sub": "Mongki Money"
+     }
+    }
+   ]
+  },
+  {
+   "key": "s2",
+   "title": "$10 a Day in Tesla vs the S&P 500 Since Texas",
+   "hook": "$10 A DAY. 4 BETS. WHO WON?",
+   "segments": [
+    {
+     "vo": "Ten dollars a day, every trading day, since Tesla said it was moving to Texas. Four bets.",
+     "scene": {
+      "type": "smash",
+      "big": "$10 A DAY",
+      "sub": "4 BETS."
+     }
+    },
+    {
+     "vo": "Tesla? {bt_value}. Lucid? {LCID_dca_value}. Rivian? {RIVN_dca_value}. And a boring S&P 500 fund? {SPY_dca_value}.",
+     "scene": {
+      "type": "multibars",
+      "title": "SAME $10 A DAY, 4 BETS"
+     }
+    },
+    {
+     "vo": "The winner? {dca_winner}. Not financial advice. Full video on the channel.",
+     "scene": {
+      "type": "title",
+      "big": "WINNER:",
+      "sub": "{dca_winner}"
+     }
+    }
+   ]
+  },
+  {
+   "key": "s3",
+   "title": "What If Musk Bought Tesla Instead of Politics?",
+   "hook": "WHAT IF THE $158M BOUGHT TESLA?",
+   "segments": [
+    {
+     "vo": "What if Musk had put that one hundred fifty-eight million dollars into his own stock instead, on the same days?",
+     "scene": {
+      "type": "question",
+      "lines": [
+       "What if the $158M",
+       "bought Tesla instead?"
+      ]
+     }
+    },
+    {
+     "vo": "Today it would be worth {musk158_value}. That's {musk158_change_words}.",
+     "scene": {
+      "type": "lump",
+      "key": "musk158",
+      "kicker": "What if the $158M bought Tesla instead?"
+     }
+    },
+    {
+     "vo": "Either way, the election cost him money. Full breakdown on the channel.",
+     "scene": {
+      "type": "title",
+      "big": "FULL VIDEO ↗",
+      "sub": "Mongki Money"
+     }
+    }
+   ]
+  }
+ ]
 }

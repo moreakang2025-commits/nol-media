@@ -25,12 +25,21 @@ def captions(tok, vid, transcript_path, srt_path=None):
     r = requests.post(url, headers={"Authorization": f"Bearer {tok}", "Content-Type": f"multipart/related; boundary={b}"}, data=data, timeout=120)
     return "added" if r.ok else f"failed {r.status_code}: {r.text[:300]}"
 
-def main(outdir):
+def main(outdir, publish_at=None):
+    """publish_at: RFC3339 UTC time. The video is uploaded private with status.publishAt so YouTube makes it
+    public at that time by itself."""
     meta = json.load(open(os.path.join(outdir, "meta.json")))
+    held = None
+    qa_path = os.path.join(outdir, "audio_qa.json")
+    if publish_at and os.path.exists(qa_path):   # never auto-publish audio that failed the defect check
+        fin = json.load(open(qa_path)).get("final_decoded", {})
+        if fin.get("clipped", 0) > 0 or fin.get("jumps"):
+            held = f"audio defects {fin}"; publish_at = None
     tok = token(); hdr = {"Authorization": f"Bearer {tok}"}
     body = {"snippet": {"title": meta["title"][:100], "description": meta["description"][:4900],
                         "tags": meta["tags"], "categoryId": "27", "defaultLanguage": "en", "defaultAudioLanguage": "en"},
             "status": {"privacyStatus": "private", "selfDeclaredMadeForKids": False, "containsSyntheticMedia": False}}
+    if publish_at: body["status"]["publishAt"] = publish_at
     video = os.path.join(outdir, "video.mp4"); size = os.path.getsize(video)
     r = requests.post("https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status",
                       headers={**hdr, "Content-Type": "application/json", "X-Upload-Content-Type": "video/mp4",
@@ -39,7 +48,7 @@ def main(outdir):
     with open(video, "rb") as f:
         r = requests.put(loc, headers={**hdr, "Content-Type": "video/mp4"}, data=f, timeout=3600)
     r.raise_for_status(); vid = r.json()["id"]; print("[upload] video id", vid)
-    res = {"video_id": vid, "url": f"https://youtu.be/{vid}", "privacy": "private"}
+    res = {"video_id": vid, "url": f"https://youtu.be/{vid}", "privacy": "private", "publish_at_requested": publish_at, "held": held}
     try:
         with open(os.path.join(outdir, "thumb.jpg"), "rb") as f:
             t = requests.post(f"https://www.googleapis.com/upload/youtube/v3/thumbnails/set?videoId={vid}",
@@ -51,8 +60,14 @@ def main(outdir):
         res["captions"] = captions(tok, vid, os.path.join(outdir, "transcript.txt"), os.path.join(outdir, "captions.srt"))
     except Exception as e:
         res["captions"] = f"failed: {e}"
+    try:  # what YouTube actually kept (an unverified API project may force private and drop publishAt)
+        st = requests.get("https://www.googleapis.com/youtube/v3/videos", params={"part": "status", "id": vid},
+                          headers=hdr, timeout=30).json()["items"][0]["status"]
+        res["status_now"] = {k: st.get(k) for k in ("privacyStatus", "publishAt", "uploadStatus")}
+    except Exception as e:
+        res["status_now"] = f"check failed: {e}"
     print("[upload]", res)
     json.dump(res, open(os.path.join(outdir, "upload.json"), "w"), indent=1)
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    main(sys.argv[1], sys.argv[2] if len(sys.argv) > 2 and sys.argv[2] else None)
