@@ -1,2 +1,2 @@
-ep01 true 2026-11-06
-# v7: pause gate (silence between phrases), tick removal, cached TTS
+ep03 true 2026-11-07
+# ep03: AI chip crash, $3T in a day, every -10% chip day since 2000

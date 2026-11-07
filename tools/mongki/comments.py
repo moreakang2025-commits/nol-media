@@ -48,6 +48,7 @@ def performance(vids):
                         "duration": it["contentDetails"].get("duration"), "views": int(st.get("viewCount", 0)),
                         "likes": int(st.get("likeCount", 0)), "comments": int(st.get("commentCount", 0))})
     out.sort(key=lambda x: -x["views"])
+    os.makedirs(os.path.dirname(OUT), exist_ok=True)
     path = os.path.join(os.path.dirname(OUT), "performance.json")
     json.dump({"updated": dt.datetime.utcnow().isoformat() + "Z", "videos": out}, open(path, "w"), indent=1, ensure_ascii=False)
     print(f"[comments] performance for {len(out)} videos")

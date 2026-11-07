@@ -1,0 +1,555 @@
+{
+ "id": "ep03",
+ "title": "$3 Trillion Gone in a Day. Every Chip Crash Since 2000 Says…",
+ "thumb": {
+  "big": "−$3T",
+  "sub": "IN 1 DAY",
+  "badge": "AI ▼",
+  "corner": "CHIPS",
+  "bg_prompt": "A giant glowing computer chip cracking in half with sparks, a huge red stock chart crashing down, money bills burning, dark dramatic background. Leave the upper-left third darker for text. No text, no logos, no real people.",
+  "concepts": [
+   {
+    "big": "−$3T",
+    "sub": "IN 1 DAY",
+    "badge": "AI ▼",
+    "emotion": "horrified, hands on head",
+    "bg_prompt": "A giant glowing computer chip cracking in half with sparks flying, a huge red stock chart line crashing down behind it, cash bills burning, dark dramatic background. Leave the upper-left third darker for text. No text, no letters, no logos, no real people."
+   },
+   {
+    "big": "BUY THE",
+    "sub": "CRASH?",
+    "badge": "CHIPS",
+    "emotion": "sly grin, rubbing hands",
+    "bg_prompt": "A huge shopping cart filled with glowing computer chips and gold coins rolling down a red crashing chart like a slide, sale tags flying. Leave the upper-left third darker for text. No text on objects, no logos, no real people."
+   },
+   {
+    "big": "{panic_count} CRASHES",
+    "sub": "THEN?",
+    "badge": "SINCE 2000",
+    "emotion": "shocked, pointing at a chart",
+    "bg_prompt": "A long wall of red lightning-shaped stock chart crashes over 25 years, ending in a giant green arrow shooting up, glowing chips scattered. Leave the upper-left third darker for text. No text, no logos, no real people."
+   }
+  ]
+ },
+ "description": [
+  "On November 5, 2026, AI chip stocks had their worst day since 2020 and about $3 trillion of market value vanished. Why it happened, how rare it was, and what came next after every 10% chip crash since 2000. Plus: $10 a day in Nvidia since ChatGPT launched.",
+  "",
+  "{chapters}",
+  "",
+  "Sources:",
+  "- CNBC and Reuters via StockTitan: Nov 5–6, 2026 market moves",
+  "- Yahoo Finance live coverage, Nov 6, 2026 (market value, Goldman Sachs data center estimate, jobs report)",
+  "- Jefferies comment via StockTitan",
+  "- Daily price data: Yahoo Finance (PHLX Semiconductor Index, NVDA, AMD, MU, INTC, AVGO, SOXX, SPY)",
+  "",
+  "Past crashes do not predict the future. Not financial advice. For education only.",
+  "",
+  "#Nvidia #AIStocks #MongkiMoney"
+ ],
+ "tags": [
+  "ai stocks",
+  "nvidia stock",
+  "chip stocks",
+  "stock market crash",
+  "semiconductor",
+  "amd stock",
+  "micron",
+  "buy the dip",
+  "mongki money"
+ ],
+ "data": {
+  "price_tickers": [
+   "^SOX",
+   "SOXX",
+   "NVDA",
+   "AMD",
+   "MU",
+   "INTC",
+   "AVGO",
+   "SPY"
+  ],
+  "history_start": {
+   "^SOX": "1999-01-01",
+   "SOXX": "2019-06-01"
+  },
+  "event_day": "2026-11-04",
+  "backtest": {
+   "ticker": "NVDA",
+   "compare": "SPY",
+   "start": "2022-11-30",
+   "daily": 10,
+   "label": "since ChatGPT launched"
+  },
+  "dca_more": [
+   "AMD",
+   "MU",
+   "SPY"
+  ],
+  "names": {
+   "NVDA": "Nvidia",
+   "AMD": "AMD",
+   "MU": "Micron",
+   "SPY": "the boring S&P 500 fund"
+  },
+  "window_rank": [
+   {
+    "key": "sox1",
+    "ticker": "^SOX",
+    "days": 1,
+    "since": "1999-01-01",
+    "end": "2026-11-05"
+   }
+  ],
+  "panic_days": [
+   {
+    "key": "panic",
+    "ticker": "^SOX",
+    "threshold": -10,
+    "since": "2000-01-01",
+    "before": "2026-11-05",
+    "horizons": {
+     "m1": 21,
+     "y1": 252
+    }
+   }
+  ],
+  "lumps": [
+   {
+    "key": "panic2020",
+    "ticker": "SOXX",
+    "buys": [
+     {
+      "date": "2020-03-16",
+      "amount": 10000
+     }
+    ]
+   }
+  ],
+  "worse_stat": false
+ },
+ "segments": [
+  {
+   "chapter": null,
+   "vo": "",
+   "scene": {
+    "type": "logo",
+    "dur": 2.0
+   }
+  },
+  {
+   "chapter": "Cold open",
+   "vo": "Three trillion dollars. Gone in one day.",
+   "scene": {
+    "type": "smash",
+    "big": "−$3,000,000,000,000",
+    "sub": "IN ONE DAY."
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "On Thursday, November fifth, the Nasdaq fell five and a half percent. The S and P five hundred, more than four. Its worst day since the tariff crash of April 2025. Yahoo Finance put the damage at about three trillion dollars of market value.",
+   "scene": {
+    "type": "statcard",
+    "kicker": "Thursday, Nov 5, 2026",
+    "big": "NASDAQ −5.5%",
+    "lines": [
+     "S&P 500 −4.4%",
+     "≈ $3 trillion erased"
+    ],
+    "source": "CNBC via StockTitan; Yahoo Finance"
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "And the AI chip stocks got destroyed. Micron, {MU_d1_words}. AMD, {AMD_d1_words}. Intel, {INTC_d1_words}. Broadcom, {AVGO_d1_words}. Even Nvidia, {NVDA_d1_words}, in a single day.",
+   "scene": {
+    "type": "tickers",
+    "title": "Nov 5, 2026",
+    "items": [
+     {
+      "sym": "MU",
+      "label": "MICRON",
+      "chg": -17.5
+     },
+     {
+      "sym": "AMD",
+      "label": "AMD",
+      "chg": -17.3
+     },
+     {
+      "sym": "INTC",
+      "label": "INTEL",
+      "chg": -10.3
+     },
+     {
+      "sym": "AVGO",
+      "label": "BROADCOM",
+      "chg": -10.4
+     },
+     {
+      "sym": "NVDA",
+      "label": "NVIDIA",
+      "chg": -9.3
+     }
+    ],
+    "source": "Yahoo Finance daily closes"
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "So what happened? Is the AI boom over? And stay to the end, because I went back and checked every single day chip stocks crashed ten percent or more since the year 2000, to see what happened next. The answer surprised me.",
+   "scene": {
+    "type": "question",
+    "lines": [
+     "What happened?",
+     "Is the AI boom over?",
+     "What came next, every time?"
+    ]
+   }
+  },
+  {
+   "chapter": "Why it crashed",
+   "vo": "Here's the trigger. On election night, Democrats won control of Congress.",
+   "scene": {
+    "type": "title",
+    "big": "THE TRIGGER",
+    "sub": "A new Congress"
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "Investors started betting that new rules could slow down the thing powering the whole AI trade. Data centers. And this isn't just one party. Candidates on both sides had campaigned against giant data centers, over power bills, water and land. Goldman Sachs estimated that about forty-five percent of planned US data center capacity could face restrictions.",
+   "scene": {
+    "type": "statcard",
+    "kicker": "The fear",
+    "big": "≈45%",
+    "lines": [
+     "of planned US data center",
+     "capacity could face limits"
+    ],
+    "source": "Goldman Sachs estimate via Yahoo Finance"
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "Why does that matter so much? Because AI chips don't sell themselves. Every data center is a giant order for chips, memory and power gear. Slow the buildings, and you slow the orders. That's why memory makers like Micron got hit even harder than Nvidia.",
+   "scene": {
+    "type": "twocol",
+    "left_title": "Data centers slow",
+    "left": [
+     "Fewer chip orders",
+     "Less memory demand",
+     "Less power gear"
+    ],
+    "left_note": "The fear on Thursday",
+    "right_title": "Data centers keep going",
+    "right": [
+     "Orders continue",
+     "Earnings hold",
+     "Panic was too much"
+    ],
+    "right_note": "The bet on Friday"
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "Because the very next day, Friday, chip stocks bounced. AMD up about eleven percent. Intel up almost eight. The jobs report came in hot, at a hundred sixty-five thousand jobs. Jefferies called Thursday's selloff reactionary, not a fundamental reset.",
+   "scene": {
+    "type": "statcard",
+    "kicker": "Friday, Nov 6",
+    "big": "THE BOUNCE",
+    "lines": [
+     "AMD +11%  ·  Intel +7.7%",
+     "Jobs: +165,000"
+    ],
+    "source": "StockTitan; Yahoo Finance; Jefferies"
+   }
+  },
+  {
+   "chapter": "How rare was this?",
+   "vo": "Okay. Time for the data. How rare was Thursday for chip stocks?",
+   "scene": {
+    "type": "title",
+    "big": "HOW RARE?",
+    "sub": "The chip index, since 2000"
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "The Philadelphia semiconductor index, the scoreboard for chip stocks, fell about {sox1_pct} in one day. The last time it dropped that much? {sox1_last}.",
+   "scene": {
+    "type": "statcard",
+    "kicker": "Chip index, one-day drop",
+    "big": "−{sox1_pct}",
+    "lines": [
+     "Last time this bad:",
+     "{sox1_last}"
+    ],
+    "source": "PHLX Semiconductor Index, Yahoo Finance"
+   }
+  },
+  {
+   "chapter": "Every chip crash since 2000",
+   "vo": "Now here's the part most headlines skip. Since the year 2000, the chip index has crashed ten percent or more in one day {panic_count_words}. Not once. {panic_count_words}. So I checked what happened next, every time.",
+   "scene": {
+    "type": "smash",
+    "big": "{panic_count} CRASH DAYS",
+    "sub": "−10% OR WORSE. SINCE 2000."
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "One month after a crash day, chip stocks were on average {panic_m1_avg_words}. And one year later? On average {panic_y1_avg_words}. Up in {panic_y1_up} cases.",
+   "scene": {
+    "type": "eventbars",
+    "data": "_panic",
+    "title": "After every −10% chip day",
+    "legend": "left bar: one month later   ·   right bar: one year later",
+    "keys": [
+     "m1",
+     "y1"
+    ],
+    "max": 8,
+    "source": "PHLX Semiconductor Index, Yahoo Finance"
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "Think about what that means. On the day of every one of those crashes, the headlines said the same thing you're hearing now. The boom is over. Get out. Sometimes they were right for a while. But a year later, more often than not, the people who sold in the panic were the ones who regretted it.",
+   "scene": {
+    "type": "statcard",
+    "kicker": "One year after a crash day",
+    "big": "{panic_y1_avg}",
+    "lines": [
+     "average chip move",
+     "up in {panic_y1_up}"
+    ],
+    "source": "PHLX Semiconductor Index, Yahoo Finance"
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "But careful. The crash days come in clusters, mostly during 2000 to 2002 and 2008, when it took years to recover. The worst one was {panic_worst}, {panic_worst_words}. A crash day tells you fear is high. It does not tell you the bottom is in.",
+   "scene": {
+    "type": "statcard",
+    "kicker": "The catch",
+    "big": "CLUSTERS",
+    "lines": [
+     "Worst: {panic_worst}",
+     "Fear high ≠ bottom"
+    ],
+    "source": "PHLX Semiconductor Index, Yahoo Finance"
+   }
+  },
+  {
+   "chapter": "The Mongki backtest",
+   "vo": "And now, the moment I promised. Say you put ten dollars into Nvidia every single trading day, starting the day ChatGPT launched, November thirtieth, 2022. Crash included.",
+   "scene": {
+    "type": "smash",
+    "big": "$10 A DAY",
+    "sub": "IN NVIDIA. SINCE CHATGPT."
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "You'd have put in {bt_invested}. Even after Thursday, it's worth {bt_value}. That's {bt_return_words}. Your worst moment? On {bt_dd_date}, you were {bt_dd_words} from your peak.",
+   "scene": {
+    "type": "backtest",
+    "which": "main"
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "Read that again. Even buying every day through the hype, the crashes, and this week's panic, the slow and boring plan still came out ahead. Not because anyone timed the bottom. Because they kept buying when it felt terrible.",
+   "scene": {
+    "type": "statcard",
+    "kicker": "The boring lesson",
+    "big": "KEEP BUYING",
+    "lines": [
+     "No timing.",
+     "Just time."
+    ]
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "Same ten dollars a day, same start date. AMD? {AMD_dca_value}, {AMD_dca_words}. Micron? {MU_dca_value}, {MU_dca_words}. And a boring S and P five hundred fund? {SPY_dca_value}, {SPY_dca_words}. So which bet paid the most? {dca_winner}.",
+   "scene": {
+    "type": "multibars",
+    "title": "SAME $10 A DAY, 4 BETS"
+   }
+  },
+  {
+   "chapter": "The panic twist",
+   "vo": "One more twist. March sixteenth, 2020. The worst day of the COVID crash. Stocks were in free fall and everyone wanted out. Say you bought ten thousand dollars of chip stocks, through the chip fund SOXX, that day. Today that's worth {panic2020_value}. That's {panic2020_change_words}.",
+   "scene": {
+    "type": "lump",
+    "key": "panic2020",
+    "label": "chip stocks",
+    "kicker": "Bought on March 16, 2020"
+   }
+  },
+  {
+   "chapter": "Three scenarios",
+   "vo": "So what happens next? We don't predict. But here are three ways this goes.",
+   "scene": {
+    "type": "title",
+    "big": "3 WAYS THIS GOES",
+    "sub": "No predictions. Just what to watch."
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "One. Blip. Thursday was panic, the data center orders keep coming, and chips grind back. Two. Grind. New rules slow some projects, and chips drift sideways for months. Three. Reset. Spending really slows, and like 2000 or 2008, the drops come in clusters. Watch three things. Nvidia's earnings later this month. Any new data center bills. And whether big tech keeps its spending plans.",
+   "scene": {
+    "type": "cards",
+    "items": [
+     {
+      "n": "1",
+      "title": "BLIP",
+      "text": "Panic fades. Orders keep coming."
+     },
+     {
+      "n": "2",
+      "title": "GRIND",
+      "text": "New rules. Months sideways."
+     },
+     {
+      "n": "3",
+      "title": "RESET",
+      "text": "Spending slows. Drops cluster."
+     }
+    ]
+   }
+  },
+  {
+   "chapter": "Outro",
+   "vo": "If this was worth your time, subscribe. And here's the deal. Drop a comment with any two things you think are connected. Does Bitcoin move with Nvidia? Do video game launches move the stock market? I'll pick the most interesting one, run the real numbers, and shout you out in the video. I'm Mongki. Not financial advice. Just math.",
+   "scene": {
+    "type": "end",
+    "next": "GTA 6 launches Nov 19. The money math.",
+    "cta": "COMMENT: X vs Y?",
+    "cta_sub": "Two things you think are connected. We run the numbers.",
+    "tail": 20.0
+   }
+  }
+ ],
+ "shorts": [
+  {
+   "key": "s1",
+   "title": "$3 Trillion Vanished in ONE Day",
+   "hook": "$3 TRILLION. ONE DAY.",
+   "segments": [
+    {
+     "vo": "Three trillion dollars of stock market value. Gone in one day.",
+     "scene": {
+      "type": "smash",
+      "big": "−$3T",
+      "sub": "IN ONE DAY."
+     }
+    },
+    {
+     "vo": "Micron, {MU_d1_words}. AMD, {AMD_d1_words}. Even Nvidia, {NVDA_d1_words}.",
+     "scene": {
+      "type": "tickers",
+      "title": "Nov 5, 2026",
+      "items": [
+       {
+        "sym": "MU",
+        "label": "MICRON",
+        "chg": -17.5
+       },
+       {
+        "sym": "AMD",
+        "label": "AMD",
+        "chg": -17.3
+       },
+       {
+        "sym": "NVDA",
+        "label": "NVIDIA",
+        "chg": -9.3
+       }
+      ],
+      "source": "Yahoo Finance"
+     }
+    },
+    {
+     "vo": "The trigger? A new Congress, and fears that new rules slow down AI data centers. Full breakdown on the channel.",
+     "scene": {
+      "type": "title",
+      "big": "FULL VIDEO ↗",
+      "sub": "Mongki Money"
+     }
+    }
+   ]
+  },
+  {
+   "key": "s2",
+   "title": "Every Chip Crash Since 2000. Then This Happened.",
+   "hook": "EVERY CHIP CRASH SINCE 2000",
+   "segments": [
+    {
+     "vo": "Chip stocks just crashed over ten percent in a day. That's happened {panic_count_words} since 2000.",
+     "scene": {
+      "type": "smash",
+      "big": "{panic_count} TIMES",
+      "sub": "SINCE 2000."
+     }
+    },
+    {
+     "vo": "One year after those crash days, chips were on average {panic_y1_avg_words}. Up in {panic_y1_up} cases.",
+     "scene": {
+      "type": "eventbars",
+      "data": "_panic",
+      "title": "After every −10% chip day",
+      "keys": [
+       "y1"
+      ],
+      "max": 8,
+      "source": "Yahoo Finance"
+     }
+    },
+    {
+     "vo": "But crashes come in clusters. Fear high does not mean bottom. Not financial advice. Full video on the channel.",
+     "scene": {
+      "type": "title",
+      "big": "FEAR ≠ BOTTOM",
+      "sub": "Full video ↗"
+     }
+    }
+   ]
+  },
+  {
+   "key": "s3",
+   "title": "$10,000 in Chips on the WORST Day of 2020",
+   "hook": "$10K ON THE WORST DAY",
+   "segments": [
+    {
+     "vo": "March sixteenth, 2020. The worst day of the COVID crash. You buy ten thousand dollars of chip stocks.",
+     "scene": {
+      "type": "smash",
+      "big": "$10,000",
+      "sub": "MARCH 16, 2020."
+     }
+    },
+    {
+     "vo": "Today that's worth {panic2020_value}. {panic2020_change_words}.",
+     "scene": {
+      "type": "lump",
+      "key": "panic2020",
+      "label": "chip stocks",
+      "kicker": "Bought on March 16, 2020"
+     }
+    },
+    {
+     "vo": "The scariest day was the best price. Not financial advice. Full video on the channel.",
+     "scene": {
+      "type": "title",
+      "big": "SCARIEST = CHEAPEST?",
+      "sub": "Full video ↗"
+     }
+    }
+   ]
+  }
+ ]
+}

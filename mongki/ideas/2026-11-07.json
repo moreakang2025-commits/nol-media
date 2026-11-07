@@ -1,0 +1,30 @@
+{
+ "run": "2026-11-07 17:10 KST",
+ "scan": ["US/world top news Nov 6", "markets Nov 5-6 (Yahoo live, StockTitan, TheStreet)", "bitcoin", "celebrity/tours", "NFL/NBA", "UFC/boxing purses", "AI/tech", "SpaceX Starship", "jobs report", "TikTok trends", "GTA 6 release", "hurricanes", "wallstreetbets", "oil/Iran talks", "viewer comments (0 yet)", "performance.json (not yet available)"],
+ "candidates": [
+  {"idea": "$3T vanished in one day: AI chip crash after the midterms + every -10% chip day since 2000 + $10/day Nvidia since ChatGPT", "lens": "shock number + backtest regret", "scores": {"shock": 5, "curiosity": 5, "fresh": 5, "data": 5, "wild": 3, "breadth": 4}, "total": 27},
+  {"idea": "GTA 6 launches Nov 19: could it out-earn Hollywood's biggest movie in 24 hours? Take-Two math", "lens": "what-if collision + shock number", "total": 24, "note": "best around Nov 12-18 (closer to launch)"},
+  {"idea": "Oil crash on Iran peace hopes, airlines surge (prepared ep02)", "lens": "you-math", "total": 22, "note": "story is a week old; Brent now below $100"},
+  {"idea": "Anthropic IPO valuation talk fell from ~$2T to ~$1.3T in a month", "lens": "shock number", "total": 21},
+  {"idea": "Jobs +165k beat -> December rate hike odds -> your mortgage/credit card", "lens": "you-math", "total": 21},
+  {"idea": "DraftKings -21% in a day: what sports betting stocks do after elections", "lens": "hidden loser", "total": 19},
+  {"idea": "Gogo +71% in one day: the strangest movers of the week", "lens": "shock number", "total": 18},
+  {"idea": "Tesla winding down Cybertruck: what each Cybertruck cost Tesla", "lens": "shock number", "total": 20},
+  {"idea": "Airbnb +12% on earnings: $10/day in Airbnb vs hotels since IPO", "lens": "backtest", "total": 18},
+  {"idea": "Conor Benn's $15M Zuffa boxing purse vs UFC fighter pay", "lens": "collision", "total": 17, "note": "not fresh"},
+  {"idea": "What if every American bought one Nvidia share on the crash day?", "lens": "scale-up absurdity", "total": 19},
+  {"idea": "Bitcoin vs Nvidia: did crypto crash with chips? correlation", "lens": "collision", "total": 19},
+  {"idea": "Gold above $4,000: $10/day in gold vs S&P since 2020", "lens": "backtest", "total": 18},
+  {"idea": "Iren -50% YTD then +20% in a day: AI miners rollercoaster", "lens": "shock", "total": 17},
+  {"idea": "VIX 25: what the fear index says happens next", "lens": "backtest", "total": 18},
+  {"idea": "Data center ban fears: what a data center costs your power bill", "lens": "you-math", "total": 20},
+  {"idea": "Micron -17% in a day: memory chips boom-bust history", "lens": "backtest", "total": 19},
+  {"idea": "Starship test flights: what one launch costs vs one Nvidia day", "lens": "collision", "total": 16},
+  {"idea": "Thanksgiving dinner price 2026 with oil falling", "lens": "you-math", "total": 17, "note": "better ~Nov 20"},
+  {"idea": "Black Friday 2026: how much Americans will spend in 24 hours", "lens": "shock number", "total": 18, "note": "better ~Nov 25"}
+ ],
+ "chosen": "ep03",
+ "titles": ["$3 Trillion Gone in a Day. Every Chip Crash Since 2000 Says… (chosen)", "AI Stocks Just Had Their Worst Day Since 2020", "The Election Just Crashed AI Stocks. Here's the Math.", "Nvidia -9%. AMD -17%. What Happens Next?", "Every Time Chip Stocks Crashed 10%, This Happened", "I Checked Every Chip Crash Since 2000", "$3 Trillion Gone: Who Lost It and What's Next", "Buy the AI Crash? 25 Years of Data Say…"],
+ "thumbnail_concepts": ["−$3T / IN 1 DAY", "BUY THE / CRASH?", "{panic_count} CRASHES / THEN?"],
+ "sources": ["https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html", "https://www.stocktitan.net/articles/stock-market-today-live-november-6-2026", "https://heise.de/-11303474"]
+}

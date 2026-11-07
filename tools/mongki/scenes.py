@@ -152,6 +152,31 @@ def election_bars(t, dur, spec, ctx):
         paste_center(im, fit_text(e["label"], "bold", 46, cw - 20, FG), cx, 870, alpha=a)
     return im
 
+def eventbars(t, dur, spec, ctx):
+    """Bars for a list of past events: spec {data: ctx key, title, legend, keys: [..], max: 8, scale}."""
+    im = base(); d = ImageDraw.Draw(im); ev = list(ctx.get(spec["data"], []))[-spec.get("max", 8):]
+    keys = spec.get("keys", ["m1", "y1"])
+    paste_center(im, fit_text(spec.get("title", "").upper(), "heavy", 90, 1700, FG), W / 2, 110)
+    if spec.get("legend"): paste_center(im, text_img(spec["legend"], "reg", 32, DIM), W / 2, 190)
+    vals = [abs(e[k]) for e in ev for k in keys if e.get(k) is not None] or [10]
+    scale = spec.get("scale") or 250 / max(vals)
+    zero = 540; n = max(1, len(ev)); cw = 1600 / n; bw = min(100, cw / (len(keys) + 1))
+    d.line([(160, zero), (1760, zero)], fill=DIM, width=3)
+    for i, e in enumerate(ev):
+        a = _appear(t, i, n, dur, lead=0.3, span=0.8); cx = 160 + cw * (i + 0.5)
+        for j, k in enumerate(keys):
+            v = e.get(k); x = cx - (len(keys) * (bw + 10)) / 2 + j * (bw + 10)
+            if v is None:
+                paste_center(im, text_img("TBD", "bold", 34, DIM), x + bw / 2, zero - 40, alpha=a); continue
+            h = max(-280, min(280, v * scale)) * a; col = GREEN if v >= 0 else RED
+            d.rounded_rectangle([x, min(zero, zero - h), x + bw, max(zero, zero - h)], 8, fill=col)
+            ty = zero - h - 36 if v >= 0 else zero - h + 36
+            paste_center(im, fit_text(f"{v:+.0f}%", "heavy", 40, cw / len(keys) + 10, col), x + bw / 2, ty, alpha=a)
+        import datetime as _dt
+        lab = _dt.date.fromisoformat(e["date"]).strftime("%b %Y") if "date" in e else e.get("label", "")
+        paste_center(im, fit_text(lab, "bold", 40, cw - 16, FG), cx, 880, alpha=a)
+    _src(im, spec.get("source")); return im
+
 def backtest(t, dur, spec, ctx):
     im = base(); d = ImageDraw.Draw(im)
     bt, cmp_, bspec = ctx.get("_bt"), ctx.get("_cmp"), ctx.get("_bt_spec", {})
@@ -252,7 +277,7 @@ def end(t, dur, spec, ctx):
     return im
 
 SCENES = {f.__name__: f for f in [logo, smash, statcard, tickers, question, title, tiles, timeline, twocol,
-                                  election_bars, backtest, cards, end, multibars, lump]}
+                                  election_bars, backtest, cards, end, multibars, lump, eventbars]}
 
 def caption_overlay(im, text):
     if not text: return

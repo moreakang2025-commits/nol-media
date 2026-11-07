@@ -9,7 +9,8 @@ def _yahoo(ticker, start):
     import requests
     p1 = int(dt.datetime.fromisoformat(start).replace(tzinfo=dt.timezone.utc).timestamp())
     p2 = int(time.time()) + 86400
-    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{ticker}?period1={p1}&period2={p2}&interval=1d&events=split"
+    from urllib.parse import quote
+    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{quote(ticker)}?period1={p1}&period2={p2}&interval=1d&events=split"
     r = requests.get(url, headers=UA, timeout=30); r.raise_for_status()
     res = r.json()["chart"]["result"][0]
     ts = res["timestamp"]
@@ -81,7 +82,8 @@ def _nice_date(iso):
 
 def compute(ep):
     spec = ep["data"]; out = {"prices_asof": None}
-    cache = {t: prices(t) for t in spec.get("price_tickers", [])}
+    starts = spec.get("history_start", {})
+    cache = {t: prices(t, starts.get(t, "2019-01-01")) for t in spec.get("price_tickers", [])}
     bt = spec.get("backtest")
     if bt:
         out["bt_start_words"] = _nice_date(bt["start"])
@@ -130,6 +132,33 @@ def compute(ep):
         out[f"{rk['key']}_pct"] = f"{abs(ch) * 100:.0f} percent"
         out[f"{rk['key']}_last"] = _nice_date(last) if last else f"at least {rk['since'][:4]}"
         out[f"{rk['key']}_last_year"] = last[:4] if last else f"before {rk['since'][:4]}"
+    for pd in spec.get("panic_days", []):
+        # every day `ticker` fell by threshold% or more (since `since`, before `before`) and what came next
+        ser = [x for x in cache[pd["ticker"]] if x[0] >= pd.get("since", "2000-01-01")]
+        th = pd.get("threshold", -10.0); before = pd.get("before", "9999"); hz = pd.get("horizons", {"m1": 21, "y1": 252})
+        ev = []
+        for i in range(1, len(ser)):
+            r = (ser[i][1] / ser[i - 1][1] - 1) * 100
+            if r <= th and ser[i][0] < before:
+                row = {"date": ser[i][0], "drop": round(r, 1)}
+                for name, n in hz.items():
+                    row[name] = round((ser[i + n][1] / ser[i][1] - 1) * 100, 1) if i + n < len(ser) else None
+                ev.append(row)
+        k = pd["key"]; out[f"_{k}"] = ev; out[f"{k}_count"] = str(len(ev))
+        out[f"{k}_count_words"] = f"{len(ev)} times"
+        for name in hz:
+            vals = [e[name] for e in ev if e[name] is not None]
+            if vals:
+                avg = sum(vals) / len(vals); up = sum(1 for v in vals if v > 0)
+                out[f"{k}_{name}_avg_words"] = pct_words(avg); out[f"{k}_{name}_up"] = f"{up} out of {len(vals)}"
+                out[f"{k}_{name}_avg"] = f"{'+' if avg >= 0 else '−'}{abs(avg):.0f}%"
+            else:
+                out[f"{k}_{name}_avg_words"] = "not known yet"; out[f"{k}_{name}_up"] = "none yet"; out[f"{k}_{name}_avg"] = "n/a"
+        if ev:
+            w = min(ev, key=lambda e: e["drop"]); out[f"{k}_worst"] = _nice_date(w["date"]); out[f"{k}_worst_words"] = pct_words(w["drop"])
+            out[f"{k}_last"] = _nice_date(ev[-1]["date"])
+        else:
+            out[f"{k}_worst"] = out[f"{k}_last"] = "never"; out[f"{k}_worst_words"] = "n/a"
     if spec.get("gas"):
         g = spec["gas"]; ser = [x for x in cache[g["ticker"]] if x[0] >= g["since"]]
         pk = max(ser, key=lambda x: x[1]); now = ser[-1]
