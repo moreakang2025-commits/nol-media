@@ -1,0 +1,22 @@
+name: mongki-query
+on:
+  push:
+    paths: ["mongki/query/q.py"]
+permissions:
+  contents: write
+concurrency:
+  group: mongki-query
+jobs:
+  q:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - run: pip install -q requests
+      - run: cd tools/mongki && python3 ../../mongki/query/q.py > ../../mongki/query/out.txt 2>&1 || true
+      - run: |
+          git config user.name "mongki-bot"; git config user.email "mongki-bot@users.noreply.github.com"
+          git add mongki/query/out.txt; git commit -m "mongki: query result" || true
+          for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done
