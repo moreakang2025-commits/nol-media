@@ -5,3 +5,4 @@ for i in range(1, len(s)):
     r = (s[i][1] / s[i-1][1] - 1) * 100
     if r <= -9: print(s[i][0], round(r, 2))
 print("last", s[-1])
+# run 2
