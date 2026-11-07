@@ -1,8 +1,13 @@
-Traceback (most recent call last):
-  File "/home/runner/work/nol-media/nol-media/tools/mongki/../../mongki/query/q.py", line 2, in <module>
-    import data
-  File "/home/runner/work/nol-media/nol-media/tools/mongki/data.py", line 4, in <module>
-    from common import OFFLINE, pct_words, money
-  File "/home/runner/work/nol-media/nol-media/tools/mongki/common.py", line 3, in <module>
-    from PIL import Image, ImageDraw, ImageFont
-ModuleNotFoundError: No module named 'PIL'
+2000-04-14 -11.64
+2000-07-05 -9.32
+2000-10-10 -10.11
+2000-10-17 -9.29
+2002-07-25 -10.08
+2020-03-12 -10.91
+2020-03-16 -15.9
+2020-03-18 -9.79
+2025-01-27 -9.15
+2025-04-03 -9.88
+2026-06-05 -10.26
+2026-11-05 -12.25
+last ('2026-11-06', 9390.25)
