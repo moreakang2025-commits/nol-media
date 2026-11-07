@@ -55,7 +55,7 @@ Goal: the most clickable, "I have to see this" money video of the day. Do all of
    - Rumors: say clearly it is a rumor, never present it as fact, and answer "if it's true, here's what happened the last time something like it did."
 7. Turn the hot issue into a **money angle** with public data: "X happened → what did it do to Y's price / your wallet / the market last time?" Use the hook formulas in the channel plan.
 8. Final pick = highest of (best comment, best hot issue) on fun + data + surprise + freshness. Respect the category rotation and "same ticker not within 14 days" rules from the channel plan (claude/VIEWS_CHANNEL_PLAN.md).
-9. Verify every fact in at least one primary or major source before it goes in the script. Reddit is for **finding** topics, never as the source of a fact.
+9. Verify every fact in at least one primary or major source before it goes in the script. Any sentence that describes what the computed data will show (dates, eras, "most of them", "the last time") must be checked against real prices first: write the check in `mongki/query/q.py`, push it (the mongki-query workflow writes `mongki/query/out.txt`), and only then write the line. Never describe data you have not seen. Reddit is for **finding** topics, never as the source of a fact.
 10. Correlation videos must say clearly: **correlation is not causation**. Show the number (correlation coefficient or simple "moved together X% of the time") and one honest reason it might be a coincidence.
 
 ## 2. Retention structure (8–10 min long form)
