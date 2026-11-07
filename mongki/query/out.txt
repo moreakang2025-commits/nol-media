@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/runner/work/nol-media/nol-media/tools/mongki/../../mongki/query/q.py", line 2, in <module>
+    import data
+  File "/home/runner/work/nol-media/nol-media/tools/mongki/data.py", line 4, in <module>
+    from common import OFFLINE, pct_words, money
+  File "/home/runner/work/nol-media/nol-media/tools/mongki/common.py", line 3, in <module>
+    from PIL import Image, ImageDraw, ImageFont
+ModuleNotFoundError: No module named 'PIL'
