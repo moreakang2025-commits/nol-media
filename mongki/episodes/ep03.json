@@ -329,14 +329,14 @@
   },
   {
    "chapter": null,
-   "vo": "But careful. The crash days come in clusters, mostly during 2000 to 2002 and 2008, when it took years to recover. The worst one was {panic_worst}, {panic_worst_words}. A crash day tells you fear is high. It does not tell you the bottom is in.",
+   "vo": "But careful. These crash days come in clusters. Half of them hit during the dot-com bust, from 2000 to 2002, when chip stocks kept falling for years. Two more came in the same week of March 2020. The worst one was {panic_worst}, {panic_worst_words}. A crash day tells you fear is high. It does not tell you the bottom is in.",
    "scene": {
     "type": "statcard",
     "kicker": "The catch",
     "big": "CLUSTERS",
     "lines": [
-     "Worst: {panic_worst}",
-     "Fear high ≠ bottom"
+     "3 of 6: dot-com bust",
+     "Worst: {panic_worst}"
     ],
     "source": "PHLX Semiconductor Index, Yahoo Finance"
    }

@@ -55,6 +55,8 @@ jobs:
           UP="${{ github.event.inputs.upload }}"
           if [ -z "$UP" ]; then UP=$(head -n1 mongki/run.txt | awk '{print $2}'); fi
           DAY=$(head -n1 mongki/run.txt | awk '{print $3}')
+          echo "replace=$(head -n1 mongki/run.txt | awk '{print $4}')" >> $GITHUB_OUTPUT
+          echo "shorts=$(head -n1 mongki/run.txt | awk '{print $5}')" >> $GITHUB_OUTPUT
           echo "day=$DAY" >> $GITHUB_OUTPUT
           echo "id=$EP" >> $GITHUB_OUTPUT
           echo "upload=${UP:-true}" >> $GITHUB_OUTPUT
@@ -69,11 +71,13 @@ jobs:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          REPLACE_VIDEO: ${{ steps.ep.outputs.replace != '-' && steps.ep.outputs.replace || '' }}
         run: |
           AT=""; [ -n "${{ steps.ep.outputs.day }}" ] && AT=$(python3 tools/mongki/schedule.py ${{ steps.ep.outputs.day }} long)
           python3 tools/mongki/upload.py out/${{ steps.ep.outputs.id }} "$AT"
       - name: Build Shorts
         id: shorts
+        if: steps.ep.outputs.shorts != 'noshorts'
         continue-on-error: true
         timeout-minutes: 30
         env:

@@ -70,6 +70,11 @@ def main(outdir, publish_at=None):
         res["status_now"] = {k: st.get(k) for k in ("privacyStatus", "publishAt", "uploadStatus")}
     except Exception as e:
         res["status_now"] = f"check failed: {e}"
+    old = os.environ.get("REPLACE_VIDEO")
+    if old and old != vid:   # take the superseded upload off the schedule (private, no publishAt)
+        u = requests.put("https://www.googleapis.com/youtube/v3/videos?part=status", headers={**hdr, "Content-Type": "application/json"},
+                         data=json.dumps({"id": old, "status": {"privacyStatus": "private", "selfDeclaredMadeForKids": False}}), timeout=30)
+        res["replaced"] = {"video": old, "result": "private" if u.ok else f"failed {u.status_code}: {u.text[:200]}"}
     print("[upload]", res)
     json.dump(res, open(os.path.join(outdir, "upload.json"), "w"), indent=1)
 
