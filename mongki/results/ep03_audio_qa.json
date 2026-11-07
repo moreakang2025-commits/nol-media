@@ -92,8 +92,11 @@
   {
    "seg": 14,
    "clipped": 0,
-   "jumps": [],
-   "smacks_removed": 18
+   "jumps": [
+    12.96,
+    14.23
+   ],
+   "smacks_removed": 23
   },
   {
    "seg": 15,
@@ -150,8 +153,8 @@
    "smacks_removed": 17
   }
  ],
- "post_master_ticks_removed": 43,
- "final_isolated_ticks": 7,
+ "post_master_ticks_removed": 46,
+ "final_isolated_ticks": 9,
  "raw_mix": {
   "clipped": 0,
   "jumps": [
@@ -160,11 +163,14 @@
    58.69,
    65.72,
    231.29,
-   331.56,
-   352.44,
-   371.82,
-   468.18,
-   515.74
+   297.83,
+   324.16,
+   355.8,
+   371.45,
+   379.53,
+   381.81,
+   471.55,
+   519.11
   ]
  },
  "final_decoded": {
@@ -173,8 +179,8 @@
    62.85,
    174.86,
    212.06,
-   352.44
+   379.53
   ]
  },
- "final_peak": 26542
+ "final_peak": 26292
 }

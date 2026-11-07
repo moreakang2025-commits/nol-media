@@ -1,6 +1,6 @@
 {
- "video_id": "aB2slAdWNbA",
- "url": "https://youtu.be/aB2slAdWNbA",
+ "video_id": "kJadvqTR7Tc",
+ "url": "https://youtu.be/kJadvqTR7Tc",
  "privacy": "private",
  "publish_at_requested": "2026-11-07T10:00:00Z",
  "held": null,
@@ -10,5 +10,9 @@
   "privacyStatus": "private",
   "publishAt": "2026-11-07T10:00:00Z",
   "uploadStatus": "uploaded"
+ },
+ "replaced": {
+  "video": "aB2slAdWNbA",
+  "result": "private"
  }
 }

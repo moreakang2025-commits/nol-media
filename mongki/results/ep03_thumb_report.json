@@ -7,12 +7,12 @@
    "text_found": "-$3T IN 1 DAY AI \u25bc",
    "real_person": false,
    "brand_logo": false,
-   "score": 8
+   "score": 7
   },
   {
    "ok": true,
    "concept": "BUY THE",
-   "text_found": "BUY THE CRASH? CHIPS",
+   "text_found": "BUY THE CRASH? CHIPS SALE! SALE! SALE!",
    "real_person": false,
    "brand_logo": false,
    "score": 8
@@ -20,11 +20,11 @@
   {
    "ok": true,
    "concept": "6 CRASHES",
-   "text_found": "6 CRASHES THEN? SINCE 2000 2000 2008 2015 2015 2016 2015 CPU GPU",
+   "text_found": "6 CRASHES THEN? SINCE 2000",
    "real_person": false,
    "brand_logo": false,
-   "score": 7
+   "score": 8
   }
  ],
- "winner": "\u2212$3T"
+ "winner": "BUY THE"
 }
