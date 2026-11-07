@@ -1,0 +1,14 @@
+{
+ "video_id": "DkQMi4ovSoI",
+ "url": "https://youtu.be/DkQMi4ovSoI",
+ "privacy": "private",
+ "publish_at_requested": "2026-11-08T02:00:00Z",
+ "held": null,
+ "thumbnail": "failed: [Errno 2] No such file or directory: 'out/ep03/shorts/s3/thumb.jpg'",
+ "captions": "added",
+ "status_now": {
+  "privacyStatus": "private",
+  "publishAt": "2026-11-08T02:00:00Z",
+  "uploadStatus": "uploaded"
+ }
+}

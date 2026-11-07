@@ -1,0 +1,14 @@
+{
+ "video_id": "IpfRbU1K8UU",
+ "url": "https://youtu.be/IpfRbU1K8UU",
+ "privacy": "private",
+ "publish_at_requested": "2026-11-07T17:00:00Z",
+ "held": null,
+ "thumbnail": "failed: [Errno 2] No such file or directory: 'out/ep03/shorts/s1/thumb.jpg'",
+ "captions": "added",
+ "status_now": {
+  "privacyStatus": "private",
+  "publishAt": "2026-11-07T17:00:00Z",
+  "uploadStatus": "uploaded"
+ }
+}
