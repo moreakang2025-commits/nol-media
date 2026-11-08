@@ -1,0 +1,30 @@
+{
+ "mode": "gemini_full",
+ "candidates": [
+  {
+   "ok": true,
+   "concept": "$815M",
+   "text_found": "GTA 6 NEXT $815M IN 24 HRS",
+   "real_person": false,
+   "brand_logo": false,
+   "score": 8
+  },
+  {
+   "ok": false,
+   "concept": "$10 A DAY",
+   "text_found": "$10 A DAY SINCE GTA 5 TAKE-TWO $",
+   "real_person": false,
+   "brand_logo": true,
+   "score": 7
+  },
+  {
+   "ok": true,
+   "concept": "$1B",
+   "text_found": "$1B SICK DAYS? NOV 19 104\u00b0F 100",
+   "real_person": false,
+   "brand_logo": false,
+   "score": 7
+  }
+ ],
+ "winner": "$815M"
+}

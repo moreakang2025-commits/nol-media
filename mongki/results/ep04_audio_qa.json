@@ -1,0 +1,161 @@
+{
+ "segments": [
+  {
+   "seg": 0,
+   "clipped": 0,
+   "jumps": [],
+   "smacks_removed": 0
+  },
+  {
+   "seg": 1,
+   "clipped": 0,
+   "jumps": [
+    6.82
+   ],
+   "smacks_removed": 12
+  },
+  {
+   "seg": 2,
+   "clipped": 0,
+   "jumps": [
+    19.03,
+    20.59
+   ],
+   "smacks_removed": 14
+  },
+  {
+   "seg": 3,
+   "clipped": 0,
+   "jumps": [
+    13.32
+   ],
+   "smacks_removed": 9
+  },
+  {
+   "seg": 4,
+   "clipped": 0,
+   "jumps": [],
+   "smacks_removed": 9
+  },
+  {
+   "seg": 5,
+   "clipped": 0,
+   "jumps": [],
+   "smacks_removed": 15
+  },
+  {
+   "seg": 6,
+   "clipped": 0,
+   "jumps": [],
+   "smacks_removed": 9
+  },
+  {
+   "seg": 7,
+   "clipped": 0,
+   "jumps": [],
+   "smacks_removed": 13
+  },
+  {
+   "seg": 8,
+   "clipped": 0,
+   "jumps": [],
+   "smacks_removed": 16
+  },
+  {
+   "seg": 9,
+   "clipped": 0,
+   "jumps": [],
+   "smacks_removed": 4
+  },
+  {
+   "seg": 10,
+   "clipped": 0,
+   "jumps": [],
+   "smacks_removed": 10
+  },
+  {
+   "seg": 11,
+   "clipped": 0,
+   "jumps": [],
+   "smacks_removed": 7
+  },
+  {
+   "seg": 12,
+   "clipped": 0,
+   "jumps": [],
+   "smacks_removed": 17
+  },
+  {
+   "seg": 13,
+   "clipped": 0,
+   "jumps": [],
+   "smacks_removed": 9
+  },
+  {
+   "seg": 14,
+   "clipped": 0,
+   "jumps": [],
+   "smacks_removed": 6
+  },
+  {
+   "seg": 15,
+   "clipped": 0,
+   "jumps": [],
+   "smacks_removed": 7
+  },
+  {
+   "seg": 16,
+   "clipped": 0,
+   "jumps": [],
+   "smacks_removed": 10
+  },
+  {
+   "seg": 17,
+   "clipped": 0,
+   "jumps": [],
+   "smacks_removed": 10
+  },
+  {
+   "seg": 18,
+   "clipped": 0,
+   "jumps": [],
+   "smacks_removed": 11
+  },
+  {
+   "seg": 19,
+   "clipped": 0,
+   "jumps": [
+    22.75
+   ],
+   "smacks_removed": 21
+  },
+  {
+   "seg": 20,
+   "clipped": 0,
+   "jumps": [],
+   "smacks_removed": 10
+  }
+ ],
+ "post_master_ticks_removed": 44,
+ "final_isolated_ticks": 12,
+ "raw_mix": {
+  "clipped": 0,
+  "jumps": [
+   8.82,
+   31.38,
+   37.72,
+   44.45,
+   57.2,
+   167.68,
+   333.63,
+   432.32
+  ]
+ },
+ "final_decoded": {
+  "clipped": 0,
+  "jumps": [
+   31.38
+  ]
+ },
+ "final_peak": 26281
+}

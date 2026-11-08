@@ -1,0 +1,53 @@
+{
+ "prices_asof": "2026-11-06",
+ "bt_start_words": "September 17, 2013",
+ "bt_invested": "$33,060",
+ "bt_value": "$106,449",
+ "bt_return_words": "a gain of 222.0 percent",
+ "bt_dd_words": "53 percent down",
+ "bt_dd_date": "November 8, 2022",
+ "cmp_value": "$89,519",
+ "cmp_return_words": "a gain of 170.8 percent",
+ "gta5_value": "$126,394",
+ "gta5_change_words": "up 1163.9 percent",
+ "NTDOY_dca_value": "$61,721",
+ "NTDOY_dca_words": "a gain of 86.7 percent",
+ "SONY_dca_value": "$100,743",
+ "SONY_dca_words": "a gain of 204.7 percent",
+ "SPY_dca_value": "$89,519",
+ "SPY_dca_words": "a gain of 170.8 percent",
+ "dca_winner": "Take-Two",
+ "e_gta5_1d_words": "up 1.2 percent",
+ "e_gta5_30d_words": "up 0.1 percent",
+ "e_rdr2_1d_words": "down 6.9 percent",
+ "e_rdr2_30d_words": "down 8.7 percent",
+ "e_trailer_1d_words": "down 0.5 percent",
+ "e_trailer_30d_words": "up 0.8 percent",
+ "_elections": [
+  {
+   "key": "e_gta5",
+   "date": "2013-09-17",
+   "label": "GTA V launch",
+   "d1": 1.2,
+   "d30": 0.1
+  },
+  {
+   "key": "e_rdr2",
+   "date": "2018-10-26",
+   "label": "RDR 2 launch",
+   "d1": -6.9,
+   "d30": -8.7
+  },
+  {
+   "key": "e_trailer",
+   "date": "2023-12-04",
+   "label": "GTA 6 trailer",
+   "d1": -0.5,
+   "d30": 0.8
+  }
+ ],
+ "ttwo_year_pct": "7 percent",
+ "ttwo_year_words": "down 7.4 percent",
+ "ttwo_year_from_price": "$232.00",
+ "ttwo_year_to_price": "$214.87"
+}
