@@ -97,6 +97,9 @@ jobs:
             [ -n "${{ steps.ep.outputs.day }}" ] && AT=$(python3 tools/mongki/schedule.py ${{ steps.ep.outputs.day }} short$n)
             python3 tools/mongki/upload.py "$d" "$AT" || true
           done
+          LONG=$(python3 -c "import json;print(json.load(open('out/${{ steps.ep.outputs.id }}/upload.json')).get('video_id',''))" 2>/dev/null || true)
+          SHORTS=$(for d in out/${{ steps.ep.outputs.id }}/shorts/*/; do python3 -c "import json;print(json.load(open('$d/upload.json')).get('video_id',''))" 2>/dev/null; done | tr '\n' ' ')
+          if [ -n "$LONG" ] && [ -n "$SHORTS" ]; then cd tools/mongki && python3 linkshorts.py $LONG $SHORTS || true; fi
       - name: Keep the files for review
         uses: actions/upload-artifact@v4
         with:
