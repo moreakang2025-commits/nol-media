@@ -5,8 +5,14 @@ from zoneinfo import ZoneInfo
 SLOTS = {"long": 5, "short1": 12, "short2": 17, "short3": 21}
 
 def slot(day, which):
-    t = dt.datetime.fromisoformat(day).replace(hour=SLOTS[which], tzinfo=ZoneInfo("America/New_York"))
-    if t < dt.datetime.now(dt.timezone.utc) + dt.timedelta(minutes=30): return ""
+    tz = ZoneInfo("America/New_York"); now = dt.datetime.now(dt.timezone.utc)
+    t = dt.datetime.fromisoformat(day).replace(hour=SLOTS[which], tzinfo=tz)
+    if t < now + dt.timedelta(minutes=30):
+        if which != "long": return ""
+        # missed the 05:00 ET slot: next full hour (>= 45 min ahead) on the same US day, before the first Short
+        n = (now + dt.timedelta(minutes=45)).astimezone(tz)
+        t = n.replace(minute=0, second=0, microsecond=0) + dt.timedelta(hours=1)
+        if t.date().isoformat() != day or t.hour >= SLOTS["short1"]: return ""
     return t.astimezone(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 if __name__ == "__main__":

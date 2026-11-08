@@ -42,7 +42,7 @@
   "- TheStreet, Oct 22, 2026: Sensor Tower pre-order data, sick-day claim, Bloomberg/analyst revenue estimates",
   "- Take-Two investor releases: net bookings guidance",
   "- OpenCritic: estimate of extra revenue from the $79.99 price; Box Office Mojo: Avengers: Endgame opening",
-  "- Daily price data: Yahoo Finance (TTWO, EA, SONY, SPY)",
+  "- Daily price data: Yahoo Finance (TTWO, NTDOY, SONY, SPY)",
   "",
   "Not affiliated with Rockstar Games or Take-Two. Not financial advice. For education only.",
   "",
@@ -61,13 +61,13 @@
  "data": {
   "price_tickers": [
    "TTWO",
-   "EA",
+   "NTDOY",
    "SONY",
    "SPY"
   ],
   "history_start": {
    "TTWO": "2013-01-01",
-   "EA": "2013-01-01",
+   "NTDOY": "2013-01-01",
    "SONY": "2013-01-01",
    "SPY": "2013-01-01"
   },
@@ -79,13 +79,13 @@
    "label": "since GTA V launched"
   },
   "dca_more": [
-   "EA",
+   "NTDOY",
    "SONY",
    "SPY"
   ],
   "names": {
    "TTWO": "Take-Two",
-   "EA": "Electronic Arts",
+   "NTDOY": "Nintendo",
    "SONY": "Sony",
    "SPY": "the boring S&P 500 fund"
   },
@@ -348,7 +348,7 @@
   },
   {
    "chapter": null,
-   "vo": "Same ten dollars a day, same start date. Electronic Arts, the company behind FIFA and Madden? {EA_dca_value}, {EA_dca_words}. Sony, the company that sells the PlayStation? {SONY_dca_value}, {SONY_dca_words}. And a boring S and P five hundred fund? {SPY_dca_value}, {SPY_dca_words}. So which bet paid the most? {dca_winner}.",
+   "vo": "Same ten dollars a day, same start date. Nintendo, the company behind Mario? {NTDOY_dca_value}, {NTDOY_dca_words}. Sony, the company that sells the PlayStation? {SONY_dca_value}, {SONY_dca_words}. And a boring S and P five hundred fund? {SPY_dca_value}, {SPY_dca_words}. So which bet paid the most? {dca_winner}.",
    "scene": {
     "type": "multibars",
     "title": "SAME $10 A DAY, 4 BETS"
@@ -459,7 +459,7 @@
      }
     },
     {
-     "vo": "Take-Two? {bt_value}. EA? {EA_dca_value}. Sony? {SONY_dca_value}. The boring S and P five hundred? {SPY_dca_value}.",
+     "vo": "Take-Two? {bt_value}. Nintendo? {NTDOY_dca_value}. Sony? {SONY_dca_value}. The boring S and P five hundred? {SPY_dca_value}.",
      "scene": {
       "type": "multibars",
       "title": "SAME $10 A DAY, 4 BETS"
