@@ -1,0 +1,29 @@
+{
+ "run": "2026-11-08 17:10 KST",
+ "performance_note": "Day 2 of the channel: best = Short '$10 a Day in Tesla vs the S&P 500' (33 views). Boost the '$10/day A vs B' lens; long forms ~0 views so far.",
+ "scan": ["top news Nov 7", "bitcoin weekend", "NFL/college football", "box office", "Taylor Swift/BTS", "Nvidia earnings", "UFC payouts", "Powerball/Mega Millions", "Anthropic IPO", "Iran deal/Hormuz", "Elon Musk", "football transfers", "GTA 6 / Take-Two (3 follow-ups)"],
+ "candidates": [
+  {"idea": "GTA 6 in 11 days: GTA V $815.7M in 24h, pre-orders ~$630M, sick-day myth, $10/day Take-Two since GTA V", "total": 27, "chosen": true},
+  {"idea": "Nvidia earnings after the $3T crash", "total": 23, "note": "do it right before the report date"},
+  {"idea": "Anthropic IPO: biggest IPO ever? every mega IPO since Facebook", "total": 25, "note": "SKIPPED: conflict of interest (Claude is made by Anthropic)"},
+  {"idea": "Oil after Iran war (ep02 refresh)", "total": 20, "note": "news is old; deal was June"},
+  {"idea": "Tesla 'flying' Roadster: what a ramp-jump car costs", "total": 18, "note": "Oct 15 news, stale"},
+  {"idea": "Jackpot math: what a $1B Powerball really pays after tax", "total": 19},
+  {"idea": "Thanksgiving dinner price 2026", "total": 17, "note": "~Nov 20"},
+  {"idea": "Black Friday spending in 24 hours", "total": 18, "note": "~Nov 25"},
+  {"idea": "UFC fighter pay vs boxing purses (Conor Benn $15M)", "total": 17},
+  {"idea": "BTS vs Taylor Swift: whose tour moves cities more", "total": 19},
+  {"idea": "Rate-hike odds after +165k jobs: your credit card", "total": 19},
+  {"idea": "Cybertruck wind-down: cost per truck", "total": 18},
+  {"idea": "College football coach salaries ($9M/yr Heupel) vs school budgets", "total": 18},
+  {"idea": "What if every GTA 6 buyer bought one Take-Two share?", "total": 20},
+  {"idea": "GTA money in real dollars: how much a GTA city would cost", "total": 21},
+  {"idea": "Micron $10/day vs Nvidia since ChatGPT (follow-up to ep03)", "total": 19},
+  {"idea": "Gold above $4,000 vs Bitcoin since 2020", "total": 19},
+  {"idea": "Airbnb +12%: $10/day Airbnb vs Marriott since IPO", "total": 18},
+  {"idea": "DraftKings -21% in a day: what bettors lost vs the house", "total": 18},
+  {"idea": "Iren -50% YTD: AI miners rollercoaster", "total": 16}
+ ],
+ "titles": ["GTA 6 Drops in 11 Days. The Money Is Insane. (chosen)", "GTA 5 Made $815 Million in a Day. GTA 6 Is Next.", "GTA 6 Already Made $630 Million. It's Not Even Out.", "$10 a Day in Take-Two Since GTA 5 Turned Into…", "Will GTA 6 Really Cost America $1 Billion?", "GTA 6 vs Hollywood: Who Makes More?", "The $80 Game That Could Beat Avengers", "GTA 6 Money Math: Every Number Explained"],
+ "sources": ["https://www.guinnessworldrecords.com/news/2013/10/confirmed-grand-theft--auto-breaks-six-sales-world-records-51900", "https://finance.yahoo.com/markets/stocks/articles/gta-6-pre-orders-send-212404392.html", "https://www.thestreet.com/investing/gta-6-launch-economic-impact-wall-street", "https://heise.de/-11303474"]
+}

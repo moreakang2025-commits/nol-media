@@ -1,2 +1,2 @@
-ep03 true 2026-11-07 aB2slAdWNbA noshorts
-# ep03 v2: corrected crash-cluster line (dot-com bust + March 2020, not 2008); replaces aB2slAdWNbA
+ep04 true 2026-11-08
+# ep04: GTA 6 money math

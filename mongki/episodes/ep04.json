@@ -1,0 +1,515 @@
+{
+ "id": "ep04",
+ "title": "GTA 6 Drops in 11 Days. The Money Is Insane.",
+ "thumb": {
+  "big": "$1B",
+  "sub": "IN 3 DAYS?",
+  "badge": "GTA 6",
+  "corner": "NOV 19",
+  "bg_prompt": "Neon Miami-style city at sunset, a giant stack of cash and a game controller, sports car with no logos. Leave the upper-left third darker for text. No text, no logos, no real people.",
+  "concepts": [
+   {
+    "big": "$815M",
+    "sub": "IN 24 HRS",
+    "badge": "GTA 6 NEXT",
+    "emotion": "jaw dropped, eyes huge",
+    "bg_prompt": "A neon Miami-style beach city at sunset, palm trees, a giant glowing game controller made of cash, a sleek sports car with no logos, money raining from the sky. Leave the upper-left third darker for text. No text, no letters, no logos, no real people, no game characters."
+   },
+   {
+    "big": "$10 A DAY",
+    "sub": "SINCE GTA 5",
+    "badge": "TAKE-TWO",
+    "emotion": "sly grin, holding a money bag",
+    "bg_prompt": "A huge green stock chart arrow shooting up through a neon city skyline at night, a game controller and stacks of cash, purple and pink neon. Leave the upper-left third darker for text. No text, no logos, no real people, no game characters."
+   },
+   {
+    "big": "$1B",
+    "sub": "SICK DAYS?",
+    "badge": "NOV 19",
+    "emotion": "faking sick with a thermometer, sneaky eyes",
+    "bg_prompt": "An office desk with an empty chair and a 'sick' thermometer, a glowing TV with a game controller in a dark living room, cash flying out of the office window. Leave the upper-left third darker for text. No text on objects, no logos, no real people, no game characters."
+   }
+  ]
+ },
+ "description": [
+  "GTA 6 launches November 19, 2026. GTA V made $815.7 million in 24 hours. How much could GTA 6 make, is the $1 billion sick-day claim real, does Take-Two stock pop on launches, and what did $10 a day in Take-Two since GTA V turn into?",
+  "",
+  "{chapters}",
+  "",
+  "Sources:",
+  "- Guinness World Records: GTA V sales records (2013)",
+  "- Yahoo Finance, June 25, 2026: GTA 6 price, editions, pre-load date, analyst estimates",
+  "- TheStreet, Oct 22, 2026: Sensor Tower pre-order data, sick-day claim, Bloomberg/analyst revenue estimates",
+  "- Take-Two investor releases: net bookings guidance",
+  "- OpenCritic: estimate of extra revenue from the $79.99 price; Box Office Mojo: Avengers: Endgame opening",
+  "- Daily price data: Yahoo Finance (TTWO, EA, SONY, SPY)",
+  "",
+  "Not affiliated with Rockstar Games or Take-Two. Not financial advice. For education only.",
+  "",
+  "#GTA6 #TakeTwo #MongkiMoney"
+ ],
+ "tags": [
+  "gta 6",
+  "gta 6 release",
+  "take-two stock",
+  "ttwo",
+  "gta 6 price",
+  "video game stocks",
+  "gta 5 sales",
+  "mongki money"
+ ],
+ "data": {
+  "price_tickers": [
+   "TTWO",
+   "EA",
+   "SONY",
+   "SPY"
+  ],
+  "history_start": {
+   "TTWO": "2013-01-01",
+   "EA": "2013-01-01",
+   "SONY": "2013-01-01",
+   "SPY": "2013-01-01"
+  },
+  "backtest": {
+   "ticker": "TTWO",
+   "compare": "SPY",
+   "start": "2013-09-17",
+   "daily": 10,
+   "label": "since GTA V launched"
+  },
+  "dca_more": [
+   "EA",
+   "SONY",
+   "SPY"
+  ],
+  "names": {
+   "TTWO": "Take-Two",
+   "EA": "Electronic Arts",
+   "SONY": "Sony",
+   "SPY": "the boring S&P 500 fund"
+  },
+  "elections": [
+   {
+    "key": "e_gta5",
+    "date": "2013-09-17",
+    "label": "GTA V launch"
+   },
+   {
+    "key": "e_rdr2",
+    "date": "2018-10-26",
+    "label": "RDR 2 launch"
+   },
+   {
+    "key": "e_trailer",
+    "date": "2023-12-04",
+    "label": "GTA 6 trailer"
+   }
+  ],
+  "moves": [
+   {
+    "key": "ttwo_year",
+    "ticker": "TTWO",
+    "from": "2025-11-07",
+    "to": "2026-11-07"
+   }
+  ],
+  "lumps": [
+   {
+    "key": "gta5",
+    "ticker": "TTWO",
+    "buys": [
+     {
+      "date": "2013-09-17",
+      "amount": 10000
+     }
+    ]
+   }
+  ],
+  "worse_stat": false
+ },
+ "segments": [
+  {
+   "chapter": null,
+   "vo": "",
+   "scene": {
+    "type": "logo",
+    "dur": 2.0
+   }
+  },
+  {
+   "chapter": "Cold open",
+   "vo": "Eight hundred fifteen million dollars. In twenty-four hours. And that was the last one.",
+   "scene": {
+    "type": "smash",
+    "big": "$815,700,000",
+    "sub": "IN 24 HOURS."
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "When Grand Theft Auto Five came out in September 2013, it made eight hundred fifteen point seven million dollars in its first day. Guinness World Records called it the highest revenue ever for an entertainment product in twenty-four hours. It passed a billion dollars in three days. Faster than any movie, ever.",
+   "scene": {
+    "type": "statcard",
+    "kicker": "GTA V, Sept 2013",
+    "big": "$1B IN 3 DAYS",
+    "lines": [
+     "$815.7M in 24 hours",
+     "Beat Avengers and Avatar"
+    ],
+    "source": "Guinness World Records"
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "On November nineteenth, Grand Theft Auto Six comes out. Thirteen years later. And the money around it is already insane.",
+   "scene": {
+    "type": "title",
+    "big": "NOV 19",
+    "sub": "GTA 6. 13 years later."
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "So how much could GTA Six make? Will America really call in sick to play it? And stay to the end, because I'll show you what happened to ten dollars a day in the company behind it, since GTA Five came out. The answer is not what you'd guess.",
+   "scene": {
+    "type": "question",
+    "lines": [
+     "How much will it make?",
+     "Will America call in sick?",
+     "$10 a day since GTA 5?"
+    ]
+   }
+  },
+  {
+   "chapter": "The price",
+   "vo": "First, the price. Seventy-nine ninety-nine for the standard game. Ninety-nine ninety-nine for the Ultimate Edition. That's ten dollars more than most big games. One report estimated that the extra ten dollars alone could bring in about four hundred fifty million dollars more in the first year. And GTA Five, remember, has sold more than two hundred thirty million copies, according to Take-Two.",
+   "scene": {
+    "type": "twocol",
+    "left_title": "Standard",
+    "left": [
+     "$79.99",
+     "PS5 + Xbox",
+     "No PC yet"
+    ],
+    "left_note": "Most big games: $69.99",
+    "right_title": "Ultimate",
+    "right": [
+     "$99.99",
+     "Extra cars",
+     "Extra clothes"
+    ],
+    "right_note": "Most pre-orders",
+    "source": "Yahoo Finance; OpenCritic report; Take-Two"
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "And here's the wild part. According to Sensor Tower, by October about six and a half million copies were already pre-ordered. Roughly six hundred thirty million dollars, before a single person has played it. Most buyers chose the hundred-dollar version.",
+   "scene": {
+    "type": "statcard",
+    "kicker": "Pre-orders by October",
+    "big": "≈$630M",
+    "lines": [
+     "≈6.45 million copies",
+     "Before launch day"
+    ],
+    "source": "Sensor Tower via TheStreet, Oct 22, 2026"
+   }
+  },
+  {
+   "chapter": "How big could it get?",
+   "vo": "Okay. How big could launch week get? Analysts cited by Bloomberg's Jason Schreier expect more than three billion dollars in the first four months. Morningstar projects sixty to seventy million copies in Take-Two's fiscal year.",
+   "scene": {
+    "type": "tiles",
+    "items": [
+     {
+      "label": "Pre-orders",
+      "value": "$630M",
+      "color": "blue"
+     },
+     {
+      "label": "First 4 months",
+      "value": "$3B+",
+      "color": "blue"
+     },
+     {
+      "label": "Copies (Morningstar)",
+      "value": "60-70M",
+      "color": "blue"
+     },
+     {
+      "label": "Take-Two FY bookings",
+      "value": "$8B+",
+      "color": "blue"
+     }
+    ],
+    "source": "TheStreet; Yahoo Finance; Take-Two"
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "Put that next to Hollywood. The biggest movie opening weekend of all time, Avengers Endgame, made about one point two billion dollars worldwide. GTA Five beat Avengers-level numbers thirteen years ago. GTA Six starts with a bigger fan base, a higher price, and six and a half million copies already sold.",
+   "scene": {
+    "type": "twocol",
+    "left_title": "Biggest movie",
+    "left": [
+     "Avengers: Endgame",
+     "≈$1.2B opening",
+     "weekend, worldwide"
+    ],
+    "left_note": "Hollywood's record",
+    "right_title": "GTA V (2013)",
+    "right": [
+     "$815.7M day one",
+     "$1B in 3 days",
+     "230M+ copies since"
+    ],
+    "right_note": "GTA 6 starts here"
+   }
+  },
+  {
+   "chapter": "Will America call in sick?",
+   "vo": "Now here's the part most headlines skip. You've probably seen the claim that GTA Six sick days will cost the US economy a billion dollars.",
+   "scene": {
+    "type": "smash",
+    "big": "$1 BILLION",
+    "sub": "IN SICK DAYS?"
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "That number came from a report that later said its own source should not be credited, and no national study backs it. TheStreet redid the math with the same assumptions and got closer to four hundred million. Still a lot of people pretending to have the flu.",
+   "scene": {
+    "type": "statcard",
+    "kicker": "The sick-day claim",
+    "big": "$1B → ≈$400M",
+    "lines": [
+     "Original source walked back",
+     "Same math, smaller number"
+    ],
+    "source": "TheStreet, Oct 22, 2026; International Business Times"
+   }
+  },
+  {
+   "chapter": "Does the stock pop?",
+   "vo": "So here's a question. When a giant game launches, does the stock go up? Let's check Take-Two after its biggest moments.",
+   "scene": {
+    "type": "title",
+    "big": "SELL THE NEWS?",
+    "sub": "Take-Two after its biggest launches"
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "The day after GTA Five launched, Take-Two was {e_gta5_1d_words}, and {e_gta5_30d_words} a month later. After Red Dead Redemption Two: {e_rdr2_1d_words}, then {e_rdr2_30d_words}. After the first GTA Six trailer: {e_trailer_1d_words}, then {e_trailer_30d_words}.",
+   "scene": {
+    "type": "eventbars",
+    "data": "_elections",
+    "title": "Take-Two after big moments",
+    "legend": "left bar: next day   ·   right bar: one month later",
+    "keys": [
+     "d1",
+     "d30"
+    ],
+    "source": "Daily closes, Yahoo Finance"
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "Remember, the hype is already in the price. Wall Street expected more than Take-Two's own forecast, and the stock is {ttwo_year_words} over the past year. A great game and a great stock are not the same thing.",
+   "scene": {
+    "type": "statcard",
+    "kicker": "Take-Two, past 12 months",
+    "big": "{ttwo_year_words}",
+    "lines": [
+     "Hype ≠ stock gains",
+     "Expectations already high"
+    ],
+    "source": "Yahoo Finance; Reuters/LSEG via TheStreet"
+   }
+  },
+  {
+   "chapter": "The Mongki backtest",
+   "vo": "And now, the moment I promised. Say you put ten dollars into Take-Two every trading day, starting the day GTA Five came out. September seventeenth, 2013.",
+   "scene": {
+    "type": "smash",
+    "big": "$10 A DAY",
+    "sub": "IN TAKE-TWO. SINCE GTA 5."
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "You'd have put in {bt_invested}. Today that's worth {bt_value}. That's {bt_return_words}. Your worst moment? On {bt_dd_date}, you were {bt_dd_words} from your peak.",
+   "scene": {
+    "type": "backtest",
+    "which": "main"
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "Same ten dollars a day, same start date. Electronic Arts, the company behind FIFA and Madden? {EA_dca_value}, {EA_dca_words}. Sony, the company that sells the PlayStation? {SONY_dca_value}, {SONY_dca_words}. And a boring S and P five hundred fund? {SPY_dca_value}, {SPY_dca_words}. So which bet paid the most? {dca_winner}.",
+   "scene": {
+    "type": "multibars",
+    "title": "SAME $10 A DAY, 4 BETS"
+   }
+  },
+  {
+   "chapter": "The launch-day twist",
+   "vo": "One more twist. Say you skipped the daily plan and put ten thousand dollars into Take-Two on GTA Five's launch day. Today that's {gta5_value}. That's {gta5_change_words}. One game, thirteen years, still paying.",
+   "scene": {
+    "type": "lump",
+    "key": "gta5",
+    "label": "Take-Two",
+    "kicker": "Bought on GTA V launch day"
+   }
+  },
+  {
+   "chapter": "Three scenarios",
+   "vo": "So what happens on November nineteenth? We don't predict. But here are three ways it goes.",
+   "scene": {
+    "type": "title",
+    "big": "3 WAYS THIS GOES",
+    "sub": "No predictions. Just what to watch."
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "One. Record. The biggest entertainment launch in history, and the stock follows. Two. Sell the news. Record sales, but the stock dips, because everyone already expected it. Three. Delay. It has been delayed before. Any last-minute slip would hit hard. Watch the pre-load on November twelfth, the first sales numbers, and Take-Two's next earnings.",
+   "scene": {
+    "type": "cards",
+    "items": [
+     {
+      "n": "1",
+      "title": "RECORD",
+      "text": "Biggest launch ever. Stock follows."
+     },
+     {
+      "n": "2",
+      "title": "SELL THE NEWS",
+      "text": "Huge sales, stock dips."
+     },
+     {
+      "n": "3",
+      "title": "DELAY",
+      "text": "One more slip hurts."
+     }
+    ]
+   }
+  },
+  {
+   "chapter": "Outro",
+   "vo": "If this was worth your time, subscribe. And here's the deal. Drop a comment with any two things you think are connected. Do video game launches move the stock market? Does Bitcoin move with Nvidia? I'll pick the most interesting one, run the real numbers, and shout you out in the video. I'm Mongki. Not financial advice. Just math.",
+   "scene": {
+    "type": "end",
+    "next": "Nvidia earnings after the crash",
+    "cta": "COMMENT: X vs Y?",
+    "cta_sub": "Two things you think are connected. We run the numbers.",
+    "tail": 20.0
+   }
+  }
+ ],
+ "shorts": [
+  {
+   "key": "s1",
+   "title": "GTA 5 Made $815 Million in ONE Day",
+   "hook": "$815 MILLION. ONE DAY.",
+   "segments": [
+    {
+     "vo": "Eight hundred fifteen million dollars. In one day. That's what GTA Five made when it came out.",
+     "scene": {
+      "type": "smash",
+      "big": "$815.7M",
+      "sub": "IN 24 HOURS."
+     }
+    },
+    {
+     "vo": "A billion in three days. Faster than Avengers. Faster than Avatar. Guinness made it a world record.",
+     "scene": {
+      "type": "statcard",
+      "kicker": "GTA V, 2013",
+      "big": "$1B IN 3 DAYS",
+      "lines": [
+       "Faster than any movie"
+      ],
+      "source": "Guinness World Records"
+     }
+    },
+    {
+     "vo": "GTA Six drops November nineteenth, with six and a half million copies already pre-ordered. Full money breakdown on the channel.",
+     "scene": {
+      "type": "title",
+      "big": "NOV 19 ↗",
+      "sub": "Full video on Mongki Money"
+     }
+    }
+   ]
+  },
+  {
+   "key": "s2",
+   "title": "$10 a Day in Take-Two Since GTA 5 vs the S&P 500",
+   "hook": "$10 A DAY SINCE GTA 5",
+   "segments": [
+    {
+     "vo": "Ten dollars a day, every trading day, since GTA Five came out. Four bets.",
+     "scene": {
+      "type": "smash",
+      "big": "$10 A DAY",
+      "sub": "SINCE 2013."
+     }
+    },
+    {
+     "vo": "Take-Two? {bt_value}. EA? {EA_dca_value}. Sony? {SONY_dca_value}. The boring S and P five hundred? {SPY_dca_value}.",
+     "scene": {
+      "type": "multibars",
+      "title": "SAME $10 A DAY, 4 BETS"
+     }
+    },
+    {
+     "vo": "The winner? {dca_winner}. Not financial advice. Full video on the channel.",
+     "scene": {
+      "type": "title",
+      "big": "WINNER:",
+      "sub": "{dca_winner}"
+     }
+    }
+   ]
+  },
+  {
+   "key": "s3",
+   "title": "Will GTA 6 Really Cost America $1 Billion in Sick Days?",
+   "hook": "$1 BILLION IN SICK DAYS?",
+   "segments": [
+    {
+     "vo": "You've heard it. GTA Six sick days will cost America a billion dollars.",
+     "scene": {
+      "type": "smash",
+      "big": "$1 BILLION?",
+      "sub": "IN SICK DAYS."
+     }
+    },
+    {
+     "vo": "The source of that number got walked back. Redo the same math and it's closer to four hundred million.",
+     "scene": {
+      "type": "statcard",
+      "kicker": "The real math",
+      "big": "≈$400M",
+      "lines": [
+       "Same assumptions",
+       "Smaller number"
+      ],
+      "source": "TheStreet, Oct 22, 2026"
+     }
+    },
+    {
+     "vo": "Still a lot of fake flu. Full GTA Six money breakdown on the channel.",
+     "scene": {
+      "type": "title",
+      "big": "FAKE FLU ↗",
+      "sub": "Full video on Mongki Money"
+     }
+    }
+   ]
+  }
+ ]
+}
