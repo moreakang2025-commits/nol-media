@@ -1,7 +1,1 @@
 rethumb ep02
-schedule hAG4V8CPWJ8 2026-11-10 long
-schedule DKuUcvhEB4Y 2026-11-11 long
-schedule g1tm4quo7HU 2026-11-11 s1
-schedule 7gq0cSzzJzs 2026-11-11 s2
-schedule bou_7uOxTG4 2026-11-11 s3
-schedule -53BsQ49wso 2026-11-11 s4

@@ -17,7 +17,10 @@ def schedule(hdr, vid, date, slot):
     return {"cmd": "schedule", "id": vid, "publishAt": t, "ok": r.ok, "detail": "" if r.ok else r.text[:300]}
 
 def rethumb(hdr, ep):
-    import build, story, images as IM
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("fps_build", os.path.join(HERE, "build.py"))
+    build = importlib.util.module_from_spec(spec); spec.loader.exec_module(build)
+    story, IM = build.ST, build.IM
     e = story.parse(f"fps/episodes/{ep}.txt"); refs = IM.portraits(e["cast"]); out = f"fps/results/{ep}_thumb.jpg"
     build.thumbnail(e, refs, out)
     vid = json.load(open(f"fps/results/{ep}_upload.json"))["video_id"]
