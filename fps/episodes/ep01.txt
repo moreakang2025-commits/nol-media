@@ -29,6 +29,7 @@ END_DESCRIPTION
 
 ## The Question
 [SHOT] Funeral reception in a cozy lakeside living room full of mourners in black holding paper plates, casseroles on a table, Margaret standing near the fireplace holding a coffee cup, autumn light through the windows
+[SHORT] My Son Asked Who Gets The House At The Funeral
 MARGARET: My husband Harold had been in the ground for exactly two hours when my son asked me who gets the house.
 MARGARET: He didn't whisper it. He said it in my living room, in front of the casseroles and the folding chairs and half the Lutheran church.
 [SHOT] Brian in a dark suit holding a paper cup, leaning toward Margaret with a forced casual smile, mourners blurred behind them
@@ -140,6 +141,7 @@ MARGARET: If you've ever been in a spot like that, I'd like to hear about it. Le
 [SHOT] Dark bedroom at night, an old landline telephone ringing on a nightstand, digital clock glowing three o'clock, Margaret sitting up in bed in a nightgown
 MARGARET: The phone rang at three o'clock in the morning on Thursday. Nobody calls a widow at three in the morning with good news. I picked it up with my heart in my throat.
 [SHOT] Ethan sitting on the floor of his dark bedroom in a hoodie, whispering into a cellphone, face lit by the phone screen, worried
+[SHORT] My Grandson Called At 3 AM: Don't Sign Anything
 ETHAN: Grandma? It's me. I'm sorry. I'm so sorry it's so late. I didn't know who else to tell.
 MARGARET: Ethan, honey, what's wrong? Are you hurt?
 ETHAN: No. No, I'm fine. Grandma, listen. Don't sign anything tomorrow. Please. Promise me you won't sign anything.
@@ -163,6 +165,7 @@ MARGARET: It had my name on it. Maggie. In his square carpenter's handwriting.
 [SHOT] Margaret's hands holding a handwritten letter on lined paper and a small white business card, warm morning light, no readable text
 MARGARET: Inside was a business card, a key to a safe deposit box, and a letter. I'm going to read you the letter, because I've read it so many times I don't need my glasses anymore.
 HAROLD: Maggie. If you're reading this, something's going on, because you never open my toolbox. You always say it's a mess. It is.
+[SHORT] My Late Husband Left A Letter In His Toolbox
 HAROLD: Three years ago, at Christmas, I went out to the car for my reading glasses, and I heard Tiffany on the phone on the porch. She said, The old man won't last forever, and the old lady will sign whatever Brian puts in front of her. She said, We'll have that place listed in a month.
 [SHOT] Harold as a memory, three years earlier, standing in the snowy dark beside a car, listening grimly toward a lit porch where a woman talks on a phone
 HAROLD: I didn't say anything. You know me. But the next Monday I drove to Columbus and I went to see a lawyer named Daniel Okafor. A good man. I built bookshelves for his mother once.
@@ -190,6 +193,7 @@ BRIAN: Mom... it's fine. Just sign it.
 MARGARET: Brian, did you wear the jacket? The one from the funeral?
 BRIAN: What? Yes. Why?
 [SHOT] Mr. Okafor in his navy suit stepping into the glass conference room doorway carrying a leather briefcase, everyone turning to look
+[SHORT] They Brought A Pen. I Brought A Lawyer.
 MARGARET: And that's when the door opened.
 OKAFOR: Good morning, everyone. I apologize for being late. Daniel Okafor. I represent the Harold and Margaret Ellis Family Trust.
 [SHOT] Tiffany's face freezing mid-smile, her pen hovering in the air, Brian beside her looking confused

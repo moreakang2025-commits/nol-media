@@ -1,0 +1,38 @@
+name: fps-fix
+# One-off fixes on uploaded videos (publish times, thumbnails). Commands in fps/fix.txt.
+on:
+  workflow_dispatch:
+  push:
+    paths: ["fps/fix.txt"]
+permissions:
+  contents: write
+concurrency:
+  group: fps-fix
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - run: pip install -q requests numpy pillow
+      - name: Fonts
+        run: |
+          mkdir -p mongki/assets/fonts
+          curl -fsSL --max-time 60 -o mongki/assets/fonts/Anton-Regular.ttf https://raw.githubusercontent.com/google/fonts/main/ofl/anton/Anton-Regular.ttf || true
+      - name: Apply fixes
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          FPS_IMAGE_MODEL: gemini-2.5-flash-image
+          FPS_IMG_CACHE: /tmp/fixcache
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: python3 tools/fps/fix.py
+      - name: Save log
+        if: always()
+        run: |
+          git config user.name "fps-bot"; git config user.email "fps-bot@users.noreply.github.com"
+          git add fps/results || true; git commit -m "fps: fix log" || true
+          for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done

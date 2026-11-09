@@ -1,11 +1,15 @@
 name: fps-video
-# Front Porch Stories long-form episode. fps/run.txt first line: "<episode> <upload true|false> [publishAt RFC3339|-]"
+# Front Porch Stories episode. fps/run.txt first line: "<episode> <upload true|false> <US publish date YYYY-MM-DD|-> [full|shorts]"
+#   full   = build + upload long-form (10:00 ET) + 4 Shorts (12:30/15:30/18:30/20:30 ET)
+#   shorts = long-form already uploaded: rebuild from cache, upload only the Shorts and (re)schedule the long-form
 on:
   workflow_dispatch:
     inputs:
       episode: {description: "fps/episodes/<id>.txt", default: "ep01"}
       upload: {description: "upload to YouTube as private", default: "true"}
       max_lines: {description: "test: only the first N lines (blank = whole episode)", default: ""}
+      date: {description: "US publish date YYYY-MM-DD (blank = stay private)", default: ""}
+      mode: {description: "full or shorts", default: "full"}
   push:
     paths: ["fps/run.txt"]
 permissions:
@@ -44,8 +48,13 @@ jobs:
         run: |
           EP="${{ github.event.inputs.episode }}"; [ -z "$EP" ] && EP=$(head -n1 fps/run.txt | awk '{print $1}')
           UP="${{ github.event.inputs.upload }}"; [ -z "$UP" ] && UP=$(head -n1 fps/run.txt | awk '{print $2}')
-          AT=$(head -n1 fps/run.txt | awk '{print $3}'); [ "$AT" = "-" ] && AT=""
-          echo "id=$EP" >> $GITHUB_OUTPUT; echo "upload=${UP:-true}" >> $GITHUB_OUTPUT; echo "at=$AT" >> $GITHUB_OUTPUT
+          DATE=$(head -n1 fps/run.txt | awk '{print $3}'); MODE=$(head -n1 fps/run.txt | awk '{print $4}')
+          [ -n "${{ github.event.inputs.episode }}" ] && DATE="${{ github.event.inputs.date }}" && MODE="${{ github.event.inputs.mode }}"
+          [ "$DATE" = "-" ] && DATE=""; [ -z "$MODE" ] && MODE=full
+          echo "id=$EP" >> $GITHUB_OUTPUT; echo "upload=${UP:-true}" >> $GITHUB_OUTPUT
+          echo "date=$DATE" >> $GITHUB_OUTPUT; echo "mode=$MODE" >> $GITHUB_OUTPUT
+          echo "at=$(python3 tools/fps/when.py "$DATE" long)" >> $GITHUB_OUTPUT
+          echo "episode=$EP upload=$UP date=$DATE mode=$MODE"
       - name: Restore voice and picture cache
         uses: actions/cache/restore@v4
         with:
@@ -68,13 +77,26 @@ jobs:
         with:
           path: fps/cache
           key: fps-cache-${{ github.run_id }}
-      - name: Upload to YouTube (private)
-        if: steps.ep.outputs.upload == 'true'
+      - name: Upload to YouTube (private, scheduled if a date is given)
+        if: steps.ep.outputs.upload == 'true' && steps.ep.outputs.mode == 'full'
         env:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
         run: python3 tools/fps/upload.py out/fps_${{ steps.ep.outputs.id }} "${{ steps.ep.outputs.at }}"
+      - name: Shorts-only mode - reuse and (re)schedule the uploaded long-form
+        if: steps.ep.outputs.upload == 'true' && steps.ep.outputs.mode == 'shorts'
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: |
+          E=${{ steps.ep.outputs.id }}; cp fps/results/${E}_upload.json out/fps_$E/upload.json
+          if [ -n "${{ steps.ep.outputs.date }}" ]; then
+            V=$(python3 -c "import json;print(json.load(open('fps/results/${E}_upload.json'))['video_id'])")
+            echo "schedule $V ${{ steps.ep.outputs.date }} long" > /tmp/fix.txt
+            cp /tmp/fix.txt fps/fix.txt && python3 tools/fps/fix.py && git checkout -- fps/fix.txt 2>/dev/null || true
+          fi
       - name: Build Shorts (from the long-form voice and pictures, no extra cost)
         id: shorts
         continue-on-error: true
@@ -90,7 +112,8 @@ jobs:
         run: |
           O=out/fps_${{ steps.ep.outputs.id }}
           LONG=$(python3 -c "import json;print(json.load(open('$O/upload.json')).get('url',''))" 2>/dev/null || true)
-          for d in $O/shorts/*/; do LONG_URL="$LONG" python3 tools/fps/upload.py "$d" || true; done
+          for d in $O/shorts/*/; do k=$(basename $d)
+            LONG_URL="$LONG" python3 tools/fps/upload.py "$d" "$(python3 tools/fps/when.py '${{ steps.ep.outputs.date }}' $k)" || true; done
       - name: Keep the files for review
         if: always()
         uses: actions/upload-artifact@v4
