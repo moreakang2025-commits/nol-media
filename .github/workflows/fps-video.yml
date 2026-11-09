@@ -57,6 +57,8 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           FPS_JOBS: "3"
+          FPS_IMAGE_MODEL: gemini-2.5-flash-image   # $0.039/image (3.1 flash image is $0.067)
+          FPS_SPLIT: "20"                           # a new picture at least every ~20 s
         run: |
           ML="${{ github.event.inputs.max_lines }}"
           python3 tools/fps/build.py fps/episodes/${{ steps.ep.outputs.id }}.txt out/fps_${{ steps.ep.outputs.id }} ${ML:+--max-lines $ML}
