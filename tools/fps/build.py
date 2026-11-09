@@ -16,6 +16,7 @@ MASTER = ("volume=-6dB,adeclip,adeclick=w=20:o=75:t=1,highpass=f=70,lowpass=f=10
           "loudnorm=I=-16:TP=-2:LRA=11,aresample=48000")
 MOVES = ["zin", "panl", "zout", "panr"]
 SPLIT = float(os.environ.get("FPS_SPLIT", "15"))
+GEN_ANGLES = os.environ.get("FPS_GEN_ANGLES", "0") == "1"   # extra generated camera angles (EP01 used this)
 ANGLES = ["Same moment, tighter close-up on the faces and their emotions", "Same moment, wide establishing angle showing the whole room",
           "Same moment, over-the-shoulder angle", "Same moment, detail shot of hands and the important object",
           "Same moment, side angle with soft background blur"]
@@ -74,7 +75,7 @@ def main():
     pend_chapter = None
     for it in ep["items"]:
         if it["kind"] == "chapter": pend_chapter = it["name"]
-        elif it["kind"] == "shot": shots.append({"prompt": it["prompt"], "first_line": None})
+        elif it["kind"] == "shot": shots.append({"prompt": it["prompt"], "lib": it.get("lib"), "first_line": None})
         else:
             txt = ST.spoken(it["text"])
             if not txt: continue
@@ -108,29 +109,40 @@ def main():
     speech_end = t; total = speech_end + END_HOLD
     print(f"[build] speech {speech_end/60:.1f} min", flush=True)
 
-    # 3) pictures
+    # 3) pictures: library pictures cost nothing; [SHOT] lines are generated (one image each)
     refs = IM.portraits(cast)
-    prev = None
+    prev = None; libdir = os.path.join(HERE, "..", "..", "fps", "library", "img"); new_images = 0
     for si, s in enumerate(shots):
-        im = IM.generate(s["prompt"], IM.refs_for(s["prompt"], cast, refs), tag=f"s{si:03d}")
+        s["imgs"] = []
+        if s["lib"]:
+            for j, lid in enumerate(s["lib"]):
+                src_p = os.path.join(libdir, lid + ".jpg")
+                if not os.path.exists(src_p): print("[build] missing library picture", lid); continue
+                pth = os.path.join(outdir, "shots", f"s{si:03d}_{j}.png"); cover(Image.open(src_p).convert("RGB"), W, H).save(pth)
+                s["imgs"].append(pth)
+            if s["imgs"]: prev = Image.open(s["imgs"][-1]); continue
+            s["prompt"] = s["prompt"] or "A quiet lakeside house at dusk"
+        im = IM.generate(s["prompt"], IM.refs_for(s["prompt"], cast, refs), tag=f"s{si:03d}"); new_images += 1
         if im is None: im = prev
         if im is None: im = IM._placeholder(s["prompt"], "16:9")
-        prev = im; s["img"] = os.path.join(outdir, "shots", f"s{si:03d}.png"); cover(im, W, H).save(s["img"])
-    endimg = os.path.join(outdir, "shots", "end.png"); end_card(Image.open(shots[-1]["img"])).save(endimg)
+        prev = im; pth = os.path.join(outdir, "shots", f"s{si:03d}.png"); cover(im, W, H).save(pth); s["imgs"].append(pth)
+    print(f"[build] new generated images: {new_images}", flush=True)
+    endimg = os.path.join(outdir, "shots", "end.png"); end_card(Image.open(shots[-1]["imgs"][-1])).save(endimg)
 
     # 4) timeline -> frames (cumulative rounding keeps video length exact). Long shots get extra camera
     #    angles of the same moment so the picture changes every ~SPLIT seconds.
     starts = [0.0] + [lines[s["first_line"]]["t"] - 0.15 for s in shots[1:]] + [speech_end + 1.0]
     clips = []; mv = 0
     for si, s in enumerate(shots):
-        a, b = starts[si], starts[si + 1]; k = max(1, int((b - a) // SPLIT + (1 if (b - a) % SPLIT > SPLIT / 2 else 0)))
-        imgs = [s["img"]]
-        for j in range(1, k):
-            ang = ANGLES[(si + j) % len(ANGLES)]
-            im = IM.generate(f"{s['prompt']}. {ang}", IM.refs_for(s["prompt"], cast, refs), tag=f"s{si:03d}_{j}")
-            pth = os.path.join(outdir, "shots", f"s{si:03d}_{j}.png")
-            if im is None: imgs.append(s["img"])
-            else: cover(im, W, H).save(pth); imgs.append(pth)
+        a, b = starts[si], starts[si + 1]
+        need = max(1, int(round((b - a) / SPLIT)))
+        imgs = list(s["imgs"])
+        if GEN_ANGLES and not s["lib"]:
+            for j in range(1, need):
+                im = IM.generate(f"{s['prompt']}. {ANGLES[(si + j) % len(ANGLES)]}", IM.refs_for(s["prompt"], cast, refs), tag=f"s{si:03d}_{j}")
+                if im is not None:
+                    pth = os.path.join(outdir, "shots", f"s{si:03d}_a{j}.png"); cover(im, W, H).save(pth); imgs.append(pth)
+        k = len(imgs)
         for j, img in enumerate(imgs):
             clips.append({"img": img, "a": a + (b - a) * j / k, "b": a + (b - a) * (j + 1) / k, "move": MOVES[mv % 4],
                           "fade_in": j == 0 and (si == 0 or lines[s["first_line"]]["chapter"] is not None),

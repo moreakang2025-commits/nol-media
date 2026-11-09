@@ -5,7 +5,8 @@ Format
   CAST Name | voice=Gacrux | look=... | style=...
   DESCRIPTION: ... END_DESCRIPTION   (multi-line; {chapters} is replaced with timestamps)
   ## Chapter name       starts a chapter
-  [SHOT] prompt          a new picture starts at the next spoken line
+  [SHOT] prompt          a new picture (generated) starts at the next spoken line
+  [LIB] id id ...        library pictures (fps/library/img/<id>.jpg), time split evenly between them
   NAME: text             a spoken line (NAME must be in CAST)
   # comment              ignored
 """
@@ -33,6 +34,8 @@ def parse(path):
             ep["cast"][parts[0].upper()] = c; continue
         if s.startswith("## "):
             chapter = s[3:].strip(); ep["items"].append({"kind": "chapter", "name": chapter}); continue
+        if s.startswith("[LIB]"):
+            ep["items"].append({"kind": "shot", "prompt": "", "lib": s[5:].split()}); continue
         if s.startswith("[SHOT]"):
             ep["items"].append({"kind": "shot", "prompt": s[6:].strip()}); continue
         m = re.match(r"^([A-Z][A-Z ]{1,20}):\s*(.+)$", s)

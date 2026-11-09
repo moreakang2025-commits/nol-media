@@ -71,8 +71,14 @@ def generate(prompt, refs=(), ratio="16:9", tag="shot"):
 def portraits(cast):
     """Reference portrait for every cast member with a look=."""
     out = {}
+    lib = os.path.join(os.path.dirname(__file__), "..", "..", "fps", "library", "ref")
     for k, c in cast.items():
         if not c.get("look"): continue
+        if c["look"].startswith("lib:"):   # a recurring library face
+            p = os.path.join(lib, c["look"][4:].strip() + ".jpg")
+            if os.path.exists(p): out[k] = Image.open(p).convert("RGB")
+            else: print("[img] missing library face", p)
+            continue
         p = (f"Head-and-shoulders portrait photo of {c['name']}, {c['look']}. Neutral expression, plain softly lit "
              "background, looking slightly off camera.")
         im = generate(p, ratio="3:4", tag=f"ref_{c['name'].lower()}")
