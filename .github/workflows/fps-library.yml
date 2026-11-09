@@ -1,0 +1,31 @@
+name: fps-library
+# One-time (and top-up) generation of the reusable picture library. Only missing pictures are made.
+on:
+  workflow_dispatch:
+  push:
+    paths: ["fps/library/library.txt"]
+permissions:
+  contents: write
+concurrency:
+  group: fps-library
+jobs:
+  lib:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - run: pip install -q pillow numpy requests
+      - name: Generate missing pictures
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          FPS_IMAGE_MODEL: gemini-2.5-flash-image
+          FPS_IMG_CACHE: /tmp/libcache
+        run: python3 tools/fps/library.py
+      - name: Commit pictures
+        if: always()
+        run: |
+          git config user.name "fps-bot"; git config user.email "fps-bot@users.noreply.github.com"
+          git add fps/library; git commit -m "fps: picture library" || true
+          for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done

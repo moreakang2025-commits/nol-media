@@ -1,0 +1,183 @@
+# Front Porch Stories reusable picture library. Generated once by tools/fps/library.py (workflow fps-library).
+# ROLE key | look            -> reference portrait fps/library/ref/<key>.jpg (same faces in every episode)
+# IMG id | prompt            -> fps/library/img/<id>.jpg ; {key} inserts the role and attaches its portrait
+# Episodes use them with:  [LIB] id id id   (the time is split evenly between the listed pictures)
+
+ROLE grandma | 72-year-old white American woman, silver chin-length bob, kind pale blue eyes, light wrinkles, small pearl earrings, soft cardigan
+ROLE grandpa | 76-year-old white American man, bald on top with a white fringe, white mustache, wire glasses, flannel shirt with suspenders
+ROLE son | 45-year-old white American man, short dark hair receding at the temples, light stubble, tired eyes, slightly heavy build
+ROLE dil | 39-year-old white American woman, long straight platinum-blonde hair, flawless makeup, sharp cheekbones, expensive clothes, cold eyes
+ROLE daughter | 43-year-old white American woman, wavy shoulder-length brown hair, freckles, plain sweater, gentle but strained face
+ROLE sil | 46-year-old white American man, slicked-back dark hair, tan, perfect white teeth, flashy watch, expensive blazer
+ROLE grandson | 17-year-old white American boy, messy dark blond hair, lanky, gray hoodie, gentle honest face
+ROLE granddaughter | 24-year-old Black American woman, natural curly hair in a puff, warm smile, denim jacket
+ROLE lawyer | 62-year-old Nigerian-American man, close-cropped gray hair, rimless glasses, navy three-piece suit, calm authority
+ROLE realtor | 54-year-old white American woman, auburn bob, bright red blazer, big smile, clipboard
+ROLE nurse | 50-year-old Filipino-American woman, hair in a neat bun, light blue scrubs, kind tired eyes
+ROLE friend | 74-year-old Black American woman, short gray natural hair, round glasses, colorful scarf, lively expression
+ROLE banker | 58-year-old white American man, gray side-parted hair, navy suit, red tie, reading glasses on his nose
+
+# ---- the grandmother alone (narrator) ----
+IMG gm_porch_dusk | {grandma} sitting alone in a wooden rocking chair on a lakeside front porch at dusk, wrapped in a red knitted blanket, holding a coffee mug, looking at the water
+IMG gm_porch_tears | {grandma} on a front porch at dusk, a single tear on her cheek, staring into the distance, close-up
+IMG gm_porch_smile | {grandma} on a sunny front porch, small knowing smile, holding a coffee mug, autumn leaves
+IMG gm_kitchen_night | {grandma} sitting alone at a farmhouse kitchen table at night under one lamp, hands folded, thinking hard
+IMG gm_kitchen_coffee | {grandma} pouring two cups of coffee in a warm farmhouse kitchen in the morning
+IMG gm_window | {grandma} standing at a rain-streaked window looking out, hand on the glass, melancholy
+IMG gm_phone_shock | {grandma} holding an old landline phone receiver to her ear, eyes wide with shock, hand on her chest
+IMG gm_phone_night | {grandma} sitting up in bed at night in a nightgown answering a ringing phone, dim lamp light, worried
+IMG gm_cellphone | {grandma} reading something shocking on a smartphone in her living room, reading glasses on, mouth open
+IMG gm_laptop | {grandma} at an old desktop computer in a small sewing room at night, face lit by the screen, shocked
+IMG gm_letter_read | {grandma} reading a handwritten letter at a kitchen table, hand over her mouth, eyes filling with tears
+IMG gm_letter_hold | Close-up of {grandma} holding a sealed white envelope against her chest with both hands
+IMG gm_photo_album | {grandma} on a sofa looking through an old family photo album, smiling sadly
+IMG gm_determined | Close-up of {grandma} with a calm, steely, determined expression, jaw set, warm side light
+IMG gm_reading_glasses | Close-up of {grandma} slowly putting on her reading glasses, a sly calm look
+IMG gm_crying_bed | {grandma} sitting on the edge of her bed in the dark, crying quietly into a handkerchief
+IMG gm_cardigan_walk | {grandma} walking slowly along a lakeside road in autumn in a long coat
+IMG gm_church | {grandma} sitting alone in a wooden church pew, praying, sunlight through stained glass windows with no text
+IMG gm_cemetery | {grandma} standing at a grave with fresh flowers in an autumn cemetery, gravestone with no readable text
+IMG gm_suitcase | {grandma} sitting on a bed next to a small packed suitcase, looking lost
+IMG gm_locked_out | {grandma} standing on a doorstep with a suitcase, the front door closed in her face, evening
+IMG gm_garden | {grandma} kneeling in her vegetable garden in a sun hat, dirt on her gloves, peaceful
+IMG gm_baking | {grandma} taking a homemade pie out of the oven in a cozy kitchen
+IMG gm_safe_box | {grandma} opening a metal safe deposit box in a bank vault room, papers inside
+IMG gm_jewelry_box | {grandma} opening an old wooden jewelry box on a dresser, looking for something that is missing, alarmed
+IMG gm_sign_hand | Close-up of an elderly woman's wrinkled hand resting flat on legal documents, refusing to pick up a pen
+IMG gm_triumph | {grandma} standing tall in a doorway, chin up, dignified, warm backlight
+IMG gm_new_start | {grandma} laughing with joy on a sunny porch, holding a coffee mug, a new beginning feeling
+
+# ---- the grandfather (alive, sick, memory) ----
+IMG gp_porch | {grandpa} and {grandma} sitting side by side in rocking chairs on a porch at sunset, holding hands
+IMG gp_workshop | {grandpa} working at a wooden workbench in a sawdust-filled garage workshop, tools on a pegboard
+IMG gp_hospital | {grandpa} pale in a hospital bed with {grandma} holding his hand beside him, monitors glowing
+IMG gp_hospital_whisper | {grandpa} in a hospital bed whispering something urgent to {grandma}, close together
+IMG gp_young_couple | Vintage 1970s photo look: a young couple in love on a lakeside dock, warm faded colors
+IMG gp_writing | {grandpa} at a desk late at night writing a letter by lamp light, serious face
+IMG gp_lawyer_secret | {grandpa} shaking hands with {lawyer} in a wood-paneled law office, years ago, secretive mood
+IMG gp_overhear | {grandpa} standing in a dark hallway, overhearing a conversation from the next room, grim face
+IMG gp_funeral_photo | A framed portrait of {grandpa} on an easel with white lilies at a funeral, candles
+
+# ---- the son ----
+IMG son_ask | {son} in a dark suit at a funeral reception leaning toward {grandma} with an awkward forced smile, mourners blurred behind
+IMG son_guilty | {son} looking away out a window, guilty and ashamed, hands in pockets
+IMG son_angry | {son} shouting angrily, pointing a finger, red-faced, in a living room
+IMG son_crying_car | {son} in the driver's seat of a parked car, forehead on the steering wheel, crying
+IMG son_bills | {son} at a cluttered desk at night surrounded by overdue bills, head in his hands
+IMG son_phone_lie | {son} on a cellphone, nervous, lying, sweat on his forehead
+IMG son_hammer | {son} in a garage workshop holding an old wooden-handled hammer, emotional
+IMG son_apology | {son} kneeling beside {grandma} who sits in an armchair, holding her hands, apologizing with tears
+IMG son_dinner_alone | {son} alone with {grandma} at a farmhouse Sunday dinner table with pot roast, both laughing
+IMG son_dil_whisper | {son} and {dil} whispering together in a hallway, conspiring, glancing toward the next room
+
+# ---- the daughter-in-law (main villain) ----
+IMG dil_smirk | Close-up of {dil} smirking with arrogant satisfaction
+IMG dil_keys | {dil} slipping a ring of house keys from a ceramic dish into her designer purse, sneaky
+IMG dil_brochures | {dil} spreading glossy senior living brochures across a coffee table in front of {grandma}, fake sweet smile
+IMG dil_pen | {dil} holding out a pen and sliding papers across a table with a sweet fake smile
+IMG dil_phone_porch | {dil} on a porch at night talking on her phone, whispering, scheming expression
+IMG dil_shocked | {dil} frozen in shock, mouth open, face pale
+IMG dil_furious | {dil} furious, grabbing her purse and standing up, face twisted with anger
+IMG dil_measuring | {dil} and {realtor} measuring a bedroom with a tape measure while the owner is not looking
+IMG dil_jewelry | {dil} trying on an old pearl necklace in front of a mirror in someone else's bedroom
+IMG dil_party | {dil} laughing and toasting with champagne at a fancy party, wearing an expensive dress
+IMG dil_exposed | {dil} at a crowded holiday table, everyone staring at her, caught, humiliated
+IMG dil_cake_trash | {dil} dumping a homemade birthday cake into a kitchen trash can, cold expression
+IMG dil_door | {dil} standing in a doorway blocking the entrance, arms crossed, cold smile
+IMG dil_leaving | {dil} storming out of a house with a suitcase, door left open behind her
+
+# ---- the daughter and son-in-law ----
+IMG dau_hug | {daughter} hugging {grandma} tightly in a kitchen, both emotional
+IMG dau_tears | {daughter} crying at a kitchen table, mascara running, guilty
+IMG dau_argue | {daughter} arguing with {sil} in a living room, tense
+IMG sil_smug | {sil} leaning back in a leather chair with a smug grin, swirling a glass of whiskey
+IMG sil_contract | {sil} pushing a business contract across a restaurant table toward {grandma}, persuasive smile
+IMG sil_caught | {sil} sweating and loosening his tie, caught in a lie
+IMG sil_car | {sil} leaning on a shiny new luxury sports car in a driveway, showing off
+
+# ---- grandchildren ----
+IMG gs_call | {grandson} sitting on the floor of his dark bedroom whispering into a cellphone, worried, face lit by the screen
+IMG gs_hug | {grandson} hugging {grandma} on porch steps, she smiles with her eyes closed
+IMG gs_workshop | {grandson} and {grandpa} sanding a wooden birdhouse together in a workshop
+IMG gs_recording | Close-up of {grandson} holding up a smartphone showing an audio recording waveform, no readable text
+IMG gs_graduation | {grandson} in a graduation cap and gown hugging {grandma}, joyful
+IMG gd_visit | {granddaughter} arriving at a front door with flowers, {grandma} delighted
+IMG gd_laptop | {granddaughter} at a laptop showing {grandma} something on the screen, both serious
+IMG gd_defend | {granddaughter} standing up at a dinner table defending {grandma}, pointing firmly
+
+# ---- lawyer / bank / realtor / nurse / friend ----
+IMG law_office | {lawyer} in a wood-paneled law office opening a thick legal file, calm small smile
+IMG law_enter | {lawyer} stepping into a glass conference room doorway carrying a leather briefcase, everyone turning to look
+IMG law_reading | {lawyer} reading a document aloud at a conference table, everyone silent and tense
+IMG law_phone | {lawyer} on a desk phone in his office, reassuring, taking notes
+IMG law_handshake | {lawyer} shaking hands with {grandma} warmly outside a courthouse
+IMG law_will | {lawyer} unfolding a will on a mahogany desk in front of a seated family
+IMG bank_desk | {banker} at a bank desk showing {grandma} a printed statement, concerned
+IMG bank_freeze | {banker} turning a computer monitor toward {grandma}, serious, protective
+IMG realtor_door | {realtor} at a front door with a big smile and a clipboard, {son} and {dil} behind her holding donuts
+IMG realtor_photos | {realtor} photographing a cozy living room with a camera
+IMG realtor_quit | {realtor} pushing papers away across a glass table, deeply uncomfortable, standing up to leave
+IMG nurse_care | {nurse} kindly adjusting a blanket for {grandma} in a nursing home room
+IMG nurse_secret | {nurse} quietly handing {grandma} a folded note in a nursing home hallway
+IMG friend_coffee | {friend} and {grandma} laughing over coffee at a small diner booth
+IMG friend_advice | {friend} pointing a finger and giving stern advice to {grandma} across a kitchen table
+IMG friend_car | {friend} driving an old car with {grandma} in the passenger seat, both determined, road trip
+
+# ---- groups / big scenes ----
+IMG funeral_reception | Funeral reception in a cozy lakeside living room full of mourners in black with paper plates, casseroles on a table, autumn light
+IMG funeral_church | Funeral service in a small white church, a closed casket with white flowers, mourners in pews
+IMG thanksgiving_table | Thanksgiving dinner with a big family around a long table, roast turkey, candles, tension in the air
+IMG thanksgiving_empty | A long Thanksgiving table set for twelve with a roast turkey and only {grandma} sitting there alone
+IMG christmas_living | A Christmas living room with a tree and wrapped gifts, family arguing in the background
+IMG birthday_table | A 75th birthday dinner with a cake with candles, half of the chairs empty
+IMG wedding_reception | An elegant wedding reception hall with round tables and string lights, a microphone at the head table
+IMG wedding_toast | {grandma} standing at a wedding reception holding a microphone, everyone turning to listen
+IMG family_meeting | A tense family meeting in a living room, {son} and {dil} on one sofa facing {grandma} in an armchair, papers on the coffee table
+IMG conference_room | A bright modern real estate office conference room with a glass table and stacks of papers with yellow sticky flags
+IMG conference_reveal | Wide shot of a glass conference room, one man with his head in his hands, a woman standing up angrily, an older woman calmly folding her glasses
+IMG courtroom | A small probate courtroom with wood paneling, a judge's bench, a few people seated
+IMG restaurant_fancy | An expensive steakhouse dinner, white tablecloth, family at a table, one person pushing a document forward
+IMG nursing_home_lobby | A sterile senior living facility lobby with beige furniture and a reception desk, no readable signs
+IMG nursing_home_room | A small bare nursing home room with a single bed and a window, cold light
+IMG hospital_hall | A hospital corridor at night, a family arguing quietly near a vending machine
+IMG moving_boxes | Moving boxes and furniture piled on a front lawn of a white house, someone's belongings put outside
+IMG yard_sale | A yard sale on a front lawn with old furniture, a rocking chair with a price tag, strangers browsing
+IMG for_sale_sign | A white farmhouse with a real estate yard sign in the front lawn, sign has no readable text
+IMG airport_goodbye | Busy airport departure area, {grandma} with a small suitcase, looking back once
+IMG beach_new_life | {grandma} walking barefoot on a sunny beach at sunrise, free and happy
+
+# ---- objects / details (no faces) ----
+IMG obj_envelope | Close-up of a sealed white envelope on a wooden table, warm light, no readable text
+IMG obj_will | Close-up of an old legal will document with a signature and a wax seal, text blurred and unreadable
+IMG obj_deed | Close-up of property deed papers and a set of house keys on a desk, text blurred
+IMG obj_keys | A ring of old house keys lying in a small blue ceramic dish by a front door
+IMG obj_pen_papers | Close-up of a pen hovering over a stack of legal papers with yellow sticky flags, text unreadable
+IMG obj_bills | Close-up of a pile of past-due bills with red stamps, text unreadable
+IMG obj_toolbox | An old red metal toolbox open on a workbench, a manila envelope hidden under a tray of chisels
+IMG obj_safe | A small home safe open in a closet, stacks of documents and an old pocket watch inside
+IMG obj_recorder | An old cassette tape recorder on a kitchen table, red record light on
+IMG obj_phone_screen | Close-up of a smartphone screen glowing in a dark room, message bubbles blurred and unreadable
+IMG obj_photo_frame | A cracked family photo frame lying on a hardwood floor, broken glass
+IMG obj_cake | A homemade birthday cake with lit candles on a kitchen counter
+IMG obj_two_mugs | Two coffee mugs side by side on a wooden porch railing at dusk, steam rising, lake behind
+IMG obj_rocking_chair | An empty wooden rocking chair on a front porch at dusk, a red blanket draped over it
+IMG obj_wedding_ring | Close-up of an old gold wedding ring in an open palm
+IMG obj_lottery | Close-up of a lottery ticket held in an old woman's hand, numbers blurred
+IMG obj_check | Close-up of a bank check on a table, amount and names blurred and unreadable
+IMG obj_pearls | A pearl necklace lying in an open velvet jewelry box
+IMG obj_bible_cash | An old family Bible open on a table with old dollar bills hidden between its pages
+IMG obj_clock_3am | A digital alarm clock glowing at three o'clock on a nightstand in the dark
+
+# ---- places with no people (scene setters) ----
+IMG place_lake_house | A white farmhouse-style lake house with a wide front porch, red rocking chair, autumn trees, calm lake
+IMG place_lake_sunset | A calm lake at sunset seen from a wooden dock, orange sky
+IMG place_house_night | A white farmhouse at night with one window lit, rain falling
+IMG place_small_town | A quiet small-town Ohio main street in autumn, old brick storefronts with no readable signs
+IMG place_law_building | Exterior of an old brick law office building with columns, no readable signs
+IMG place_bank | Exterior of a small-town bank building, no readable signs
+IMG place_mansion | A huge modern suburban mansion with a three-car garage and a fountain
+IMG place_kitchen_empty | An empty cozy farmhouse kitchen in morning light, a pie cooling on the counter
+IMG place_porch_rain | An empty front porch in the rain, rocking chair moving slightly in the wind
+IMG place_road | An empty two-lane country road through autumn trees
+IMG place_hospital_ext | Exterior of a small hospital at night, ambulance lights
+IMG place_church_ext | A small white country church with a steeple under a gray sky
