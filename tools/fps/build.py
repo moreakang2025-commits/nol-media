@@ -15,6 +15,10 @@ GAP, CHAPTER_GAP, END_HOLD = 0.55, 1.6, 12.0
 MASTER = ("volume=-6dB,adeclip,adeclick=w=20:o=75:t=1,highpass=f=70,lowpass=f=10000,"
           "loudnorm=I=-16:TP=-2:LRA=11,aresample=48000")
 MOVES = ["zin", "panl", "zout", "panr"]
+SPLIT = float(os.environ.get("FPS_SPLIT", "15"))
+ANGLES = ["Same moment, tighter close-up on the faces and their emotions", "Same moment, wide establishing angle showing the whole room",
+          "Same moment, over-the-shoulder angle", "Same moment, detail shot of hands and the important object",
+          "Same moment, side angle with soft background blur"]
 
 def cover(im, w, h):
     r = max(w / im.width, h / im.height)
@@ -114,15 +118,24 @@ def main():
         prev = im; s["img"] = os.path.join(outdir, "shots", f"s{si:03d}.png"); cover(im, W, H).save(s["img"])
     endimg = os.path.join(outdir, "shots", "end.png"); end_card(Image.open(shots[-1]["img"])).save(endimg)
 
-    # 4) timeline -> frames (cumulative rounding keeps video length exact)
+    # 4) timeline -> frames (cumulative rounding keeps video length exact). Long shots get extra camera
+    #    angles of the same moment so the picture changes every ~SPLIT seconds.
     starts = [0.0] + [lines[s["first_line"]]["t"] - 0.15 for s in shots[1:]] + [speech_end + 1.0]
-    chap_starts = {round(l["t"], 3) for l in lines if l["chapter"]}
-    clips = []
+    clips = []; mv = 0
     for si, s in enumerate(shots):
-        a, b = starts[si], starts[si + 1]
-        clips.append({"img": s["img"], "a": a, "b": b, "move": MOVES[si % 4],
-                      "fade_in": si == 0 or lines[s["first_line"]]["chapter"] is not None,
-                      "fade_out": si + 1 < len(shots) and lines[shots[si + 1]["first_line"]]["chapter"] is not None})
+        a, b = starts[si], starts[si + 1]; k = max(1, int((b - a) // SPLIT + (1 if (b - a) % SPLIT > SPLIT / 2 else 0)))
+        imgs = [s["img"]]
+        for j in range(1, k):
+            ang = ANGLES[(si + j) % len(ANGLES)]
+            im = IM.generate(f"{s['prompt']}. {ang}", IM.refs_for(s["prompt"], cast, refs), tag=f"s{si:03d}_{j}")
+            pth = os.path.join(outdir, "shots", f"s{si:03d}_{j}.png")
+            if im is None: imgs.append(s["img"])
+            else: cover(im, W, H).save(pth); imgs.append(pth)
+        for j, img in enumerate(imgs):
+            clips.append({"img": img, "a": a + (b - a) * j / k, "b": a + (b - a) * (j + 1) / k, "move": MOVES[mv % 4],
+                          "fade_in": j == 0 and (si == 0 or lines[s["first_line"]]["chapter"] is not None),
+                          "fade_out": j == k - 1 and si + 1 < len(shots) and lines[shots[si + 1]["first_line"]]["chapter"] is not None})
+            mv += 1
     clips[-1]["fade_out"] = True
     clips.append({"img": endimg, "a": starts[-1], "b": total, "move": "zin", "fade_in": True, "fade_out": True})
     jobs = []
