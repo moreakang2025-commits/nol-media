@@ -1,14 +1,77 @@
 {
  "_how": "Shorts whose Studio 'Related video' must point at their long-form. 'done': true once set in YouTube Studio. The daily run must process every entry with done=false.",
  "items": [
-  {"short": "RJFQ9PqfRhA", "long": "YluHz2Fxbbw", "ep": "ep01", "done": false},
-  {"short": "EtaF8X6QDyQ", "long": "YluHz2Fxbbw", "ep": "ep01", "done": false},
-  {"short": "ZttcFjHXyEE", "long": "YluHz2Fxbbw", "ep": "ep01", "done": false},
-  {"short": "IpfRbU1K8UU", "long": "kJadvqTR7Tc", "ep": "ep03", "done": false},
-  {"short": "e32_SXkmCGY", "long": "kJadvqTR7Tc", "ep": "ep03", "done": false},
-  {"short": "DkQMi4ovSoI", "long": "kJadvqTR7Tc", "ep": "ep03", "done": false},
-  {"short": "8YhlMg9E3YU", "long": "9Mp9Ub0_nbY", "ep": "ep04", "done": false},
-  {"short": "GXyRlLdYBsI", "long": "9Mp9Ub0_nbY", "ep": "ep04", "done": false},
-  {"short": "RW6D4CURdA8", "long": "9Mp9Ub0_nbY", "ep": "ep04", "done": false}
+  {
+   "short": "RJFQ9PqfRhA",
+   "long": "YluHz2Fxbbw",
+   "ep": "ep01",
+   "done": false
+  },
+  {
+   "short": "EtaF8X6QDyQ",
+   "long": "YluHz2Fxbbw",
+   "ep": "ep01",
+   "done": false
+  },
+  {
+   "short": "ZttcFjHXyEE",
+   "long": "YluHz2Fxbbw",
+   "ep": "ep01",
+   "done": false
+  },
+  {
+   "short": "IpfRbU1K8UU",
+   "long": "kJadvqTR7Tc",
+   "ep": "ep03",
+   "done": false
+  },
+  {
+   "short": "e32_SXkmCGY",
+   "long": "kJadvqTR7Tc",
+   "ep": "ep03",
+   "done": false
+  },
+  {
+   "short": "DkQMi4ovSoI",
+   "long": "kJadvqTR7Tc",
+   "ep": "ep03",
+   "done": false
+  },
+  {
+   "short": "8YhlMg9E3YU",
+   "long": "9Mp9Ub0_nbY",
+   "ep": "ep04",
+   "done": false
+  },
+  {
+   "short": "GXyRlLdYBsI",
+   "long": "9Mp9Ub0_nbY",
+   "ep": "ep04",
+   "done": false
+  },
+  {
+   "short": "RW6D4CURdA8",
+   "long": "9Mp9Ub0_nbY",
+   "ep": "ep04",
+   "done": false
+  },
+  {
+   "short": "oIMfhyQjpDU",
+   "long": "dWtDGhHTqDc",
+   "ep": "ep05",
+   "done": false
+  },
+  {
+   "short": "DFW6gU3Q3ok",
+   "long": "dWtDGhHTqDc",
+   "ep": "ep05",
+   "done": false
+  },
+  {
+   "short": "L6bo0dU6AA0",
+   "long": "dWtDGhHTqDc",
+   "ep": "ep05",
+   "done": false
+  }
  ]
 }
