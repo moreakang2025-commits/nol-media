@@ -116,7 +116,7 @@ def _call(key, prompt, sc, words, h):
             try:
                 r = requests.post(f"{API}/models/{model}:generateContent?key={key}", json=body, timeout=300)
                 if r.status_code == 400:
-                    last = f"{model} 400: {r.text[:400]}"; print(f"[voice] {h} {last}", flush=True); break
+                    last = f"{model} 400: {r.text[:400]}"; print(f"[voice] {h} {last}", flush=True); _bad_models.add(model); break
                 if r.status_code == 429 or r.status_code >= 500:
                     raise RuntimeError(f"{model} HTTP {r.status_code}: {r.text[:200]}")
                 r.raise_for_status()

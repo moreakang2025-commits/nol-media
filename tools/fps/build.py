@@ -149,6 +149,12 @@ def main():
     subprocess.run(["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", os.path.join(outdir, "list.txt"),
                     "-c", "copy", os.path.join(outdir, "silent.mp4")], check=True)
 
+    # contact sheet of every picture for quick review (saved to fps/results by the workflow)
+    th = [Image.open(c["img"]).resize((320, 180)) for c in clips]
+    cols = 8; sheet = Image.new("RGB", (cols * 320, ((len(th) + cols - 1) // cols) * 180), (0, 0, 0))
+    for k, t_ in enumerate(th): sheet.paste(t_, ((k % cols) * 320, (k // cols) * 180))
+    sheet.save(os.path.join(outdir, "contact.jpg"), quality=80)
+
     # 5) audio mix + master + mux
     buf = np.zeros(int(total * V.RATE) + V.RATE, np.float32)
     for t0, a in audio_parts:

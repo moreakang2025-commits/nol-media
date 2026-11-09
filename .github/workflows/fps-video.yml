@@ -91,7 +91,7 @@ jobs:
         if: always()
         run: |
           E=${{ steps.ep.outputs.id }}; O=out/fps_$E; mkdir -p fps/results
-          for f in meta.json upload.json audio_qa.json thumb.jpg; do [ -f $O/$f ] && cp $O/$f fps/results/${E}_$f || true; done
+          for f in meta.json upload.json audio_qa.json thumb.jpg contact.jpg; do [ -f $O/$f ] && cp $O/$f fps/results/${E}_$f || true; done
           python3 - "$O/upload.json" <<'PY' || true
           import json, os, sys
           p = "fps/results/fps_ids.json"; ids = json.load(open(p)) if os.path.exists(p) else []
