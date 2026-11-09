@@ -12,7 +12,24 @@
   "public": 13,
   "private": 6
  },
- "changed": [],
+ "changed": [
+  "dWtDGhHTqDc",
+  "L6bo0dU6AA0",
+  "DFW6gU3Q3ok",
+  "oIMfhyQjpDU",
+  "RW6D4CURdA8",
+  "GXyRlLdYBsI",
+  "8YhlMg9E3YU",
+  "9Mp9Ub0_nbY",
+  "DkQMi4ovSoI",
+  "e32_SXkmCGY",
+  "IpfRbU1K8UU",
+  "kJadvqTR7Tc",
+  "ZttcFjHXyEE",
+  "EtaF8X6QDyQ",
+  "RJFQ9PqfRhA",
+  "YluHz2Fxbbw"
+ ],
  "videos": [
   {
    "id": "dWtDGhHTqDc",
@@ -20,7 +37,8 @@
    "privacy": "public",
    "publishAt": null,
    "published": "2026-11-09T10:00:38Z",
-   "duration": "PT7M49S"
+   "duration": "PT7M49S",
+   "action": "set private"
   },
   {
    "id": "L6bo0dU6AA0",
@@ -28,7 +46,8 @@
    "privacy": "private",
    "publishAt": "2026-11-10T02:00:00Z",
    "published": "2026-11-09T08:35:31Z",
-   "duration": "PT48S"
+   "duration": "PT48S",
+   "action": "set private"
   },
   {
    "id": "DFW6gU3Q3ok",
@@ -36,7 +55,8 @@
    "privacy": "private",
    "publishAt": "2026-11-09T22:00:00Z",
    "published": "2026-11-09T08:35:27Z",
-   "duration": "PT53S"
+   "duration": "PT53S",
+   "action": "set private"
   },
   {
    "id": "oIMfhyQjpDU",
@@ -44,7 +64,8 @@
    "privacy": "private",
    "publishAt": "2026-11-09T17:00:00Z",
    "published": "2026-11-09T08:35:23Z",
-   "duration": "PT48S"
+   "duration": "PT48S",
+   "action": "set private"
   },
   {
    "id": "RW6D4CURdA8",
@@ -52,7 +73,8 @@
    "privacy": "public",
    "publishAt": null,
    "published": "2026-11-09T02:00:37Z",
-   "duration": "PT45S"
+   "duration": "PT45S",
+   "action": "set private"
   },
   {
    "id": "GXyRlLdYBsI",
@@ -60,7 +82,8 @@
    "privacy": "public",
    "publishAt": null,
    "published": "2026-11-08T22:00:04Z",
-   "duration": "PT54S"
+   "duration": "PT54S",
+   "action": "set private"
   },
   {
    "id": "8YhlMg9E3YU",
@@ -68,7 +91,8 @@
    "privacy": "public",
    "publishAt": null,
    "published": "2026-11-08T17:00:32Z",
-   "duration": "PT51S"
+   "duration": "PT51S",
+   "action": "set private"
   },
   {
    "id": "9Mp9Ub0_nbY",
@@ -76,7 +100,8 @@
    "privacy": "public",
    "publishAt": null,
    "published": "2026-11-08T16:00:02Z",
-   "duration": "PT8M17S"
+   "duration": "PT8M17S",
+   "action": "set private"
   },
   {
    "id": "DkQMi4ovSoI",
@@ -84,7 +109,8 @@
    "privacy": "public",
    "publishAt": null,
    "published": "2026-11-08T02:00:24Z",
-   "duration": "PT47S"
+   "duration": "PT47S",
+   "action": "set private"
   },
   {
    "id": "e32_SXkmCGY",
@@ -92,7 +118,8 @@
    "privacy": "public",
    "publishAt": null,
    "published": "2026-11-07T22:00:01Z",
-   "duration": "PT48S"
+   "duration": "PT48S",
+   "action": "set private"
   },
   {
    "id": "IpfRbU1K8UU",
@@ -100,7 +127,8 @@
    "privacy": "public",
    "publishAt": null,
    "published": "2026-11-07T17:00:17Z",
-   "duration": "PT51S"
+   "duration": "PT51S",
+   "action": "set private"
   },
   {
    "id": "kJadvqTR7Tc",
@@ -108,7 +136,8 @@
    "privacy": "public",
    "publishAt": null,
    "published": "2026-11-07T10:00:15Z",
-   "duration": "PT9M3S"
+   "duration": "PT9M3S",
+   "action": "set private"
   },
   {
    "id": "ZttcFjHXyEE",
@@ -116,7 +145,8 @@
    "privacy": "public",
    "publishAt": null,
    "published": "2026-11-07T02:00:26Z",
-   "duration": "PT46S"
+   "duration": "PT46S",
+   "action": "set private"
   },
   {
    "id": "EtaF8X6QDyQ",
@@ -124,7 +154,8 @@
    "privacy": "public",
    "publishAt": null,
    "published": "2026-11-06T22:00:09Z",
-   "duration": "PT57S"
+   "duration": "PT57S",
+   "action": "set private"
   },
   {
    "id": "RJFQ9PqfRhA",
@@ -132,7 +163,8 @@
    "privacy": "public",
    "publishAt": null,
    "published": "2026-11-06T17:00:35Z",
-   "duration": "PT49S"
+   "duration": "PT49S",
+   "action": "set private"
   },
   {
    "id": "YluHz2Fxbbw",
@@ -140,7 +172,8 @@
    "privacy": "public",
    "publishAt": null,
    "published": "2026-11-06T10:00:37Z",
-   "duration": "PT8M38S"
+   "duration": "PT8M38S",
+   "action": "set private"
   },
   {
    "id": "eox9vAE4plE",
