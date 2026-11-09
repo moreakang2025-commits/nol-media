@@ -1,0 +1,101 @@
+name: fps-video
+# Front Porch Stories long-form episode. fps/run.txt first line: "<episode> <upload true|false> [publishAt RFC3339|-]"
+on:
+  workflow_dispatch:
+    inputs:
+      episode: {description: "fps/episodes/<id>.txt", default: "ep01"}
+      upload: {description: "upload to YouTube as private", default: "true"}
+  push:
+    paths: ["fps/run.txt"]
+permissions:
+  contents: write
+concurrency:
+  group: fps-video
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - name: Python packages and ffmpeg
+        timeout-minutes: 5
+        run: |
+          pip install -q pillow numpy requests imageio-ffmpeg
+          FF=$(python3 -c "import imageio_ffmpeg; print(imageio_ffmpeg.get_ffmpeg_exe())")
+          mkdir -p $HOME/bin && ln -sf "$FF" $HOME/bin/ffmpeg && echo "$HOME/bin" >> $GITHUB_PATH
+          "$FF" -version | head -1
+      - name: Fonts
+        timeout-minutes: 3
+        run: |
+          mkdir -p mongki/assets/fonts
+          curl -fsSL --max-time 60 -o mongki/assets/fonts/Anton-Regular.ttf https://raw.githubusercontent.com/google/fonts/main/ofl/anton/Anton-Regular.ttf
+          curl -fsSL --max-time 60 -o /tmp/inter.zip https://github.com/rsms/inter/releases/download/v4.0/Inter-4.0.zip || true
+          if [ -f /tmp/inter.zip ]; then
+            unzip -q -o /tmp/inter.zip -d /tmp/inter
+            sudo mkdir -p /usr/share/fonts/opentype/inter
+            sudo cp /tmp/inter/extras/otf/InterDisplay-Bold.otf /tmp/inter/extras/otf/Inter-Regular.otf /usr/share/fonts/opentype/inter/ || true
+          fi
+      - name: Pick episode
+        id: ep
+        run: |
+          EP="${{ github.event.inputs.episode }}"; [ -z "$EP" ] && EP=$(head -n1 fps/run.txt | awk '{print $1}')
+          UP="${{ github.event.inputs.upload }}"; [ -z "$UP" ] && UP=$(head -n1 fps/run.txt | awk '{print $2}')
+          AT=$(head -n1 fps/run.txt | awk '{print $3}'); [ "$AT" = "-" ] && AT=""
+          echo "id=$EP" >> $GITHUB_OUTPUT; echo "upload=${UP:-true}" >> $GITHUB_OUTPUT; echo "at=$AT" >> $GITHUB_OUTPUT
+      - name: Restore voice and picture cache
+        uses: actions/cache/restore@v4
+        with:
+          path: fps/cache
+          key: fps-cache-${{ github.run_id }}
+          restore-keys: fps-cache-
+      - name: Build episode
+        timeout-minutes: 200
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          FPS_JOBS: "3"
+        run: python3 tools/fps/build.py fps/episodes/${{ steps.ep.outputs.id }}.txt out/fps_${{ steps.ep.outputs.id }}
+      - name: Save voice and picture cache
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: fps/cache
+          key: fps-cache-${{ github.run_id }}
+      - name: Upload to YouTube (private)
+        if: steps.ep.outputs.upload == 'true'
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: python3 tools/fps/upload.py out/fps_${{ steps.ep.outputs.id }} "${{ steps.ep.outputs.at }}"
+      - name: Keep the files for review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fps_${{ steps.ep.outputs.id }}
+          path: |
+            out/fps_${{ steps.ep.outputs.id }}/video.mp4
+            out/fps_${{ steps.ep.outputs.id }}/thumb.jpg
+            out/fps_${{ steps.ep.outputs.id }}/transcript.txt
+            out/fps_${{ steps.ep.outputs.id }}/meta.json
+            out/fps_${{ steps.ep.outputs.id }}/upload.json
+            out/fps_${{ steps.ep.outputs.id }}/audio_qa.json
+            out/fps_${{ steps.ep.outputs.id }}/shots/
+          retention-days: 14
+      - name: Record result in the repo
+        if: always()
+        run: |
+          E=${{ steps.ep.outputs.id }}; O=out/fps_$E; mkdir -p fps/results
+          for f in meta.json upload.json audio_qa.json thumb.jpg; do [ -f $O/$f ] && cp $O/$f fps/results/${E}_$f || true; done
+          python3 - "$O/upload.json" <<'PY' || true
+          import json, os, sys
+          p = "fps/results/fps_ids.json"; ids = json.load(open(p)) if os.path.exists(p) else []
+          v = json.load(open(sys.argv[1])).get("video_id")
+          if v and v not in ids: ids.append(v)
+          json.dump(ids, open(p, "w"), indent=1)
+          PY
+          git config user.name "fps-bot"; git config user.email "fps-bot@users.noreply.github.com"
+          git add fps/results || true; git commit -m "fps: results for $E" || true
+          for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done || true

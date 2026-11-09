@@ -1,0 +1,30 @@
+name: fps-check
+on:
+  workflow_dispatch:
+  push:
+    paths: ["fps/check.txt"]
+permissions:
+  contents: write
+concurrency:
+  group: fps-check
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - run: pip install -q requests numpy pillow
+      - name: List channel videos (and privatize leftover Mongki videos if asked)
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: python3 tools/fps/check_channel.py $(head -n1 fps/check.txt 2>/dev/null)
+      - name: Save result
+        if: always()
+        run: |
+          git config user.name "fps-bot"; git config user.email "fps-bot@users.noreply.github.com"
+          git add fps/results || true; git commit -m "fps: channel check" || true
+          for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done
