@@ -1,0 +1,28 @@
+{
+ "run": "2026-11-09 17:15 KST",
+ "performance_note": "Shorts with one huge number + 'in ONE day' lead: $3T Vanished (129), GTA 5 $815M (96). '$10/day A vs B' Shorts 37-38. Long forms 0-4 views. Boost shock-number Shorts titles.",
+ "candidates": [
+  {"idea": "$847M Powerball: winner keeps ~$190M; odds; $6/week tickets vs S&P since 2000", "total": 26, "chosen": true},
+  {"idea": "Nvidia board opens probe after report CEO was target of foreign intelligence effort; earnings Nov 17", "total": 26, "note": "tie on score but NVDA used in ep03 (14-day rule) and story still developing; revisit with earnings Nov 17"},
+  {"idea": "CPI inflation report this week: your grocery bill", "total": 20},
+  {"idea": "Bitcoin slips below $82k: $10/day BTC vs Nvidia", "total": 20},
+  {"idea": "Predator/box office weekend math", "total": 15},
+  {"idea": "NFL Week 10 upsets: betting stocks", "total": 17},
+  {"idea": "Singles Day (Nov 11) China: $X in 24 hours", "total": 22, "note": "Nov 11 timing"},
+  {"idea": "Russia-Ukraine deal terms rejected: European defense stocks", "total": 19},
+  {"idea": "China exports beat forecasts: tariff math", "total": 17},
+  {"idea": "What a $847M jackpot would buy (sports team, island)", "total": 21},
+  {"idea": "Lottery vs stock market: do jackpots rise when stocks fall?", "total": 19},
+  {"idea": "Black Friday 2026 preview", "total": 18},
+  {"idea": "Thanksgiving dinner cost 2026", "total": 17},
+  {"idea": "Taylor Swift/BTS tour economics", "total": 18},
+  {"idea": "Cybertruck wind-down cost", "total": 17},
+  {"idea": "Gold vs Bitcoin since 2020", "total": 18},
+  {"idea": "AI data center power bills: your electric bill", "total": 20},
+  {"idea": "GTA 6 pre-load Nov 12 (follow-up)", "total": 19},
+  {"idea": "Micron $10/day since ChatGPT", "total": 17},
+  {"idea": "Jackpot winners who went broke (rumor-heavy, skip)", "total": 14}
+ ],
+ "titles": ["$847 Million Powerball. The Winner Actually Keeps… (chosen)", "The $847M Powerball Winner Won't Get $847M", "$847 Million → $190 Million. Here's Where It Went", "I Did the Math on the $847M Powerball", "Lottery Tickets vs Stocks: $6 a Week Since 2000", "1 in 292 Million. Was It Worth It?", "What $847 Million Really Pays After Taxes", "The Powerball Math Nobody Shows You"],
+ "sources": ["https://www.kbtx.com/2026/11/05/single-powerball-ticket-matches-all-numbers-847-million-jackpot/", "https://nj.gov/treasury/taxation/lotterygamblingwinnings.shtml", "https://www.nbcphiladelphia.com/news/business/money-report/winning-ticket-for-mega-millions-1-128-billion-jackpot-sold-in-new-jersey-heres-how-much-the-winner-will-owe-in-taxes/3814912/?amp=1", "https://financefeeds.com/nvidia-nvda-stock-180-monday-after-board-opens-independent-probe-results-17-november-bull-194-bear-172/"]
+}

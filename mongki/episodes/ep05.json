@@ -1,0 +1,486 @@
+{
+ "id": "ep05",
+ "title": "$847 Million Powerball. The Winner Actually Keeps…",
+ "thumb": {
+  "big": "$847M?",
+  "sub": "KEEPS $190M",
+  "badge": "POWERBALL",
+  "corner": "TAX",
+  "bg_prompt": "A giant golden lottery ticket being torn in half, cash flying out, a big tax bill. Leave the upper-left third darker for text. No text, no logos, no real people.",
+  "concepts": [
+   {
+    "big": "$847M",
+    "sub": "→ $190M?",
+    "badge": "AFTER TAX",
+    "emotion": "shocked, jaw on the floor",
+    "bg_prompt": "A giant golden lottery ticket being ripped in half with a mountain of cash pouring out and most of it blowing away into a dark tax office building, dramatic lighting. Leave the upper-left third darker for text. No text, no letters, no logos, no real people."
+   },
+   {
+    "big": "1 IN",
+    "sub": "292 MILLION",
+    "badge": "POWERBALL",
+    "emotion": "laughing hysterically",
+    "bg_prompt": "A single glowing lottery ball floating above an endless sea of millions of white balls, spotlight from above, dark background. Leave the upper-left third darker for text. No text on objects, no logos, no real people."
+   },
+   {
+    "big": "$6 A WEEK",
+    "sub": "TICKETS vs STOCKS",
+    "badge": "SINCE 2000",
+    "emotion": "smug, arms crossed",
+    "bg_prompt": "Split scene: on one side a trash can full of losing lottery tickets, on the other a growing glowing money tree on a green rising chart. Leave the upper-left third darker for text. No text, no logos, no real people."
+   }
+  ]
+ },
+ "description": [
+  "A single Powerball ticket in New Jersey won $847 million on November 4, 2026. But the winner won't keep $847 million. Cash option, federal and New Jersey taxes, the real odds, and what $6 a week in stocks instead of tickets turned into since 2000.",
+  "",
+  "{chapters}",
+  "",
+  "Sources:",
+  "- KBTX / Gray News, Nov 5, 2026: jackpot, cash value, odds, rank",
+  "- New Jersey Division of Taxation: lottery withholding (8% over $500,000)",
+  "- NBC Philadelphia: federal 24% withholding, 37% top bracket, NJ 10.75% top rate",
+  "- Daily price data: Yahoo Finance (SPY, QQQ, BRK-B, KO)",
+  "",
+  "Tax figures are rough estimates on top rates, before deductions. Not financial, tax or legal advice. For education only.",
+  "",
+  "#Powerball #Lottery #MongkiMoney"
+ ],
+ "tags": [
+  "powerball",
+  "powerball jackpot",
+  "lottery taxes",
+  "lump sum vs annuity",
+  "lottery winner",
+  "new jersey powerball",
+  "investing",
+  "mongki money"
+ ],
+ "data": {
+  "price_tickers": [
+   "SPY",
+   "QQQ",
+   "BRK-B",
+   "KO"
+  ],
+  "history_start": {
+   "SPY": "1999-06-01",
+   "QQQ": "1999-06-01",
+   "BRK-B": "1999-06-01",
+   "KO": "1999-06-01"
+  },
+  "backtest": {
+   "ticker": "SPY",
+   "compare": "QQQ",
+   "start": "2000-01-03",
+   "daily": 1.2,
+   "label": "since 2000"
+  },
+  "dca_more": [
+   "QQQ",
+   "BRK-B",
+   "KO"
+  ],
+  "names": {
+   "SPY": "the S&P 500 fund",
+   "QQQ": "the Nasdaq 100 fund",
+   "BRK-B": "Berkshire Hathaway",
+   "KO": "Coca-Cola"
+  },
+  "worse_stat": false
+ },
+ "segments": [
+  {
+   "chapter": null,
+   "vo": "",
+   "scene": {
+    "type": "logo",
+    "dur": 2.0
+   }
+  },
+  {
+   "chapter": "Cold open",
+   "vo": "Eight hundred forty-seven million dollars. One ticket. One person.",
+   "scene": {
+    "type": "smash",
+    "big": "$847,000,000",
+    "sub": "ONE TICKET."
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "On Wednesday, November fourth, a single Powerball ticket sold in New Jersey matched every number. An eight hundred forty-seven million dollar jackpot. The tenth-largest in Powerball history. The odds were one in two hundred ninety-two million.",
+   "scene": {
+    "type": "statcard",
+    "kicker": "Powerball, Nov 4, 2026",
+    "big": "$847M",
+    "lines": [
+     "1 ticket · New Jersey",
+     "Odds: 1 in 292,201,338"
+    ],
+    "source": "KBTX / Gray News, Nov 5, 2026"
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "But here's the thing nobody tells you. The winner is not getting eight hundred forty-seven million dollars. Not even close.",
+   "scene": {
+    "type": "title",
+    "big": "NOT $847M.",
+    "sub": "Not even close."
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "So how much do they actually keep? Should they take the lump sum or the payments? And stay to the end, because I'll show you what happens if you put six dollars a week into the stock market instead of lottery tickets. Since the year 2000.",
+   "scene": {
+    "type": "question",
+    "lines": [
+     "How much do they keep?",
+     "Lump sum or payments?",
+     "$6 a week: tickets vs stocks?"
+    ]
+   }
+  },
+  {
+   "chapter": "The cash option",
+   "vo": "First problem. That eight hundred forty-seven million is the annuity. Thirty payments, spread over twenty-nine years. If you want the money now, the cash value is about three hundred sixty-three million dollars. Less than half.",
+   "scene": {
+    "type": "twocol",
+    "left_title": "Annuity",
+    "left": [
+     "$847M",
+     "30 payments",
+     "over 29 years"
+    ],
+    "left_note": "The headline number",
+    "right_title": "Cash now",
+    "right": [
+     "≈$363.1M",
+     "One payment",
+     "Today"
+    ],
+    "right_note": "What most winners take"
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "And the annuity isn't thirty equal checks. Each yearly payment is five percent bigger than the last, so the early checks are the smallest. That's why most big winners take the cash, even though it's less than half.",
+   "scene": {
+    "type": "statcard",
+    "kicker": "How the annuity works",
+    "big": "+5% A YEAR",
+    "lines": [
+     "30 payments",
+     "Smallest checks first"
+    ],
+    "source": "Powerball prize rules"
+   }
+  },
+  {
+   "chapter": "The tax bill",
+   "vo": "Second problem. Taxes. The IRS withholds twenty-four percent up front. But a prize this big lands in the top federal bracket, thirty-seven percent. That's about one hundred thirty-four million dollars.",
+   "scene": {
+    "type": "statcard",
+    "kicker": "Federal, top bracket 37%",
+    "big": "−$134.3M",
+    "lines": [
+     "24% withheld up front",
+     "rest due at tax time"
+    ],
+    "source": "IRS brackets; NBC Philadelphia method"
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "Then New Jersey. The state withholds eight percent on any lottery prize over five hundred thousand dollars, and its top income tax rate is ten point seven five percent. That's about thirty-nine million more.",
+   "scene": {
+    "type": "statcard",
+    "kicker": "New Jersey, top rate 10.75%",
+    "big": "−$39.0M",
+    "lines": [
+     "8% withheld on prizes over $500K",
+     "10.75% top rate"
+    ],
+    "source": "NJ Division of Taxation; NBC Philadelphia"
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "So here's the real number. Start with eight hundred forty-seven million. Take the cash, pay the taxes, and you're left with roughly one hundred ninety million dollars. About twenty-two cents of every headline dollar. Rough math, before any deductions or planning.",
+   "scene": {
+    "type": "tiles",
+    "items": [
+     {
+      "label": "Headline",
+      "value": "$847M",
+      "color": "blue"
+     },
+     {
+      "label": "Cash option",
+      "value": "$363M",
+      "color": "blue"
+     },
+     {
+      "label": "Federal tax",
+      "value": "−$134M",
+      "color": "red"
+     },
+     {
+      "label": "NJ tax",
+      "value": "−$39M",
+      "color": "red"
+     },
+     {
+      "label": "Kept",
+      "value": "≈$190M",
+      "color": "blue"
+     }
+    ],
+    "source": "Mongki math on official rates"
+   }
+  },
+  {
+   "chapter": "Still insane money",
+   "vo": "Now, let's be fair. A hundred ninety million is still insane money. How insane? If you earned one hundred thousand dollars a year, it would take you about one thousand eight hundred ninety-seven years to earn that. You'd have to start working around the year one hundred thirty A D.",
+   "scene": {
+    "type": "smash",
+    "big": "1,897 YEARS",
+    "sub": "AT $100K A YEAR."
+   }
+  },
+  {
+   "chapter": "The odds",
+   "vo": "Okay. Time for the data. What are your chances of being that person? One in two hundred ninety-two million. Say you buy one ticket for every drawing. Three drawings a week, every week. On average, you'd expect to hit the jackpot once every one point eight seven million years.",
+   "scene": {
+    "type": "statcard",
+    "kicker": "One ticket every drawing",
+    "big": "1.87 MILLION YEARS",
+    "lines": [
+     "average wait for one jackpot",
+     "3 drawings a week"
+    ],
+    "source": "Odds: Powerball; Mongki math"
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "Here's the part most headlines skip. The jackpot is designed to grow. Every drawing with no winner makes it bigger, the bigger number makes the news, and the news sells more tickets. That loop is how jackpots get this big. The biggest one ever, two point zero four billion dollars, was won by a single ticket in California in November 2022.",
+   "scene": {
+    "type": "twocol",
+    "left_title": "No winner",
+    "left": [
+     "Jackpot grows",
+     "Headlines get bigger"
+    ],
+    "left_note": "The loop",
+    "right_title": "Bigger headlines",
+    "right": [
+     "More tickets sold",
+     "Jackpot grows faster"
+    ],
+    "right_note": "Repeat"
+   }
+  },
+  {
+   "chapter": "The Mongki backtest",
+   "vo": "And now, the moment I promised. Say instead of lottery tickets, you put six dollars a week, that's about a dollar twenty every trading day, into a boring S and P five hundred fund. Starting January 2000.",
+   "scene": {
+    "type": "smash",
+    "big": "$6 A WEEK",
+    "sub": "STOCKS, NOT TICKETS. SINCE 2000."
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "You'd have put in {bt_invested}. Today it's worth {bt_value}. That's {bt_return_words}. Even through the dot-com crash, 2008 and 2020. Your worst moment? On {bt_dd_date}, you were {bt_dd_words} from your peak.",
+   "scene": {
+    "type": "backtest",
+    "which": "main"
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "Same six dollars a week, same start. The Nasdaq one hundred fund? {QQQ_dca_value}, {QQQ_dca_words}. Warren Buffett's Berkshire Hathaway? {BRK-B_dca_value}, {BRK-B_dca_words}. Coca-Cola? {KO_dca_value}, {KO_dca_words}. So which boring bet won? {dca_winner}.",
+   "scene": {
+    "type": "multibars",
+    "title": "SAME $6 A WEEK, 4 BETS"
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "Not millions. But here's the difference. Over long stretches like this one, the boring stock plan has usually ended up ahead. The ticket plan almost never does.",
+   "scene": {
+    "type": "statcard",
+    "kicker": "The real difference",
+    "big": "USUALLY",
+    "lines": [
+     "vs. almost never"
+    ]
+   }
+  },
+  {
+   "chapter": "Three choices",
+   "vo": "So if you ever do win, what then? We don't give advice. But here are the three paths winners usually face.",
+   "scene": {
+    "type": "title",
+    "big": "3 PATHS",
+    "sub": "If you ever win"
+   }
+  },
+  {
+   "chapter": null,
+   "vo": "One. Lump sum. Pay the tax now, invest the rest, and it's on you. Two. Annuity. Thirty payments, a built-in guard against spending it all in a year. Three. Lawyers first. Many experts say: before you claim, get a lawyer, an accountant and a financial planner, and stay quiet if your state allows it.",
+   "scene": {
+    "type": "cards",
+    "items": [
+     {
+      "n": "1",
+      "title": "LUMP SUM",
+      "text": "Taxed now. Invest the rest."
+     },
+     {
+      "n": "2",
+      "title": "ANNUITY",
+      "text": "30 payments. Built-in brakes."
+     },
+     {
+      "n": "3",
+      "title": "TEAM FIRST",
+      "text": "Lawyer, accountant, planner."
+     }
+    ]
+   }
+  },
+  {
+   "chapter": "Outro",
+   "vo": "If this was worth your time, subscribe. And here's the deal. Drop a comment with any two things you think are connected. Do lottery jackpots go up when the stock market goes down? Does Bitcoin move with Nvidia? I'll pick the most interesting one, run the real numbers, and shout you out in the video. I'm Mongki. Not financial advice. Just math.",
+   "scene": {
+    "type": "end",
+    "next": "Nvidia earnings: Nov 17",
+    "cta": "COMMENT: X vs Y?",
+    "cta_sub": "Two things you think are connected. We run the numbers.",
+    "tail": 20.0
+   }
+  }
+ ],
+ "shorts": [
+  {
+   "key": "s1",
+   "title": "$847 Million Jackpot. The Winner Keeps $190M.",
+   "hook": "$847M → $190M?",
+   "segments": [
+    {
+     "vo": "Eight hundred forty-seven million dollars. One Powerball ticket. But the winner keeps about one hundred ninety million.",
+     "scene": {
+      "type": "smash",
+      "big": "$847M → $190M",
+      "sub": "WHERE DID IT GO?"
+     }
+    },
+    {
+     "vo": "Cash option: three hundred sixty-three million. Federal tax at thirty-seven percent: about one hundred thirty-four million. New Jersey: about thirty-nine million.",
+     "scene": {
+      "type": "tiles",
+      "items": [
+       {
+        "label": "Cash",
+        "value": "$363M",
+        "color": "blue"
+       },
+       {
+        "label": "Federal",
+        "value": "−$134M",
+        "color": "red"
+       },
+       {
+        "label": "NJ",
+        "value": "−$39M",
+        "color": "red"
+       },
+       {
+        "label": "Kept",
+        "value": "≈$190M",
+        "color": "blue"
+       }
+      ],
+      "source": "Rough math on official rates"
+     }
+    },
+    {
+     "vo": "Still insane money. Full breakdown on the channel.",
+     "scene": {
+      "type": "title",
+      "big": "FULL VIDEO ↗",
+      "sub": "Mongki Money"
+     }
+    }
+   ]
+  },
+  {
+   "key": "s2",
+   "title": "$6 a Week: Lottery Tickets vs the S&P 500 Since 2000",
+   "hook": "$6 A WEEK: TICKETS vs STOCKS",
+   "segments": [
+    {
+     "vo": "Six dollars a week. Lottery tickets, or a boring S and P five hundred fund, since the year 2000.",
+     "scene": {
+      "type": "smash",
+      "big": "$6 A WEEK",
+      "sub": "SINCE 2000."
+     }
+    },
+    {
+     "vo": "The stock plan? You put in {bt_invested}. Today it's {bt_value}. The ticket plan? Odds of one in two hundred ninety-two million per ticket.",
+     "scene": {
+      "type": "backtest",
+      "which": "main"
+     }
+    },
+    {
+     "vo": "Almost always, versus almost never. Not financial advice. Full video on the channel.",
+     "scene": {
+      "type": "title",
+      "big": "ALMOST ALWAYS",
+      "sub": "vs almost never"
+     }
+    }
+   ]
+  },
+  {
+   "key": "s3",
+   "title": "How Long Until You Win Powerball? 1.87 MILLION Years",
+   "hook": "1.87 MILLION YEARS",
+   "segments": [
+    {
+     "vo": "Buy one Powerball ticket for every drawing. Three a week. Every week.",
+     "scene": {
+      "type": "smash",
+      "big": "EVERY DRAWING",
+      "sub": "3 A WEEK."
+     }
+    },
+    {
+     "vo": "With odds of one in two hundred ninety-two million, you'd expect one jackpot every one point eight seven million years.",
+     "scene": {
+      "type": "statcard",
+      "kicker": "Average wait",
+      "big": "1.87M YEARS",
+      "lines": [
+       "one ticket per drawing"
+      ],
+      "source": "Powerball odds; Mongki math"
+     }
+    },
+    {
+     "vo": "Somebody still won eight hundred forty-seven million last week. Full breakdown on the channel.",
+     "scene": {
+      "type": "title",
+      "big": "$847M ↗",
+      "sub": "Full video on Mongki Money"
+     }
+    }
+   ]
+  }
+ ]
+}
