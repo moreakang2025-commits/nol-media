@@ -5,6 +5,7 @@ on:
     inputs:
       episode: {description: "fps/episodes/<id>.txt", default: "ep01"}
       upload: {description: "upload to YouTube as private", default: "true"}
+      max_lines: {description: "test: only the first N lines (blank = whole episode)", default: ""}
   push:
     paths: ["fps/run.txt"]
 permissions:
@@ -56,7 +57,9 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           FPS_JOBS: "3"
-        run: python3 tools/fps/build.py fps/episodes/${{ steps.ep.outputs.id }}.txt out/fps_${{ steps.ep.outputs.id }}
+        run: |
+          ML="${{ github.event.inputs.max_lines }}"
+          python3 tools/fps/build.py fps/episodes/${{ steps.ep.outputs.id }}.txt out/fps_${{ steps.ep.outputs.id }} ${ML:+--max-lines $ML}
       - name: Save voice and picture cache
         if: always()
         uses: actions/cache/save@v4

@@ -62,27 +62,73 @@ def synth_chunk(chunk, cast, style_intro, path):
         shutil.copy(cached, path); d = len(read(path)) / RATE
         print(f"[voice] cached {h} {d:.1f}s", flush=True); return d
     import requests
-    key = os.environ["GEMINI_API_KEY"]; model = MT._pick_model(key)
+    key = os.environ["GEMINI_API_KEY"]
+    a, err = _call(key, prompt, sc, words, h)
+    if a is None and len(chunk["speakers"]) > 1:
+        # multi-speaker refused: say each run of one speaker separately and join with short pauses
+        print(f"[voice] {h} multi-speaker failed ({err}); falling back to one voice per request", flush=True)
+        parts, run = [], []
+        for l in chunk["lines"]:
+            if run and l["who"] != run[-1]["who"]: parts.append(run); run = []
+            run.append(l)
+        if run: parts.append(run)
+        pieces = []
+        for k, ls in enumerate(parts):
+            sub = {"lines": ls, "speakers": [ls[0]["who"]]}
+            p2, s2 = _request(sub, cast, style_intro)
+            h2 = hashlib.sha1(("v2|" + p2 + repr(s2)).encode()).hexdigest()[:16]
+            c2 = os.path.join(CACHE, h2 + ".wav")
+            if os.path.exists(c2): x = read(c2)
+            else:
+                x, e2 = _call(key, p2, s2, sum(len(l["text"].split()) for l in ls), h2)
+                if x is None: raise RuntimeError(f"TTS failed: {e2}")
+                _write(c2, x)
+            pieces += [x, np.zeros(int(0.35 * RATE), np.float32)]
+        a = np.concatenate(pieces[:-1])
+    if a is None: raise RuntimeError(f"TTS failed: {err}")
+    _write(path, a); shutil.copy(path, cached)
+    return len(a) / RATE
+
+_bad_models = set()
+def _models(key):
+    """Preferred TTS model first, then every other TTS model the key can use."""
+    import requests
+    first = MT._pick_model(key); out = [first]
+    try:
+        r = requests.get(f"{API}/models?key={key}&pageSize=200", timeout=30)
+        out += sorted([m["name"].split("/")[-1] for m in r.json().get("models", []) if "tts" in m["name"]
+                       and "generateContent" in m.get("supportedGenerationMethods", [])], reverse=True)
+    except Exception: pass
+    seen = []
+    for m in out:
+        if m not in seen and m not in _bad_models: seen.append(m)
+    return seen
+
+def _call(key, prompt, sc, words, h):
+    """Returns (audio float32 array or None, last error text)."""
+    import requests
     body = {"contents": [{"parts": [{"text": prompt}]}],
             "generationConfig": {"responseModalities": ["AUDIO"], "speechConfig": sc}}
-    best, last = None, None
-    for attempt in range(6):
-        try:
-            r = requests.post(f"{API}/models/{model}:generateContent?key={key}", json=body, timeout=300)
-            if r.status_code == 429 or r.status_code >= 500:
-                raise RuntimeError(f"HTTP {r.status_code}: {r.text[:200]}")
-            r.raise_for_status()
-            part = r.json()["candidates"][0]["content"]["parts"][0]["inlineData"]
-            pcm = MT._trim(MT._decode(base64.b64decode(part["data"]), part.get("mimeType", "")))
-            a = np.frombuffer(pcm, np.int16).astype(np.float32); d = len(a) / RATE
-            wpm = words / max(d, 1) * 60
-            ok = 95 <= wpm <= 205   # catches truncated or runaway (off-script) takes
-            print(f"[voice] {h} take {attempt+1}: {d:.1f}s {wpm:.0f} wpm {'ok' if ok else 'REJECT'}", flush=True)
-            if best is None or abs(wpm - 150) < abs(best[1] - 150): best = (a, wpm)
-            if ok: break
-            time.sleep(4)
-        except Exception as e:
-            last = e; print(f"[voice] attempt {attempt+1} failed: {e}", flush=True); time.sleep(min(60, 10 * (attempt + 1)))
-    if best is None: raise RuntimeError(f"TTS failed: {last}")
-    _write(path, best[0]); shutil.copy(path, cached)
-    return len(best[0]) / RATE
+    last = None
+    for model in _models(key):
+        best = None
+        for attempt in range(5):
+            try:
+                r = requests.post(f"{API}/models/{model}:generateContent?key={key}", json=body, timeout=300)
+                if r.status_code == 400:
+                    last = f"{model} 400: {r.text[:400]}"; print(f"[voice] {h} {last}", flush=True); break
+                if r.status_code == 429 or r.status_code >= 500:
+                    raise RuntimeError(f"{model} HTTP {r.status_code}: {r.text[:200]}")
+                r.raise_for_status()
+                part = r.json()["candidates"][0]["content"]["parts"][0]["inlineData"]
+                pcm = MT._trim(MT._decode(base64.b64decode(part["data"]), part.get("mimeType", "")))
+                a = np.frombuffer(pcm, np.int16).astype(np.float32); d = len(a) / RATE
+                wpm = words / max(d, 1) * 60; ok = 95 <= wpm <= 205   # catches truncated or runaway takes
+                print(f"[voice] {h} {model} take {attempt+1}: {d:.1f}s {wpm:.0f} wpm {'ok' if ok else 'REJECT'}", flush=True)
+                if best is None or abs(wpm - 150) < abs(best[1] - 150): best = (a, wpm)
+                if ok: break
+                time.sleep(4)
+            except Exception as e:
+                last = str(e); print(f"[voice] {h} attempt {attempt+1}: {e}", flush=True); time.sleep(min(60, 10 * (attempt + 1)))
+        if best is not None: return best[0], None
+    return None, last
