@@ -99,7 +99,15 @@ jobs:
           done
           LONG=$(python3 -c "import json;print(json.load(open('out/${{ steps.ep.outputs.id }}/upload.json')).get('video_id',''))" 2>/dev/null || true)
           SHORTS=$(for d in out/${{ steps.ep.outputs.id }}/shorts/*/; do python3 -c "import json;print(json.load(open('$d/upload.json')).get('video_id',''))" 2>/dev/null; done | tr '\n' ' ')
-          if [ -n "$LONG" ] && [ -n "$SHORTS" ]; then cd tools/mongki && python3 linkshorts.py $LONG $SHORTS || true; fi
+          if [ -n "$LONG" ] && [ -n "$SHORTS" ]; then (cd tools/mongki && python3 linkshorts.py $LONG $SHORTS || true); fi
+          python3 - "$LONG" $SHORTS <<'PY' || true
+          import json, sys
+          p = "mongki/related.json"; d = json.load(open(p)); have = {i["short"] for i in d["items"]}
+          long = sys.argv[1]
+          for s in sys.argv[2:]:
+              if long and s not in have: d["items"].append({"short": s, "long": long, "ep": "${{ steps.ep.outputs.id }}", "done": False})
+          json.dump(d, open(p, "w"), indent=1)
+          PY
       - name: Keep the files for review
         uses: actions/upload-artifact@v4
         with:
@@ -133,6 +141,6 @@ jobs:
           for f in voice_raw.flac voice_final.flac; do
             [ -f out/${{ steps.ep.outputs.id }}/$f ] && cp out/${{ steps.ep.outputs.id }}/$f mongki/diag/${{ steps.ep.outputs.id }}_$f || true
           done
-          git add mongki/results mongki/diag mongki/cache || true
+          git add mongki/results mongki/diag mongki/cache mongki/related.json || true
           git commit -m "mongki: results for ${{ steps.ep.outputs.id }}" || echo "nothing to commit"
           for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done || true
