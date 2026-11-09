@@ -6,6 +6,7 @@ Format
   DESCRIPTION: ... END_DESCRIPTION   (multi-line; {chapters} is replaced with timestamps)
   ## Chapter name       starts a chapter
   [SHOT] prompt          a new picture (generated) starts at the next spoken line
+  [SHORT] hook title     a vertical Short starts at the next spoken line (up to ~58 s)
   [LIB] id id ...        library pictures (fps/library/img/<id>.jpg), time split evenly between them
   NAME: text             a spoken line (NAME must be in CAST)
   # comment              ignored
@@ -34,6 +35,8 @@ def parse(path):
             ep["cast"][parts[0].upper()] = c; continue
         if s.startswith("## "):
             chapter = s[3:].strip(); ep["items"].append({"kind": "chapter", "name": chapter}); continue
+        if s.startswith("[SHORT]"):
+            ep["items"].append({"kind": "short", "title": s[7:].strip()}); continue
         if s.startswith("[LIB]"):
             ep["items"].append({"kind": "shot", "prompt": "", "lib": s[5:].split()}); continue
         if s.startswith("[SHOT]"):

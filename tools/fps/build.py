@@ -72,15 +72,16 @@ def main():
 
     # 1) lines with their shot and chapter
     lines, shots, chapters = [], [], []
-    pend_chapter = None
+    pend_chapter = None; pend_short = None
     for it in ep["items"]:
+        if it["kind"] == "short": pend_short = it["title"]; continue
         if it["kind"] == "chapter": pend_chapter = it["name"]
         elif it["kind"] == "shot": shots.append({"prompt": it["prompt"], "lib": it.get("lib"), "first_line": None})
         else:
             txt = ST.spoken(it["text"])
             if not txt: continue
-            ln = {"idx": len(lines), "who": it["who"], "text": txt, "shot": len(shots) - 1, "chapter": pend_chapter}
-            pend_chapter = None
+            ln = {"idx": len(lines), "who": it["who"], "text": txt, "shot": len(shots) - 1, "chapter": pend_chapter, "short": pend_short}
+            pend_chapter = None; pend_short = None
             if shots and shots[-1]["first_line"] is None: shots[-1]["first_line"] = ln["idx"]
             lines.append(ln)
             if max_lines and len(lines) >= max_lines: break
@@ -194,6 +195,12 @@ def main():
     meta = {"title": ep["title"], "description": desc, "tags": ep["tags"], "duration": round(total, 1),
             "stats": ST.stats(ep), "shots": len(shots), "voice_chunks": len(chunks)}
     json.dump(meta, open(os.path.join(outdir, "meta.json"), "w"), indent=1)
+    # timeline for the Shorts maker (voice_clean.wav and shots/ stay in outdir)
+    json.dump({"lines": [{k: l.get(k) for k in ("idx", "who", "text", "t", "chapter", "short")} for l in lines],
+               "line_end": [c["t0"] + c["dur"] for c in chunks for _ in c["lines"]],
+               "clips": [{"img": c["img"], "a": c["a"], "b": c["b"]} for c in clips], "speech_end": speech_end,
+               "title": ep["title"], "tags": ep["tags"]},
+              open(os.path.join(outdir, "timeline.json"), "w"), indent=1)
     for f in files + [os.path.join(outdir, "silent.mp4")] + [os.path.join(outdir, f"v{i:03d}.wav") for i in range(len(chunks))]:
         if os.path.exists(f): os.remove(f)
     print("[build] done", round(total / 60, 1), "min", flush=True)

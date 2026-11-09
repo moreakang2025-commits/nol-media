@@ -8,6 +8,7 @@ from upload import token, captions
 
 def main(outdir, publish_at=None):
     meta = json.load(open(os.path.join(outdir, "meta.json")))
+    meta["description"] = meta["description"].replace("{long}", os.environ.get("LONG_URL", "on our channel"))
     tok = token(); hdr = {"Authorization": f"Bearer {tok}"}
     body = {"snippet": {"title": meta["title"][:100], "description": meta["description"][:4900], "tags": meta["tags"],
                         "categoryId": "24", "defaultLanguage": "en", "defaultAudioLanguage": "en"},
@@ -24,15 +25,17 @@ def main(outdir, publish_at=None):
         r = requests.put(r.headers["Location"], headers={**hdr, "Content-Type": "video/mp4"}, data=f, timeout=3600)
     r.raise_for_status(); vid = r.json()["id"]
     res = {"video_id": vid, "url": f"https://youtu.be/{vid}", "privacy": "private", "publish_at": publish_at}
-    try:
+    if os.path.exists(os.path.join(outdir, "thumb.jpg")):
+      try:
         with open(os.path.join(outdir, "thumb.jpg"), "rb") as f:
             t = requests.post(f"https://www.googleapis.com/upload/youtube/v3/thumbnails/set?videoId={vid}",
                               headers={**hdr, "Content-Type": "image/jpeg"}, data=f, timeout=120)
         res["thumbnail"] = "set" if t.ok else f"failed {t.status_code}: {t.text[:300]}"
-    except Exception as e:
+      except Exception as e:
         res["thumbnail"] = f"failed: {e}"
-    try: res["captions"] = captions(tok, vid, os.path.join(outdir, "transcript.txt"))
-    except Exception as e: res["captions"] = f"failed: {e}"
+    if os.path.exists(os.path.join(outdir, "transcript.txt")):
+        try: res["captions"] = captions(tok, vid, os.path.join(outdir, "transcript.txt"))
+        except Exception as e: res["captions"] = f"failed: {e}"
     try:
         st = requests.get("https://www.googleapis.com/youtube/v3/videos", params={"part": "status", "id": vid}, headers=hdr, timeout=30).json()["items"][0]["status"]
         res["status_now"] = {k: st.get(k) for k in ("privacyStatus", "publishAt", "uploadStatus", "containsSyntheticMedia")}

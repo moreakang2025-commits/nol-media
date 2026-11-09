@@ -75,6 +75,22 @@ jobs:
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
         run: python3 tools/fps/upload.py out/fps_${{ steps.ep.outputs.id }} "${{ steps.ep.outputs.at }}"
+      - name: Build Shorts (from the long-form voice and pictures, no extra cost)
+        id: shorts
+        continue-on-error: true
+        timeout-minutes: 40
+        run: python3 tools/fps/shorts.py out/fps_${{ steps.ep.outputs.id }} 4
+      - name: Upload Shorts (private)
+        if: steps.ep.outputs.upload == 'true' && steps.shorts.outcome == 'success'
+        continue-on-error: true
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: |
+          O=out/fps_${{ steps.ep.outputs.id }}
+          LONG=$(python3 -c "import json;print(json.load(open('$O/upload.json')).get('url',''))" 2>/dev/null || true)
+          for d in $O/shorts/*/; do LONG_URL="$LONG" python3 tools/fps/upload.py "$d" || true; done
       - name: Keep the files for review
         if: always()
         uses: actions/upload-artifact@v4
@@ -94,6 +110,10 @@ jobs:
         run: |
           E=${{ steps.ep.outputs.id }}; O=out/fps_$E; mkdir -p fps/results
           for f in meta.json upload.json audio_qa.json thumb.jpg contact.jpg; do [ -f $O/$f ] && cp $O/$f fps/results/${E}_$f || true; done
+          for d in $O/shorts/*/; do [ -d "$d" ] || continue; k=$(basename $d)
+            for f in meta.json upload.json; do [ -f $d$f ] && cp $d$f fps/results/${E}_${k}_$f || true; done
+            [ -f $d/upload.json ] && python3 -c "import json,sys;v=json.load(open('$d/upload.json')).get('video_id');ids=json.load(open('fps/results/fps_ids.json')) if __import__('os').path.exists('fps/results/fps_ids.json') else [];v and v not in ids and ids.append(v);json.dump(ids,open('fps/results/fps_ids.json','w'),indent=1)" || true
+          done
           python3 - "$O/upload.json" <<'PY' || true
           import json, os, sys
           p = "fps/results/fps_ids.json"; ids = json.load(open(p)) if os.path.exists(p) else []

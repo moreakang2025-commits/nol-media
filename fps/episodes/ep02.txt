@@ -29,6 +29,7 @@ END_DESCRIPTION
 
 ## The Cake
 [LIB] dil_cake_trash obj_cake
+[SHORT] She Threw My 75th Birthday Cake In The Trash
 BROOKE: Nobody wants sugar, Ruth. And honestly? Nobody wants you here past Christmas either.
 RUTH: That's what my daughter-in-law said on my seventy-fifth birthday. Then she scraped the cake I baked myself into the kitchen trash. Candles still lit.
 [LIB] birthday_table son_guilty
@@ -56,6 +57,7 @@ RUTH: And this time, we did win. Dolores insisted I keep the ticket in my purse.
 ## What I Heard
 [LIB] dil_phone_porch gp_overhear
 RUTH: Two days after my birthday, I came down for a glass of water at night and heard Brooke on the back porch, on the phone.
+[SHORT] I Heard My Daughter-In-Law's Plan At Midnight
 BROOKE: Sunny Acres has a bed opening December first. She'll sign whatever Kevin puts in front of her, she always does. Then I finally get my home office. The suite has its own bathroom, it's perfect.
 [LIB] gm_crying_bed obj_clock_3am
 RUTH: Her home office. The suite I paid one hundred and eighty thousand dollars for was going to be her home office. And I was going to be in a room at Sunny Acres with a window that looked at a parking lot.
@@ -64,6 +66,7 @@ RUTH: I went back upstairs and I didn't sleep. But I didn't cry for long, either
 ## The Bank
 [LIB] place_bank bank_desk
 RUTH: The next morning, Dolores drove me to the bank. I wanted to know how much I had of my own, before I did anything. The manager turned his screen toward me and went very quiet.
+[SHORT] The Bank Manager Went Quiet
 BANKER: Mrs. Hale, there's an automatic transfer from your account every month. Fourteen hundred dollars. It's been going on for about nineteen months. It goes to a business account. A boutique called Brooke and Bloom.
 [LIB] gm_cellphone bank_freeze
 RUTH: My Social Security. Fourteen hundred dollars a month, for nineteen months. Brooke had set it up the week I moved in, when she so kindly offered to handle my online banking.
@@ -102,6 +105,7 @@ BROOKE: Everybody, before we eat. We have an announcement. Ruth is moving to Sun
 RUTH: Her mother clapped. Kevin stared at his plate. Brooke held up the folder and slid a pen toward me down the table, right past the cranberry sauce.
 BROOKE: Just sign the intake form, Ruth. Right there. Kevin already filled it out for you.
 [LIB] gm_triumph thanksgiving_table
+[SHORT] Then I Tapped My Glass At Thanksgiving
 RUTH: I stood up. I tapped my water glass with my fork. And fourteen people went silent.
 RUTH: Thank you, Brooke. I do have an announcement of my own. Three of them, actually.
 RUTH: One. I'm not moving to Sunny Acres. On Monday I'm moving into my new house on Crystal Lake. I paid for it in cash.
