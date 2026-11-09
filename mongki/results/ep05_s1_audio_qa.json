@@ -1,0 +1,26 @@
+{
+ "segments": [
+  {
+   "seg": 0,
+   "clipped": 0,
+   "jumps": []
+  },
+  {
+   "seg": 1,
+   "clipped": 0,
+   "jumps": [
+    9.55
+   ]
+  },
+  {
+   "seg": 2,
+   "clipped": 0,
+   "jumps": []
+  }
+ ],
+ "final_decoded": {
+  "clipped": 0,
+  "jumps": [],
+  "isolated_ticks": 0
+ }
+}

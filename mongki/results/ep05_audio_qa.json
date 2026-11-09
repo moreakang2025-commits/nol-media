@@ -1,0 +1,151 @@
+{
+ "segments": [
+  {
+   "seg": 0,
+   "clipped": 0,
+   "jumps": [],
+   "smacks_removed": 0
+  },
+  {
+   "seg": 1,
+   "clipped": 0,
+   "jumps": [],
+   "smacks_removed": 5
+  },
+  {
+   "seg": 2,
+   "clipped": 0,
+   "jumps": [
+    7.04
+   ],
+   "smacks_removed": 11
+  },
+  {
+   "seg": 3,
+   "clipped": 0,
+   "jumps": [
+    10.13
+   ],
+   "smacks_removed": 14
+  },
+  {
+   "seg": 4,
+   "clipped": 0,
+   "jumps": [],
+   "smacks_removed": 5
+  },
+  {
+   "seg": 5,
+   "clipped": 0,
+   "jumps": [],
+   "smacks_removed": 9
+  },
+  {
+   "seg": 6,
+   "clipped": 0,
+   "jumps": [],
+   "smacks_removed": 9
+  },
+  {
+   "seg": 7,
+   "clipped": 0,
+   "jumps": [],
+   "smacks_removed": 8
+  },
+  {
+   "seg": 8,
+   "clipped": 0,
+   "jumps": [],
+   "smacks_removed": 9
+  },
+  {
+   "seg": 9,
+   "clipped": 0,
+   "jumps": [
+    19.33
+   ],
+   "smacks_removed": 11
+  },
+  {
+   "seg": 10,
+   "clipped": 0,
+   "jumps": [],
+   "smacks_removed": 8
+  },
+  {
+   "seg": 11,
+   "clipped": 0,
+   "jumps": [],
+   "smacks_removed": 14
+  },
+  {
+   "seg": 12,
+   "clipped": 0,
+   "jumps": [
+    12.83
+   ],
+   "smacks_removed": 12
+  },
+  {
+   "seg": 13,
+   "clipped": 0,
+   "jumps": [],
+   "smacks_removed": 6
+  },
+  {
+   "seg": 14,
+   "clipped": 0,
+   "jumps": [],
+   "smacks_removed": 11
+  },
+  {
+   "seg": 15,
+   "clipped": 0,
+   "jumps": [
+    4.21
+   ],
+   "smacks_removed": 12
+  },
+  {
+   "seg": 16,
+   "clipped": 0,
+   "jumps": [],
+   "smacks_removed": 7
+  },
+  {
+   "seg": 17,
+   "clipped": 0,
+   "jumps": [],
+   "smacks_removed": 5
+  },
+  {
+   "seg": 18,
+   "clipped": 0,
+   "jumps": [],
+   "smacks_removed": 16
+  },
+  {
+   "seg": 19,
+   "clipped": 0,
+   "jumps": [],
+   "smacks_removed": 14
+  }
+ ],
+ "post_master_ticks_removed": 45,
+ "final_isolated_ticks": 12,
+ "raw_mix": {
+  "clipped": 0,
+  "jumps": [
+   92.08,
+   96.03,
+   99.18,
+   328.11,
+   406.36
+  ]
+ },
+ "final_decoded": {
+  "clipped": 0,
+  "jumps": []
+ },
+ "final_peak": 26297
+}

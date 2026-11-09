@@ -1,0 +1,19 @@
+{
+ "prices_asof": "2026-11-06",
+ "bt_start_words": "January 3, 2000",
+ "bt_invested": "$8,104",
+ "bt_value": "$47,457",
+ "bt_return_words": "a gain of 485.6 percent",
+ "bt_dd_words": "48 percent down",
+ "bt_dd_date": "March 9, 2009",
+ "cmp_value": "$88,858",
+ "cmp_return_words": "a gain of 996.5 percent",
+ "QQQ_dca_value": "$88,858",
+ "QQQ_dca_words": "a gain of 996.5 percent",
+ "BRK-B_dca_value": "$49,589",
+ "BRK-B_dca_words": "a gain of 511.9 percent",
+ "KO_dca_value": "$37,348",
+ "KO_dca_words": "a gain of 360.9 percent",
+ "dca_winner": "the Nasdaq 100 fund",
+ "_elections": []
+}

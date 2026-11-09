@@ -1,0 +1,30 @@
+{
+ "mode": "gemini_full",
+ "candidates": [
+  {
+   "ok": false,
+   "concept": "$847M",
+   "text_found": "$847M \u2192 $190M? AFTER TAX POWER BALL LOTTERY",
+   "real_person": false,
+   "brand_logo": true,
+   "score": 8
+  },
+  {
+   "ok": false,
+   "concept": "1 IN",
+   "text_found": "1 IN 292 MILLION #7 POWERBALL",
+   "real_person": false,
+   "brand_logo": true,
+   "score": 8
+  },
+  {
+   "ok": true,
+   "concept": "$6 A WEEK",
+   "text_found": "$6 A WEEK TICKETS vs STOCKS SINCE 2000 LOTTERY LOSER",
+   "real_person": false,
+   "brand_logo": false,
+   "score": 7
+  }
+ ],
+ "winner": "$6 A WEEK"
+}
