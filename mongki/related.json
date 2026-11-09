@@ -5,73 +5,86 @@
    "short": "RJFQ9PqfRhA",
    "long": "YluHz2Fxbbw",
    "ep": "ep01",
-   "done": false
+   "done": true,
+   "set_on": "2026-11-09"
   },
   {
    "short": "EtaF8X6QDyQ",
    "long": "YluHz2Fxbbw",
    "ep": "ep01",
-   "done": false
+   "done": true,
+   "set_on": "2026-11-09"
   },
   {
    "short": "ZttcFjHXyEE",
    "long": "YluHz2Fxbbw",
    "ep": "ep01",
-   "done": false
+   "done": true,
+   "set_on": "2026-11-09"
   },
   {
    "short": "IpfRbU1K8UU",
    "long": "kJadvqTR7Tc",
    "ep": "ep03",
-   "done": false
+   "done": true,
+   "set_on": "2026-11-09"
   },
   {
    "short": "e32_SXkmCGY",
    "long": "kJadvqTR7Tc",
    "ep": "ep03",
-   "done": false
+   "done": true,
+   "set_on": "2026-11-09"
   },
   {
    "short": "DkQMi4ovSoI",
    "long": "kJadvqTR7Tc",
    "ep": "ep03",
-   "done": false
+   "done": true,
+   "set_on": "2026-11-09"
   },
   {
    "short": "8YhlMg9E3YU",
    "long": "9Mp9Ub0_nbY",
    "ep": "ep04",
-   "done": false
+   "done": true,
+   "set_on": "2026-11-09"
   },
   {
    "short": "GXyRlLdYBsI",
    "long": "9Mp9Ub0_nbY",
    "ep": "ep04",
-   "done": false
+   "done": true,
+   "set_on": "2026-11-09"
   },
   {
    "short": "RW6D4CURdA8",
    "long": "9Mp9Ub0_nbY",
    "ep": "ep04",
-   "done": false
+   "done": true,
+   "set_on": "2026-11-09"
   },
   {
    "short": "oIMfhyQjpDU",
    "long": "dWtDGhHTqDc",
    "ep": "ep05",
-   "done": false
+   "done": true,
+   "set_on": "2026-11-09"
   },
   {
    "short": "DFW6gU3Q3ok",
    "long": "dWtDGhHTqDc",
    "ep": "ep05",
-   "done": false
+   "done": true,
+   "set_on": "2026-11-09"
   },
   {
    "short": "L6bo0dU6AA0",
    "long": "dWtDGhHTqDc",
    "ep": "ep05",
-   "done": false
+   "done": true,
+   "set_on": "2026-11-09"
   }
- ]
+ ],
+ "_procedure": "Built-in browser: open https://studio.youtube.com/video/<short>/edit, wait 4s, find '관련 동영상' (gives a ref), scroll_to that ref, click the pencil at (744,558) in an 800x1019 frame, wait, click the search box (300,176), type a distinctive part of the long-form title, wait, find '선택되지 않음' to confirm exactly one option, click it (116,283), click 저장 (694,112), confirm with find '변경사항이 저장됨' and the long title. Scheduled (not yet public) long-forms also appear in the picker."
 }
