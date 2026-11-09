@@ -51,7 +51,7 @@ def end_card(im):
     return im.convert("RGB")
 
 def thumbnail(ep, refs, out):
-    prompt = ep.get("thumb_prompt", "")
+    prompt = ep.get("thumb_prompt", "") + " Any printed text on objects (tickets, papers, signs) is out of focus and unreadable."
     rf = IM.refs_for(prompt, ep["cast"], refs)
     im = IM.generate(prompt, rf, tag="thumb") or Image.new("RGB", (1344, 768), (40, 30, 30))
     im = cover(im, 1280, 720).convert("RGBA")
