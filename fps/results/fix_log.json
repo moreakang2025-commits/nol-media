@@ -1,48 +1,8 @@
 [
  {
-  "cmd": "rethumb ep02",
-  "ok": false,
-  "detail": "module 'build' has no attribute 'thumbnail'"
- },
- {
-  "cmd": "schedule",
-  "id": "hAG4V8CPWJ8",
-  "publishAt": "2026-11-10T15:00:00Z",
-  "ok": true,
-  "detail": ""
- },
- {
-  "cmd": "schedule",
+  "cmd": "rethumb",
+  "ep": "ep02",
   "id": "DKuUcvhEB4Y",
-  "publishAt": "2026-11-11T15:00:00Z",
-  "ok": true,
-  "detail": ""
- },
- {
-  "cmd": "schedule",
-  "id": "g1tm4quo7HU",
-  "publishAt": "2026-11-11T17:30:00Z",
-  "ok": true,
-  "detail": ""
- },
- {
-  "cmd": "schedule",
-  "id": "7gq0cSzzJzs",
-  "publishAt": "2026-11-11T20:30:00Z",
-  "ok": true,
-  "detail": ""
- },
- {
-  "cmd": "schedule",
-  "id": "bou_7uOxTG4",
-  "publishAt": "2026-11-11T23:30:00Z",
-  "ok": true,
-  "detail": ""
- },
- {
-  "cmd": "schedule",
-  "id": "-53BsQ49wso",
-  "publishAt": "2026-11-12T01:30:00Z",
   "ok": true,
   "detail": ""
  }
