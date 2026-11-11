@@ -3,6 +3,8 @@ generated with the matching portraits attached so faces stay consistent. Cached 
 import base64, hashlib, io, os, re, sys, time
 from PIL import Image, ImageDraw, ImageFilter
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "mongki"))
+sys.path.insert(0, os.path.dirname(__file__))
+import fallback as FB
 
 API = "https://generativelanguage.googleapis.com/v1beta"
 CACHE = os.environ.get("FPS_IMG_CACHE", os.path.join(os.path.dirname(__file__), "..", "..", "fps", "cache", "img"))
@@ -35,14 +37,21 @@ def _placeholder(prompt, ratio):
     im = Image.new("RGB", (w, h), (60, 45, 40)); d = ImageDraw.Draw(im)
     d.text((40, 40), prompt[:90], fill=(240, 220, 200)); return im
 
-def generate(prompt, refs=(), ratio="16:9", tag="shot"):
-    """refs: [(label, PIL image)]. Returns PIL RGB image (cached)."""
+def generate(prompt, refs=(), ratio="16:9", tag="shot", backup=True):
+    """refs: [(label, PIL image)]. Returns PIL RGB image (cached). backup=False: Gemini only (library pictures)."""
     full = f"{prompt}\n\n{STYLE}"
     h = hashlib.sha1(("v1|" + ratio + full + "|".join(l for l, _ in refs)).encode()).hexdigest()[:16]
     os.makedirs(CACHE, exist_ok=True); path = os.path.join(CACHE, f"{tag}_{h}.jpg")
     if os.path.exists(path): return Image.open(path).convert("RGB")
+    if backup and os.path.exists(path.replace(".jpg", "_pl.jpg")) and not FB.gemini_ok():
+        return Image.open(path.replace(".jpg", "_pl.jpg")).convert("RGB")
     if OFFLINE:
         im = _placeholder(prompt, ratio); im.save(path, quality=88); return im
+    if not FB.gemini_ok():
+        if not backup: return None
+        im = FB.image(prompt, ratio, tag)
+        if im is not None: im.save(path.replace(".jpg", "_pl.jpg"), quality=90)
+        return im
     import requests
     key = os.environ["GEMINI_API_KEY"]; model = _image_model(key)
     parts = []
@@ -57,16 +66,19 @@ def generate(prompt, refs=(), ratio="16:9", tag="shot"):
             r = requests.post(f"{API}/models/{model}:generateContent?key={key}", json=body, timeout=240)
             if r.status_code == 400 and "imageConfig" in r.text:
                 body["generationConfig"].pop("imageConfig", None); continue
+            if FB.is_billing_error(r.status_code, r.text):
+                FB.mark_dead(f"image HTTP {r.status_code}: {r.text[:200]}")
+                return generate(prompt, refs, ratio, tag, backup)
             if r.status_code == 429 or r.status_code >= 500: raise RuntimeError(f"HTTP {r.status_code}: {r.text[:200]}")
             r.raise_for_status()
             for part in r.json()["candidates"][0]["content"].get("parts", []):
                 if "inlineData" in part:
                     im = Image.open(io.BytesIO(base64.b64decode(part["inlineData"]["data"]))).convert("RGB")
-                    im.save(path, quality=90); print(f"[img] {tag} {h} {im.size}", flush=True); return im
+                    im.save(path, quality=90); print(f"[img] {tag} {h} {im.size}", flush=True); FB.USED["img_gemini"] += 1; return im
             raise RuntimeError("no image in response: " + str(r.json())[:300])
         except Exception as e:
             print(f"[img] {tag} attempt {attempt+1}: {e}", flush=True); time.sleep(min(60, 8 * (attempt + 1)))
-    return None
+    return FB.image(prompt, ratio, tag) if backup else None
 
 def portraits(cast):
     """Reference portrait for every cast member with a look=."""

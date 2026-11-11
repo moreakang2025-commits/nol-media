@@ -29,6 +29,44 @@ def ref_image(key):
     p = os.path.join(REF, f"{key}.jpg")
     return Image.open(p).convert("RGB") if os.path.exists(p) else None
 
+def make_role(key, look):
+    """Reference portrait for one face (Gemini only). True if it exists afterwards."""
+    p = os.path.join(REF, f"{key}.jpg")
+    if os.path.exists(p): return True
+    if IM.OFFLINE: return False
+    os.makedirs(REF, exist_ok=True)
+    im = IM.generate(f"Head-and-shoulders portrait photo of {look}. Neutral expression, plain softly lit background, "
+                     "looking slightly off camera.", ratio="3:4", tag=f"libref_{key}", backup=False)
+    if im: im.thumbnail((900, 1200)); im.save(p, quality=88); return True
+    return False
+
+def make_img(iid):
+    """One library picture on demand (Gemini only, faces attached). Returns the path or None."""
+    roles, imgs = parse(); prompt = dict(imgs).get(iid)
+    p = os.path.join(IMG, f"{iid}.jpg")
+    if os.path.exists(p): return p
+    if not prompt or IM.OFFLINE: return None
+    os.makedirs(IMG, exist_ok=True)
+    keys = re.findall(r"\{(\w+)\}", prompt)
+    for k in keys:
+        if k in roles: make_role(k, roles[k])
+    text = re.sub(r"\{(\w+)\}", lambda m: LABEL.get(m.group(1), m.group(1)), prompt)
+    refs = [(LABEL[k], ref_image(k)) for k in dict.fromkeys(keys) if k in LABEL and ref_image(k) is not None][:3]
+    im = IM.generate(text, refs, tag=f"lib_{iid}", backup=False)
+    if im is None: return None
+    im = im.resize((1600, int(1600 * im.height / im.width)), Image.LANCZOS); im.save(p, quality=85)
+    return p
+
+def write_catalog():
+    roles, imgs = parse()
+    with open(os.path.join(LIB, "catalog.md"), "w") as f:
+        f.write("# Picture library catalog (use in episodes as `[LIB] id id ...`)\n\n")
+        f.write("Pictures marked (MISSING) are made automatically the first time an episode uses them (~$0.04 each).\n\n")
+        f.write("Recurring faces: " + ", ".join(f"{k} ({LABEL.get(k, k)})" for k in roles) + "\n\n")
+        for iid, prompt in imgs:
+            ok = "" if os.path.exists(os.path.join(IMG, f"{iid}.jpg")) else " (MISSING)"
+            f.write(f"- `{iid}`{ok}: {prompt}\n")
+
 def main():
     limit = int(sys.argv[sys.argv.index("--limit") + 1]) if "--limit" in sys.argv else 10 ** 6
     os.makedirs(REF, exist_ok=True); os.makedirs(IMG, exist_ok=True)
@@ -37,7 +75,7 @@ def main():
         p = os.path.join(REF, f"{key}.jpg")
         if os.path.exists(p): continue
         im = IM.generate(f"Head-and-shoulders portrait photo of {look}. Neutral expression, plain softly lit background, "
-                         "looking slightly off camera.", ratio="3:4", tag=f"libref_{key}")
+                         "looking slightly off camera.", ratio="3:4", tag=f"libref_{key}", backup=False)
         if im: im.thumbnail((900, 1200)); im.save(p, quality=88); made += 1
     for iid, prompt in imgs:
         p = os.path.join(IMG, f"{iid}.jpg")
@@ -45,15 +83,10 @@ def main():
         keys = re.findall(r"\{(\w+)\}", prompt)
         text = re.sub(r"\{(\w+)\}", lambda m: LABEL.get(m.group(1), m.group(1)), prompt)
         refs = [(LABEL[k], ref_image(k)) for k in dict.fromkeys(keys) if k in LABEL and ref_image(k) is not None][:3]
-        im = IM.generate(text, refs, tag=f"lib_{iid}")
+        im = IM.generate(text, refs, tag=f"lib_{iid}", backup=False)
         if im:
             im = im.resize((1600, int(1600 * im.height / im.width)), Image.LANCZOS); im.save(p, quality=85); made += 1
-    with open(os.path.join(LIB, "catalog.md"), "w") as f:
-        f.write("# Picture library catalog (use in episodes as `[LIB] id id ...`)\n\n")
-        f.write("Recurring faces: " + ", ".join(f"{k} ({LABEL[k]})" for k in roles) + "\n\n")
-        for iid, prompt in imgs:
-            ok = "" if os.path.exists(os.path.join(IMG, f"{iid}.jpg")) else " (MISSING)"
-            f.write(f"- `{iid}`{ok}: {prompt}\n")
+    write_catalog()
     have = sum(os.path.exists(os.path.join(IMG, f"{i}.jpg")) for i, _ in imgs)
     print(f"[library] made {made} now; {have}/{len(imgs)} scene pictures, {len(os.listdir(REF))}/{len(roles)} faces")
 

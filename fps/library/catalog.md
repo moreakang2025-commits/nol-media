@@ -1,5 +1,7 @@
 # Picture library catalog (use in episodes as `[LIB] id id ...`)
 
+Pictures marked (MISSING) are made automatically the first time an episode uses them (~$0.04 each).
+
 Recurring faces: grandma (the grandmother), grandpa (the grandfather), son (the son), dil (the daughter-in-law), daughter (the daughter), sil (the son-in-law), grandson (the grandson), granddaughter (the granddaughter), lawyer (the lawyer), realtor (the real estate agent), nurse (the nurse), friend (the old friend), dog (the old dog), youngman (the young man), neighbor (the old neighbor), kidboy (the little boy), kidgirl (the little girl), mom (the young mother), widow (the widow), banker (the banker)
 
 - `gm_porch_dusk`: {grandma} sitting alone in a wooden rocking chair on a lakeside front porch at dusk, wrapped in a red knitted blanket, holding a coffee mug, looking at the water

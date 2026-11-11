@@ -6,7 +6,7 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFilter
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE); sys.path.insert(0, os.path.join(HERE, "..", "mongki"))
-import story as ST, voice as V, images as IM
+import story as ST, voice as V, images as IM, fallback as FB, library as LB
 import tts as MT
 from common import fit_text, text_img, paste_center
 
@@ -111,14 +111,34 @@ def main():
     print(f"[build] speech {speech_end/60:.1f} min", flush=True)
 
     # 3) pictures: library pictures cost nothing; [SHOT] lines are generated (one image each)
+    for k, c in cast.items():   # faces the library does not have yet are made now (once, kept for later episodes)
+        lk = c.get("look", "")
+        if lk.startswith("lib:"):
+            roles, _ = LB.parse(); key = lk[4:].strip()
+            had = os.path.exists(os.path.join(LB.REF, key + ".jpg"))
+            if key in roles and not had and LB.make_role(key, roles[key]): FB.USED["library_made"].append("face:" + key)
     refs = IM.portraits(cast)
+    libtxt = os.path.join(HERE, "..", "..", "fps", "library", "library.txt"); used_lib = []
     prev = None; libdir = os.path.join(HERE, "..", "..", "fps", "library", "img"); new_images = 0
     for si, s in enumerate(shots):
         s["imgs"] = []
         if s["lib"]:
             for j, lid in enumerate(s["lib"]):
                 src_p = os.path.join(libdir, lid + ".jpg")
-                if not os.path.exists(src_p): print("[build] missing library picture", lid); continue
+                if not os.path.exists(src_p):   # made on first use (Gemini), else a free backup picture
+                    made = LB.make_img(lid)
+                    if made: FB.USED["library_made"].append(lid); print("[build] made library picture", lid, flush=True)
+                    else:
+                        prompt = dict(LB.parse()[1]).get(lid, "")
+                        txt = __import__("re").sub(r"\{(\w+)\}", lambda m: LB.LABEL.get(m.group(1), m.group(1)), prompt)
+                        im = FB.image(txt, "16:9", f"lib_{lid}") if txt and not IM.OFFLINE else None
+                        if im is not None:
+                            pth = os.path.join(outdir, "shots", f"s{si:03d}_{j}.png"); cover(im, W, H).save(pth); s["imgs"].append(pth); continue
+                        sub = FB.nearest_library(txt or lid, libtxt, libdir, avoid=used_lib[-3:])
+                        print(f"[build] library picture {lid} unavailable; using {sub}", flush=True)
+                        if not sub: continue
+                        src_p = os.path.join(libdir, sub + ".jpg")
+                used_lib.append(os.path.basename(src_p)[:-4])
                 pth = os.path.join(outdir, "shots", f"s{si:03d}_{j}.png"); cover(Image.open(src_p).convert("RGB"), W, H).save(pth)
                 s["imgs"].append(pth)
             if s["imgs"]: prev = Image.open(s["imgs"][-1]); continue
@@ -195,6 +215,9 @@ def main():
     meta = {"title": ep["title"], "description": desc, "tags": ep["tags"], "duration": round(total, 1),
             "stats": ST.stats(ep), "shots": len(shots), "voice_chunks": len(chunks)}
     json.dump(meta, open(os.path.join(outdir, "meta.json"), "w"), indent=1)
+    FB.USED["library_made"] = sorted(set(FB.USED["library_made"]))
+    json.dump(FB.USED, open(os.path.join(outdir, "engine.json"), "w"), indent=1); print("[build] engine", FB.USED, flush=True)
+    if FB.USED["library_made"]: LB.write_catalog()
     # timeline for the Shorts maker (voice_clean.wav and shots/ stay in outdir)
     json.dump({"lines": [{k: l.get(k) for k in ("idx", "who", "text", "t", "chapter", "short")} for l in lines],
                "line_end": [c["t0"] + c["dur"] for c in chunks for _ in c["lines"]],

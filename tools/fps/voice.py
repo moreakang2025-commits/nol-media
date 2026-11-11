@@ -4,6 +4,8 @@ import base64, hashlib, os, re, shutil, sys, time, wave
 import numpy as np
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "mongki"))
 import tts as MT   # decode / trim / analyze helpers from the Mongki pipeline
+sys.path.insert(0, os.path.dirname(__file__))
+import fallback as FB
 
 API = "https://generativelanguage.googleapis.com/v1beta"
 RATE = 24000
@@ -50,7 +52,32 @@ def _request(chunk, cast, style_intro):
     return prompt, sc
 
 def synth_chunk(chunk, cast, style_intro, path):
-    """Write wav for one chunk, return seconds."""
+    """Write wav for one chunk, return seconds. Gemini first; Edge voices if Gemini is unavailable."""
+    if not OFFLINE:   # a Gemini take made earlier is always reused (rebuilds keep the same voices)
+        p0, sc0 = _request(chunk, cast, style_intro)
+        c0 = os.path.join(CACHE, hashlib.sha1(("v2|" + p0 + repr(sc0)).encode()).hexdigest()[:16] + ".wav")
+        if os.path.exists(c0):
+            shutil.copy(c0, path); return len(read(path)) / RATE
+    if not OFFLINE and not FB.gemini_ok():
+        return _edge_chunk(chunk, cast, path)
+    try:
+        return _gemini_chunk(chunk, cast, style_intro, path)
+    except RuntimeError as e:
+        if OFFLINE: raise
+        print(f"[voice] Gemini failed ({e}); using backup voices for this chunk", flush=True)
+        return _edge_chunk(chunk, cast, path)
+
+def _edge_chunk(chunk, cast, path):
+    os.makedirs(CACHE, exist_ok=True)
+    key = "edge1|" + "|".join(f"{cast[l['who']].get('voice')}:{l['text']}" for l in chunk["lines"])
+    cached = os.path.join(CACHE, "e_" + hashlib.sha1(key.encode()).hexdigest()[:16] + ".wav")
+    if os.path.exists(cached):
+        FB.USED["tts"] = "edge"; shutil.copy(cached, path); return len(read(path)) / RATE
+    a = FB.tts(chunk, cast); _write(path, a); shutil.copy(path, cached)
+    print(f"[voice] backup voices {len(a)/RATE:.1f}s", flush=True)
+    return len(a) / RATE
+
+def _gemini_chunk(chunk, cast, style_intro, path):
     words = sum(len(l["text"].split()) for l in chunk["lines"])
     if OFFLINE:
         secs = words / 2.45; _write(path, np.zeros(int(secs * RATE))); return secs
@@ -115,6 +142,8 @@ def _call(key, prompt, sc, words, h):
         for attempt in range(5):
             try:
                 r = requests.post(f"{API}/models/{model}:generateContent?key={key}", json=body, timeout=300)
+                if FB.is_billing_error(r.status_code, r.text):
+                    FB.mark_dead(f"{model} HTTP {r.status_code}: {r.text[:200]}"); return None, f"billing {r.status_code}"
                 if r.status_code == 400:
                     last = f"{model} 400: {r.text[:400]}"; print(f"[voice] {h} {last}", flush=True); _bad_models.add(model); break
                 if r.status_code == 429 or r.status_code >= 500:

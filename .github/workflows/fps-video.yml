@@ -10,6 +10,7 @@ on:
       max_lines: {description: "test: only the first N lines (blank = whole episode)", default: ""}
       date: {description: "US publish date YYYY-MM-DD (blank = stay private)", default: ""}
       mode: {description: "full or shorts", default: "full"}
+      force_fallback: {description: "test: 1 = act as if Gemini is down (backup voices/pictures)", default: ""}
   push:
     paths: ["fps/run.txt"]
 permissions:
@@ -28,7 +29,7 @@ jobs:
       - name: Python packages and ffmpeg
         timeout-minutes: 5
         run: |
-          pip install -q pillow numpy requests imageio-ffmpeg
+          pip install -q pillow numpy requests imageio-ffmpeg edge-tts
           FF=$(python3 -c "import imageio_ffmpeg; print(imageio_ffmpeg.get_ffmpeg_exe())")
           mkdir -p $HOME/bin && ln -sf "$FF" $HOME/bin/ffmpeg && echo "$HOME/bin" >> $GITHUB_PATH
           "$FF" -version | head -1
@@ -68,6 +69,7 @@ jobs:
           FPS_JOBS: "3"
           FPS_IMAGE_MODEL: gemini-2.5-flash-image   # $0.039/image (3.1 flash image is $0.067)
           FPS_SPLIT: "20"                           # a new picture at least every ~20 s
+          FPS_FORCE_FALLBACK: ${{ github.event.inputs.force_fallback }}
         run: |
           ML="${{ github.event.inputs.max_lines }}"
           python3 tools/fps/build.py fps/episodes/${{ steps.ep.outputs.id }}.txt out/fps_${{ steps.ep.outputs.id }} ${ML:+--max-lines $ML}
@@ -132,7 +134,7 @@ jobs:
         if: always()
         run: |
           E=${{ steps.ep.outputs.id }}; O=out/fps_$E; mkdir -p fps/results
-          for f in meta.json upload.json audio_qa.json thumb.jpg contact.jpg; do [ -f $O/$f ] && cp $O/$f fps/results/${E}_$f || true; done
+          for f in meta.json upload.json audio_qa.json thumb.jpg contact.jpg engine.json; do [ -f $O/$f ] && cp $O/$f fps/results/${E}_$f || true; done
           for d in $O/shorts/*/; do [ -d "$d" ] || continue; k=$(basename $d)
             for f in meta.json upload.json; do [ -f $d$f ] && cp $d$f fps/results/${E}_${k}_$f || true; done
             [ -f $d/upload.json ] && python3 -c "import json,sys;v=json.load(open('$d/upload.json')).get('video_id');ids=json.load(open('fps/results/fps_ids.json')) if __import__('os').path.exists('fps/results/fps_ids.json') else [];v and v not in ids and ids.append(v);json.dump(ids,open('fps/results/fps_ids.json','w'),indent=1)" || true
@@ -145,5 +147,5 @@ jobs:
           json.dump(ids, open(p, "w"), indent=1)
           PY
           git config user.name "fps-bot"; git config user.email "fps-bot@users.noreply.github.com"
-          git add fps/results || true; git commit -m "fps: results for $E" || true
+          git add fps/results fps/library || true; git commit -m "fps: results for $E" || true
           for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done || true
