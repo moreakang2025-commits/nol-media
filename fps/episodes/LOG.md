@@ -4,3 +4,4 @@
 |---|---|---|---|---|---|---|
 | ep01 | 2026-11-10 | widow Margaret, 72 | son + daughter-in-law | funeral: "who gets the house?" | husband put house in a trust; letter in toolbox; grandson's 3 AM call | realtor's signing room |
 | ep02 | 2026-11-11 | widow Ruth, 75 | daughter-in-law | 75th birthday cake thrown in trash | secret $2.3M lottery win; DIL skimming Social Security; $180k was a signed loan | Thanksgiving table |
+| ep03 | 2026-11-12 | grandma June, 74 (+ grandpa Frank, 77) | son-in-law | steakhouse: SIL takes husband's truck keys, "too old" | they secretly own the land under his car lot (Two Mugs LLC); video doorbell catches his break-in + Maple Grove plan; his loan needs their consent | 50th anniversary party, church hall |
