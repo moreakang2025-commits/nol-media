@@ -1,0 +1,9 @@
+{
+ "tts": "edge",
+ "tts_fallback_chunks": 1,
+ "img_gemini": 0,
+ "img_pollinations": 1,
+ "img_substituted": 0,
+ "library_made": [],
+ "gemini_error": "forced by FPS_FORCE_FALLBACK=1"
+}

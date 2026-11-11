@@ -1,0 +1,25 @@
+{
+ "chunks": [
+  {
+   "chunk": 0,
+   "secs": 74.5,
+   "smacks": 38,
+   "clipped": 0,
+   "jumps": []
+  },
+  {
+   "chunk": 1,
+   "secs": 34.1,
+   "smacks": 2,
+   "clipped": 0,
+   "jumps": []
+  }
+ ],
+ "post_master_ticks_removed": 9,
+ "final_decoded": {
+  "clipped": 0,
+  "jumps": []
+ },
+ "final_isolated_ticks": 4,
+ "final_peak": 26184
+}
