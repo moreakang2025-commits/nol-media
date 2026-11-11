@@ -71,6 +71,7 @@ def main():
     limit = int(sys.argv[sys.argv.index("--limit") + 1]) if "--limit" in sys.argv else 10 ** 6
     os.makedirs(REF, exist_ok=True); os.makedirs(IMG, exist_ok=True)
     roles, imgs = parse(); made = 0
+    if IM.OFFLINE: write_catalog(); print("[library] offline: catalog only"); return
     for key, look in roles.items():
         p = os.path.join(REF, f"{key}.jpg")
         if os.path.exists(p): continue
