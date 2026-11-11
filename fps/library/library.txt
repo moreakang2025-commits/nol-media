@@ -15,6 +15,13 @@ ROLE lawyer | 62-year-old Nigerian-American man, close-cropped gray hair, rimles
 ROLE realtor | 54-year-old white American woman, auburn bob, bright red blazer, big smile, clipboard
 ROLE nurse | 50-year-old Filipino-American woman, hair in a neat bun, light blue scrubs, kind tired eyes
 ROLE friend | 74-year-old Black American woman, short gray natural hair, round glasses, colorful scarf, lively expression
+ROLE dog | golden retriever dog, about 9 years old, gray muzzle, soft brown eyes, worn red collar with a small round brass tag (no readable text)
+ROLE youngman | 24-year-old Latino American man, short black hair, thin beard, tired but kind dark eyes, faded olive army-style jacket
+ROLE neighbor | 80-year-old white American man, tall and thin, wild white eyebrows, deep-set gray eyes, old tweed flat cap, gruff face
+ROLE kidboy | 9-year-old Black American boy, short twists, gap-toothed grin, oversized red hoodie, scraped knees
+ROLE kidgirl | 8-year-old white American girl, messy red pigtails, freckles, yellow raincoat, bold curious eyes
+ROLE mom | 34-year-old Black American woman, hair in a low bun, diner waitress uniform, tired warm eyes, single mother
+ROLE widow | 70-year-old Korean-American woman, short permed gray hair, bright smile lines, lavender cardigan, elegant and warm
 ROLE banker | 58-year-old white American man, gray side-parted hair, navy suit, red tie, reading glasses on his nose
 
 # ---- the grandmother alone (narrator) ----
@@ -181,3 +188,70 @@ IMG place_porch_rain | An empty front porch in the rain, rocking chair moving sl
 IMG place_road | An empty two-lane country road through autumn trees
 IMG place_hospital_ext | Exterior of a small hospital at night, ambulance lights
 IMG place_church_ext | A small white country church with a steeple under a gray sky
+
+# ---- the old dog (dog stories) ----
+IMG dog_porch | {dog} lying on a front porch next to an empty rocking chair at dusk, waiting, head on paws
+IMG dog_gp_walk | {grandpa} walking {dog} on a leash along an autumn country road, slow and peaceful
+IMG dog_gm_couch | {grandma} on a sofa with {dog} resting its head on her lap, she strokes its ears, lamp light
+IMG dog_window | {dog} with its nose pressed against a rainy window, watching the street
+IMG dog_vet | {dog} on a veterinary clinic table with {grandpa} holding its head, worried, kind vet hands
+IMG dog_shelter | {dog} behind the wire door of a crowded animal shelter kennel, sad eyes
+IMG dog_reunion | {dog} jumping up joyfully on {grandpa} in a driveway, tail blurred, he laughs with tears
+IMG dog_snow | {dog} pulling on the sleeve of {grandma} who has fallen in the snow, barking for help, winter evening
+IMG dog_bowl | An old steel dog bowl and a worn red leash by a back door, no dog, quiet
+IMG dog_collar | Close-up of a worn red dog collar with a small round brass tag in an old man's hand, no readable text
+
+# ---- the homeless young man ----
+IMG ym_street | {youngman} sitting on a flattened cardboard box against a brick wall on a cold city street, paper cup in front, snow falling
+IMG ym_bench | {youngman} sleeping on a park bench under a thin blanket at dawn, frost on the grass
+IMG ym_shelter_meal | {youngman} eating soup at a long table in a church soup kitchen, grateful, steam rising
+IMG ym_help_gm | {youngman} carrying heavy grocery bags for {grandma} across an icy parking lot, she holds his arm
+IMG ym_porch_coffee | {youngman} and {grandma} sitting on porch steps sharing coffee and laughing, morning light
+IMG ym_fix_roof | {youngman} on a ladder fixing the gutter of a white farmhouse while {grandpa} holds the ladder
+IMG ym_sketchbook | Close-up of {youngman} drawing in a battered sketchbook with a pencil, talented, focused
+IMG ym_suit | {youngman} clean-shaven in a borrowed suit, nervous, standing in front of a mirror
+IMG ym_accused | {youngman} standing in a living room, falsely accused, hands open, an angry family pointing at him
+IMG ym_hug_gp | {youngman} hugging {grandpa} tightly at a front door, both emotional
+IMG ym_graduation | {youngman} in a graduation gown holding a diploma, {grandma} clapping and crying in the crowd
+
+# ---- the strange neighbor ----
+IMG nb_window | {neighbor} watching from behind a lace curtain in the window of an old dark house next door, suspicious
+IMG nb_house | An old gray Victorian house next door with an overgrown yard, shutters closed, one light in the attic
+IMG nb_yard_night | {neighbor} digging in his backyard at night with a shovel and a lantern, mysterious
+IMG nb_grumpy | {neighbor} at his fence scowling and waving a cane, grumpy, autumn leaves
+IMG nb_packages | {neighbor} carrying a stack of brown cardboard boxes into his house at night, glancing around
+IMG nb_secret_room | A hidden room full of handmade wooden toys and tiny cardboard boxes stacked to the ceiling, warm light
+IMG nb_photo_young | Vintage 1960s photo look: a young soldier in uniform smiling with a little girl on his shoulders, faded colors
+IMG nb_soft | {neighbor} smiling for the first time, eyes wet, holding a small wooden toy in his hands
+IMG nb_kitchen | {neighbor} and {grandma} at a small kitchen table drinking tea, he is telling a long story, she listens
+IMG nb_gate_flowers | {neighbor} at a garden gate holding a small bouquet of wildflowers, shy, hat in his other hand
+
+# ---- the noisy neighborhood kids ----
+IMG kids_bikes | {kidboy} and {kidgirl} racing bikes up and down a quiet suburban street, laughing loudly, summer
+IMG kids_ball_window | A baseball that has just broken a front window of a white house, glass on the porch
+IMG kids_yard | {kidboy} and {kidgirl} shouting and playing in a front yard with a garden hose, mud everywhere
+IMG kids_scolded | {grandpa} on his porch scolding {kidboy} and {kidgirl} who look down at their shoes
+IMG kids_door | {kidboy} and {kidgirl} at a front door holding a lopsided homemade cake, hopeful
+IMG kids_homework | {kidboy} doing homework at a farmhouse kitchen table with {grandpa} helping, milk and cookies
+IMG kids_fishing | {grandpa}, {kidboy} and {kidgirl} fishing together from a wooden dock at sunset
+IMG kids_hospital | {kidboy} and {kidgirl} with crayon drawings at a hospital bedside, {grandpa} smiling in the bed
+IMG kids_mom | {mom} hugging {kidboy} and {kidgirl} on the steps of a small rental house, tired but loving
+IMG kids_drawing | Close-up of a child's crayon drawing of an old man, a dog and two kids holding hands, no words
+IMG kids_crowd | A crowd of neighbors and children in a backyard with balloons and paper lanterns, a surprise party
+
+# ---- second chance love ----
+IMG love_meet | {grandpa} and {widow} reaching for the same can on a small grocery store shelf, both laughing
+IMG love_dance | {grandpa} and {widow} slow dancing in a church hall under string lights
+IMG love_porch | {grandpa} and {widow} on a porch swing at sunset sharing a blanket, shy smiles
+IMG love_letter | {widow} reading a handwritten letter at a window, smiling, hand on her heart
+IMG love_garden | {widow} and {grandma} laughing together while planting flowers, best friends
+IMG love_disapprove | {son} and {dil} glaring across a dinner table at {grandpa} holding hands with {widow}
+IMG love_wedding | {grandpa} and {widow} at a small backyard wedding, string lights, a few friends clapping
+
+# ---- other everyday places ----
+IMG place_city_winter | A cold small-city downtown street at night in winter, snow, steam from a grate, no readable signs
+IMG place_soup_kitchen | A church basement soup kitchen with long tables and volunteers, warm light, no readable signs
+IMG place_suburb_street | A quiet tree-lined suburban street with small houses and bikes on the lawns, summer evening
+IMG place_diner | A small-town diner interior with a counter, red stools and a waitress pouring coffee, no readable signs
+IMG place_grocery | A small-town grocery store aisle, warm light, no readable labels
+IMG place_park | A small-town park with a bench under a big oak tree in autumn, empty

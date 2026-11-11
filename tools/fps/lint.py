@@ -22,6 +22,7 @@ def lint(path):
         if c.get("voice") not in VOICES: errs.append(f"cast {c['name']}: unknown voice {c.get('voice')}")
         lk = c.get("look", "")
         if lk.startswith("lib:") and lk[4:] not in roles: errs.append(f"cast {c['name']}: unknown library face {lk}")
+        elif lk.startswith("lib:") and not os.path.exists(f"fps/library/ref/{lk[4:]}.jpg"): errs.append(f"cast {c['name']}: library face {lk} not generated yet")
     st = ST.stats(e)
     if not 1550 <= st["words"] <= 2300: errs.append(f"{st['words']} words (aim 1,700-2,100 for 12-15 min)")
     shorts = [x for x in e["items"] if x["kind"] == "short"]
@@ -33,6 +34,7 @@ def lint(path):
                 for i in x["lib"]:
                     pics += 1
                     if i not in lib: errs.append(f"unknown library picture {i}")
+                    elif not os.path.exists(f"fps/library/img/{i}.jpg"): errs.append(f"library picture {i} not generated yet (MISSING in catalog)")
             else: gen += 1; pics += 1
     if gen > 2: errs.append(f"{gen} generated [SHOT]s (max 2, each costs money; use [LIB])")
     secs = st["words"] / 2.3

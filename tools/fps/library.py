@@ -21,7 +21,9 @@ def parse():
 
 LABEL = {"grandma": "the grandmother", "grandpa": "the grandfather", "son": "the son", "dil": "the daughter-in-law",
          "daughter": "the daughter", "sil": "the son-in-law", "grandson": "the grandson", "granddaughter": "the granddaughter",
-         "lawyer": "the lawyer", "realtor": "the real estate agent", "nurse": "the nurse", "friend": "the old friend", "banker": "the banker"}
+         "lawyer": "the lawyer", "realtor": "the real estate agent", "nurse": "the nurse", "friend": "the old friend", "banker": "the banker",
+         "dog": "the old dog", "youngman": "the young man", "neighbor": "the old neighbor", "kidboy": "the little boy",
+         "kidgirl": "the little girl", "mom": "the young mother", "widow": "the widow"}
 
 def ref_image(key):
     p = os.path.join(REF, f"{key}.jpg")
