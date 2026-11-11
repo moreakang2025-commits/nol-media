@@ -93,7 +93,8 @@ def _image(prompt, ratio, tag):
             r = requests.get(url, timeout=180)
             if r.ok and r.headers.get("content-type", "").startswith("image"):
                 USED["img_pollinations"] += 1; print(f"[fallback] pollinations {tag}", flush=True)
-                return Image.open(io.BytesIO(r.content)).convert("RGB")
+                im = Image.open(io.BytesIO(r.content)).convert("RGB")
+                return im.crop((0, 0, im.width, int(im.height * 0.94)))   # trims the small corner mark
             print(f"[fallback] pollinations {tag} HTTP {r.status_code}", flush=True)
         except Exception as e:
             print(f"[fallback] pollinations {tag} attempt {attempt+1}: {e}", flush=True)
