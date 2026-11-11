@@ -1,6 +1,6 @@
 # Picture library catalog (use in episodes as `[LIB] id id ...`)
 
-Recurring faces: grandma (the grandmother), grandpa (the grandfather), son (the son), dil (the daughter-in-law), daughter (the daughter), sil (the son-in-law), grandson (the grandson), granddaughter (the granddaughter), lawyer (the lawyer), realtor (the real estate agent), nurse (the nurse), friend (the old friend), banker (the banker)
+Recurring faces: grandma (the grandmother), grandpa (the grandfather), son (the son), dil (the daughter-in-law), daughter (the daughter), sil (the son-in-law), grandson (the grandson), granddaughter (the granddaughter), lawyer (the lawyer), realtor (the real estate agent), nurse (the nurse), friend (the old friend), dog (the old dog), youngman (the young man), neighbor (the old neighbor), kidboy (the little boy), kidgirl (the little girl), mom (the young mother), widow (the widow), banker (the banker)
 
 - `gm_porch_dusk`: {grandma} sitting alone in a wooden rocking chair on a lakeside front porch at dusk, wrapped in a red knitted blanket, holding a coffee mug, looking at the water
 - `gm_porch_tears`: {grandma} on a front porch at dusk, a single tear on her cheek, staring into the distance, close-up
@@ -147,3 +147,58 @@ Recurring faces: grandma (the grandmother), grandpa (the grandfather), son (the 
 - `place_road`: An empty two-lane country road through autumn trees
 - `place_hospital_ext`: Exterior of a small hospital at night, ambulance lights
 - `place_church_ext`: A small white country church with a steeple under a gray sky
+- `dog_porch` (MISSING): {dog} lying on a front porch next to an empty rocking chair at dusk, waiting, head on paws
+- `dog_gp_walk` (MISSING): {grandpa} walking {dog} on a leash along an autumn country road, slow and peaceful
+- `dog_gm_couch` (MISSING): {grandma} on a sofa with {dog} resting its head on her lap, she strokes its ears, lamp light
+- `dog_window` (MISSING): {dog} with its nose pressed against a rainy window, watching the street
+- `dog_vet` (MISSING): {dog} on a veterinary clinic table with {grandpa} holding its head, worried, kind vet hands
+- `dog_shelter` (MISSING): {dog} behind the wire door of a crowded animal shelter kennel, sad eyes
+- `dog_reunion` (MISSING): {dog} jumping up joyfully on {grandpa} in a driveway, tail blurred, he laughs with tears
+- `dog_snow` (MISSING): {dog} pulling on the sleeve of {grandma} who has fallen in the snow, barking for help, winter evening
+- `dog_bowl` (MISSING): An old steel dog bowl and a worn red leash by a back door, no dog, quiet
+- `dog_collar` (MISSING): Close-up of a worn red dog collar with a small round brass tag in an old man's hand, no readable text
+- `ym_street` (MISSING): {youngman} sitting on a flattened cardboard box against a brick wall on a cold city street, paper cup in front, snow falling
+- `ym_bench` (MISSING): {youngman} sleeping on a park bench under a thin blanket at dawn, frost on the grass
+- `ym_shelter_meal` (MISSING): {youngman} eating soup at a long table in a church soup kitchen, grateful, steam rising
+- `ym_help_gm` (MISSING): {youngman} carrying heavy grocery bags for {grandma} across an icy parking lot, she holds his arm
+- `ym_porch_coffee` (MISSING): {youngman} and {grandma} sitting on porch steps sharing coffee and laughing, morning light
+- `ym_fix_roof` (MISSING): {youngman} on a ladder fixing the gutter of a white farmhouse while {grandpa} holds the ladder
+- `ym_sketchbook` (MISSING): Close-up of {youngman} drawing in a battered sketchbook with a pencil, talented, focused
+- `ym_suit` (MISSING): {youngman} clean-shaven in a borrowed suit, nervous, standing in front of a mirror
+- `ym_accused` (MISSING): {youngman} standing in a living room, falsely accused, hands open, an angry family pointing at him
+- `ym_hug_gp` (MISSING): {youngman} hugging {grandpa} tightly at a front door, both emotional
+- `ym_graduation` (MISSING): {youngman} in a graduation gown holding a diploma, {grandma} clapping and crying in the crowd
+- `nb_window` (MISSING): {neighbor} watching from behind a lace curtain in the window of an old dark house next door, suspicious
+- `nb_house` (MISSING): An old gray Victorian house next door with an overgrown yard, shutters closed, one light in the attic
+- `nb_yard_night` (MISSING): {neighbor} digging in his backyard at night with a shovel and a lantern, mysterious
+- `nb_grumpy` (MISSING): {neighbor} at his fence scowling and waving a cane, grumpy, autumn leaves
+- `nb_packages` (MISSING): {neighbor} carrying a stack of brown cardboard boxes into his house at night, glancing around
+- `nb_secret_room` (MISSING): A hidden room full of handmade wooden toys and tiny cardboard boxes stacked to the ceiling, warm light
+- `nb_photo_young` (MISSING): Vintage 1960s photo look: a young soldier in uniform smiling with a little girl on his shoulders, faded colors
+- `nb_soft` (MISSING): {neighbor} smiling for the first time, eyes wet, holding a small wooden toy in his hands
+- `nb_kitchen` (MISSING): {neighbor} and {grandma} at a small kitchen table drinking tea, he is telling a long story, she listens
+- `nb_gate_flowers` (MISSING): {neighbor} at a garden gate holding a small bouquet of wildflowers, shy, hat in his other hand
+- `kids_bikes` (MISSING): {kidboy} and {kidgirl} racing bikes up and down a quiet suburban street, laughing loudly, summer
+- `kids_ball_window` (MISSING): A baseball that has just broken a front window of a white house, glass on the porch
+- `kids_yard` (MISSING): {kidboy} and {kidgirl} shouting and playing in a front yard with a garden hose, mud everywhere
+- `kids_scolded` (MISSING): {grandpa} on his porch scolding {kidboy} and {kidgirl} who look down at their shoes
+- `kids_door` (MISSING): {kidboy} and {kidgirl} at a front door holding a lopsided homemade cake, hopeful
+- `kids_homework` (MISSING): {kidboy} doing homework at a farmhouse kitchen table with {grandpa} helping, milk and cookies
+- `kids_fishing` (MISSING): {grandpa}, {kidboy} and {kidgirl} fishing together from a wooden dock at sunset
+- `kids_hospital` (MISSING): {kidboy} and {kidgirl} with crayon drawings at a hospital bedside, {grandpa} smiling in the bed
+- `kids_mom` (MISSING): {mom} hugging {kidboy} and {kidgirl} on the steps of a small rental house, tired but loving
+- `kids_drawing` (MISSING): Close-up of a child's crayon drawing of an old man, a dog and two kids holding hands, no words
+- `kids_crowd` (MISSING): A crowd of neighbors and children in a backyard with balloons and paper lanterns, a surprise party
+- `love_meet` (MISSING): {grandpa} and {widow} reaching for the same can on a small grocery store shelf, both laughing
+- `love_dance` (MISSING): {grandpa} and {widow} slow dancing in a church hall under string lights
+- `love_porch` (MISSING): {grandpa} and {widow} on a porch swing at sunset sharing a blanket, shy smiles
+- `love_letter` (MISSING): {widow} reading a handwritten letter at a window, smiling, hand on her heart
+- `love_garden` (MISSING): {widow} and {grandma} laughing together while planting flowers, best friends
+- `love_disapprove` (MISSING): {son} and {dil} glaring across a dinner table at {grandpa} holding hands with {widow}
+- `love_wedding` (MISSING): {grandpa} and {widow} at a small backyard wedding, string lights, a few friends clapping
+- `place_city_winter` (MISSING): A cold small-city downtown street at night in winter, snow, steam from a grate, no readable signs
+- `place_soup_kitchen` (MISSING): A church basement soup kitchen with long tables and volunteers, warm light, no readable signs
+- `place_suburb_street` (MISSING): A quiet tree-lined suburban street with small houses and bikes on the lawns, summer evening
+- `place_diner` (MISSING): A small-town diner interior with a counter, red stools and a waitress pouring coffee, no readable signs
+- `place_grocery` (MISSING): A small-town grocery store aisle, warm light, no readable labels
+- `place_park` (MISSING): A small-town park with a bench under a big oak tree in autumn, empty
