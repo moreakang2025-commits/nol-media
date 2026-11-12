@@ -1,0 +1,21 @@
+{
+ "tts": "gemini",
+ "tts_fallback_chunks": 0,
+ "img_gemini": 15,
+ "img_pollinations": 0,
+ "img_substituted": 0,
+ "library_made": [
+  "dog_bowl",
+  "dog_collar",
+  "dog_gm_couch",
+  "dog_gp_walk",
+  "dog_porch",
+  "dog_reunion",
+  "dog_shelter",
+  "dog_snow",
+  "dog_vet",
+  "dog_window",
+  "face:neighbor"
+ ],
+ "gemini_error": ""
+}

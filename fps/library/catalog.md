@@ -149,16 +149,16 @@ Recurring faces: grandma (the grandmother), grandpa (the grandfather), son (the 
 - `place_road`: An empty two-lane country road through autumn trees
 - `place_hospital_ext`: Exterior of a small hospital at night, ambulance lights
 - `place_church_ext`: A small white country church with a steeple under a gray sky
-- `dog_porch` (MISSING): {dog} lying on a front porch next to an empty rocking chair at dusk, waiting, head on paws
-- `dog_gp_walk` (MISSING): {grandpa} walking {dog} on a leash along an autumn country road, slow and peaceful
-- `dog_gm_couch` (MISSING): {grandma} on a sofa with {dog} resting its head on her lap, she strokes its ears, lamp light
-- `dog_window` (MISSING): {dog} with its nose pressed against a rainy window, watching the street
-- `dog_vet` (MISSING): {dog} on a veterinary clinic table with {grandpa} holding its head, worried, kind vet hands
-- `dog_shelter` (MISSING): {dog} behind the wire door of a crowded animal shelter kennel, sad eyes
-- `dog_reunion` (MISSING): {dog} jumping up joyfully on {grandpa} in a driveway, tail blurred, he laughs with tears
-- `dog_snow` (MISSING): {dog} pulling on the sleeve of {grandma} who has fallen in the snow, barking for help, winter evening
-- `dog_bowl` (MISSING): An old steel dog bowl and a worn red leash by a back door, no dog, quiet
-- `dog_collar` (MISSING): Close-up of a worn red dog collar with a small round brass tag in an old man's hand, no readable text
+- `dog_porch`: {dog} lying on a front porch next to an empty rocking chair at dusk, waiting, head on paws
+- `dog_gp_walk`: {grandpa} walking {dog} on a leash along an autumn country road, slow and peaceful
+- `dog_gm_couch`: {grandma} on a sofa with {dog} resting its head on her lap, she strokes its ears, lamp light
+- `dog_window`: {dog} with its nose pressed against a rainy window, watching the street
+- `dog_vet`: {dog} on a veterinary clinic table with {grandpa} holding its head, worried, kind vet hands
+- `dog_shelter`: {dog} behind the wire door of a crowded animal shelter kennel, sad eyes
+- `dog_reunion`: {dog} jumping up joyfully on {grandpa} in a driveway, tail blurred, he laughs with tears
+- `dog_snow`: {dog} pulling on the sleeve of {grandma} who has fallen in the snow, barking for help, winter evening
+- `dog_bowl`: An old steel dog bowl and a worn red leash by a back door, no dog, quiet
+- `dog_collar`: Close-up of a worn red dog collar with a small round brass tag in an old man's hand, no readable text
 - `ym_street` (MISSING): {youngman} sitting on a flattened cardboard box against a brick wall on a cold city street, paper cup in front, snow falling
 - `ym_bench` (MISSING): {youngman} sleeping on a park bench under a thin blanket at dawn, frost on the grass
 - `ym_shelter_meal` (MISSING): {youngman} eating soup at a long table in a church soup kitchen, grateful, steam rising
