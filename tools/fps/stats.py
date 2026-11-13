@@ -55,7 +55,7 @@ def main():
     for v in vids:
         s = v.get("statistics", {}); e = emap[v["id"]]
         views = int(s.get("viewCount", 0)); likes = int(s.get("likeCount", 0))
-        rows.append({"id": v["id"], **e, "title": v["snippet"]["title"], "privacy": v["status"]["privacyStatus"],
+        rows.append({"id": v["id"], **e, "title": v["snippet"]["title"], "published": v["snippet"].get("publishedAt"), "privacy": v["status"]["privacyStatus"],
                      "seconds": secs(v["contentDetails"]["duration"]), "views": views, "likes": likes,
                      "comments": int(s.get("commentCount", 0)), "like_rate": round(likes / views, 4) if views else None})
     today = dt.date.today().isoformat(); start = "2026-11-01"

@@ -23,7 +23,7 @@ jobs:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
-        run: python3 tools/fps/stats.py
+        run: python3 tools/fps/stats.py && python3 tools/fps/analyze.py
       - name: Save result
         if: always()
         run: |
