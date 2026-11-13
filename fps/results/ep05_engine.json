@@ -1,0 +1,22 @@
+{
+ "tts": "gemini",
+ "tts_fallback_chunks": 0,
+ "img_gemini": 13,
+ "img_pollinations": 0,
+ "img_substituted": 0,
+ "library_made": [
+  "face:youngman",
+  "place_city_winter",
+  "place_grocery",
+  "place_soup_kitchen",
+  "ym_accused",
+  "ym_graduation",
+  "ym_help_gm",
+  "ym_porch_coffee",
+  "ym_shelter_meal",
+  "ym_sketchbook",
+  "ym_street",
+  "ym_suit"
+ ],
+ "gemini_error": ""
+}
