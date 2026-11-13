@@ -42,3 +42,14 @@ Lanes B-F still need: spicy first line (an insult, accusation or shocking line f
 1. `python3 tools/fps/lint.py fps/episodes/epNN.txt` must pass.
 2. Add a row to `fps/episodes/LOG.md` and the date to `fps/schedule.json`.
 3. `fps/run.txt` = `epNN true YYYY-MM-DD full` → push → workflow fps-video builds, uploads and schedules everything.
+
+## What the data says (update every Monday from fps/results/insights.md)
+Data loop: workflow fps-stats runs daily 06:17 UTC (15:17 KST) → `fps/results/stats.json` (+ history in `fps/results/stats/`) → `tools/fps/analyze.py` → `fps/results/insights.md`. Read-only; changes nothing on YouTube.
+First read, 2026-11-13 (ep01-ep03 only, 15 public videos, 3 subscribers; hints, not rules):
+- Shorts bring ~80% of views (245 vs 52). Long-form viewers like more (3.8% vs 0.4% like rate). Shorts are the front door; the long-form is where fans are made.
+- The payoff Short (s4, 20:30 ET) wins every episode: ~75 views/day vs 5-9 for s2/s3. s1 (the insult) is second. s2 (overheard plan) and s3 (hidden card) are nearly dead: a stranger in the Shorts feed doesn't know who these people are.
+  → Rule from ep06: every Short must work for a stranger. Its first line names the relationship and the conflict in under 12 words ("My son-in-law took my husband's truck keys."). Put the s2/s3 markers on lines that are a confrontation said out loud, not on narration or a quiet discovery.
+  → Short titles: confrontation or contrast, first person, under 50 characters. Winners: "I Took The Microphone At Our 50th Anniversary", "They Brought A Pen. I Brought A Lawyer." Avoid vague ones like "The Bank Manager Went Quiet".
+- Content vs time is mixed up (s4 always went out at 20:30). From 2026-11-15 `tools/fps/when.py` rotates the four Shorts through 12:30/15:30/18:30/20:30 ET day by day. After ~8 rotated days, insights.md shows whether the payoff content or the 20:30 slot is what wins; then fix the order.
+- Theme lanes: only lane A has public data so far. Compare A vs B-F once each lane has 2+ public episodes. Do not drop a lane on less than that.
+- Not yet available: watch time, retention, audience age, traffic sources, best hour. They need the owner to re-authorize YouTube with the yt-analytics.readonly scope (see claude/FPS_STATUS.md). YouTube's API never gives "when viewers are online" by hour; the slot rotation is how we learn it.
