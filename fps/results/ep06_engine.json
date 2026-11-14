@@ -1,0 +1,21 @@
+{
+ "tts": "gemini",
+ "tts_fallback_chunks": 0,
+ "img_gemini": 13,
+ "img_pollinations": 0,
+ "img_substituted": 0,
+ "library_made": [
+  "kids_crowd",
+  "nb_gate_flowers",
+  "nb_grumpy",
+  "nb_house",
+  "nb_kitchen",
+  "nb_packages",
+  "nb_photo_young",
+  "nb_secret_room",
+  "nb_soft",
+  "nb_window",
+  "nb_yard_night"
+ ],
+ "gemini_error": ""
+}

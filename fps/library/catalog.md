@@ -170,16 +170,16 @@ Recurring faces: grandma (the grandmother), grandpa (the grandfather), son (the 
 - `ym_accused`: {youngman} standing in a living room, falsely accused, hands open, an angry family pointing at him
 - `ym_hug_gp` (MISSING): {youngman} hugging {grandpa} tightly at a front door, both emotional
 - `ym_graduation`: {youngman} in a graduation gown holding a diploma, {grandma} clapping and crying in the crowd
-- `nb_window` (MISSING): {neighbor} watching from behind a lace curtain in the window of an old dark house next door, suspicious
-- `nb_house` (MISSING): An old gray Victorian house next door with an overgrown yard, shutters closed, one light in the attic
-- `nb_yard_night` (MISSING): {neighbor} digging in his backyard at night with a shovel and a lantern, mysterious
-- `nb_grumpy` (MISSING): {neighbor} at his fence scowling and waving a cane, grumpy, autumn leaves
-- `nb_packages` (MISSING): {neighbor} carrying a stack of brown cardboard boxes into his house at night, glancing around
-- `nb_secret_room` (MISSING): A hidden room full of handmade wooden toys and tiny cardboard boxes stacked to the ceiling, warm light
-- `nb_photo_young` (MISSING): Vintage 1960s photo look: a young soldier in uniform smiling with a little girl on his shoulders, faded colors
-- `nb_soft` (MISSING): {neighbor} smiling for the first time, eyes wet, holding a small wooden toy in his hands
-- `nb_kitchen` (MISSING): {neighbor} and {grandma} at a small kitchen table drinking tea, he is telling a long story, she listens
-- `nb_gate_flowers` (MISSING): {neighbor} at a garden gate holding a small bouquet of wildflowers, shy, hat in his other hand
+- `nb_window`: {neighbor} watching from behind a lace curtain in the window of an old dark house next door, suspicious
+- `nb_house`: An old gray Victorian house next door with an overgrown yard, shutters closed, one light in the attic
+- `nb_yard_night`: {neighbor} digging in his backyard at night with a shovel and a lantern, mysterious
+- `nb_grumpy`: {neighbor} at his fence scowling and waving a cane, grumpy, autumn leaves
+- `nb_packages`: {neighbor} carrying a stack of brown cardboard boxes into his house at night, glancing around
+- `nb_secret_room`: A hidden room full of handmade wooden toys and tiny cardboard boxes stacked to the ceiling, warm light
+- `nb_photo_young`: Vintage 1960s photo look: a young soldier in uniform smiling with a little girl on his shoulders, faded colors
+- `nb_soft`: {neighbor} smiling for the first time, eyes wet, holding a small wooden toy in his hands
+- `nb_kitchen`: {neighbor} and {grandma} at a small kitchen table drinking tea, he is telling a long story, she listens
+- `nb_gate_flowers`: {neighbor} at a garden gate holding a small bouquet of wildflowers, shy, hat in his other hand
 - `kids_bikes` (MISSING): {kidboy} and {kidgirl} racing bikes up and down a quiet suburban street, laughing loudly, summer
 - `kids_ball_window` (MISSING): A baseball that has just broken a front window of a white house, glass on the porch
 - `kids_yard` (MISSING): {kidboy} and {kidgirl} shouting and playing in a front yard with a garden hose, mud everywhere
@@ -190,7 +190,7 @@ Recurring faces: grandma (the grandmother), grandpa (the grandfather), son (the 
 - `kids_hospital` (MISSING): {kidboy} and {kidgirl} with crayon drawings at a hospital bedside, {grandpa} smiling in the bed
 - `kids_mom` (MISSING): {mom} hugging {kidboy} and {kidgirl} on the steps of a small rental house, tired but loving
 - `kids_drawing` (MISSING): Close-up of a child's crayon drawing of an old man, a dog and two kids holding hands, no words
-- `kids_crowd` (MISSING): A crowd of neighbors and children in a backyard with balloons and paper lanterns, a surprise party
+- `kids_crowd`: A crowd of neighbors and children in a backyard with balloons and paper lanterns, a surprise party
 - `love_meet` (MISSING): {grandpa} and {widow} reaching for the same can on a small grocery store shelf, both laughing
 - `love_dance` (MISSING): {grandpa} and {widow} slow dancing in a church hall under string lights
 - `love_porch` (MISSING): {grandpa} and {widow} on a porch swing at sunset sharing a blanket, shy smiles

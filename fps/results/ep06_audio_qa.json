@@ -1,0 +1,148 @@
+{
+ "chunks": [
+  {
+   "chunk": 0,
+   "secs": 87.7,
+   "smacks": 42,
+   "clipped": 0,
+   "jumps": [
+    46.16
+   ]
+  },
+  {
+   "chunk": 1,
+   "secs": 87.0,
+   "smacks": 26,
+   "clipped": 0,
+   "jumps": []
+  },
+  {
+   "chunk": 2,
+   "secs": 20.8,
+   "smacks": 10,
+   "clipped": 0,
+   "jumps": []
+  },
+  {
+   "chunk": 3,
+   "secs": 99.7,
+   "smacks": 41,
+   "clipped": 0,
+   "jumps": []
+  },
+  {
+   "chunk": 4,
+   "secs": 28.2,
+   "smacks": 6,
+   "clipped": 0,
+   "jumps": []
+  },
+  {
+   "chunk": 5,
+   "secs": 15.6,
+   "smacks": 2,
+   "clipped": 0,
+   "jumps": [
+    15.09
+   ]
+  },
+  {
+   "chunk": 6,
+   "secs": 28.8,
+   "smacks": 6,
+   "clipped": 0,
+   "jumps": []
+  },
+  {
+   "chunk": 7,
+   "secs": 82.6,
+   "smacks": 21,
+   "clipped": 0,
+   "jumps": [
+    57.55,
+    68.73
+   ]
+  },
+  {
+   "chunk": 8,
+   "secs": 102.6,
+   "smacks": 26,
+   "clipped": 0,
+   "jumps": [
+    32.35,
+    35.27,
+    65.81
+   ]
+  },
+  {
+   "chunk": 9,
+   "secs": 18.4,
+   "smacks": 8,
+   "clipped": 0,
+   "jumps": []
+  },
+  {
+   "chunk": 10,
+   "secs": 52.6,
+   "smacks": 22,
+   "clipped": 0,
+   "jumps": []
+  },
+  {
+   "chunk": 11,
+   "secs": 24.3,
+   "smacks": 10,
+   "clipped": 0,
+   "jumps": [
+    7.79,
+    8.37,
+    10.18
+   ]
+  },
+  {
+   "chunk": 12,
+   "secs": 116.3,
+   "smacks": 37,
+   "clipped": 0,
+   "jumps": [
+    42.78,
+    44.35,
+    57.66
+   ]
+  },
+  {
+   "chunk": 13,
+   "secs": 106.5,
+   "smacks": 37,
+   "clipped": 0,
+   "jumps": []
+  }
+ ],
+ "post_master_ticks_removed": 69,
+ "final_decoded": {
+  "clipped": 0,
+  "jumps": [
+   46.16,
+   59.58,
+   307.18,
+   334.23,
+   429.08,
+   437.68,
+   439.32,
+   440.43,
+   441.58,
+   444.09,
+   492.38,
+   574.18,
+   646.54,
+   681.9,
+   685.27,
+   720.83,
+   723.28,
+   746.9,
+   766.55
+  ]
+ },
+ "final_isolated_ticks": 16,
+ "final_peak": 26585
+}
