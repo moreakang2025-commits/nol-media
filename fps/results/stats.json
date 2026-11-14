@@ -1,5 +1,5 @@
 {
- "collected": "2026-11-14T08:17:51Z",
+ "collected": "2026-11-14T13:28:42Z",
  "channel": {
   "viewCount": "371",
   "subscriberCount": "5",
@@ -17,7 +17,7 @@
    "published": "2026-11-10T17:30:09Z",
    "privacy": "public",
    "seconds": 53,
-   "views": 57,
+   "views": 58,
    "likes": 0,
    "comments": 0,
    "like_rate": 0.0
@@ -77,10 +77,10 @@
    "published": "2026-11-10T15:00:07Z",
    "privacy": "public",
    "seconds": 1907,
-   "views": 35,
+   "views": 33,
    "likes": 2,
    "comments": 0,
-   "like_rate": 0.0571
+   "like_rate": 0.0606
   },
   {
    "id": "g1tm4quo7HU",
@@ -182,7 +182,7 @@
    "published": "2026-11-12T20:30:05Z",
    "privacy": "public",
    "seconds": 58,
-   "views": 4,
+   "views": 5,
    "likes": 0,
    "comments": 0,
    "like_rate": 0.0
@@ -228,9 +228,9 @@
    "privacy": "public",
    "seconds": 845,
    "views": 27,
-   "likes": 2,
+   "likes": 3,
    "comments": 0,
-   "like_rate": 0.0741
+   "like_rate": 0.1111
   },
   {
    "id": "ehxvRBDuiFo",
@@ -242,10 +242,10 @@
    "published": "2026-11-13T17:30:04Z",
    "privacy": "public",
    "seconds": 44,
-   "views": 55,
+   "views": 66,
    "likes": 4,
    "comments": 0,
-   "like_rate": 0.0727
+   "like_rate": 0.0606
   },
   {
    "id": "nRfg24Axpng",
@@ -377,6 +377,81 @@
    "published": "2026-11-13T08:31:44Z",
    "privacy": "private",
    "seconds": 883,
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "like_rate": null
+  },
+  {
+   "id": "lrOa_E64_pg",
+   "ep": "ep06",
+   "kind": "s1",
+   "theme": "D",
+   "publish_at": "2026-11-15T20:30:00Z",
+   "title": "My HOA President Wanted My Neighbor Gone #Shorts",
+   "published": "2026-11-14T08:33:26Z",
+   "privacy": "private",
+   "seconds": 56,
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "like_rate": null
+  },
+  {
+   "id": "JGbXiDyMKsQ",
+   "ep": "ep06",
+   "kind": "s2",
+   "theme": "D",
+   "publish_at": "2026-11-15T23:30:00Z",
+   "title": "She Told Him To Pay Or Lose The House #Shorts",
+   "published": "2026-11-14T08:33:28Z",
+   "privacy": "private",
+   "seconds": 48,
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "like_rate": null
+  },
+  {
+   "id": "L0-ELKP1lvo",
+   "ep": "ep06",
+   "kind": "s3",
+   "theme": "D",
+   "publish_at": "2026-11-16T01:30:00Z",
+   "title": "They Called Him A Creep. Then I Saw His Attic. #Shorts",
+   "published": "2026-11-14T08:33:30Z",
+   "privacy": "private",
+   "seconds": 52,
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "like_rate": null
+  },
+  {
+   "id": "1VosKLSSf8I",
+   "ep": "ep06",
+   "kind": "s4",
+   "theme": "D",
+   "publish_at": "2026-11-15T17:30:00Z",
+   "title": "She Wanted His House. I Brought Page Four. #Shorts",
+   "published": "2026-11-14T08:33:32Z",
+   "privacy": "private",
+   "seconds": 57,
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "like_rate": null
+  },
+  {
+   "id": "LIAWriD8JbU",
+   "ep": "ep06",
+   "kind": "long",
+   "theme": "D",
+   "publish_at": "2026-11-15T15:00:00Z",
+   "title": "My HOA President Called My Old Neighbor a Creep and Fined Him $14,200. Then I Saw His Attic.",
+   "published": "2026-11-14T08:30:43Z",
+   "privacy": "private",
+   "seconds": 898,
    "views": 0,
    "likes": 0,
    "comments": 0,
