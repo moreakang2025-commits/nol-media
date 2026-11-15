@@ -1,10 +1,10 @@
 {
- "collected": "2026-11-14T13:28:42Z",
+ "collected": "2026-11-15T13:54:06Z",
  "channel": {
-  "viewCount": "371",
+  "viewCount": "439",
   "subscriberCount": "5",
   "hiddenSubscriberCount": false,
-  "videoCount": "20"
+  "videoCount": "25"
  },
  "videos": [
   {
@@ -77,10 +77,10 @@
    "published": "2026-11-10T15:00:07Z",
    "privacy": "public",
    "seconds": 1907,
-   "views": 33,
+   "views": 32,
    "likes": 2,
    "comments": 0,
-   "like_rate": 0.0606
+   "like_rate": 0.0625
   },
   {
    "id": "g1tm4quo7HU",
@@ -137,7 +137,7 @@
    "published": "2026-11-12T01:30:22Z",
    "privacy": "public",
    "seconds": 54,
-   "views": 14,
+   "views": 13,
    "likes": 0,
    "comments": 0,
    "like_rate": 0.0
@@ -152,10 +152,10 @@
    "published": "2026-11-11T15:00:37Z",
    "privacy": "public",
    "seconds": 793,
-   "views": 6,
-   "likes": 0,
+   "views": 22,
+   "likes": 2,
    "comments": 0,
-   "like_rate": 0.0
+   "like_rate": 0.0909
   },
   {
    "id": "SnlcRy75DJk",
@@ -227,10 +227,10 @@
    "published": "2026-11-12T15:00:09Z",
    "privacy": "public",
    "seconds": 845,
-   "views": 27,
+   "views": 46,
    "likes": 3,
    "comments": 0,
-   "like_rate": 0.1111
+   "like_rate": 0.0652
   },
   {
    "id": "ehxvRBDuiFo",
@@ -242,10 +242,10 @@
    "published": "2026-11-13T17:30:04Z",
    "privacy": "public",
    "seconds": 44,
-   "views": 66,
+   "views": 67,
    "likes": 4,
    "comments": 0,
-   "like_rate": 0.0606
+   "like_rate": 0.0597
   },
   {
    "id": "nRfg24Axpng",
@@ -302,7 +302,7 @@
    "published": "2026-11-13T15:00:20Z",
    "privacy": "public",
    "seconds": 857,
-   "views": 6,
+   "views": 7,
    "likes": 0,
    "comments": 0,
    "like_rate": 0.0
@@ -314,13 +314,13 @@
    "theme": "C",
    "publish_at": "2026-11-14T17:30:00Z",
    "title": "My Son Called Him A Thief #Shorts",
-   "published": "2026-11-13T08:34:15Z",
-   "privacy": "private",
+   "published": "2026-11-14T17:30:02Z",
+   "privacy": "public",
    "seconds": 45,
-   "views": 0,
+   "views": 2,
    "likes": 0,
    "comments": 0,
-   "like_rate": null
+   "like_rate": 0.0
   },
   {
    "id": "K0iR5h2gDJU",
@@ -329,8 +329,8 @@
    "theme": "C",
    "publish_at": "2026-11-14T20:30:00Z",
    "title": "I Heard My Son's Plan #Shorts",
-   "published": "2026-11-13T08:34:18Z",
-   "privacy": "private",
+   "published": "2026-11-14T20:30:39Z",
+   "privacy": "public",
    "seconds": 49,
    "views": 0,
    "likes": 0,
@@ -344,8 +344,8 @@
    "theme": "C",
    "publish_at": "2026-11-14T23:30:00Z",
    "title": "What His Sketchbook Saw #Shorts",
-   "published": "2026-11-13T08:34:20Z",
-   "privacy": "private",
+   "published": "2026-11-14T23:30:23Z",
+   "privacy": "public",
    "seconds": 53,
    "views": 0,
    "likes": 0,
@@ -359,13 +359,13 @@
    "theme": "C",
    "publish_at": "2026-11-15T01:30:00Z",
    "title": "I Stood Up In Court #Shorts",
-   "published": "2026-11-13T08:34:22Z",
-   "privacy": "private",
+   "published": "2026-11-15T01:30:16Z",
+   "privacy": "public",
    "seconds": 43,
-   "views": 0,
+   "views": 8,
    "likes": 0,
    "comments": 0,
-   "like_rate": null
+   "like_rate": 0.0
   },
   {
    "id": "mG78MRA74sw",
@@ -374,13 +374,13 @@
    "theme": "C",
    "publish_at": "2026-11-14T15:00:00Z",
    "title": "My Son Called the Homeless Boy I Took In a Thief. He Didn't Know What That Boy Drew From My Window.",
-   "published": "2026-11-13T08:31:44Z",
-   "privacy": "private",
+   "published": "2026-11-14T15:00:32Z",
+   "privacy": "public",
    "seconds": 883,
-   "views": 0,
+   "views": 2,
    "likes": 0,
    "comments": 0,
-   "like_rate": null
+   "like_rate": 0.0
   },
   {
    "id": "lrOa_E64_pg",
@@ -452,6 +452,81 @@
    "published": "2026-11-14T08:30:43Z",
    "privacy": "private",
    "seconds": 898,
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "like_rate": null
+  },
+  {
+   "id": "7NsdhWGCxWM",
+   "ep": "ep07",
+   "kind": "s1",
+   "theme": "E",
+   "publish_at": "2026-11-16T23:30:00Z",
+   "title": "He Wanted Us To Help Evict The Kids Next Door #Shorts",
+   "published": "2026-11-15T08:37:45Z",
+   "privacy": "private",
+   "seconds": 59,
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "like_rate": null
+  },
+  {
+   "id": "hzc6kFS2IZ0",
+   "ep": "ep07",
+   "kind": "s2",
+   "theme": "E",
+   "publish_at": "2026-11-17T01:30:00Z",
+   "title": "He Used My Husband's Name To Evict A Single Mom #Shorts",
+   "published": "2026-11-15T08:37:48Z",
+   "privacy": "private",
+   "seconds": 52,
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "like_rate": null
+  },
+  {
+   "id": "j7G8ZB0qI5w",
+   "ep": "ep07",
+   "kind": "s3",
+   "theme": "E",
+   "publish_at": "2026-11-16T17:30:00Z",
+   "title": "He Forged My Husband's Name. A Little Girl Proved It. #Shorts",
+   "published": "2026-11-15T08:37:51Z",
+   "privacy": "private",
+   "seconds": 57,
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "like_rate": null
+  },
+  {
+   "id": "uPtFUvMFbE4",
+   "ep": "ep07",
+   "kind": "s4",
+   "theme": "E",
+   "publish_at": "2026-11-16T20:30:00Z",
+   "title": "I Played The 911 Call At City Hall #Shorts",
+   "published": "2026-11-15T08:37:55Z",
+   "privacy": "private",
+   "seconds": 52,
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "like_rate": null
+  },
+  {
+   "id": "8CB9h3KBqnc",
+   "ep": "ep07",
+   "kind": "long",
+   "theme": "E",
+   "publish_at": "2026-11-16T15:00:00Z",
+   "title": "The Landlord Forged My Husband's Name to Evict the Noisy Kids Next Door. He Picked the Wrong Night.",
+   "published": "2026-11-15T08:34:50Z",
+   "privacy": "private",
+   "seconds": 838,
    "views": 0,
    "likes": 0,
    "comments": 0,
