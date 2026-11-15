@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-14T01:48:30.726510Z",
+ "updated": "2026-11-15T01:19:55.657250Z",
  "videos": [
   {
    "id": "3kJZJVqrJAk",
    "title": "I Took The Microphone At Our 50th Anniversary #Shorts",
    "published": "2026-11-13T01:30:17Z",
    "duration": "PT54S",
-   "views": 91,
+   "views": 96,
    "likes": 0,
    "comments": 0
   },
@@ -15,8 +15,17 @@
    "title": "They Brought A Pen. I Brought A Lawyer. #Shorts",
    "published": "2026-11-11T01:30:38Z",
    "duration": "PT41S",
-   "views": 75,
+   "views": 70,
    "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "ehxvRBDuiFo",
+   "title": "My Daughter Said Put My Old Dog Down #Shorts",
+   "published": "2026-11-13T17:30:04Z",
+   "duration": "PT44S",
+   "views": 66,
+   "likes": 4,
    "comments": 0
   },
   {
@@ -24,8 +33,17 @@
    "title": "My Son Asked Who Gets The House At The Funeral #Shorts",
    "published": "2026-11-10T17:30:09Z",
    "duration": "PT53S",
-   "views": 57,
+   "views": 58,
    "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "BO7-0L6HjKY",
+   "title": "My Son-in-Law Took My Husband's Truck Keys at Dinner. He Didn't Know Who His Landlord Was.",
+   "published": "2026-11-12T15:00:09Z",
+   "duration": "PT14M5S",
+   "views": 38,
+   "likes": 3,
    "comments": 0
   },
   {
@@ -34,24 +52,6 @@
    "published": "2026-11-10T15:00:07Z",
    "duration": "PT31M47S",
    "views": 33,
-   "likes": 2,
-   "comments": 0
-  },
-  {
-   "id": "BO7-0L6HjKY",
-   "title": "My Son-in-Law Took My Husband's Truck Keys at Dinner. He Didn't Know Who His Landlord Was.",
-   "published": "2026-11-12T15:00:09Z",
-   "duration": "PT14M5S",
-   "views": 24,
-   "likes": 2,
-   "comments": 0
-  },
-  {
-   "id": "ehxvRBDuiFo",
-   "title": "My Daughter Said Put My Old Dog Down #Shorts",
-   "published": "2026-11-13T17:30:04Z",
-   "duration": "PT44S",
-   "views": 20,
    "likes": 2,
    "comments": 0
   },
@@ -83,19 +83,19 @@
    "comments": 0
   },
   {
-   "id": "Axk7S-FSaxo",
-   "title": "My Daughter Said Put My Old Dog Down or Lose Her Help. She Didn't Know Who That Dog Once Found.",
-   "published": "2026-11-13T15:00:20Z",
-   "duration": "PT14M17S",
-   "views": 6,
-   "likes": 0,
-   "comments": 0
-  },
-  {
    "id": "SnlcRy75DJk",
    "title": "My Son-In-Law Took My Husband's Keys At Dinner #Shorts",
    "published": "2026-11-12T17:30:21Z",
    "duration": "PT54S",
+   "views": 7,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "Axk7S-FSaxo",
+   "title": "My Daughter Said Put My Old Dog Down or Lose Her Help. She Didn't Know Who That Dog Once Found.",
+   "published": "2026-11-13T15:00:20Z",
+   "duration": "PT14M17S",
    "views": 6,
    "likes": 0,
    "comments": 0
@@ -114,6 +114,24 @@
    "title": "The Doorbell Caught My Son-In-Law #Shorts",
    "published": "2026-11-12T20:30:05Z",
    "duration": "PT58S",
+   "views": 5,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "nRfg24Axpng",
+   "title": "I Heard My Daughter's Plan For My Dog #Shorts",
+   "published": "2026-11-13T20:30:28Z",
+   "duration": "PT55S",
+   "views": 4,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "qWbR9BQgl08",
+   "title": "My Son-In-Law Needed Our Signature #Shorts",
+   "published": "2026-11-12T23:30:06Z",
+   "duration": "PT52S",
    "views": 4,
    "likes": 0,
    "comments": 0
@@ -128,20 +146,47 @@
    "comments": 0
   },
   {
-   "id": "qWbR9BQgl08",
-   "title": "My Son-In-Law Needed Our Signature #Shorts",
-   "published": "2026-11-12T23:30:06Z",
-   "duration": "PT52S",
-   "views": 3,
+   "id": "6fjGgaHG3yM",
+   "title": "The Shelter Girl Showed Me The Paper #Shorts",
+   "published": "2026-11-13T23:30:07Z",
+   "duration": "PT54S",
+   "views": 1,
    "likes": 0,
    "comments": 0
   },
   {
-   "id": "nRfg24Axpng",
-   "title": "I Heard My Daughter's Plan For My Dog #Shorts",
-   "published": "2026-11-13T20:30:28Z",
-   "duration": "PT55S",
-   "views": 1,
+   "id": "mfuU68uahUM",
+   "title": "What His Sketchbook Saw #Shorts",
+   "published": "2026-11-14T23:30:23Z",
+   "duration": "PT53S",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "K0iR5h2gDJU",
+   "title": "I Heard My Son's Plan #Shorts",
+   "published": "2026-11-14T20:30:39Z",
+   "duration": "PT49S",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "u-VoRwcire0",
+   "title": "My Son Called Him A Thief #Shorts",
+   "published": "2026-11-14T17:30:02Z",
+   "duration": "PT45S",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "mG78MRA74sw",
+   "title": "My Son Called the Homeless Boy I Took In a Thief. He Didn't Know What That Boy Drew From My Window.",
+   "published": "2026-11-14T15:00:32Z",
+   "duration": "PT14M43S",
+   "views": 0,
    "likes": 0,
    "comments": 0
   },
@@ -150,15 +195,6 @@
    "title": "An Old Dog Walked Up On Stage #Shorts",
    "published": "2026-11-14T01:30:32Z",
    "duration": "PT49S",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "6fjGgaHG3yM",
-   "title": "The Shelter Girl Showed Me The Paper #Shorts",
-   "published": "2026-11-13T23:30:07Z",
-   "duration": "PT54S",
    "views": 0,
    "likes": 0,
    "comments": 0
