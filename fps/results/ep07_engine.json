@@ -1,0 +1,24 @@
+{
+ "tts": "gemini",
+ "tts_fallback_chunks": 0,
+ "img_gemini": 17,
+ "img_pollinations": 0,
+ "img_substituted": 0,
+ "library_made": [
+  "face:kidboy",
+  "face:kidgirl",
+  "face:mom",
+  "face:widow",
+  "kids_ball_window",
+  "kids_bikes",
+  "kids_drawing",
+  "kids_fishing",
+  "kids_homework",
+  "kids_hospital",
+  "kids_mom",
+  "kids_scolded",
+  "kids_yard",
+  "place_suburb_street"
+ ],
+ "gemini_error": ""
+}

@@ -180,16 +180,16 @@ Recurring faces: grandma (the grandmother), grandpa (the grandfather), son (the 
 - `nb_soft`: {neighbor} smiling for the first time, eyes wet, holding a small wooden toy in his hands
 - `nb_kitchen`: {neighbor} and {grandma} at a small kitchen table drinking tea, he is telling a long story, she listens
 - `nb_gate_flowers`: {neighbor} at a garden gate holding a small bouquet of wildflowers, shy, hat in his other hand
-- `kids_bikes` (MISSING): {kidboy} and {kidgirl} racing bikes up and down a quiet suburban street, laughing loudly, summer
-- `kids_ball_window` (MISSING): A baseball that has just broken a front window of a white house, glass on the porch
-- `kids_yard` (MISSING): {kidboy} and {kidgirl} shouting and playing in a front yard with a garden hose, mud everywhere
-- `kids_scolded` (MISSING): {grandpa} on his porch scolding {kidboy} and {kidgirl} who look down at their shoes
+- `kids_bikes`: {kidboy} and {kidgirl} racing bikes up and down a quiet suburban street, laughing loudly, summer
+- `kids_ball_window`: A baseball that has just broken a front window of a white house, glass on the porch
+- `kids_yard`: {kidboy} and {kidgirl} shouting and playing in a front yard with a garden hose, mud everywhere
+- `kids_scolded`: {grandpa} on his porch scolding {kidboy} and {kidgirl} who look down at their shoes
 - `kids_door` (MISSING): {kidboy} and {kidgirl} at a front door holding a lopsided homemade cake, hopeful
-- `kids_homework` (MISSING): {kidboy} doing homework at a farmhouse kitchen table with {grandpa} helping, milk and cookies
-- `kids_fishing` (MISSING): {grandpa}, {kidboy} and {kidgirl} fishing together from a wooden dock at sunset
-- `kids_hospital` (MISSING): {kidboy} and {kidgirl} with crayon drawings at a hospital bedside, {grandpa} smiling in the bed
-- `kids_mom` (MISSING): {mom} hugging {kidboy} and {kidgirl} on the steps of a small rental house, tired but loving
-- `kids_drawing` (MISSING): Close-up of a child's crayon drawing of an old man, a dog and two kids holding hands, no words
+- `kids_homework`: {kidboy} doing homework at a farmhouse kitchen table with {grandpa} helping, milk and cookies
+- `kids_fishing`: {grandpa}, {kidboy} and {kidgirl} fishing together from a wooden dock at sunset
+- `kids_hospital`: {kidboy} and {kidgirl} with crayon drawings at a hospital bedside, {grandpa} smiling in the bed
+- `kids_mom`: {mom} hugging {kidboy} and {kidgirl} on the steps of a small rental house, tired but loving
+- `kids_drawing`: Close-up of a child's crayon drawing of an old man, a dog and two kids holding hands, no words
 - `kids_crowd`: A crowd of neighbors and children in a backyard with balloons and paper lanterns, a surprise party
 - `love_meet` (MISSING): {grandpa} and {widow} reaching for the same can on a small grocery store shelf, both laughing
 - `love_dance` (MISSING): {grandpa} and {widow} slow dancing in a church hall under string lights
@@ -200,7 +200,7 @@ Recurring faces: grandma (the grandmother), grandpa (the grandfather), son (the 
 - `love_wedding` (MISSING): {grandpa} and {widow} at a small backyard wedding, string lights, a few friends clapping
 - `place_city_winter`: A cold small-city downtown street at night in winter, snow, steam from a grate, no readable signs
 - `place_soup_kitchen`: A church basement soup kitchen with long tables and volunteers, warm light, no readable signs
-- `place_suburb_street` (MISSING): A quiet tree-lined suburban street with small houses and bikes on the lawns, summer evening
+- `place_suburb_street`: A quiet tree-lined suburban street with small houses and bikes on the lawns, summer evening
 - `place_diner` (MISSING): A small-town diner interior with a counter, red stools and a waitress pouring coffee, no readable signs
 - `place_grocery`: A small-town grocery store aisle, warm light, no readable labels
 - `place_park` (MISSING): A small-town park with a bench under a big oak tree in autumn, empty
