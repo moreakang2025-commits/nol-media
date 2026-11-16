@@ -22,7 +22,10 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           FPS_IMAGE_MODEL: gemini-2.5-flash-image
           FPS_IMG_CACHE: /tmp/libcache
-        run: python3 tools/fps/library.py
+        # owner rule: pictures are made only when an episode needs them. A push to library.txt only refreshes
+        # catalog.md; a manual run (workflow_dispatch) still tops up everything that is missing.
+        run: |
+          if [ "${{ github.event_name }}" = "push" ]; then python3 tools/fps/library.py --limit 0; else python3 tools/fps/library.py; fi
       - name: Commit pictures
         if: always()
         run: |
