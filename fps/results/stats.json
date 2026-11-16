@@ -1,10 +1,10 @@
 {
- "collected": "2026-11-15T13:54:06Z",
+ "collected": "2026-11-16T08:20:25Z",
  "channel": {
-  "viewCount": "439",
-  "subscriberCount": "5",
+  "viewCount": "472",
+  "subscriberCount": "6",
   "hiddenSubscriberCount": false,
-  "videoCount": "25"
+  "videoCount": "30"
  },
  "videos": [
   {
@@ -197,7 +197,7 @@
    "published": "2026-11-12T23:30:06Z",
    "privacy": "public",
    "seconds": 52,
-   "views": 4,
+   "views": 5,
    "likes": 0,
    "comments": 0,
    "like_rate": 0.0
@@ -287,10 +287,10 @@
    "published": "2026-11-14T01:30:32Z",
    "privacy": "public",
    "seconds": 49,
-   "views": 0,
+   "views": 1,
    "likes": 0,
    "comments": 0,
-   "like_rate": null
+   "like_rate": 0.0
   },
   {
    "id": "Axk7S-FSaxo",
@@ -377,7 +377,7 @@
    "published": "2026-11-14T15:00:32Z",
    "privacy": "public",
    "seconds": 883,
-   "views": 2,
+   "views": 3,
    "likes": 0,
    "comments": 0,
    "like_rate": 0.0
@@ -389,8 +389,8 @@
    "theme": "D",
    "publish_at": "2026-11-15T20:30:00Z",
    "title": "My HOA President Wanted My Neighbor Gone #Shorts",
-   "published": "2026-11-14T08:33:26Z",
-   "privacy": "private",
+   "published": "2026-11-15T20:30:12Z",
+   "privacy": "public",
    "seconds": 56,
    "views": 0,
    "likes": 0,
@@ -404,8 +404,8 @@
    "theme": "D",
    "publish_at": "2026-11-15T23:30:00Z",
    "title": "She Told Him To Pay Or Lose The House #Shorts",
-   "published": "2026-11-14T08:33:28Z",
-   "privacy": "private",
+   "published": "2026-11-15T23:30:39Z",
+   "privacy": "public",
    "seconds": 48,
    "views": 0,
    "likes": 0,
@@ -419,8 +419,8 @@
    "theme": "D",
    "publish_at": "2026-11-16T01:30:00Z",
    "title": "They Called Him A Creep. Then I Saw His Attic. #Shorts",
-   "published": "2026-11-14T08:33:30Z",
-   "privacy": "private",
+   "published": "2026-11-16T01:30:12Z",
+   "privacy": "public",
    "seconds": 52,
    "views": 0,
    "likes": 0,
@@ -434,8 +434,8 @@
    "theme": "D",
    "publish_at": "2026-11-15T17:30:00Z",
    "title": "She Wanted His House. I Brought Page Four. #Shorts",
-   "published": "2026-11-14T08:33:32Z",
-   "privacy": "private",
+   "published": "2026-11-15T17:30:19Z",
+   "privacy": "public",
    "seconds": 57,
    "views": 0,
    "likes": 0,
@@ -449,13 +449,13 @@
    "theme": "D",
    "publish_at": "2026-11-15T15:00:00Z",
    "title": "My HOA President Called My Old Neighbor a Creep and Fined Him $14,200. Then I Saw His Attic.",
-   "published": "2026-11-14T08:30:43Z",
-   "privacy": "private",
+   "published": "2026-11-15T15:00:10Z",
+   "privacy": "public",
    "seconds": 898,
-   "views": 0,
+   "views": 7,
    "likes": 0,
    "comments": 0,
-   "like_rate": null
+   "like_rate": 0.0
   },
   {
    "id": "7NsdhWGCxWM",
