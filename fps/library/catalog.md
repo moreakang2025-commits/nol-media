@@ -191,27 +191,27 @@ Recurring faces: grandma (the grandmother), grandpa (the grandfather), son (the 
 - `kids_mom`: {mom} hugging {kidboy} and {kidgirl} on the steps of a small rental house, tired but loving
 - `kids_drawing`: Close-up of a child's crayon drawing of an old man, a dog and two kids holding hands, no words
 - `kids_crowd`: A crowd of neighbors and children in a backyard with balloons and paper lanterns, a surprise party
-- `love_meet` (MISSING): {grandpa} and {widow} reaching for the same can on a small grocery store shelf, both laughing
-- `love_dance` (MISSING): {grandpa} and {widow} slow dancing in a church hall under string lights
-- `love_porch` (MISSING): {grandpa} and {widow} on a porch swing at sunset sharing a blanket, shy smiles
-- `love_letter` (MISSING): {widow} reading a handwritten letter at a window, smiling, hand on her heart
+- `love_meet`: {grandpa} and {widow} reaching for the same can on a small grocery store shelf, both laughing
+- `love_dance`: {grandpa} and {widow} slow dancing in a church hall under string lights
+- `love_porch`: {grandpa} and {widow} on a porch swing at sunset sharing a blanket, shy smiles
+- `love_letter`: {widow} reading a handwritten letter at a window, smiling, hand on her heart
 - `love_garden` (MISSING): {widow} and {grandma} laughing together while planting flowers, best friends
 - `love_disapprove` (MISSING): {son} and {dil} glaring across a dinner table at {grandpa} holding hands with {widow}
-- `love_wedding` (MISSING): {grandpa} and {widow} at a small backyard wedding, string lights, a few friends clapping
+- `love_wedding`: {grandpa} and {widow} at a small backyard wedding, string lights, a few friends clapping
 - `place_city_winter`: A cold small-city downtown street at night in winter, snow, steam from a grate, no readable signs
 - `place_soup_kitchen`: A church basement soup kitchen with long tables and volunteers, warm light, no readable signs
 - `place_suburb_street`: A quiet tree-lined suburban street with small houses and bikes on the lawns, summer evening
 - `place_diner` (MISSING): A small-town diner interior with a counter, red stools and a waitress pouring coffee, no readable signs
 - `place_grocery`: A small-town grocery store aisle, warm light, no readable labels
 - `place_park` (MISSING): A small-town park with a bench under a big oak tree in autumn, empty
-- `love_engaged` (MISSING): {grandpa} slipping a small engagement ring onto the finger of {widow} at a family dinner table with a roast, she covers her mouth with her other hand, people at the table stunned
-- `love_sil_accuse` (MISSING): {sil} standing up at a family dinner table pointing at {widow} with a sneer, {daughter} looking down at her plate, tense
-- `love_statements` (MISSING): {widow} and {grandpa} at a small kitchen table reading printed bank statements with a pencil and a calculator, serious, numbers unreadable
-- `love_confront` (MISSING): {widow} calmly facing {sil} across a kitchen table, holding up a printed statement, he looks rattled, text unreadable
-- `love_shoebox` (MISSING): {widow} sitting on the edge of her bed with an old shoebox full of faded airmail envelopes, eyes wet, lamp light, no readable text
-- `love_daughter_visit` (MISSING): {daughter} at the front door of a small brick house confronting {widow} with a thick folder in her hands, tense, evening
-- `love_daughter_hug` (MISSING): {daughter} hugging {widow} tightly in a hotel ballroom, both crying, {widow} in a cream dress with a small corsage
-- `love_trumpet` (MISSING): {grandpa} in a suit playing an old brass trumpet at a ballroom microphone, eyes closed, {widow} in a cream dress watching with tears
-- `love_widow_calm` (MISSING): Close-up of {widow} with a calm, knowing, steely expression, warm side light
-- `love_laundromat` (MISSING): Vintage 1980s photo look: {widow} as a young woman with her late husband, smiling in front of a small laundromat with washing machines, faded colors, no readable signs
-- `love_sil_exposed` (MISSING): {sil} in a suit standing in a hotel ballroom wedding, holding a folder, every guest turned to stare at him, sweating, caught
+- `love_engaged`: {grandpa} slipping a small engagement ring onto the finger of {widow} at a family dinner table with a roast, she covers her mouth with her other hand, people at the table stunned
+- `love_sil_accuse`: {sil} standing up at a family dinner table pointing at {widow} with a sneer, {daughter} looking down at her plate, tense
+- `love_statements`: {widow} and {grandpa} at a small kitchen table reading printed bank statements with a pencil and a calculator, serious, numbers unreadable
+- `love_confront`: {widow} calmly facing {sil} across a kitchen table, holding up a printed statement, he looks rattled, text unreadable
+- `love_shoebox`: {widow} sitting on the edge of her bed with an old shoebox full of faded airmail envelopes, eyes wet, lamp light, no readable text
+- `love_daughter_visit`: {daughter} at the front door of a small brick house confronting {widow} with a thick folder in her hands, tense, evening
+- `love_daughter_hug`: {daughter} hugging {widow} tightly in a hotel ballroom, both crying, {widow} in a cream dress with a small corsage
+- `love_trumpet`: {grandpa} in a suit playing an old brass trumpet at a ballroom microphone, eyes closed, {widow} in a cream dress watching with tears
+- `love_widow_calm`: Close-up of {widow} with a calm, knowing, steely expression, warm side light
+- `love_laundromat`: Vintage 1980s photo look: {widow} as a young woman with her late husband, smiling in front of a small laundromat with washing machines, faded colors, no readable signs
+- `love_sil_exposed`: {sil} in a suit standing in a hotel ballroom wedding, holding a folder, every guest turned to stare at him, sweating, caught

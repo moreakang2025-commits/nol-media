@@ -1,0 +1,26 @@
+{
+ "tts": "gemini",
+ "tts_fallback_chunks": 0,
+ "img_gemini": 19,
+ "img_pollinations": 0,
+ "img_substituted": 0,
+ "library_made": [
+  "love_confront",
+  "love_dance",
+  "love_daughter_hug",
+  "love_daughter_visit",
+  "love_engaged",
+  "love_laundromat",
+  "love_letter",
+  "love_meet",
+  "love_porch",
+  "love_shoebox",
+  "love_sil_accuse",
+  "love_sil_exposed",
+  "love_statements",
+  "love_trumpet",
+  "love_wedding",
+  "love_widow_calm"
+ ],
+ "gemini_error": ""
+}
