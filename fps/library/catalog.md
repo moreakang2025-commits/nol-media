@@ -204,3 +204,14 @@ Recurring faces: grandma (the grandmother), grandpa (the grandfather), son (the 
 - `place_diner` (MISSING): A small-town diner interior with a counter, red stools and a waitress pouring coffee, no readable signs
 - `place_grocery`: A small-town grocery store aisle, warm light, no readable labels
 - `place_park` (MISSING): A small-town park with a bench under a big oak tree in autumn, empty
+- `love_engaged` (MISSING): {grandpa} slipping a small engagement ring onto the finger of {widow} at a family dinner table with a roast, she covers her mouth with her other hand, people at the table stunned
+- `love_sil_accuse` (MISSING): {sil} standing up at a family dinner table pointing at {widow} with a sneer, {daughter} looking down at her plate, tense
+- `love_statements` (MISSING): {widow} and {grandpa} at a small kitchen table reading printed bank statements with a pencil and a calculator, serious, numbers unreadable
+- `love_confront` (MISSING): {widow} calmly facing {sil} across a kitchen table, holding up a printed statement, he looks rattled, text unreadable
+- `love_shoebox` (MISSING): {widow} sitting on the edge of her bed with an old shoebox full of faded airmail envelopes, eyes wet, lamp light, no readable text
+- `love_daughter_visit` (MISSING): {daughter} at the front door of a small brick house confronting {widow} with a thick folder in her hands, tense, evening
+- `love_daughter_hug` (MISSING): {daughter} hugging {widow} tightly in a hotel ballroom, both crying, {widow} in a cream dress with a small corsage
+- `love_trumpet` (MISSING): {grandpa} in a suit playing an old brass trumpet at a ballroom microphone, eyes closed, {widow} in a cream dress watching with tears
+- `love_widow_calm` (MISSING): Close-up of {widow} with a calm, knowing, steely expression, warm side light
+- `love_laundromat` (MISSING): Vintage 1980s photo look: {widow} as a young woman with her late husband, smiling in front of a small laundromat with washing machines, faded colors, no readable signs
+- `love_sil_exposed` (MISSING): {sil} in a suit standing in a hotel ballroom wedding, holding a folder, every guest turned to stare at him, sweating, caught

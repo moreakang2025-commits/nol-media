@@ -45,6 +45,13 @@ Lanes B-F still need: spicy first line (an insult, accusation or shocking line f
 
 ## What the data says (update every Monday from fps/results/insights.md)
 Data loop: workflow fps-stats runs daily 06:17 UTC (15:17 KST) → `fps/results/stats.json` (+ history in `fps/results/stats/`) → `tools/fps/analyze.py` → `fps/results/insights.md`. Read-only; changes nothing on YouTube.
+Weekly read, 2026-11-16 (Mon; ep01-ep06 public = 30 videos, 6 subscribers, 472 total views; every group still has n<=6 → hints only):
+- Shorts are hit-or-miss: per episode usually ONE Short takes almost all the views (ep03 s4 96, ep01 s4 70, ep04 s1 67, ep01 s1 58); the other three get 0-13. The winners all say a family role + a taboo or a public act in plain words ("My Daughter Said Put My Old Dog Down", "I Took The Microphone At Our 50th Anniversary"). Keep that title style.
+- s2/s3 are still near zero (1.1 and 0.8 views/day, n=6 each). The ep06 rule (confrontation lines for s2/s3) has no public result yet (ep06 Shorts were 0-15 h old). Judge it on ep07-ep10.
+- Hint: everything published from Sat 2026-11-14 on (ep05, ep06: 8 Shorts) is at ~0-8 views, while Tue-Fri uploads got 60-160. Could be the weekend, the C/D lanes, or the feed simply not testing us. Watch whether ep07 (Mon) recovers before changing anything.
+- Slot rotation: started 2026-11-15; ep06 s4 (payoff) ran at 12:30 ET and got 0 in 15 h, but one day says nothing. Re-read after ~8 rotated days (around 2026-11-23).
+- Theme lanes (long-form): A 7.5 views/day (n=3), D 9.7 (n=1, too young), B 2.6, C 1.7 (n=1 each). Not enough to drop or favour a lane. F (second-chance love) first used in ep08.
+→ Used in ep08: every Short title first person, confrontation, under 50 characters, and each Short's first line names the relationship ("my father-in-law", "my fiancé", "my father").
 First read, 2026-11-13 (ep01-ep03 only, 15 public videos, 3 subscribers; hints, not rules):
 - Shorts bring ~80% of views (245 vs 52). Long-form viewers like more (3.8% vs 0.4% like rate). Shorts are the front door; the long-form is where fans are made.
 - The payoff Short (s4, 20:30 ET) wins every episode: ~75 views/day vs 5-9 for s2/s3. s1 (the insult) is second. s2 (overheard plan) and s3 (hidden card) are nearly dead: a stranger in the Shorts feed doesn't know who these people are.

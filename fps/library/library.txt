@@ -255,3 +255,14 @@ IMG place_suburb_street | A quiet tree-lined suburban street with small houses a
 IMG place_diner | A small-town diner interior with a counter, red stools and a waitress pouring coffee, no readable signs
 IMG place_grocery | A small-town grocery store aisle, warm light, no readable labels
 IMG place_park | A small-town park with a bench under a big oak tree in autumn, empty
+IMG love_engaged | {grandpa} slipping a small engagement ring onto the finger of {widow} at a family dinner table with a roast, she covers her mouth with her other hand, people at the table stunned
+IMG love_sil_accuse | {sil} standing up at a family dinner table pointing at {widow} with a sneer, {daughter} looking down at her plate, tense
+IMG love_statements | {widow} and {grandpa} at a small kitchen table reading printed bank statements with a pencil and a calculator, serious, numbers unreadable
+IMG love_confront | {widow} calmly facing {sil} across a kitchen table, holding up a printed statement, he looks rattled, text unreadable
+IMG love_shoebox | {widow} sitting on the edge of her bed with an old shoebox full of faded airmail envelopes, eyes wet, lamp light, no readable text
+IMG love_daughter_visit | {daughter} at the front door of a small brick house confronting {widow} with a thick folder in her hands, tense, evening
+IMG love_daughter_hug | {daughter} hugging {widow} tightly in a hotel ballroom, both crying, {widow} in a cream dress with a small corsage
+IMG love_trumpet | {grandpa} in a suit playing an old brass trumpet at a ballroom microphone, eyes closed, {widow} in a cream dress watching with tears
+IMG love_widow_calm | Close-up of {widow} with a calm, knowing, steely expression, warm side light
+IMG love_laundromat | Vintage 1980s photo look: {widow} as a young woman with her late husband, smiling in front of a small laundromat with washing machines, faded colors, no readable signs
+IMG love_sil_exposed | {sil} in a suit standing in a hotel ballroom wedding, holding a folder, every guest turned to stare at him, sweating, caught
