@@ -1,0 +1,155 @@
+{
+ "chunks": [
+  {
+   "chunk": 0,
+   "secs": 89.1,
+   "smacks": 13,
+   "clipped": 0,
+   "jumps": [
+    68.92
+   ]
+  },
+  {
+   "chunk": 1,
+   "secs": 94.3,
+   "smacks": 23,
+   "clipped": 0,
+   "jumps": [
+    15.55,
+    45.41,
+    52.51
+   ]
+  },
+  {
+   "chunk": 2,
+   "secs": 26.6,
+   "smacks": 6,
+   "clipped": 0,
+   "jumps": []
+  },
+  {
+   "chunk": 3,
+   "secs": 43.6,
+   "smacks": 12,
+   "clipped": 0,
+   "jumps": []
+  },
+  {
+   "chunk": 4,
+   "secs": 43.0,
+   "smacks": 14,
+   "clipped": 0,
+   "jumps": []
+  },
+  {
+   "chunk": 5,
+   "secs": 23.2,
+   "smacks": 5,
+   "clipped": 0,
+   "jumps": []
+  },
+  {
+   "chunk": 6,
+   "secs": 27.3,
+   "smacks": 6,
+   "clipped": 0,
+   "jumps": [
+    0.81
+   ]
+  },
+  {
+   "chunk": 7,
+   "secs": 17.9,
+   "smacks": 7,
+   "clipped": 0,
+   "jumps": []
+  },
+  {
+   "chunk": 8,
+   "secs": 12.2,
+   "smacks": 5,
+   "clipped": 0,
+   "jumps": []
+  },
+  {
+   "chunk": 9,
+   "secs": 90.3,
+   "smacks": 19,
+   "clipped": 0,
+   "jumps": [
+    21.0
+   ]
+  },
+  {
+   "chunk": 10,
+   "secs": 50.4,
+   "smacks": 22,
+   "clipped": 0,
+   "jumps": []
+  },
+  {
+   "chunk": 11,
+   "secs": 3.3,
+   "smacks": 1,
+   "clipped": 0,
+   "jumps": []
+  },
+  {
+   "chunk": 12,
+   "secs": 45.1,
+   "smacks": 11,
+   "clipped": 0,
+   "jumps": [
+    7.48,
+    43.38
+   ]
+  },
+  {
+   "chunk": 13,
+   "secs": 38.6,
+   "smacks": 8,
+   "clipped": 0,
+   "jumps": []
+  },
+  {
+   "chunk": 14,
+   "secs": 108.6,
+   "smacks": 27,
+   "clipped": 0,
+   "jumps": []
+  },
+  {
+   "chunk": 15,
+   "secs": 99.6,
+   "smacks": 20,
+   "clipped": 0,
+   "jumps": [
+    20.78,
+    40.26
+   ]
+  },
+  {
+   "chunk": 16,
+   "secs": 9.7,
+   "smacks": 5,
+   "clipped": 0,
+   "jumps": []
+  }
+ ],
+ "post_master_ticks_removed": 61,
+ "final_decoded": {
+  "clipped": 0,
+  "jumps": [
+   106.26,
+   407.3,
+   549.92,
+   555.21,
+   570.71,
+   577.39,
+   594.04,
+   769.25
+  ]
+ },
+ "final_isolated_ticks": 19,
+ "final_peak": 26228
+}

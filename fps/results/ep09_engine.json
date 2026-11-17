@@ -1,0 +1,33 @@
+{
+ "tts": "gemini",
+ "tts_fallback_chunks": 0,
+ "img_gemini": 24,
+ "img_pollinations": 0,
+ "img_substituted": 0,
+ "library_made": [
+  "jan_abby_papers",
+  "jan_auditorium",
+  "jan_banker_stage",
+  "jan_boiler_boy",
+  "jan_confront",
+  "jan_dil_frozen",
+  "jan_dil_podium",
+  "jan_dil_spending",
+  "jan_dil_walkout",
+  "jan_dinner_insult",
+  "jan_dolly_ledger",
+  "jan_gd_hug",
+  "jan_gp_stage",
+  "jan_heloc_letter",
+  "jan_hospital_paper",
+  "jan_hug_banker",
+  "jan_leon_calm",
+  "jan_mop_night",
+  "jan_note",
+  "jan_porch_end",
+  "jan_son_stand",
+  "jan_standing",
+  "jan_surgery"
+ ],
+ "gemini_error": ""
+}

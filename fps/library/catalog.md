@@ -215,26 +215,26 @@ Recurring faces: grandma (the grandmother), grandpa (the grandfather), son (the 
 - `love_widow_calm`: Close-up of {widow} with a calm, knowing, steely expression, warm side light
 - `love_laundromat`: Vintage 1980s photo look: {widow} as a young woman with her late husband, smiling in front of a small laundromat with washing machines, faded colors, no readable signs
 - `love_sil_exposed`: {sil} in a suit standing in a hotel ballroom wedding, holding a folder, every guest turned to stare at him, sweating, caught
-- `jan_dinner_insult` (MISSING): {dil} standing at a Sunday dinner table with a pot roast, pointing at {grandpa} with a sneer, {son} looking down at his plate, tense, warm lamp light
-- `jan_leon_calm` (MISSING): Close-up of {grandpa} with a calm, quiet, dignified expression, a faint knowing smile, warm side light
-- `jan_porch_end` (MISSING): {grandpa} and {granddaughter} sitting on porch steps with two coffee mugs, laughing together, morning light, autumn leaves
-- `jan_mop_night` (MISSING): Vintage 1980s photo look: a 38-year-old school janitor in a gray work shirt mopping a long empty high school hallway at night, lockers, a yellow mop bucket, warm faded colors, no readable text
-- `jan_boiler_boy` (MISSING): Vintage 1980s photo look: a skinny teenage boy asleep on a folded blanket next to an old boiler in a school basement, a metal thermos and half a sandwich in wax paper beside him, faded colors
-- `jan_note` (MISSING): Close-up of an old folded note on yellowed lined school paper in a wrinkled hand, handwriting blurred and unreadable
-- `jan_dolly_ledger` (MISSING): Vintage 1980s photo look: a working-class husband and wife at a small kitchen table writing in a ledger beside a tin coffee can of savings, smiling at each other, faded colors, no readable text
-- `jan_heloc_letter` (MISSING): {grandpa} at a farmhouse kitchen table reading a bank letter, stunned, glasses pushed up on his forehead, text unreadable
-- `jan_confront` (MISSING): {grandpa} holding up a letter across a kitchen table toward {dil}, who crosses her arms with a cold smile, {son} in the doorway behind with car keys, text unreadable
-- `jan_dil_spending` (MISSING): {dil} at a lakefront condo sales office signing papers with a big smile, a glass of champagne, text unreadable
-- `jan_abby_papers` (MISSING): {granddaughter} and {grandpa} at a kitchen table at night going through loan papers with a highlighter and a laptop, serious, text unreadable
-- `jan_hospital_paper` (MISSING): Close-up of a hospital discharge paper and a plastic eye shield on a kitchen table, text blurred and unreadable
-- `jan_surgery` (MISSING): {grandpa} in a hospital bed with a clear plastic shield taped over his right eye, {son} sitting beside him, daytime
-- `jan_auditorium` (MISSING): A packed high school auditorium at night, red seats, six hundred people, a podium on a lit stage, banners with no readable text
-- `jan_dil_podium` (MISSING): {dil} in an elegant silver dress at a podium on a high school auditorium stage, smiling into the microphone, no readable text
-- `jan_gp_stage` (MISSING): {grandpa} in an old brown suit and tie walking up the steps onto a high school auditorium stage under a spotlight, audience applauding
-- `jan_standing` (MISSING): Hundreds of adults standing up and applauding in a high school auditorium, a nurse, a firefighter, people in suits, some wiping tears
-- `jan_dil_frozen` (MISSING): {dil} in a silver dress on an auditorium stage, frozen in shock, microphone lowered, the crowd staring at her
-- `jan_banker_stage` (MISSING): {banker} at a podium on an auditorium stage, emotional, holding a yellowed folded note, no readable text
-- `jan_hug_banker` (MISSING): {banker} hugging {grandpa} on an auditorium stage, both crying, the crowd applauding behind them
-- `jan_dil_walkout` (MISSING): {dil} in a silver dress walking alone up the aisle of a high school auditorium toward the exit, hundreds of people turned to stare
-- `jan_son_stand` (MISSING): {son} standing beside {grandpa} on an auditorium stage with his hand on his father's shoulder, ashamed but proud, spotlight
-- `jan_gd_hug` (MISSING): {granddaughter} hugging {grandpa} in an auditorium aisle, laughing and crying, people clapping around them
+- `jan_dinner_insult`: {dil} standing at a Sunday dinner table with a pot roast, pointing at {grandpa} with a sneer, {son} looking down at his plate, tense, warm lamp light
+- `jan_leon_calm`: Close-up of {grandpa} with a calm, quiet, dignified expression, a faint knowing smile, warm side light
+- `jan_porch_end`: {grandpa} and {granddaughter} sitting on porch steps with two coffee mugs, laughing together, morning light, autumn leaves
+- `jan_mop_night`: Vintage 1980s photo look: a 38-year-old school janitor in a gray work shirt mopping a long empty high school hallway at night, lockers, a yellow mop bucket, warm faded colors, no readable text
+- `jan_boiler_boy`: Vintage 1980s photo look: a skinny teenage boy asleep on a folded blanket next to an old boiler in a school basement, a metal thermos and half a sandwich in wax paper beside him, faded colors
+- `jan_note`: Close-up of an old folded note on yellowed lined school paper in a wrinkled hand, handwriting blurred and unreadable
+- `jan_dolly_ledger`: Vintage 1980s photo look: a working-class husband and wife at a small kitchen table writing in a ledger beside a tin coffee can of savings, smiling at each other, faded colors, no readable text
+- `jan_heloc_letter`: {grandpa} at a farmhouse kitchen table reading a bank letter, stunned, glasses pushed up on his forehead, text unreadable
+- `jan_confront`: {grandpa} holding up a letter across a kitchen table toward {dil}, who crosses her arms with a cold smile, {son} in the doorway behind with car keys, text unreadable
+- `jan_dil_spending`: {dil} at a lakefront condo sales office signing papers with a big smile, a glass of champagne, text unreadable
+- `jan_abby_papers`: {granddaughter} and {grandpa} at a kitchen table at night going through loan papers with a highlighter and a laptop, serious, text unreadable
+- `jan_hospital_paper`: Close-up of a hospital discharge paper and a plastic eye shield on a kitchen table, text blurred and unreadable
+- `jan_surgery`: {grandpa} in a hospital bed with a clear plastic shield taped over his right eye, {son} sitting beside him, daytime
+- `jan_auditorium`: A packed high school auditorium at night, red seats, six hundred people, a podium on a lit stage, banners with no readable text
+- `jan_dil_podium`: {dil} in an elegant silver dress at a podium on a high school auditorium stage, smiling into the microphone, no readable text
+- `jan_gp_stage`: {grandpa} in an old brown suit and tie walking up the steps onto a high school auditorium stage under a spotlight, audience applauding
+- `jan_standing`: Hundreds of adults standing up and applauding in a high school auditorium, a nurse, a firefighter, people in suits, some wiping tears
+- `jan_dil_frozen`: {dil} in a silver dress on an auditorium stage, frozen in shock, microphone lowered, the crowd staring at her
+- `jan_banker_stage`: {banker} at a podium on an auditorium stage, emotional, holding a yellowed folded note, no readable text
+- `jan_hug_banker`: {banker} hugging {grandpa} on an auditorium stage, both crying, the crowd applauding behind them
+- `jan_dil_walkout`: {dil} in a silver dress walking alone up the aisle of a high school auditorium toward the exit, hundreds of people turned to stare
+- `jan_son_stand`: {son} standing beside {grandpa} on an auditorium stage with his hand on his father's shoulder, ashamed but proud, spotlight
+- `jan_gd_hug`: {granddaughter} hugging {grandpa} in an auditorium aisle, laughing and crying, people clapping around them
