@@ -266,3 +266,26 @@ IMG love_trumpet | {grandpa} in a suit playing an old brass trumpet at a ballroo
 IMG love_widow_calm | Close-up of {widow} with a calm, knowing, steely expression, warm side light
 IMG love_laundromat | Vintage 1980s photo look: {widow} as a young woman with her late husband, smiling in front of a small laundromat with washing machines, faded colors, no readable signs
 IMG love_sil_exposed | {sil} in a suit standing in a hotel ballroom wedding, holding a folder, every guest turned to stare at him, sweating, caught
+IMG jan_dinner_insult | {dil} standing at a Sunday dinner table with a pot roast, pointing at {grandpa} with a sneer, {son} looking down at his plate, tense, warm lamp light
+IMG jan_leon_calm | Close-up of {grandpa} with a calm, quiet, dignified expression, a faint knowing smile, warm side light
+IMG jan_porch_end | {grandpa} and {granddaughter} sitting on porch steps with two coffee mugs, laughing together, morning light, autumn leaves
+IMG jan_mop_night | Vintage 1980s photo look: a 38-year-old school janitor in a gray work shirt mopping a long empty high school hallway at night, lockers, a yellow mop bucket, warm faded colors, no readable text
+IMG jan_boiler_boy | Vintage 1980s photo look: a skinny teenage boy asleep on a folded blanket next to an old boiler in a school basement, a metal thermos and half a sandwich in wax paper beside him, faded colors
+IMG jan_note | Close-up of an old folded note on yellowed lined school paper in a wrinkled hand, handwriting blurred and unreadable
+IMG jan_dolly_ledger | Vintage 1980s photo look: a working-class husband and wife at a small kitchen table writing in a ledger beside a tin coffee can of savings, smiling at each other, faded colors, no readable text
+IMG jan_heloc_letter | {grandpa} at a farmhouse kitchen table reading a bank letter, stunned, glasses pushed up on his forehead, text unreadable
+IMG jan_confront | {grandpa} holding up a letter across a kitchen table toward {dil}, who crosses her arms with a cold smile, {son} in the doorway behind with car keys, text unreadable
+IMG jan_dil_spending | {dil} at a lakefront condo sales office signing papers with a big smile, a glass of champagne, text unreadable
+IMG jan_abby_papers | {granddaughter} and {grandpa} at a kitchen table at night going through loan papers with a highlighter and a laptop, serious, text unreadable
+IMG jan_hospital_paper | Close-up of a hospital discharge paper and a plastic eye shield on a kitchen table, text blurred and unreadable
+IMG jan_surgery | {grandpa} in a hospital bed with a clear plastic shield taped over his right eye, {son} sitting beside him, daytime
+IMG jan_auditorium | A packed high school auditorium at night, red seats, six hundred people, a podium on a lit stage, banners with no readable text
+IMG jan_dil_podium | {dil} in an elegant silver dress at a podium on a high school auditorium stage, smiling into the microphone, no readable text
+IMG jan_gp_stage | {grandpa} in an old brown suit and tie walking up the steps onto a high school auditorium stage under a spotlight, audience applauding
+IMG jan_standing | Hundreds of adults standing up and applauding in a high school auditorium, a nurse, a firefighter, people in suits, some wiping tears
+IMG jan_dil_frozen | {dil} in a silver dress on an auditorium stage, frozen in shock, microphone lowered, the crowd staring at her
+IMG jan_banker_stage | {banker} at a podium on an auditorium stage, emotional, holding a yellowed folded note, no readable text
+IMG jan_hug_banker | {banker} hugging {grandpa} on an auditorium stage, both crying, the crowd applauding behind them
+IMG jan_dil_walkout | {dil} in a silver dress walking alone up the aisle of a high school auditorium toward the exit, hundreds of people turned to stare
+IMG jan_son_stand | {son} standing beside {grandpa} on an auditorium stage with his hand on his father's shoulder, ashamed but proud, spotlight
+IMG jan_gd_hug | {granddaughter} hugging {grandpa} in an auditorium aisle, laughing and crying, people clapping around them
