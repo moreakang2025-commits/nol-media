@@ -160,15 +160,15 @@ Recurring faces: grandma (the grandmother), grandpa (the grandfather), son (the 
 - `dog_bowl`: An old steel dog bowl and a worn red leash by a back door, no dog, quiet
 - `dog_collar`: Close-up of a worn red dog collar with a small round brass tag in an old man's hand, no readable text
 - `ym_street`: {youngman} sitting on a flattened cardboard box against a brick wall on a cold city street, paper cup in front, snow falling
-- `ym_bench` (MISSING): {youngman} sleeping on a park bench under a thin blanket at dawn, frost on the grass
+- `ym_bench`: {youngman} sleeping on a park bench under a thin blanket at dawn, frost on the grass
 - `ym_shelter_meal`: {youngman} eating soup at a long table in a church soup kitchen, grateful, steam rising
 - `ym_help_gm`: {youngman} carrying heavy grocery bags for {grandma} across an icy parking lot, she holds his arm
 - `ym_porch_coffee`: {youngman} and {grandma} sitting on porch steps sharing coffee and laughing, morning light
-- `ym_fix_roof` (MISSING): {youngman} on a ladder fixing the gutter of a white farmhouse while {grandpa} holds the ladder
+- `ym_fix_roof`: {youngman} on a ladder fixing the gutter of a white farmhouse while {grandpa} holds the ladder
 - `ym_sketchbook`: Close-up of {youngman} drawing in a battered sketchbook with a pencil, talented, focused
 - `ym_suit`: {youngman} clean-shaven in a borrowed suit, nervous, standing in front of a mirror
 - `ym_accused`: {youngman} standing in a living room, falsely accused, hands open, an angry family pointing at him
-- `ym_hug_gp` (MISSING): {youngman} hugging {grandpa} tightly at a front door, both emotional
+- `ym_hug_gp`: {youngman} hugging {grandpa} tightly at a front door, both emotional
 - `ym_graduation`: {youngman} in a graduation gown holding a diploma, {grandma} clapping and crying in the crowd
 - `nb_window`: {neighbor} watching from behind a lace curtain in the window of an old dark house next door, suspicious
 - `nb_house`: An old gray Victorian house next door with an overgrown yard, shutters closed, one light in the attic
