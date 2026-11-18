@@ -1,0 +1,33 @@
+{
+ "tts": "gemini",
+ "tts_fallback_chunks": 0,
+ "img_gemini": 24,
+ "img_pollinations": 0,
+ "img_substituted": 0,
+ "library_made": [
+  "tuck_app",
+  "tuck_arrival",
+  "tuck_charge",
+  "tuck_cody_lie",
+  "tuck_cody_phone",
+  "tuck_deed",
+  "tuck_exposed",
+  "tuck_gp_search",
+  "tuck_gp_wait",
+  "tuck_hospice_door",
+  "tuck_insult",
+  "tuck_kneel",
+  "tuck_porch_confront",
+  "tuck_porch_end",
+  "tuck_proof",
+  "tuck_puppy",
+  "tuck_reunion",
+  "tuck_road",
+  "tuck_room12",
+  "tuck_sale",
+  "tuck_shelter",
+  "tuck_therapy",
+  "tuck_trent"
+ ],
+ "gemini_error": ""
+}
