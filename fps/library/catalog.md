@@ -238,3 +238,26 @@ Recurring faces: grandma (the grandmother), grandpa (the grandfather), son (the 
 - `jan_dil_walkout`: {dil} in a silver dress walking alone up the aisle of a high school auditorium toward the exit, hundreds of people turned to stare
 - `jan_son_stand`: {son} standing beside {grandpa} on an auditorium stage with his hand on his father's shoulder, ashamed but proud, spotlight
 - `jan_gd_hug`: {granddaughter} hugging {grandpa} in an auditorium aisle, laughing and crying, people clapping around them
+- `tuck_insult` (MISSING): {grandson} as a young man in his twenties standing in a farmhouse kitchen pointing at {dog} lying at the feet of {grandma}, sneering, {grandpa} in the doorway leaning on a cane, tense, warm lamp light
+- `tuck_therapy` (MISSING): {dog} wearing a small blue therapy vest resting its chin on the bed of a frail elderly patient in a quiet hospice room, {grandma} sitting beside the bed holding the patient's hand, soft lamp light, no readable text
+- `tuck_puppy` (MISSING): Smartphone photo look from 2013: {daughter} pale and thin in a soft knit hat, smiling in a hospice bed holding a golden retriever puppy, a 10-year-old boy with dark blond hair standing back by the door, faded colors
+- `tuck_charge` (MISSING): {grandpa} at a farmhouse kitchen table at night clipping a tiny black tracker box onto the worn red collar of {dog}, gentle, lamp light
+- `tuck_cody_phone` (MISSING): {grandson} as a young man in his twenties on a dark back porch at night talking on a cellphone, whispering, scheming grin, porch light
+- `tuck_porch_confront` (MISSING): {grandma} in a bathrobe standing in a back doorway at night facing {grandson} as a young man in his twenties, he smirks with a cellphone in his hand, she holds a dish towel, tense
+- `tuck_cody_lie` (MISSING): {grandson} as a young man in his twenties at a kitchen table with a coffee mug, shrugging with a fake sad face, {grandpa} in a winter coat holding truck keys, distraught, morning
+- `tuck_gp_search` (MISSING): {grandpa} driving an old pickup truck slowly down a country road at dusk, window down, calling out, headlights on, autumn fields
+- `tuck_gp_wait` (MISSING): {grandpa} sitting alone on a cold front porch at night under the porch light in a winter coat, an empty steel dog bowl at his feet, waiting
+- `tuck_app` (MISSING): Close-up of an elderly woman's wrinkled hands holding a smartphone showing a simple map with a dotted line along a country road, no labels, no readable text
+- `tuck_road` (MISSING): {dog} walking alone along the gravel shoulder of an empty two-lane country road at dawn, limping, frost on the grass, determined
+- `tuck_hospice_door` (MISSING): {nurse} kneeling at the back door of a small hospice building at night, holding {dog} who is muddy and exhausted, porch light, no readable signs
+- `tuck_room12` (MISSING): {dog} lying on a neatly made empty bed in a quiet hospice room at night, a single lamp on, rain on the window, peaceful
+- `tuck_reunion` (MISSING): {grandpa} kneeling on a hospice hallway floor hugging {dog}, crying, {grandma} and {nurse} standing behind with tears, soft light
+- `tuck_sale` (MISSING): A busy estate sale on the front lawn of a white farmhouse, {grandson} as a young man in his twenties with a clipboard and a metal cash box, dozens of neighbors browsing furniture and lamps, autumn, no readable signs
+- `tuck_trent` (MISSING): {sil} in a blazer on a front lawn shaking hands with {grandson} as a young man in his twenties, pointing at the farmhouse, smug, neighbors in the background
+- `tuck_arrival` (MISSING): {grandpa} walking slowly up a gravel driveway with {dog} on a red leash, {grandma} and {nurse} beside them, a crowd on the lawn turning to look, autumn
+- `tuck_proof` (MISSING): {grandma} on a front lawn holding up a smartphone toward {grandson} as a young man in his twenties, he goes pale, neighbors watching, no readable text
+- `tuck_deed` (MISSING): {lawyer} on a front lawn holding up an old recorded deed paper toward {sil}, who looks furious, neighbors watching, text unreadable
+- `tuck_exposed` (MISSING): {grandson} as a young man in his twenties standing alone on a front lawn holding a metal cash box, pale and caught, dozens of neighbors staring at him
+- `tuck_kneel` (MISSING): {grandson} as a young man in his twenties kneeling on a lawn crying with {dog} resting its head on his knee, {grandma} watching with wet eyes
+- `tuck_porch_end` (MISSING): {grandma} and {grandpa} in rocking chairs on a sunny front porch with {dog} asleep between them, coffee mugs, autumn morning
+- `tuck_shelter` (MISSING): {grandson} as a young man in his twenties in a work apron hosing down an animal shelter kennel floor, an old gray-muzzled dog watching him through the wire
