@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T03:08:58.347853Z",
+ "updated": "2026-11-19T02:49:58.037701Z",
  "videos": [
   {
    "id": "3kJZJVqrJAk",
@@ -42,7 +42,7 @@
    "title": "My Son-in-Law Took My Husband's Truck Keys at Dinner. He Didn't Know Who His Landlord Was.",
    "published": "2026-11-12T15:00:09Z",
    "duration": "PT14M5S",
-   "views": 49,
+   "views": 50,
    "likes": 3,
    "comments": 0
   },
@@ -101,11 +101,20 @@
    "comments": 0
   },
   {
+   "id": "j7G8ZB0qI5w",
+   "title": "He Forged My Husband's Name. A Little Girl Proved It. #Shorts",
+   "published": "2026-11-16T17:30:05Z",
+   "duration": "PT57S",
+   "views": 7,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "OzMvBN7aUy8",
    "title": "I Stood Up In Court #Shorts",
    "published": "2026-11-15T01:30:16Z",
    "duration": "PT43S",
-   "views": 8,
+   "views": 7,
    "likes": 0,
    "comments": 0
   },
@@ -128,20 +137,20 @@
    "comments": 0
   },
   {
-   "id": "j7G8ZB0qI5w",
-   "title": "He Forged My Husband's Name. A Little Girl Proved It. #Shorts",
-   "published": "2026-11-16T17:30:05Z",
-   "duration": "PT57S",
-   "views": 6,
-   "likes": 0,
-   "comments": 0
-  },
-  {
    "id": "nRfg24Axpng",
    "title": "I Heard My Daughter's Plan For My Dog #Shorts",
    "published": "2026-11-13T20:30:28Z",
    "duration": "PT55S",
    "views": 6,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "qtK1A2z3F5s",
+   "title": "My Fiancé's Son-in-Law Called Me a Gold Digger and Hired a Detective. He Found a 1975 Photo.",
+   "published": "2026-11-17T15:00:14Z",
+   "duration": "PT14M51S",
+   "views": 5,
    "likes": 0,
    "comments": 0
   },
@@ -200,6 +209,24 @@
    "comments": 0
   },
   {
+   "id": "R7R6CTVdKN8",
+   "title": "My Dad's New Wife Told Grandpa a Janitor Doesn't Get a Say. Then Scholarship Night Began.",
+   "published": "2026-11-18T15:00:36Z",
+   "duration": "PT14M11S",
+   "views": 2,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "sYWJLDtK5LU",
+   "title": "Why Is My Fiancé Paying Your Company's Rent? #Shorts",
+   "published": "2026-11-17T17:30:11Z",
+   "duration": "PT33S",
+   "views": 2,
+   "likes": 0,
+   "comments": 0
+  },
+  {
    "id": "u-VoRwcire0",
    "title": "My Son Called Him A Thief #Shorts",
    "published": "2026-11-14T17:30:02Z",
@@ -209,10 +236,19 @@
    "comments": 0
   },
   {
-   "id": "qtK1A2z3F5s",
-   "title": "My Fiancé's Son-in-Law Called Me a Gold Digger and Hired a Detective. He Found a 1975 Photo.",
-   "published": "2026-11-17T15:00:14Z",
-   "duration": "PT14M51S",
+   "id": "oinzWa3Fzco",
+   "title": "He Objected At Our Wedding. Bad Idea. #Shorts",
+   "published": "2026-11-17T23:30:39Z",
+   "duration": "PT50S",
+   "views": 1,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "uPtFUvMFbE4",
+   "title": "I Played The 911 Call At City Hall #Shorts",
+   "published": "2026-11-16T20:30:12Z",
+   "duration": "PT52S",
    "views": 1,
    "likes": 0,
    "comments": 0
@@ -245,19 +281,46 @@
    "comments": 0
   },
   {
-   "id": "Z1e8jhU-1bw",
-   "title": "He Called Me A Gold Digger At Dinner #Shorts",
-   "published": "2026-11-18T01:30:37Z",
-   "duration": "PT53S",
+   "id": "LWMNLVWH284",
+   "title": "She Forged Grandpa's Name. Her Boss Was On Stage. #Shorts",
+   "published": "2026-11-19T01:30:32Z",
+   "duration": "PT47S",
    "views": 0,
    "likes": 0,
    "comments": 0
   },
   {
-   "id": "oinzWa3Fzco",
-   "title": "He Objected At Our Wedding. Bad Idea. #Shorts",
-   "published": "2026-11-17T23:30:39Z",
+   "id": "0s4_ZMAaOjE",
+   "title": "She Mocked The Janitor. He Paid For 211 Kids. #Shorts",
+   "published": "2026-11-18T23:30:35Z",
+   "duration": "PT49S",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "HR8-W_NsJ7M",
+   "title": "Why Does My Bank Say I Borrowed $85,000? #Shorts",
+   "published": "2026-11-18T20:30:20Z",
    "duration": "PT50S",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "U2Du4MLvnuQ",
+   "title": "My Dad's New Wife Called Grandpa \"Just A Janitor\" #Shorts",
+   "published": "2026-11-18T17:30:24Z",
+   "duration": "PT52S",
+   "views": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "Z1e8jhU-1bw",
+   "title": "He Called Me A Gold Digger At Dinner #Shorts",
+   "published": "2026-11-18T01:30:37Z",
+   "duration": "PT53S",
    "views": 0,
    "likes": 0,
    "comments": 0
@@ -272,28 +335,10 @@
    "comments": 0
   },
   {
-   "id": "sYWJLDtK5LU",
-   "title": "Why Is My Fiancé Paying Your Company's Rent? #Shorts",
-   "published": "2026-11-17T17:30:11Z",
-   "duration": "PT33S",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
    "id": "7NsdhWGCxWM",
    "title": "He Wanted Us To Help Evict The Kids Next Door #Shorts",
    "published": "2026-11-16T23:30:09Z",
    "duration": "PT59S",
-   "views": 0,
-   "likes": 0,
-   "comments": 0
-  },
-  {
-   "id": "uPtFUvMFbE4",
-   "title": "I Played The 911 Call At City Hall #Shorts",
-   "published": "2026-11-16T20:30:12Z",
-   "duration": "PT52S",
    "views": 0,
    "likes": 0,
    "comments": 0
