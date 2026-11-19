@@ -261,27 +261,27 @@ Recurring faces: grandma (the grandmother), grandpa (the grandfather), son (the 
 - `tuck_kneel`: {grandson} as a young man in his twenties kneeling on a lawn crying with {dog} resting its head on his knee, {grandma} watching with wet eyes
 - `tuck_porch_end`: {grandma} and {grandpa} in rocking chairs on a sunny front porch with {dog} asleep between them, coffee mugs, autumn morning
 - `tuck_shelter`: {grandson} as a young man in his twenties in a work apron hosing down an animal shelter kennel floor, an old gray-muzzled dog watching him through the wire
-- `bake_insult` (MISSING): {dil} in a small-town bakery pointing at {youngman} in a flour-dusted apron, {grandma} behind the old counter, two customers watching, morning light, no readable text
-- `bake_alley` (MISSING): {youngman} sleeping curled against a warm brick wall beside a bakery exhaust vent in a dark alley at night, frost on the ground, steam rising
-- `bake_bread_gift` (MISSING): {grandma} in an apron at a bakery back door at dawn handing a paper bag of warm bread to {youngman}, breath visible in the cold
-- `bake_4am` (MISSING): {youngman} and {grandma} kneading dough together at a floured wooden table in a small bakery kitchen at 4 AM, ovens glowing orange
-- `bake_notebook` (MISSING): Close-up of {youngman}'s hands writing in a small worn pocket notebook beside a loaf of bread on a flour-dusted table, handwriting not readable
-- `bake_register` (MISSING): An ornate old brass mechanical cash register from the 1970s on a wooden bakery counter, warm morning light, no readable text
-- `bake_books` (MISSING): {dil} at a desk in a cramped bakery back office at night with ledgers and a laptop, smug half smile
-- `bake_fired` (MISSING): {youngman} folding his flour apron on a bakery counter, head down, while {grandma} watches heartbroken and customers stare
-- `bake_phone` (MISSING): {dil} in a dark bakery back office at night talking on a cellphone, scheming smile, flour sacks stacked behind her
-- `bake_overhear` (MISSING): {grandma} hiding in a dark flour storage room among flour sacks, listening through a half-open door, hand over her mouth
-- `bake_tape` (MISSING): {grandma} with reading glasses pulling a long curled paper receipt tape out of the side of an old brass cash register at night under one lamp, no readable text
-- `bake_flour` (MISSING): {grandma} at a farmhouse kitchen table at night comparing two stacks of papers, reading glasses, determined, no readable text
-- `bake_shelter_book` (MISSING): {friend} at the front desk of a church shelter showing {grandma} an open handwritten sign-in ledger, warm light, no readable text
-- `bake_bus` (MISSING): {youngman} sitting alone on a bench in a small-town bus station at night with a backpack at his feet, fluorescent light
-- `bake_lid` (MISSING): Close-up of young weathered hands holding an old faded cardboard cake box lid with a child-like drawn birthday cake and faded handwriting, not readable
-- `bake_lou_cakes` (MISSING): Old faded photo look from the 1990s: {grandpa} in a flannel shirt carrying a tall stack of white cake boxes up the steps of a children's home, children waving at the door
-- `bake_anniversary` (MISSING): A small-town bakery packed with townspeople at a 50th anniversary celebration, gold balloons, pies on the counter, warm light, no readable signs
-- `bake_grant` (MISSING): {banker} standing in a crowded bakery holding a leather folder of papers, confident smug smile
-- `bake_photo` (MISSING): {dil} holding up a printed security camera photo to a crowd in a bakery, triumphant, pointing at {youngman}
-- `bake_reveal` (MISSING): {grandma} holding up a long curled paper register tape in front of a crowd in a bakery, calm and fierce
-- `bake_exposed` (MISSING): {dil} frozen in shock in a crowded bakery, everyone staring at her, a sheriff's deputy in uniform beside her
-- `bake_cake` (MISSING): {grandma} carrying a birthday cake with lit candles through a crowded bakery toward {youngman}, who covers his face with both hands
-- `bake_hug` (MISSING): {youngman} hugging {grandma} in a bakery, both crying, flour on their aprons, crowd applauding
-- `bake_dawn` (MISSING): {youngman} and {grandma} standing under a bakery awning on a small-town main street at dawn, holding coffee cups, smiling, no readable text
+- `bake_insult`: {dil} in a small-town bakery pointing at {youngman} in a flour-dusted apron, {grandma} behind the old counter, two customers watching, morning light, no readable text
+- `bake_alley`: {youngman} sleeping curled against a warm brick wall beside a bakery exhaust vent in a dark alley at night, frost on the ground, steam rising
+- `bake_bread_gift`: {grandma} in an apron at a bakery back door at dawn handing a paper bag of warm bread to {youngman}, breath visible in the cold
+- `bake_4am`: {youngman} and {grandma} kneading dough together at a floured wooden table in a small bakery kitchen at 4 AM, ovens glowing orange
+- `bake_notebook`: Close-up of {youngman}'s hands writing in a small worn pocket notebook beside a loaf of bread on a flour-dusted table, handwriting not readable
+- `bake_register`: An ornate old brass mechanical cash register from the 1970s on a wooden bakery counter, warm morning light, no readable text
+- `bake_books`: {dil} at a desk in a cramped bakery back office at night with ledgers and a laptop, smug half smile
+- `bake_fired`: {youngman} folding his flour apron on a bakery counter, head down, while {grandma} watches heartbroken and customers stare
+- `bake_phone`: {dil} in a dark bakery back office at night talking on a cellphone, scheming smile, flour sacks stacked behind her
+- `bake_overhear`: {grandma} hiding in a dark flour storage room among flour sacks, listening through a half-open door, hand over her mouth
+- `bake_tape`: {grandma} with reading glasses pulling a long curled paper receipt tape out of the side of an old brass cash register at night under one lamp, no readable text
+- `bake_flour`: {grandma} at a farmhouse kitchen table at night comparing two stacks of papers, reading glasses, determined, no readable text
+- `bake_shelter_book`: {friend} at the front desk of a church shelter showing {grandma} an open handwritten sign-in ledger, warm light, no readable text
+- `bake_bus`: {youngman} sitting alone on a bench in a small-town bus station at night with a backpack at his feet, fluorescent light
+- `bake_lid`: Close-up of young weathered hands holding an old faded cardboard cake box lid with a child-like drawn birthday cake and faded handwriting, not readable
+- `bake_lou_cakes`: Old faded photo look from the 1990s: {grandpa} in a flannel shirt carrying a tall stack of white cake boxes up the steps of a children's home, children waving at the door
+- `bake_anniversary`: A small-town bakery packed with townspeople at a 50th anniversary celebration, gold balloons, pies on the counter, warm light, no readable signs
+- `bake_grant`: {banker} standing in a crowded bakery holding a leather folder of papers, confident smug smile
+- `bake_photo`: {dil} holding up a printed security camera photo to a crowd in a bakery, triumphant, pointing at {youngman}
+- `bake_reveal`: {grandma} holding up a long curled paper register tape in front of a crowd in a bakery, calm and fierce
+- `bake_exposed`: {dil} frozen in shock in a crowded bakery, everyone staring at her, a sheriff's deputy in uniform beside her
+- `bake_cake`: {grandma} carrying a birthday cake with lit candles through a crowded bakery toward {youngman}, who covers his face with both hands
+- `bake_hug`: {youngman} hugging {grandma} in a bakery, both crying, flour on their aprons, crowd applauding
+- `bake_dawn`: {youngman} and {grandma} standing under a bakery awning on a small-town main street at dawn, holding coffee cups, smiling, no readable text
