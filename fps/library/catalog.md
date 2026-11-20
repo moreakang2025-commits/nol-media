@@ -285,3 +285,28 @@ Recurring faces: grandma (the grandmother), grandpa (the grandfather), son (the 
 - `bake_cake`: {grandma} carrying a birthday cake with lit candles through a crowded bakery toward {youngman}, who covers his face with both hands
 - `bake_hug`: {youngman} hugging {grandma} in a bakery, both crying, flour on their aprons, crowd applauding
 - `bake_dawn`: {youngman} and {grandma} standing under a bakery awning on a small-town main street at dawn, holding coffee cups, smiling, no readable text
+- `owl_insult` (MISSING): {banker} on a front porch at dusk jabbing a finger toward an old gray house next door, holding a manila folder, {grandpa} in a rocking chair frowning, tense
+- `owl_house_antenna` (MISSING): An old gray two-story house at night with tall wire radio antennas strung above the roof, shutters closed, one upstairs window glowing amber, bare trees
+- `owl_window_curtain` (MISSING): {friend} peeking out between heavy closed curtains of a dark old house at night, wary, amber light behind her
+- `owl_fence` (MISSING): {grandpa} at a wooden fence in autumn frowning at an old gray house next door, arms crossed, grumpy
+- `owl_blizzard_1978` (MISSING): Vintage 1970s photo look: a blue 1970s sedan stuck in deep snow on a country road during a blizzard at night, headlights glowing, snow whipping sideways
+- `owl_plow_1978` (MISSING): Vintage 1970s photo look: a young man with dark hair and a thick mustache driving a big county snowplow at night in a blizzard, holding a CB radio microphone, headlights in heavy snow
+- `owl_baby_1978` (MISSING): Vintage 1970s photo look: a young mother in a hospital bed holding a newborn baby, a young man with dark hair and a mustache in a snowy work coat beside her crying with joy
+- `owl_folder` (MISSING): {banker} handing a thick manila folder to {grandpa} across a farmhouse kitchen table, persuasive politician smile
+- `owl_letter` (MISSING): {grandpa} at a kitchen table at night reading a typed business letter under a lamp, glasses pushed up, stunned, text unreadable
+- `owl_confront` (MISSING): {grandpa} on his porch holding up a letter toward {banker}, who leans in with a cold smile and a raised finger, evening, tense
+- `owl_knock` (MISSING): {grandpa} in a winter coat knocking on the front door of an old dark house in the middle of the night under a single porch light, frost on the steps
+- `owl_door_open` (MISSING): {friend} in a thick cardigan with headphones around her neck opening a front door a crack at night, suspicious, amber light behind her
+- `owl_radio_room` (MISSING): A cluttered warm radio room at night full of old ham radio sets with glowing dials, a desk microphone, stacks of logbooks, a mug of coffee, no readable text
+- `owl_opal_mic` (MISSING): {friend} with headphones on sitting at an old ham radio desk at night speaking into a desk microphone, focused and kind, dials glowing
+- `owl_logbooks` (MISSING): Close-up of a shelf of old worn logbooks, one blue cloth logbook pulled halfway out, warm lamp light, no readable text
+- `owl_wendell_photo` (MISSING): Vintage 1970s photo look: a smiling young Black American trucker in a cap leaning on the cab of a big rig beside his young wife, faded colors
+- `owl_tea` (MISSING): {friend} and {grandpa} at a small kitchen table at night with two mugs of tea, she tells a story, he listens, radio dials glowing behind them
+- `owl_tom_office` (MISSING): {son} in a county emergency office with radio equipment and wall maps, showing {grandpa} a printed log sheet, serious, text unreadable
+- `owl_square` (MISSING): A small-town square at dusk with a tall unlit Christmas tree, a wooden gazebo stage and a crowd in winter coats, light snow, no readable signs
+- `owl_dale_stage` (MISSING): {banker} in a wool overcoat on a gazebo stage speaking into a microphone in front of a big unlit Christmas tree, a crowd below, smug
+- `owl_ray_mic` (MISSING): {grandpa} in a winter coat holding a microphone on a gazebo stage in front of a Christmas tree, holding up a letter, the crowd watching
+- `owl_tom_reads` (MISSING): {son} on a gazebo stage reading from a printed log sheet into a microphone, {banker} beside him going pale, crowd watching, snow falling
+- `owl_opal_arrives` (MISSING): {friend} in a long winter coat walking into a crowded small-town square at dusk, people stepping aside to let her through, snow falling
+- `owl_hug` (MISSING): {son} hugging {friend} on a gazebo stage, both crying, {grandpa} beside them wiping his eyes, crowd applauding, Christmas tree lights glowing
+- `owl_porch_end` (MISSING): {grandpa} and {friend} in rocking chairs on a front porch on a sunny winter morning with two coffee mugs, laughing, wire radio antennas on the house behind
