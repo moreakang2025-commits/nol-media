@@ -1,10 +1,10 @@
 {
- "collected": "2026-11-19T15:42:07Z",
+ "collected": "2026-11-20T15:24:34Z",
  "channel": {
-  "viewCount": "513",
-  "subscriberCount": "6",
+  "viewCount": "529",
+  "subscriberCount": "7",
   "hiddenSubscriberCount": false,
-  "videoCount": "46"
+  "videoCount": "51"
  },
  "videos": [
   {
@@ -92,10 +92,10 @@
    "published": "2026-11-11T17:30:24Z",
    "privacy": "public",
    "seconds": 57,
-   "views": 0,
+   "views": 1,
    "likes": 0,
    "comments": 0,
-   "like_rate": null
+   "like_rate": 0.0
   },
   {
    "id": "7gq0cSzzJzs",
@@ -482,7 +482,7 @@
    "published": "2026-11-17T01:30:09Z",
    "privacy": "public",
    "seconds": 52,
-   "views": 4,
+   "views": 5,
    "likes": 0,
    "comments": 0,
    "like_rate": 0.0
@@ -557,7 +557,7 @@
    "published": "2026-11-17T17:30:11Z",
    "privacy": "public",
    "seconds": 33,
-   "views": 2,
+   "views": 3,
    "likes": 0,
    "comments": 0,
    "like_rate": 0.0
@@ -617,10 +617,10 @@
    "published": "2026-11-18T17:30:24Z",
    "privacy": "public",
    "seconds": 52,
-   "views": 0,
+   "views": 2,
    "likes": 0,
    "comments": 0,
-   "like_rate": null
+   "like_rate": 0.0
   },
   {
    "id": "HR8-W_NsJ7M",
@@ -662,7 +662,7 @@
    "published": "2026-11-19T01:30:32Z",
    "privacy": "public",
    "seconds": 47,
-   "views": 1,
+   "views": 2,
    "likes": 0,
    "comments": 0,
    "like_rate": 0.0
@@ -677,10 +677,10 @@
    "published": "2026-11-18T15:00:36Z",
    "privacy": "public",
    "seconds": 851,
-   "views": 5,
-   "likes": 0,
+   "views": 10,
+   "likes": 1,
    "comments": 0,
-   "like_rate": 0.0
+   "like_rate": 0.1
   },
   {
    "id": "Cc-zHH3QwAk",
@@ -689,8 +689,8 @@
    "theme": "B",
    "publish_at": "2026-11-19T20:30:00Z",
    "title": "My Grandson Said Our Old Dog Goes To The Pound #Shorts",
-   "published": "2026-11-18T08:37:36Z",
-   "privacy": "private",
+   "published": "2026-11-19T20:30:03Z",
+   "privacy": "public",
    "seconds": 50,
    "views": 0,
    "likes": 0,
@@ -704,13 +704,13 @@
    "theme": "B",
    "publish_at": "2026-11-19T23:30:00Z",
    "title": "I Heard My Grandson Plan To Dump Our Dog #Shorts",
-   "published": "2026-11-18T08:37:38Z",
-   "privacy": "private",
+   "published": "2026-11-19T23:30:37Z",
+   "privacy": "public",
    "seconds": 46,
-   "views": 0,
+   "views": 2,
    "likes": 0,
    "comments": 0,
-   "like_rate": null
+   "like_rate": 0.0
   },
   {
    "id": "pkXiV2dnoIE",
@@ -719,13 +719,13 @@
    "theme": "B",
    "publish_at": "2026-11-20T01:30:00Z",
    "title": "He Said Our Dog Ran Away. The Collar Said 55 MPH #Shorts",
-   "published": "2026-11-18T08:37:40Z",
-   "privacy": "private",
+   "published": "2026-11-20T01:30:10Z",
+   "privacy": "public",
    "seconds": 50,
-   "views": 0,
+   "views": 2,
    "likes": 0,
    "comments": 0,
-   "like_rate": null
+   "like_rate": 0.0
   },
   {
    "id": "dK8RoPYr1JY",
@@ -734,8 +734,8 @@
    "theme": "B",
    "publish_at": "2026-11-19T17:30:00Z",
    "title": "My Grandson Sold Our House. There Was One Problem. #Shorts",
-   "published": "2026-11-18T08:37:42Z",
-   "privacy": "private",
+   "published": "2026-11-19T17:30:00Z",
+   "privacy": "public",
    "seconds": 44,
    "views": 0,
    "likes": 0,
@@ -824,9 +824,84 @@
    "theme": "C",
    "publish_at": "2026-11-20T15:00:00Z",
    "title": "My Niece Said the Homeless Kid I Fed Was Robbing Me. My Late Husband's Old Cash Register Disagreed.",
-   "published": "2026-11-19T08:33:59Z",
-   "privacy": "private",
+   "published": "2026-11-20T15:00:12Z",
+   "privacy": "public",
    "seconds": 814,
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "like_rate": null
+  },
+  {
+   "id": "TXgKjIDZrQw",
+   "ep": "ep12",
+   "kind": "s1",
+   "theme": "D",
+   "publish_at": "2026-11-22T01:30:00Z",
+   "title": "My Brother Called My Neighbor A Crazy Hermit #Shorts",
+   "published": "2026-11-20T08:36:46Z",
+   "privacy": "private",
+   "seconds": 50,
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "like_rate": null
+  },
+  {
+   "id": "BveomCCgyv4",
+   "ep": "ep12",
+   "kind": "s2",
+   "theme": "D",
+   "publish_at": "2026-11-21T17:30:00Z",
+   "title": "My Brother Said Sign It Or Lose Me #Shorts",
+   "published": "2026-11-20T08:36:48Z",
+   "privacy": "private",
+   "seconds": 52,
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "like_rate": null
+  },
+  {
+   "id": "_fW0tXoqDcE",
+   "ep": "ep12",
+   "kind": "s3",
+   "theme": "D",
+   "publish_at": "2026-11-21T20:30:00Z",
+   "title": "I Called Her Crazy. Then She Opened The Door. #Shorts",
+   "published": "2026-11-20T08:36:50Z",
+   "privacy": "private",
+   "seconds": 54,
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "like_rate": null
+  },
+  {
+   "id": "ynwdwX-W9qI",
+   "ep": "ep12",
+   "kind": "s4",
+   "theme": "D",
+   "publish_at": "2026-11-21T23:30:00Z",
+   "title": "I Took The Microphone At The Tree Lighting #Shorts",
+   "published": "2026-11-20T08:36:53Z",
+   "privacy": "private",
+   "seconds": 39,
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "like_rate": null
+  },
+  {
+   "id": "nmKXHl_GN70",
+   "ep": "ep12",
+   "kind": "long",
+   "theme": "D",
+   "publish_at": "2026-11-21T15:00:00Z",
+   "title": "My Brother Called the Hermit Next Door Crazy and Wanted Her House. He Didn't Know Who She Was.",
+   "published": "2026-11-20T08:34:58Z",
+   "privacy": "private",
+   "seconds": 825,
    "views": 0,
    "likes": 0,
    "comments": 0,
