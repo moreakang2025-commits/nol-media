@@ -35,4 +35,4 @@ jobs:
         run: |
           git config user.name "fps-bot"; git config user.email "fps-bot@users.noreply.github.com"
           git add fps/results || true; git commit -m "fps: fix log" || true
-          for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done
+          for i in 1 2 3; do git pull --rebase -X theirs -q && git push && break; sleep 5; done
