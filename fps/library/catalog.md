@@ -310,3 +310,27 @@ Recurring faces: grandma (the grandmother), grandpa (the grandfather), son (the 
 - `owl_opal_arrives` (MISSING): {friend} in a long winter coat walking into a crowded small-town square at dusk, people stepping aside to let her through, snow falling
 - `owl_hug` (MISSING): {son} hugging {friend} on a gazebo stage, both crying, {grandpa} beside them wiping his eyes, crowd applauding, Christmas tree lights glowing
 - `owl_porch_end` (MISSING): {grandpa} and {friend} in rocking chairs on a front porch on a sunny winter morning with two coffee mugs, laughing, wire radio antennas on the house behind
+- `tune_insult` (MISSING): {sil} on a front porch at dusk holding out a pen and a paper toward {grandma} in a rocking chair, pointing angrily at the small blue house next door where {kidboy} and {kidgirl} bounce a basketball, tense, text unreadable
+- `tune_keyboard_window` (MISSING): {kidboy} playing a cheap battered electronic keyboard by an open window of a small blue rental house, afternoon light, focused, eyes half closed
+- `tune_mae_tuning` (MISSING): {grandma} tuning an old upright piano with a tuning hammer, the front panel open showing strings, head tilted, listening, warm living room
+- `tune_henry_1968` (MISSING): Vintage 1960s photo look: a young music teacher in a white shirt and narrow tie playing an old upright piano for a young woman who leans on the piano laughing, faded colors
+- `tune_hospice_night` (MISSING): {grandma} asleep in a chair beside a hospice bed at night, an old man asleep in the bed, the silhouette of a night aide in scrubs in the lit doorway, dim warm light
+- `tune_mae_yells` (MISSING): {grandma} on her front porch shouting toward the small blue house next door, cane raised, {kidboy} and {kidgirl} frozen in their yard holding a basketball
+- `tune_listen` (MISSING): {grandma} frozen in her kitchen with a teacup halfway to her lips, listening to music coming through the open window, eyes wide, afternoon light
+- `tune_confront_boy` (MISSING): {grandma} in slippers standing at the open window of the small blue house next door facing {kidboy} at a battered keyboard, she is stunned and teary, he looks scared but stubborn
+- `tune_notebook` (MISSING): Close-up of a child's spiral notebook with purple crayon drawings of a house, a mailbox and a white pickup truck, childish handwriting blurred and unreadable, a small hand holding it
+- `tune_hazel_gives` (MISSING): {kidgirl} in pajamas with ducks on them handing a spiral notebook to {grandma} at her front door in the morning, serious face
+- `tune_mailbox` (MISSING): {sil} pulling envelopes out of a roadside mailbox and stuffing them into his blazer at dawn, a white pickup truck behind him, glancing around, sneaky
+- `tune_overhear` (MISSING): {grandma} standing behind a screen door in the evening, listening, while {sil} talks on a cellphone on her porch with his back to her
+- `tune_porch_threat` (MISSING): {sil} leaning over {grandma} at her kitchen table, jabbing a finger at legal papers and a senior living brochure, cold smile, text unreadable
+- `tune_kids_apology` (MISSING): {grandma} sitting on the front steps of a small blue rental house between {kidboy} and {kidgirl}, holding the girl's spiral notebook, emotional, porch light at night
+- `tune_tanya_door` (MISSING): {mom} in pale blue nurse aide scrubs opening the door of a small blue rental house at night, tired, guarded, surprised to see {grandma}
+- `tune_tea_four` (MISSING): {grandma}, {kidboy} and {kidgirl} at a cozy kitchen table with teacups, cocoa and cookies at four in the afternoon, an old upright piano behind them, all laughing
+- `tune_grange` (MISSING): A small-town grange hall at night packed with families on folding chairs for a holiday talent show, an upright piano on a small wooden stage, paper snowflakes hanging, no readable signs
+- `tune_sil_emcee` (MISSING): {sil} in a sports coat holding a microphone on a small grange hall stage, a sponsor banner behind him with no readable text, big salesman smile
+- `tune_jayden_plays` (MISSING): {kidboy} in a too-big white button-up shirt playing an upright piano on a small grange hall stage under a spotlight, eyes closed, paper snowflakes
+- `tune_mae_mic` (MISSING): {grandma} at a microphone on a small grange hall stage holding up a child's spiral notebook, the crowd silent on folding chairs, text unreadable
+- `tune_sil_exposed` (MISSING): {sil} frozen on a grange hall stage, microphone lowered, the whole crowd on folding chairs turned to stare at him, sweat on his forehead
+- `tune_tanya_reveal` (MISSING): {mom} in pale blue scrubs standing up in the back of a crowded grange hall holding an old folded letter, eyes wet, people turned toward her
+- `tune_hug` (MISSING): {grandma} kneeling at the edge of a grange hall stage hugging {kidboy} and {kidgirl}, all crying and laughing, {mom} in scrubs behind them, the crowd applauding
+- `tune_daughter` (MISSING): {daughter} in a grange hall aisle taking a house key out of the hand of {sil}, cold and ashamed, people on folding chairs watching
