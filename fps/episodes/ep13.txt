@@ -1,0 +1,145 @@
+TITLE: My Son-in-Law Called the Kids Next Door Brats and Told a Judge I Hear Things. Then the Boy Played.
+THUMB_TOP: SHE HEARS THINGS!
+THUMB_BOTTOM: THEN THE BOY PLAYED...
+THUMB_PROMPT: Dramatic split scene at dusk on a small-town street. On the left third, a 79-year-old woman with a silver chin-length bob, pearl earrings and a soft cardigan stands on her front porch holding a small brass piano tuning hammer, eyes wet but calm and quietly fierce, looking straight at the viewer. Behind her, through the open window of a small blue house next door, a young boy in an oversized red hoodie plays a battered keyboard, a little girl with red pigtails holding a spiral notebook beside him. In the soft-focus background on the right, a slick dark-haired man in an expensive blazer points at her, frozen mid-shout, holding legal papers. Strong contrast, golden light on the old woman, empty dark space in the upper right.
+VOICE_STYLE: This is an audio drama for older American listeners. Natural and intimate, like a true story told on a porch, with tension, warmth and a little bite. Never rushed.
+TAGS: senior stories, noisy neighbors, kids next door, son-in-law, grandma story, piano, family drama, audio story, heartwarming story, small town story
+CAST Mae | voice=Gacrux | style=a 79-year-old retired piano tuner and widow from small-town Pennsylvania telling her own story, warm, sharp-eared, dry humor, proud and a little stubborn | look=lib:grandma
+CAST Garrett | voice=Orus | style=a 50-year-old real estate agent, the narrator's son-in-law, smooth and helpful in public, cold and condescending in private | look=lib:sil
+CAST Tanya | voice=Autonoe | style=a 34-year-old single mother who works nights as a nurse's aide, tired, guarded, proud, deeply kind underneath | look=lib:mom
+CAST Jayden | voice=Puck | style=an 11-year-old boy, polite, stubborn, brave, a quiet musician | look=lib:kidboy
+CAST Hazel | voice=Kore | style=a 7-year-old girl, small clear voice, very serious and matter-of-fact | look=lib:kidgirl
+
+DESCRIPTION:
+My son-in-law stood on my porch, pointed at the little blue house next door and called the two children inside brats. Sign the complaint, Mae, he said. They're gone by Christmas, or you're going to Pine Haven.
+
+He didn't know the little girl next door had been keeping a notebook. And none of us knew who taught that boy the song he played every afternoon at four, until the night of the town talent show.
+
+Chapters
+{chapters}
+
+Did a noisy neighbor ever turn out to be family? Tell me in the comments. I read every one.
+
+This story is a work of fiction for entertainment. Names, characters, places and events are fictional. Legal, guardianship and banking details are simplified for the story and are not advice. Narration and visuals were made with the help of AI tools.
+
+#seniorstories #audiostory #neighbors
+END_DESCRIPTION
+
+## Those Brats Next Door
+[LIB] tune_insult kids_yard
+[SHORT] My Son-in-Law Called The Neighbor Kids Brats
+GARRETT: Sign it, Mae. Those screaming brats next door are gone by Christmas, or you're going to Pine Haven. Your choice.
+MAE: My son-in-law Garrett said that on my own porch, pushing a pen at me, while two kids next door bounced a basketball off my garage door.
+[LIB] gm_determined kids_bikes
+MAE: And I'm ashamed to say it, I signed. I'd called those children brats myself all summer.
+MAE: What Garrett didn't know was that the little girl next door had been keeping a notebook. And what none of us knew was who taught that boy the song he played at four o'clock every afternoon.
+[LIB] tune_mae_tuning place_suburb_street
+MAE: I'm Mae Lindqvist. I'm seventy-nine. I tuned pianos in three counties for fifty-one years. I can hear a string go flat from the back of a church. Sit a while, and I'll tell you what I almost didn't hear.
+
+## Four O'Clock
+[LIB] tune_henry_1968 gp_young_couple
+MAE: My husband Henry taught music at Millbrook High for thirty-eight years. In 1968 he wrote me a little song on our first piano. He called it Four O'Clock, because that was our tea time. He never wrote it down. He only ever played it for me.
+[LIB] tune_hospice_night place_hospital_ext
+MAE: Henry passed two winters ago at Riverside Hospice. Near the end, a night aide used to hum to him while I slept in the chair. I never learned her name. I never even thanked her.
+[LIB] gm_window obj_two_mugs
+MAE: After that my house went quiet. No piano. No tea at four. Just the kitchen clock.
+[LIB] kids_yard kids_bikes
+MAE: Then in April a family rented the little blue house next door. Tanya Brooks, a single mother who works nights as a nurse's aide, and her two kids. Jayden, eleven. Hazel, seven. Basketballs off my garage. Bike bells at seven in the morning. And every afternoon at four o'clock, a cheap keyboard with three dead keys, through their open window.
+[LIB] tune_mae_yells kids_scolded
+MAE: I yelled. I banged my cane on the railing. I called them brats, out loud, more than once. Lord forgive me.
+[LIB] sil_smug obj_pen_papers
+MAE: My daughter Dana married Garrett Shaw twelve years ago. He sells real estate. His face is printed on the door of his white pickup. Since Henry died he'd been coming around a lot. Being helpful.
+[LIB] tune_porch_threat obj_bills
+MAE: That night he brought two papers. A noise complaint against the family next door, and a brochure for Pine Haven Senior Living. He said I was losing sleep. He said I'd been forgetting my bills. And it was true. I had a stack of past-due notices on my counter, and I could not for the life of me remember not paying them.
+[LIB] tune_insult obj_pen_papers
+MAE: So I signed the complaint. I was tired and angry, and that keyboard had been driving me up the wall. Garrett smiled and patted my hand, the way you'd pat a dog.
+
+## The Song
+[LIB] tune_keyboard_window tune_listen
+MAE: The next day, at four o'clock, the keyboard started up next door. And I set my teacup down so hard it cracked.
+MAE: Because that boy was playing Four O'Clock. Henry's song. Every note of it. The song that was never written down, that nobody alive had ever heard but me.
+[LIB] tune_confront_boy tune_keyboard_window
+MAE: I walked straight across that wet lawn in my slippers and stood at their open window.
+MAE: Where did you learn that song? Who taught you that?
+JAYDEN: I can't say, ma'am. I promised. I'm only allowed to tell at the talent show.
+[LIB] tune_confront_boy kids_mom
+MAE: And he went right on playing it. On three dead keys, half of it missing. But it was Henry's song, and I stood there in my slippers and cried.
+
+## Hazel's Notebook
+[LIB] tune_hazel_gives tune_notebook
+MAE: The next morning there was a knock. Hazel, seven years old, in pajamas with ducks on them, holding a spiral notebook in both hands.
+HAZEL: My mom says we're getting kicked out because of you. So you should have this. It's our Mrs. Mae Log.
+[LIB] tune_notebook kids_drawing
+MAE: Every morning since April, those two kids had checked my house before school. Kitchen light on at six-ten, check. Newspaper picked up, check. One day in June my light didn't come on, and Jayden rang my bell until I answered. I'd told him to get off my porch.
+[LIB] tune_notebook tune_mailbox
+MAE: Then the October pages, in purple crayon. October fourteenth, the man with his face on his truck took Mrs. Mae's mail. October twenty-first, again. October twenty-eighth, again. With a drawing of a white truck, and a little smiling face on the door.
+[LIB] gm_phone_shock gm_kitchen_night
+MAE: I called my bank. In September somebody had switched my statements to paperless. The email address on my account belonged to Garrett Shaw. My bills weren't forgotten. They were taken out of my mailbox before I ever saw them.
+
+## Music in the Walls
+[LIB] tune_overhear gm_window
+MAE: That Sunday Garrett came for dinner. Afterward he stepped out on my porch to take a call, and I stood behind the screen door. I've listened for flat notes my whole life. I don't miss much.
+[LIB] tune_overhear sil_smug
+MAE: He told somebody the doctor's letter was done. That I hear piano music at night that isn't there. That I can't manage my bills. The guardianship hearing was December twelfth. Once those renters are out, he said, nobody can prove the music was ever real. Then the Hollis Group closes on her lot in January, and my fee is thirty-one thousand.
+[LIB] tune_porch_threat gm_determined
+[SHORT] My Son-in-Law Said Sign Or The Judge Will
+MAE: My son-in-law was on my porch selling my house out from under me. I opened that screen door.
+GARRETT: Nobody believes an old woman who hears music in the walls, Mae. Sign Pine Haven, or the judge signs for you. Dana already agrees.
+[LIB] dau_tears gm_kitchen_night
+MAE: My son-in-law, telling me my own mind was gone so he could sell my house. And my daughter, who believed him, because she was busy and he was so very helpful.
+MAE: I didn't argue. Henry used to say, Mae, you can't tune a piano by yelling at it. You listen, and you fix one string at a time.
+
+## That's the Rule
+[LIB] tune_tanya_door kids_mom
+MAE: That night I knocked on the blue house. Tanya opened the door in her pale blue scrubs, on her way out to a shift, and her face went hard when she saw me. I didn't blame her one bit.
+[LIB] tune_kids_apology tune_notebook
+MAE: I sat down on their steps between those two children, and I held that notebook in my lap.
+[SHORT] The Kids I Called Brats Were Watching Over Me
+MAE: I called you two brats. I signed a paper to throw you out of your home. And you checked my kitchen light every single morning.
+JAYDEN: You yell a lot, Mrs. Mae. But somebody has to check on you. That's the rule.
+[LIB] tune_kids_apology kids_drawing
+MAE: That's the rule, he said. Like it was the most ordinary thing in the world. I tore my copy of that complaint in half right there on their steps, and Hazel clapped.
+[LIB] gm_determined obj_pen_papers
+MAE: In the morning I went to my own doctor and asked for every memory test she had. I passed every one. She wrote that my hearing is sharper than hers, and that she never wrote any letter about phantom music. Garrett's letter came from a clinic that had never once laid eyes on me.
+MAE: The town talent show at the Grange hall was December tenth, two days before the hearing. Garrett's agency sponsored it. Garrett was the emcee. So I went over and tuned that old Grange piano myself, free of charge.
+
+## The Talent Show
+[LIB] tune_grange tune_sil_emcee
+MAE: Two hundred people on folding chairs. Paper snowflakes. Garrett on stage in his sports coat with his agency's banner behind him, and Dana in the front row next to his boss, Mrs. Dunn, who owns the agency.
+GARRETT: And next, folks, a young man from the blue house on Elm Street. Jayden Brooks, playing a song he calls Four O'Clock.
+[LIB] tune_jayden_plays tune_grange
+MAE: And that boy played Henry's song on a real piano, in tune, every key working. The whole hall went still. I watched Dana's hand go to her mouth. Her daddy used to play that song every afternoon when she was little.
+[LIB] tune_mae_mic tune_jayden_plays
+MAE: When he finished, I walked up those steps, seventy-nine-year-old knees and all, and I took the microphone right out of my son-in-law's hand.
+[SHORT] I Took The Microphone At The Talent Show
+MAE: My son-in-law told a judge I hear piano music at night that isn't there. You all just heard it. It comes from the blue house next door, every day at four.
+[LIB] tune_mae_mic tune_sil_exposed
+MAE: Then I held up Hazel's notebook and read the October pages out loud. The man with his face on his truck took Mrs. Mae's mail. Three times. I held up the bank's letter with his email on my account, and my doctor's report, and the name of the clinic that had never seen me.
+[LIB] tune_sil_exposed tune_grange
+MAE: Two hundred people turned and looked out the window at the white pickup in the parking lot, with his face on the door.
+
+## Henry's Letter
+[LIB] tune_tanya_reveal tune_grange
+MAE: And then Tanya stood up in the back, in her scrubs, still on her way to work.
+TANYA: Mrs. Lindqvist. I was the night aide at Riverside. I'm the one who hummed to your husband. Jayden came to work with me when I had no sitter, and Mr. Henry taught him that song on the old piano in the day room, in the middle of the night, when neither one of them could sleep.
+[LIB] tune_tanya_reveal gm_letter_read
+TANYA: He asked me to give you this when you finally came knocking. He said you would. He said it might take a while.
+[LIB] gm_letter_read tune_henry_1968
+MAE: It was Henry's handwriting. Mae, if you're reading this, the kids got loud and you got curious. Don't send them away. Our house was never meant to be quiet. Have tea at four. Love, Henry.
+MAE: Henry had asked the landlord, one of his old students, to rent them the blue house cheap. He planned the whole thing from a hospice bed. He knew I'd never ask anybody for help. So he sent me some noise.
+[LIB] tune_daughter sil_caught
+MAE: Mrs. Dunn didn't wait. She walked up and pulled her agency's banner off the wall herself, told Garrett he was finished at her agency, and said she'd be calling the state licensing board in the morning. The postmaster was sitting in row three. He asked Garrett for a word outside.
+[LIB] tune_daughter tune_sil_exposed
+MAE: Dana stood up, walked over, and took my house key right out of her husband's hand. Monday morning she withdrew the petition. And before Garrett left that stage, he had to say he was sorry to Tanya, and to Jayden, and to Hazel, in front of the whole town.
+[LIB] tune_hug tune_grange
+MAE: Then Hazel ran up the steps and threw her arms around my waist, and Jayden came too, and I knelt down on that stage and held both of those children and cried like I hadn't cried since Henry. Tanya stood behind us, humming. I knew that hum. I'd heard it in the dark at Riverside, two winters ago.
+
+## Tea at Four
+[LIB] tune_sil_emcee sil_caught
+GARRETT: You'd pick a couple of noisy brats over your own family?
+MAE: Those noisy brats checked my kitchen light every morning, Garrett. You checked my mailbox.
+[LIB] tune_tea_four obj_two_mugs
+MAE: The kids come over every day at four now. Tea for me, cocoa for them. Jayden practices on Henry's old piano, and I tuned it myself. Hazel still keeps the log. Tanya sleeps easier at work, knowing they're right next door to me.
+[LIB] tune_tea_four kids_drawing
+MAE: Here's what I learned. Sometimes the noise you can't stand is somebody looking after you. If this story touched your heart, subscribe so you don't miss the next one.
+MAE: And tell me in the comments, did a noisy neighbor ever turn out to be family? Hazel says she's taking notes. So am I. I read every one.
