@@ -201,7 +201,7 @@ Recurring faces: grandma (the grandmother), grandpa (the grandfather), son (the 
 - `place_city_winter`: A cold small-city downtown street at night in winter, snow, steam from a grate, no readable signs
 - `place_soup_kitchen`: A church basement soup kitchen with long tables and volunteers, warm light, no readable signs
 - `place_suburb_street`: A quiet tree-lined suburban street with small houses and bikes on the lawns, summer evening
-- `place_diner` (MISSING): A small-town diner interior with a counter, red stools and a waitress pouring coffee, no readable signs
+- `place_diner`: A small-town diner interior with a counter, red stools and a waitress pouring coffee, no readable signs
 - `place_grocery`: A small-town grocery store aisle, warm light, no readable labels
 - `place_park` (MISSING): A small-town park with a bench under a big oak tree in autumn, empty
 - `love_engaged`: {grandpa} slipping a small engagement ring onto the finger of {widow} at a family dinner table with a roast, she covers her mouth with her other hand, people at the table stunned
@@ -334,27 +334,27 @@ Recurring faces: grandma (the grandmother), grandpa (the grandfather), son (the 
 - `tune_tanya_reveal`: {mom} in pale blue scrubs standing up in the back of a crowded grange hall holding an old folded letter, eyes wet, people turned toward her
 - `tune_hug`: {grandma} kneeling at the edge of a grange hall stage hugging {kidboy} and {kidgirl}, all crying and laughing, {mom} in scrubs behind them, the crowd applauding
 - `tune_daughter`: {daughter} in a grange hall aisle taking a house key out of the hand of {sil}, cold and ashamed, people on folding chairs watching
-- `cut_insult` (MISSING): {dil} at a church fellowship hall coffee hour holding up a glowing smartphone toward a crowd and pointing at {grandpa} who stands holding his hat beside {widow}, people by a donut table staring, rainy window, tense, screen unreadable
-- `cut_salon_1980s` (MISSING): Vintage 1980s photo look: {widow} as a young woman in a smock cutting a customer's hair in a small-town hair salon with old dryer chairs, smiling, faded colors, no readable signs
-- `cut_haircut_joe` (MISSING): {widow} giving {grandpa} a haircut with silver scissors at a senior center free haircut day, a cape around his shoulders, both laughing
-- `cut_logbook` (MISSING): Close-up of a stack of old worn trucker's logbooks with a pair of wire glasses and a pencil on top, kitchen table, writing blurred and unreadable
-- `cut_phone_post` (MISSING): Close-up of a smartphone screen showing a social media post with a grainy mugshot photo of a man, all text blurred and unreadable, held in a woman's manicured hand
-- `cut_dil_spy` (MISSING): {dil} sitting in a parked car secretly photographing {grandpa} with her phone as he walks into a small-town bank holding an envelope, autumn, no readable signs
-- `cut_town_stares` (MISSING): {widow} pushing a cart in a small-town grocery aisle while two older women look down at their phones and avoid her eyes, awkward, no readable labels
-- `cut_caseworker` (MISSING): A middle-aged social worker woman with a clipboard standing politely at the front door of a small brick house, {widow} in the doorway in a cardigan, worried, morning
-- `cut_son_kitchen` (MISSING): {son} at a kitchen table at night beside {dil} who slides papers toward {widow}, he looks torn and tired, text unreadable
-- `cut_diner_threat` (MISSING): {dil} standing over a diner booth jabbing a finger at {grandpa} who sits calmly with a cup of coffee, red stools behind, {widow} hiding behind a menu in the next booth
-- `cut_ears` (MISSING): {widow} with reading glasses studying a large printed mugshot photo under a magnifying lamp at an old hair salon station, silver scissors beside it, focused, text unreadable
-- `cut_library_pc` (MISSING): {widow} and a young librarian at a public library computer looking at an old newspaper article on the screen, {widow} shocked, screen text unreadable
-- `cut_confront_dil` (MISSING): {widow} on her front porch holding up a printed mugshot photo toward {dil}, calm and firm, {dil} smirking with arms crossed, evening
-- `cut_boutique_boxes` (MISSING): Stacks of brown shipping boxes with clothing tags spilling out in the back room of a small boutique, labels unreadable
-- `cut_bank_desk` (MISSING): {banker} at a small-town bank desk listening seriously to {widow} who holds a credit card statement, text unreadable
-- `cut_vfw_hall` (MISSING): A small-town VFW hall decorated for a community Thanksgiving dinner, long tables with roast turkeys and pies, paper turkeys on the walls, a projector screen up front, about 150 people, no readable signs
-- `cut_dil_mic` (MISSING): {dil} in a cream sweater at a microphone in a VFW hall in front of a projector screen showing a grainy mugshot, smug, crowd at long Thanksgiving tables, no readable text
-- `cut_esther_stands` (MISSING): {widow} standing up at a long Thanksgiving table in a VFW hall holding up papers, calm and fierce, the whole crowd turned toward her, text unreadable
-- `cut_banker_stands` (MISSING): {banker} standing up at a long Thanksgiving table in a VFW hall speaking, people turned toward him in silence, emotional
-- `cut_dil_frozen` (MISSING): {dil} frozen beside a microphone in a VFW hall, a man in a suit taking the microphone from her hand, the whole crowd staring, humiliated
-- `cut_son_stands` (MISSING): {son} standing up at a Thanksgiving table in a VFW hall facing {dil}, ashamed but firm, {widow} beside him
-- `cut_joe_door` (MISSING): {grandpa} in a flannel shirt standing in the open back door of a VFW hall holding his hat in both hands, humble, crowd at Thanksgiving tables turning to look
-- `cut_hug` (MISSING): {widow} hugging {grandpa} in the middle of a VFW hall, both crying, {son} beside them, people standing and clapping at Thanksgiving tables
-- `cut_haircut_end` (MISSING): {widow} giving {grandpa} a haircut on a sunny front porch, a cape over his flannel shirt, both laughing, two coffee mugs on the railing
+- `cut_insult`: {dil} at a church fellowship hall coffee hour holding up a glowing smartphone toward a crowd and pointing at {grandpa} who stands holding his hat beside {widow}, people by a donut table staring, rainy window, tense, screen unreadable
+- `cut_salon_1980s`: Vintage 1980s photo look: {widow} as a young woman in a smock cutting a customer's hair in a small-town hair salon with old dryer chairs, smiling, faded colors, no readable signs
+- `cut_haircut_joe`: {widow} giving {grandpa} a haircut with silver scissors at a senior center free haircut day, a cape around his shoulders, both laughing
+- `cut_logbook`: Close-up of a stack of old worn trucker's logbooks with a pair of wire glasses and a pencil on top, kitchen table, writing blurred and unreadable
+- `cut_phone_post`: Close-up of a smartphone screen showing a social media post with a grainy mugshot photo of a man, all text blurred and unreadable, held in a woman's manicured hand
+- `cut_dil_spy`: {dil} sitting in a parked car secretly photographing {grandpa} with her phone as he walks into a small-town bank holding an envelope, autumn, no readable signs
+- `cut_town_stares`: {widow} pushing a cart in a small-town grocery aisle while two older women look down at their phones and avoid her eyes, awkward, no readable labels
+- `cut_caseworker`: A middle-aged social worker woman with a clipboard standing politely at the front door of a small brick house, {widow} in the doorway in a cardigan, worried, morning
+- `cut_son_kitchen`: {son} at a kitchen table at night beside {dil} who slides papers toward {widow}, he looks torn and tired, text unreadable
+- `cut_diner_threat`: {dil} standing over a diner booth jabbing a finger at {grandpa} who sits calmly with a cup of coffee, red stools behind, {widow} hiding behind a menu in the next booth
+- `cut_ears`: {widow} with reading glasses studying a large printed mugshot photo under a magnifying lamp at an old hair salon station, silver scissors beside it, focused, text unreadable
+- `cut_library_pc`: {widow} and a young librarian at a public library computer looking at an old newspaper article on the screen, {widow} shocked, screen text unreadable
+- `cut_confront_dil`: {widow} on her front porch holding up a printed mugshot photo toward {dil}, calm and firm, {dil} smirking with arms crossed, evening
+- `cut_boutique_boxes`: Stacks of brown shipping boxes with clothing tags spilling out in the back room of a small boutique, labels unreadable
+- `cut_bank_desk`: {banker} at a small-town bank desk listening seriously to {widow} who holds a credit card statement, text unreadable
+- `cut_vfw_hall`: A small-town VFW hall decorated for a community Thanksgiving dinner, long tables with roast turkeys and pies, paper turkeys on the walls, a projector screen up front, about 150 people, no readable signs
+- `cut_dil_mic`: {dil} in a cream sweater at a microphone in a VFW hall in front of a projector screen showing a grainy mugshot, smug, crowd at long Thanksgiving tables, no readable text
+- `cut_esther_stands`: {widow} standing up at a long Thanksgiving table in a VFW hall holding up papers, calm and fierce, the whole crowd turned toward her, text unreadable
+- `cut_banker_stands`: {banker} standing up at a long Thanksgiving table in a VFW hall speaking, people turned toward him in silence, emotional
+- `cut_dil_frozen`: {dil} frozen beside a microphone in a VFW hall, a man in a suit taking the microphone from her hand, the whole crowd staring, humiliated
+- `cut_son_stands`: {son} standing up at a Thanksgiving table in a VFW hall facing {dil}, ashamed but firm, {widow} beside him
+- `cut_joe_door`: {grandpa} in a flannel shirt standing in the open back door of a VFW hall holding his hat in both hands, humble, crowd at Thanksgiving tables turning to look
+- `cut_hug`: {widow} hugging {grandpa} in the middle of a VFW hall, both crying, {son} beside them, people standing and clapping at Thanksgiving tables
+- `cut_haircut_end`: {widow} giving {grandpa} a haircut on a sunny front porch, a cape over his flannel shirt, both laughing, two coffee mugs on the railing
