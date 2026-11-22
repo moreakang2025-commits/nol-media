@@ -389,3 +389,28 @@ IMG tune_sil_exposed | {sil} frozen on a grange hall stage, microphone lowered, 
 IMG tune_tanya_reveal | {mom} in pale blue scrubs standing up in the back of a crowded grange hall holding an old folded letter, eyes wet, people turned toward her
 IMG tune_hug | {grandma} kneeling at the edge of a grange hall stage hugging {kidboy} and {kidgirl}, all crying and laughing, {mom} in scrubs behind them, the crowd applauding
 IMG tune_daughter | {daughter} in a grange hall aisle taking a house key out of the hand of {sil}, cold and ashamed, people on folding chairs watching
+# ---- ep14 hairdresser / second-chance love ----
+IMG cut_insult | {dil} at a church fellowship hall coffee hour holding up a glowing smartphone toward a crowd and pointing at {grandpa} who stands holding his hat beside {widow}, people by a donut table staring, rainy window, tense, screen unreadable
+IMG cut_salon_1980s | Vintage 1980s photo look: {widow} as a young woman in a smock cutting a customer's hair in a small-town hair salon with old dryer chairs, smiling, faded colors, no readable signs
+IMG cut_haircut_joe | {widow} giving {grandpa} a haircut with silver scissors at a senior center free haircut day, a cape around his shoulders, both laughing
+IMG cut_logbook | Close-up of a stack of old worn trucker's logbooks with a pair of wire glasses and a pencil on top, kitchen table, writing blurred and unreadable
+IMG cut_phone_post | Close-up of a smartphone screen showing a social media post with a grainy mugshot photo of a man, all text blurred and unreadable, held in a woman's manicured hand
+IMG cut_dil_spy | {dil} sitting in a parked car secretly photographing {grandpa} with her phone as he walks into a small-town bank holding an envelope, autumn, no readable signs
+IMG cut_town_stares | {widow} pushing a cart in a small-town grocery aisle while two older women look down at their phones and avoid her eyes, awkward, no readable labels
+IMG cut_caseworker | A middle-aged social worker woman with a clipboard standing politely at the front door of a small brick house, {widow} in the doorway in a cardigan, worried, morning
+IMG cut_son_kitchen | {son} at a kitchen table at night beside {dil} who slides papers toward {widow}, he looks torn and tired, text unreadable
+IMG cut_diner_threat | {dil} standing over a diner booth jabbing a finger at {grandpa} who sits calmly with a cup of coffee, red stools behind, {widow} hiding behind a menu in the next booth
+IMG cut_ears | {widow} with reading glasses studying a large printed mugshot photo under a magnifying lamp at an old hair salon station, silver scissors beside it, focused, text unreadable
+IMG cut_library_pc | {widow} and a young librarian at a public library computer looking at an old newspaper article on the screen, {widow} shocked, screen text unreadable
+IMG cut_confront_dil | {widow} on her front porch holding up a printed mugshot photo toward {dil}, calm and firm, {dil} smirking with arms crossed, evening
+IMG cut_boutique_boxes | Stacks of brown shipping boxes with clothing tags spilling out in the back room of a small boutique, labels unreadable
+IMG cut_bank_desk | {banker} at a small-town bank desk listening seriously to {widow} who holds a credit card statement, text unreadable
+IMG cut_vfw_hall | A small-town VFW hall decorated for a community Thanksgiving dinner, long tables with roast turkeys and pies, paper turkeys on the walls, a projector screen up front, about 150 people, no readable signs
+IMG cut_dil_mic | {dil} in a cream sweater at a microphone in a VFW hall in front of a projector screen showing a grainy mugshot, smug, crowd at long Thanksgiving tables, no readable text
+IMG cut_esther_stands | {widow} standing up at a long Thanksgiving table in a VFW hall holding up papers, calm and fierce, the whole crowd turned toward her, text unreadable
+IMG cut_banker_stands | {banker} standing up at a long Thanksgiving table in a VFW hall speaking, people turned toward him in silence, emotional
+IMG cut_dil_frozen | {dil} frozen beside a microphone in a VFW hall, a man in a suit taking the microphone from her hand, the whole crowd staring, humiliated
+IMG cut_son_stands | {son} standing up at a Thanksgiving table in a VFW hall facing {dil}, ashamed but firm, {widow} beside him
+IMG cut_joe_door | {grandpa} in a flannel shirt standing in the open back door of a VFW hall holding his hat in both hands, humble, crowd at Thanksgiving tables turning to look
+IMG cut_hug | {widow} hugging {grandpa} in the middle of a VFW hall, both crying, {son} beside them, people standing and clapping at Thanksgiving tables
+IMG cut_haircut_end | {widow} giving {grandpa} a haircut on a sunny front porch, a cape over his flannel shirt, both laughing, two coffee mugs on the railing
