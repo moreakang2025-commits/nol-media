@@ -1,0 +1,142 @@
+TITLE: My Daughter Talked Slow and Loud Because She Thought I Was Deaf. I Was a Court Reporter 41 Years.
+THUMB_TOP: HE CAN'T HEAR A THING!
+THUMB_BOTTOM: I WROTE IT ALL DOWN...
+THUMB_PROMPT: Dramatic scene at a farmhouse kitchen table at night under one warm lamp. On the left third, a 78-year-old bald man with a white fringe, white mustache and wire glasses in a brown corduroy jacket looks straight at the viewer, calm and quietly fierce, holding a small spiral steno notepad covered in shorthand squiggles and a pencil. Across the table in soft focus on the right, a 48-year-old woman with wavy brown hair and freckles leans in with her mouth wide open, shouting slowly, pointing at legal papers, while a slick man in a blazer stands behind her with crossed arms. Strong contrast, warm light on the old man, empty dark space in the upper right. No readable text.
+VOICE_STYLE: This is an audio drama for older American listeners. Natural and intimate, like a true story told on a porch, with tension, warmth and a little bite. Never rushed.
+TAGS: senior stories, family betrayal, grandpa story, daughter, son-in-law, audio story, court reporter, shorthand, family drama, revenge story
+CAST Arthur | voice=Gacrux | style=a 78-year-old widower and retired county court reporter from Indiana telling his own story, dry, precise, patient, a quiet sense of humor, steel underneath | look=lib:grandpa
+CAST Denise | voice=Leda | style=a 48-year-old daughter, sweet and loud in public, impatient and cold in private, talks to her father as if he were a child | look=lib:daughter
+CAST Rick | voice=Orus | style=a 50-year-old son-in-law, smooth salesman, smug, then rattled | look=lib:sil
+CAST Nate | voice=Puck | style=a 17-year-old grandson, shy, honest, brave when it counts | look=lib:grandson
+CAST Harriet | voice=Autonoe | style=a 74-year-old retired county judge and the narrator's old friend, warm, dry, sharp as a tack | look=lib:friend
+
+DESCRIPTION:
+My daughter leaned across my kitchen table and talked to me slow and loud, like I was a dog that couldn't hear. You can't hear, you can't drive, you can't think straight. Sign the papers, or you're in Briar Glen by Christmas.
+
+She forgot one thing. For forty-one years I sat in the county courthouse and wrote down every word anybody said in front of me. I never stopped. Stay until her housewarming party, when somebody read her own words back to her.
+
+Chapters
+{chapters}
+
+Has anyone ever talked about you like you weren't in the room? Tell me in the comments. I read every one.
+
+This story is a work of fiction for entertainment. Names, characters, places and events are fictional. Banking, medical and legal details are simplified for the story and are not advice. Narration and visuals were made with the help of AI tools.
+
+#seniorstories #audiostory #familydrama
+END_DESCRIPTION
+
+## Slow and Loud
+[LIB] steno_insult jan_leon_calm
+[SHORT] My Daughter Said I'm Too Deaf To Decide
+DENISE: Dad. You. Can't. Hear. You can't drive, and you can't think straight. Sign the papers, or you're in Briar Glen by Christmas.
+ARTHUR: My daughter Denise said that at my kitchen table, slow and loud, the way you talk to a dog that's gone deaf. Her husband Rick stood behind her with his arms crossed, jingling his keys.
+[LIB] steno_pad_knee steno_insult
+ARTHUR: I didn't say a word. I nodded, and under the table, on a little spiral pad on my knee, my pencil kept moving.
+[LIB] steno_courtroom_1985 jan_leon_calm
+ARTHUR: What Denise forgot is that for forty-one years I was the court reporter for Dalton County, Indiana. Bank robberies, divorces, tractor disputes. Two hundred and twenty-five words a minute, in shorthand almost nobody under sixty can read. If you said it in front of me, I took it down. And I never stopped.
+[LIB] place_house_night jan_leon_calm
+ARTHUR: My name is Arthur Pell. I'm seventy-eight. Pour yourself some coffee. My daughter wanted everybody to believe I couldn't follow a conversation. So in the end, I let everybody follow hers.
+
+## Forty-One Years of Words
+[LIB] steno_carol gp_young_couple
+ARTHUR: My wife Carol passed two winters ago. Forty-nine years married. She was the only person alive who could read my shorthand, because I taught her on our honeymoon, and she used it to leave me grocery lists I couldn't argue with.
+[LIB] steno_carol gp_writing
+ARTHUR: In the hospital, near the end, she squeezed my hand and said, Artie, don't let it die with you. Teach somebody. I said, who on earth wants to learn shorthand now, honey? She just smiled.
+[LIB] steno_hearing_aid jan_leon_calm
+ARTHUR: My ears did go bad. I won't lie. Those big beige hearing aids I'd worn for ten years squealed so much I stopped wearing them. That's when Denise decided I was deaf. But last April the veterans clinic fitted me with new ones. Tiny. Hide right behind the ear. Hear a pin drop. Denise never noticed. You have to look at a man to notice.
+[LIB] gs_workshop steno_lessons
+ARTHUR: My grandson Nate noticed. He's seventeen, Denise and Rick's boy. Every Tuesday after school he rode his bike over to fix my internet, which I'm fairly sure was never broken. We'd sit at the kitchen table with root beer, and we'd do his homework.
+[LIB] jan_heloc_letter dau_argue
+ARTHUR: After Carol died, Denise put her name on my checking account. For emergencies, Dad. Rick sold home staging, fancy furniture for houses on the market. And that summer, the two of them bought a brand new house on Larkspur Court with a three-car garage. I remember thinking, staging must pay better than I thought.
+
+## Talk Normal, He Can't Hear
+[LIB] steno_porch_plan obj_two_mugs
+ARTHUR: The Sunday before Thanksgiving they came for supper. Afterward the three of us sat out on my porch. I was in my rocker with my pad on my knee, like always. Rick leaned toward Denise and whispered. And Denise laughed.
+[LIB] steno_porch_plan dau_argue
+[SHORT] My Daughter Said Talk Normal, He Can't Hear
+ARTHUR: My daughter thought I was deaf, so she said it right in front of me.
+DENISE: Talk normal, Rick. He can't hear a word. Friday he signs the power of attorney, Monday we list the house, and the Briar Glen deposit is already paid. With his own money.
+RICK: And the rest covers what we owe on Larkspur. Your dad won't even know which state he's in.
+[LIB] steno_pad_knee gp_overhear
+ARTHUR: I wrote it down. Every word, the date, and the time, seven forty-two PM. My hand was steady. My heart wasn't. That was my little girl. I taught her to ride a bike on that same porch.
+[LIB] place_house_night gp_overhear
+ARTHUR: That night I couldn't sleep, so I did what a court reporter does. I went back through my pads. I'd been writing at that kitchen table since spring, out of habit. Fourteen pads. And reading them all in a row, for the first time, I didn't like the story they told.
+
+## The Bank
+[LIB] place_bank steno_bank
+ARTHUR: Monday morning Nate skipped first period and drove me to the bank in his mother's old car. I'd told him I needed a ride. I hadn't told him why. He figured it out in the parking lot.
+[LIB] steno_bank jan_heloc_letter
+ARTHUR: The young man at the desk printed out my account for eighteen months. Twenty-two transfers. Sixty-four thousand two hundred dollars. All to something called D and R Home Staging. D for Denise. R for Rick.
+[LIB] steno_bank place_mansion
+ARTHUR: The biggest one, thirty-one thousand dollars, went out the week before they closed on the house on Larkspur Court. And the Briar Glen deposit? Paid from my account in October. Signed, Arthur Pell. In handwriting that wasn't mine.
+[LIB] gs_call steno_bank
+ARTHUR: Nate didn't say anything on the drive home. Then at the stop sign by the feed store he said, Grandpa, are you going to send Mom to jail? I said, son, I'm going to make sure everybody hears the truth. What happens after that is up to her.
+
+## The Pad
+[LIB] steno_grab obj_pen_papers
+ARTHUR: Wednesday Denise came by with the papers. And this time she saw the pad.
+[SHORT] My Daughter Grabbed My Notepad. Big Mistake.
+DENISE: Dad, what is that? What are you scribbling? Give me that thing.
+ARTHUR: It's shorthand, Denise. Your mother could read it. You never wanted to learn. And you'll want to take your hand off it, honey.
+[LIB] steno_grab dau_argue
+DENISE: It's gibberish, Dad. Doodles. That's exactly what the doctor said.
+ARTHUR: And she slid a letter across my table.
+[LIB] steno_doctor_letter jan_leon_calm
+ARTHUR: On clinic letterhead. Patient shows advanced decline. Cannot follow a conversation. Unable to manage his affairs. Signed by a Doctor Alan Voss. A doctor I had never met in my life. Her lawyer had a guardianship hearing on the calendar for the Monday after Thanksgiving.
+[LIB] steno_doctor_letter gp_writing
+ARTHUR: But that name stuck to me like a burr on a sock. Alan Voss. I'd heard that name before. I'd typed it before. Forty-one years of names, and that one was in there somewhere.
+
+## Harriet
+[LIB] place_small_town steno_harriet
+ARTHUR: Harriet Cole was the judge in courtroom two for twenty-six years, and I sat four feet from her bench for every one of them. She retired the same spring I did. We've had pie at the diner every Thursday since, and she still calls me Mister Pell when she wants to annoy me.
+[LIB] steno_harriet owl_tea
+ARTHUR: Harriet had picked up a little of my shorthand over the years, sitting through long trials. She put on her glasses and read the porch page twice. Then she set it down very gently.
+HARRIET: Arthur. You didn't write down a family argument. You wrote down a confession. Dated and timed.
+[LIB] steno_archive cut_logbook
+ARTHUR: Then I told her about Doctor Voss, and her eyebrows went up. Thursday morning she walked me down to the courthouse basement, where my old notebooks sit in boxes, one box a year. Nineteen ninety-eight. State versus Alan Voss.
+[LIB] steno_archive jan_leon_calm
+ARTHUR: He was a doctor who sold false medical letters, fifteen hundred dollars apiece. He lost his license. And I had typed every word of his sentencing with my own two hands. Twenty-eight years later, he was still selling the same letter. To my daughter.
+[LIB] owl_tea steno_harriet
+HARRIET: She's throwing a housewarming party Saturday, isn't she? Eighty people. Half the church and her whole office.
+ARTHUR: She is. She invited me. She said, Dad, just smile and don't talk, it's easier for everyone.
+HARRIET: Then let's go. And Arthur? Bring your pads.
+
+## The Housewarming
+[LIB] steno_party place_mansion
+ARTHUR: Saturday night. The house on Larkspur Court. String lights over a deck as big as my whole yard. Eighty people with wine glasses. Rick showing men the garage. And Denise in a green dress, tapping a microphone.
+[LIB] steno_toast steno_party
+DENISE: Thank you all for coming to our new home. We built it ourselves, every penny. And one more thing. My dad is here tonight. He's moving to Briar Glen next week. He can't really follow conversations anymore, so if he smiles at you, just smile back.
+[LIB] steno_toast jan_leon_calm
+ARTHUR: Eighty heads turned and looked at me with that kind, sad look. I stood up. I walked to the front, slow, and I held out my hand for the microphone. Denise gave it to me, because eighty people were watching.
+[LIB] steno_gp_mic steno_party
+[SHORT] My Daughter Toasted Me. I Took The Mic.
+ARTHUR: My daughter just told you I can't follow a conversation. I followed every one. I was the court reporter for this county for forty-one years. And these are her words, taken down in front of me, dated and timed.
+[LIB] steno_gp_mic steno_dau_exposed
+DENISE: Dad, nobody can read that! It's scribbles! He can't even hear!
+ARTHUR: I tapped my ear. Veterans clinic, honey. Since April. You'd know if you'd ever looked at me.
+
+## Word for Word
+[LIB] steno_gs_reads steno_party
+ARTHUR: Then my grandson walked up out of the crowd. Seventeen. Hands shaking. He took the porch page from me, cleared his throat, and he read it into the microphone. Word for word. Talk normal, Rick, he can't hear a word. Friday he signs, Monday we list the house. With his own money.
+[LIB] steno_gs_reads steno_dau_exposed
+ARTHUR: You see, those Tuesdays were never about my internet. For a whole year, I'd been teaching Nate shorthand. Carol told me to teach somebody. I just never told his mother who.
+[LIB] steno_dau_exposed dil_exposed
+DENISE: Nate. Sit down. You don't know what you're reading.
+NATE: I know exactly what I'm reading, Mom. Grandpa taught me. You're the one who never learned.
+[LIB] steno_judge_paper sil_caught
+ARTHUR: Then Harriet stepped up beside Rick in her long wool coat, and every lawyer in that crowd knew her face. She handed him a copy of the bank printout. Sixty-four thousand two hundred dollars, twenty-two transfers, to D and R Home Staging. Then the 1998 sentencing of Alan Voss, the man who signed my letter.
+[LIB] steno_judge_paper steno_dau_exposed
+HARRIET: The guardianship petition is being contested Monday morning with fourteen pads of evidence. The bank has frozen that account. And Mister Pell's lawyer filed a lien on this house this afternoon. Every penny, Denise. Just like you said.
+[LIB] steno_dau_exposed sil_caught
+ARTHUR: Her boss set his glass down and left. Then her pastor. Then the neighbors she'd been trying so hard to impress, one by one, down the brand new steps. Rick said, Arthur, we'll pay it back, every dime. And Denise stood on that deck she bought with my money, and in front of everyone who was left, she said it. I'm sorry, Daddy.
+[LIB] steno_hug steno_party
+ARTHUR: Then Nate put his arms around me, right there, in front of everybody, and he wouldn't let go. He whispered, Grandma made you promise, didn't she? I said, she did. He said, I'm glad it was me.
+[LIB] steno_hug jan_leon_calm
+ARTHUR: Denise walked past us to the door, white as a sheet, and stopped.
+DENISE: You let me talk for eight months, Dad. You never said a thing.
+ARTHUR: You talked slow and loud so I'd understand, honey. I understood every word. I wrote them down.
+[LIB] steno_porch_end obj_two_mugs
+ARTHUR: I didn't move to Briar Glen. Denise and Rick sold the house on Larkspur Court to pay me back, and they're in an apartment now, starting over. She comes by on Sundays. She's quieter. She looks at me now when she talks.
+[LIB] steno_porch_end jan_porch_end
+ARTHUR: And every Tuesday, Nate and I still sit on my porch with root beer and two pads, and he's up to a hundred and forty words a minute. Here's what I learned. Never talk about a man like he isn't in the room. He might be the one keeping the record. If this story touched your heart, subscribe so you don't miss the next one.
+ARTHUR: And tell me in the comments, has anyone ever talked about you like you weren't in the room? I read every one.

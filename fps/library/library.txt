@@ -414,3 +414,24 @@ IMG cut_son_stands | {son} standing up at a Thanksgiving table in a VFW hall fac
 IMG cut_joe_door | {grandpa} in a flannel shirt standing in the open back door of a VFW hall holding his hat in both hands, humble, crowd at Thanksgiving tables turning to look
 IMG cut_hug | {widow} hugging {grandpa} in the middle of a VFW hall, both crying, {son} beside them, people standing and clapping at Thanksgiving tables
 IMG cut_haircut_end | {widow} giving {grandpa} a haircut on a sunny front porch, a cape over his flannel shirt, both laughing, two coffee mugs on the railing
+# ---- ep15 court reporter (family betrayal, daughter, shorthand) ----
+IMG steno_insult | {daughter} leaning over a farmhouse kitchen table speaking slowly and loudly to {grandpa}, jabbing a finger at legal papers and a senior living brochure, {sil} standing behind her with arms crossed, tense, evening lamp light, text unreadable
+IMG steno_pad_knee | Close-up of an old man's wrinkled hand writing quick shorthand squiggles in a small spiral steno pad resting on his knee under a kitchen table, the marks blurred and unreadable
+IMG steno_courtroom_1985 | Vintage 1980s photo look: a younger man with dark hair, a thick mustache and wire glasses typing on a court stenograph machine beside the witness stand in a wood-paneled county courtroom, faded colors, no readable text
+IMG steno_hearing_aid | Close-up of a tiny modern behind-the-ear hearing aid resting in an old man's open palm over a kitchen table, warm morning light
+IMG steno_porch_plan | {daughter} and {sil} talking openly with wine glasses on a front porch at dusk, while {grandpa} sits in a rocking chair a few feet away with a small spiral notepad on his knee, eyes down, they ignore him
+IMG steno_bank | {banker} at a small-town bank desk turning a computer monitor toward {grandpa} and {grandson}, a long printed transaction list on the desk, serious, text unreadable
+IMG steno_grab | {daughter} in a farmhouse kitchen reaching to snatch a small spiral notepad from the hand of {grandpa}, who calmly holds it away from her, tense, text unreadable
+IMG steno_doctor_letter | Close-up of a typed letter on clinic letterhead lying on a kitchen table beside a pair of wire glasses and a coffee mug, text blurred and unreadable
+IMG steno_archive | {grandpa} in a dusty courthouse basement archive with tall metal shelves under a single bulb, pulling an old spiral steno notebook out of a cardboard box, stunned, writing unreadable
+IMG steno_harriet | {friend} with reading glasses reading a small spiral steno pad at a cozy kitchen table at night, eyebrows raised, {grandpa} across from her with a cup of tea, lamp light
+IMG steno_lessons | {grandpa} teaching {grandson} shorthand at a kitchen table on a sunny afternoon, both writing in spiral steno pads, laughing
+IMG steno_carol | {grandpa} at a hospital bedside holding the hand of a frail elderly woman with short white hair who smiles weakly at him, soft morning light
+IMG steno_party | A big new suburban house backyard party at dusk with string lights, about eighty guests holding drinks on a large wooden deck, a microphone stand, no readable signs
+IMG steno_toast | {daughter} in an elegant green dress holding a microphone and a champagne glass on a big backyard deck under string lights, fake sweet smile, guests watching
+IMG steno_gp_mic | {grandpa} in a brown corduroy jacket holding a microphone and a small stack of spiral notepads on a backyard deck under string lights, calm and dignified, guests watching
+IMG steno_gs_reads | {grandson} standing on a backyard deck under string lights reading aloud from a spiral steno pad into a microphone, nervous but brave, guests staring, text unreadable
+IMG steno_dau_exposed | {daughter} in an elegant green dress frozen on a backyard deck under string lights, champagne glass lowered, dozens of guests turned to stare at her, pale
+IMG steno_judge_paper | {friend} in a long wool coat handing a folded legal paper to {sil} on a backyard deck under string lights, he is sweating, guests watching, text unreadable
+IMG steno_hug | {grandson} hugging {grandpa} tightly on a backyard deck under string lights, both crying, {friend} wiping her eyes behind them, guests applauding
+IMG steno_porch_end | {grandpa} and {grandson} on a front porch on a bright winter morning with two coffee mugs, both writing in spiral steno pads and laughing
