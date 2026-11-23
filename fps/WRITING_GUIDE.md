@@ -43,6 +43,10 @@ Lanes B-F still need: spicy first line (an insult, accusation or shocking line f
 2. Add a row to `fps/episodes/LOG.md` and the date to `fps/schedule.json`.
 3. `fps/run.txt` = `epNN true YYYY-MM-DD full` → push → workflow fps-video builds, uploads and schedules everything.
 
+## Cadence (owner decision, 2026-11-23)
+Views collapsed after the first week (ep01-04: 60-160 views each; ep05-ep14: 0-17 each, one outlier). Five near-identical uploads a day were competing with each other and YouTube stopped testing them. From US date 2026-11-24: ONE episode every TWO days (11-24, 11-26, 11-28 ...). Day 1: long-form 10:00 ET + s1 20:30. Day 2: s4 12:30 + s2 20:30. s3 is still written and built but not uploaded. Use the freed time for quality: a sharper first 3 seconds, the strongest possible s1/s4 lines, and only publish on days where the Gemini engine works if possible (the backup engine changes faces and voice).
+Judge the change after 4 episodes on the new cadence (around 2026-12-02): views@48h per video vs ep05-ep14.
+
 ## What the data says (update every Monday from fps/results/insights.md)
 Data loop: workflow fps-stats runs daily 06:17 UTC (15:17 KST) → `fps/results/stats.json` (+ history in `fps/results/stats/`) → `tools/fps/analyze.py` → `fps/results/insights.md`. Read-only; changes nothing on YouTube.
 Weekly read, 2026-11-23 (Mon; ep01-ep12 public = 60 videos, 7 subscribers (+1 in a week), 544 total views (+72)). Groups with n>=6 are called patterns; the rest are hints:

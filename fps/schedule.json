@@ -1,5 +1,5 @@
 {
- "_note": "US publish date -> episode. Long-form 10:00 ET, Shorts 12:30/15:30/18:30/20:30 ET (tools/fps/when.py).",
+ "_note": "US publish date -> episode. From 2026-11-24 ONE episode every TWO days (dates 11-24, 11-26, 11-28...): day 1 long 10:00 ET + s1 20:30; day 2 s4 12:30 + s2 20:30; s3 not uploaded (tools/fps/when.py).",
  "2026-11-10": "ep01",
  "2026-11-11": "ep02",
  "2026-11-12": "ep03",

@@ -115,7 +115,9 @@ jobs:
           O=out/fps_${{ steps.ep.outputs.id }}
           LONG=$(python3 -c "import json;print(json.load(open('$O/upload.json')).get('url',''))" 2>/dev/null || true)
           for d in $O/shorts/*/; do k=$(basename $d)
-            LONG_URL="$LONG" python3 tools/fps/upload.py "$d" "$(python3 tools/fps/when.py '${{ steps.ep.outputs.date }}' $k)" || true; done
+            AT=$(python3 tools/fps/when.py '${{ steps.ep.outputs.date }}' $k)
+            if [ -z "$AT" ]; then echo "skip $k (not uploaded under the every-2-days cadence)"; continue; fi
+            LONG_URL="$LONG" python3 tools/fps/upload.py "$d" "$AT" || true; done
       - name: Keep the files for review
         if: always()
         uses: actions/upload-artifact@v4
