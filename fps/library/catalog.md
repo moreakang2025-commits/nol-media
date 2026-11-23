@@ -301,7 +301,7 @@ Recurring faces: grandma (the grandmother), grandpa (the grandfather), son (the 
 - `owl_opal_mic` (MISSING): {friend} with headphones on sitting at an old ham radio desk at night speaking into a desk microphone, focused and kind, dials glowing
 - `owl_logbooks` (MISSING): Close-up of a shelf of old worn logbooks, one blue cloth logbook pulled halfway out, warm lamp light, no readable text
 - `owl_wendell_photo` (MISSING): Vintage 1970s photo look: a smiling young Black American trucker in a cap leaning on the cab of a big rig beside his young wife, faded colors
-- `owl_tea` (MISSING): {friend} and {grandpa} at a small kitchen table at night with two mugs of tea, she tells a story, he listens, radio dials glowing behind them
+- `owl_tea`: {friend} and {grandpa} at a small kitchen table at night with two mugs of tea, she tells a story, he listens, radio dials glowing behind them
 - `owl_tom_office` (MISSING): {son} in a county emergency office with radio equipment and wall maps, showing {grandpa} a printed log sheet, serious, text unreadable
 - `owl_square` (MISSING): A small-town square at dusk with a tall unlit Christmas tree, a wooden gazebo stage and a crowd in winter coats, light snow, no readable signs
 - `owl_dale_stage` (MISSING): {banker} in a wool overcoat on a gazebo stage speaking into a microphone in front of a big unlit Christmas tree, a crowd below, smug

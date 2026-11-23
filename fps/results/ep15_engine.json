@@ -1,0 +1,11 @@
+{
+ "tts": "edge",
+ "tts_fallback_chunks": 13,
+ "img_gemini": 0,
+ "img_pollinations": 8,
+ "img_substituted": 30,
+ "library_made": [
+  "owl_tea"
+ ],
+ "gemini_error": "HTTP 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai."
+}
