@@ -358,3 +358,23 @@ Recurring faces: grandma (the grandmother), grandpa (the grandfather), son (the 
 - `cut_joe_door`: {grandpa} in a flannel shirt standing in the open back door of a VFW hall holding his hat in both hands, humble, crowd at Thanksgiving tables turning to look
 - `cut_hug`: {widow} hugging {grandpa} in the middle of a VFW hall, both crying, {son} beside them, people standing and clapping at Thanksgiving tables
 - `cut_haircut_end`: {widow} giving {grandpa} a haircut on a sunny front porch, a cape over his flannel shirt, both laughing, two coffee mugs on the railing
+- `steno_insult` (MISSING): {daughter} leaning over a farmhouse kitchen table speaking slowly and loudly to {grandpa}, jabbing a finger at legal papers and a senior living brochure, {sil} standing behind her with arms crossed, tense, evening lamp light, text unreadable
+- `steno_pad_knee` (MISSING): Close-up of an old man's wrinkled hand writing quick shorthand squiggles in a small spiral steno pad resting on his knee under a kitchen table, the marks blurred and unreadable
+- `steno_courtroom_1985` (MISSING): Vintage 1980s photo look: a younger man with dark hair, a thick mustache and wire glasses typing on a court stenograph machine beside the witness stand in a wood-paneled county courtroom, faded colors, no readable text
+- `steno_hearing_aid` (MISSING): Close-up of a tiny modern behind-the-ear hearing aid resting in an old man's open palm over a kitchen table, warm morning light
+- `steno_porch_plan` (MISSING): {daughter} and {sil} talking openly with wine glasses on a front porch at dusk, while {grandpa} sits in a rocking chair a few feet away with a small spiral notepad on his knee, eyes down, they ignore him
+- `steno_bank` (MISSING): {banker} at a small-town bank desk turning a computer monitor toward {grandpa} and {grandson}, a long printed transaction list on the desk, serious, text unreadable
+- `steno_grab` (MISSING): {daughter} in a farmhouse kitchen reaching to snatch a small spiral notepad from the hand of {grandpa}, who calmly holds it away from her, tense, text unreadable
+- `steno_doctor_letter` (MISSING): Close-up of a typed letter on clinic letterhead lying on a kitchen table beside a pair of wire glasses and a coffee mug, text blurred and unreadable
+- `steno_archive` (MISSING): {grandpa} in a dusty courthouse basement archive with tall metal shelves under a single bulb, pulling an old spiral steno notebook out of a cardboard box, stunned, writing unreadable
+- `steno_harriet` (MISSING): {friend} with reading glasses reading a small spiral steno pad at a cozy kitchen table at night, eyebrows raised, {grandpa} across from her with a cup of tea, lamp light
+- `steno_lessons` (MISSING): {grandpa} teaching {grandson} shorthand at a kitchen table on a sunny afternoon, both writing in spiral steno pads, laughing
+- `steno_carol` (MISSING): {grandpa} at a hospital bedside holding the hand of a frail elderly woman with short white hair who smiles weakly at him, soft morning light
+- `steno_party` (MISSING): A big new suburban house backyard party at dusk with string lights, about eighty guests holding drinks on a large wooden deck, a microphone stand, no readable signs
+- `steno_toast` (MISSING): {daughter} in an elegant green dress holding a microphone and a champagne glass on a big backyard deck under string lights, fake sweet smile, guests watching
+- `steno_gp_mic` (MISSING): {grandpa} in a brown corduroy jacket holding a microphone and a small stack of spiral notepads on a backyard deck under string lights, calm and dignified, guests watching
+- `steno_gs_reads` (MISSING): {grandson} standing on a backyard deck under string lights reading aloud from a spiral steno pad into a microphone, nervous but brave, guests staring, text unreadable
+- `steno_dau_exposed` (MISSING): {daughter} in an elegant green dress frozen on a backyard deck under string lights, champagne glass lowered, dozens of guests turned to stare at her, pale
+- `steno_judge_paper` (MISSING): {friend} in a long wool coat handing a folded legal paper to {sil} on a backyard deck under string lights, he is sweating, guests watching, text unreadable
+- `steno_hug` (MISSING): {grandson} hugging {grandpa} tightly on a backyard deck under string lights, both crying, {friend} wiping her eyes behind them, guests applauding
+- `steno_porch_end` (MISSING): {grandpa} and {grandson} on a front porch on a bright winter morning with two coffee mugs, both writing in spiral steno pads and laughing
