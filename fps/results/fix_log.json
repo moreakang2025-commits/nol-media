@@ -1,23 +1,17 @@
 [
  {
-  "cmd": "schedule",
-  "id": "VX6om1hMY_0",
-  "publishAt": "2026-11-25T01:30:00Z",
+  "cmd": "unschedule",
+  "id": "JPBNap8Eb5k",
   "ok": true,
-  "detail": ""
- },
- {
-  "cmd": "schedule",
-  "id": "QafXRsXsX90",
-  "publishAt": "2026-11-25T17:30:00Z",
-  "ok": true,
-  "detail": ""
- },
- {
-  "cmd": "schedule",
-  "id": "vLiMQJsu2mc",
-  "publishAt": "2026-11-26T01:30:00Z",
-  "ok": true,
+  "status": {
+   "uploadStatus": "processed",
+   "privacyStatus": "private",
+   "license": "youtube",
+   "embeddable": false,
+   "publicStatsViewable": false,
+   "selfDeclaredMadeForKids": false,
+   "containsSyntheticMedia": true
+  },
   "detail": ""
  }
 ]
