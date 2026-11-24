@@ -1,3 +1,2 @@
-schedule VX6om1hMY_0 2026-11-24 s1
-schedule QafXRsXsX90 2026-11-24 s4
-schedule vLiMQJsu2mc 2026-11-24 s2
+# ep15 s3 was uploaded with a publish time before the every-2-days cadence; keep it private (s3 is not published)
+unschedule JPBNap8Eb5k

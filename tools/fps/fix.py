@@ -1,5 +1,6 @@
 """One-off fixes on already uploaded videos. Reads commands from fps/fix.txt (one per line):
   schedule <video_id> <US date YYYY-MM-DD> <long|s1|s2|s3|s4>   set a publish time (stays private until then)
+  unschedule <video_id>                                           remove the publish time: stays private for good (never deletes)
   rethumb <epNN>                                                  make a new thumbnail for the episode and set it
 Writes fps/results/fix_log.json."""
 import json, os, sys
@@ -15,6 +16,14 @@ def schedule(hdr, vid, date, slot):
                      data=json.dumps({"id": vid, "status": {"privacyStatus": "private", "publishAt": t,
                                                             "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True}}), timeout=30)
     return {"cmd": "schedule", "id": vid, "publishAt": t, "ok": r.ok, "detail": "" if r.ok else r.text[:300]}
+
+def unschedule(hdr, vid):
+    r = requests.put(f"{G}/videos?part=status", headers={**hdr, "Content-Type": "application/json"},
+                     data=json.dumps({"id": vid, "status": {"privacyStatus": "private",
+                                                            "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True}}), timeout=30)
+    st = r.json().get("status", {}) if r.ok else {}
+    ok = r.ok and not st.get("publishAt") and st.get("privacyStatus") == "private"
+    return {"cmd": "unschedule", "id": vid, "ok": ok, "status": st, "detail": "" if r.ok else r.text[:300]}
 
 def rethumb(hdr, ep):
     import importlib.util
@@ -36,6 +45,8 @@ def main():
         if not p or p[0].startswith("#"): continue
         try:
             if p[0] == "schedule": log.append(schedule(hdr, p[1], p[2], p[3]))
+            elif p[0] == "unschedule" or (p[0] == "schedule" and not when.at(p[2], p[3])):
+                log.append(unschedule(hdr, p[1]))
             elif p[0] == "rethumb": log.append(rethumb(hdr, p[1]))
         except Exception as e:
             log.append({"cmd": line.strip(), "ok": False, "detail": str(e)[:300]})
