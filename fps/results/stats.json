@@ -1,10 +1,10 @@
 {
- "collected": "2026-11-23T18:00:49Z",
+ "collected": "2026-11-24T17:38:48Z",
  "channel": {
-  "viewCount": "744",
+  "viewCount": "761",
   "subscriberCount": "7",
   "hiddenSubscriberCount": false,
-  "videoCount": "67"
+  "videoCount": "71"
  },
  "videos": [
   {
@@ -377,7 +377,7 @@
    "published": "2026-11-14T15:00:32Z",
    "privacy": "public",
    "seconds": 883,
-   "views": 3,
+   "views": 4,
    "likes": 0,
    "comments": 0,
    "like_rate": 0.0
@@ -722,7 +722,7 @@
    "published": "2026-11-20T01:30:10Z",
    "privacy": "public",
    "seconds": 50,
-   "views": 2,
+   "views": 4,
    "likes": 0,
    "comments": 0,
    "like_rate": 0.0
@@ -752,10 +752,10 @@
    "published": "2026-11-19T15:00:08Z",
    "privacy": "public",
    "seconds": 901,
-   "views": 0,
+   "views": 1,
    "likes": 0,
    "comments": 0,
-   "like_rate": null
+   "like_rate": 0.0
   },
   {
    "id": "ei1i9mVI8Lw",
@@ -842,10 +842,10 @@
    "published": "2026-11-22T01:30:35Z",
    "privacy": "public",
    "seconds": 50,
-   "views": 0,
+   "views": 1,
    "likes": 0,
    "comments": 0,
-   "like_rate": null
+   "like_rate": 0.0
   },
   {
    "id": "BveomCCgyv4",
@@ -932,10 +932,10 @@
    "published": "2026-11-22T20:30:24Z",
    "privacy": "public",
    "seconds": 60,
-   "views": 0,
+   "views": 2,
    "likes": 0,
    "comments": 0,
-   "like_rate": null
+   "like_rate": 0.0
   },
   {
    "id": "L3RrMfOvTgA",
@@ -989,8 +989,8 @@
    "theme": "F",
    "publish_at": "2026-11-23T20:30:00Z",
    "title": "My Daughter-in-Law Called My Boyfriend A Con Man #Shorts",
-   "published": "2026-11-22T08:34:28Z",
-   "privacy": "private",
+   "published": "2026-11-23T20:30:23Z",
+   "privacy": "public",
    "seconds": 48,
    "views": 0,
    "likes": 0,
@@ -1004,13 +1004,13 @@
    "theme": "F",
    "publish_at": "2026-11-23T23:30:00Z",
    "title": "My Daughter-in-Law Told Him To Leave Town #Shorts",
-   "published": "2026-11-22T08:34:30Z",
-   "privacy": "private",
+   "published": "2026-11-23T23:30:36Z",
+   "privacy": "public",
    "seconds": 54,
-   "views": 0,
+   "views": 4,
    "likes": 0,
    "comments": 0,
-   "like_rate": null
+   "like_rate": 0.0
   },
   {
    "id": "rLnNaQjm39k",
@@ -1019,8 +1019,8 @@
    "theme": "F",
    "publish_at": "2026-11-24T01:30:00Z",
    "title": "I Cut Hair 44 Years. I Know A Fake Photo. #Shorts",
-   "published": "2026-11-22T08:34:32Z",
-   "privacy": "private",
+   "published": "2026-11-24T01:30:33Z",
+   "privacy": "public",
    "seconds": 56,
    "views": 0,
    "likes": 0,
@@ -1124,9 +1124,24 @@
    "theme": "A",
    "publish_at": "2026-11-24T15:00:00Z",
    "title": "My Daughter Talked Slow and Loud Because She Thought I Was Deaf. I Was a Court Reporter 41 Years.",
-   "published": "2026-11-23T08:41:53Z",
-   "privacy": "private",
+   "published": "2026-11-24T15:00:19Z",
+   "privacy": "public",
    "seconds": 816,
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "like_rate": null
+  },
+  {
+   "id": "BvOMdoRBCP8",
+   "ep": "sh001",
+   "kind": "solo",
+   "theme": "C",
+   "publish_at": "2026-11-25T23:30:00Z",
+   "title": "My Daughter-in-Law Said Count The Silverware Before The Homeless Man Leaves #Shorts",
+   "published": "2026-11-24T08:28:11Z",
+   "privacy": "private",
+   "seconds": 65,
    "views": 0,
    "likes": 0,
    "comments": 0,
