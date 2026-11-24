@@ -44,9 +44,9 @@ def main():
         p = line.split()
         if not p or p[0].startswith("#"): continue
         try:
-            if p[0] == "schedule": log.append(schedule(hdr, p[1], p[2], p[3]))
-            elif p[0] == "unschedule" or (p[0] == "schedule" and not when.at(p[2], p[3])):
+            if p[0] == "unschedule" or (p[0] == "schedule" and not when.at(p[2], p[3])):
                 log.append(unschedule(hdr, p[1]))
+            elif p[0] == "schedule": log.append(schedule(hdr, p[1], p[2], p[3]))
             elif p[0] == "rethumb": log.append(rethumb(hdr, p[1]))
         except Exception as e:
             log.append({"cmd": line.strip(), "ok": False, "detail": str(e)[:300]})
