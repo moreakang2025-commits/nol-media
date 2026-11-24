@@ -1,7 +1,7 @@
 """Parse a Front Porch Stories episode file (fps/episodes/epNN.txt).
 
 Format
-  KEY: value            header fields (TITLE, VOICE_STYLE, THUMB_TOP, THUMB_BOTTOM, THUMB_PROMPT, TAGS)
+  KEY: value            header fields (KIND: short for a standalone Short, TITLE, VOICE_STYLE, THUMB_TOP, THUMB_BOTTOM, THUMB_PROMPT, TAGS)
   CAST Name | voice=Gacrux | look=... | style=...
   DESCRIPTION: ... END_DESCRIPTION   (multi-line; {chapters} is replaced with timestamps)
   ## Chapter name       starts a chapter

@@ -1,0 +1,33 @@
+KIND: short
+TITLE: My Daughter-in-Law Said Count The Silverware Before The Homeless Man Leaves
+VOICE_STYLE: A one-minute audio story for older American listeners. Natural and intimate, a little bite, quick but never rushed.
+TAGS: thanksgiving story, daughter-in-law, homeless young man, grandma story, family drama, storytime, senior stories
+CAST Lorraine | voice=Gacrux | style=a 74-year-old widow from Ohio telling her own story, calm, warm, a little dry, steel underneath | look=lib:grandma
+CAST Tiffany | voice=Leda | style=a 40-year-old daughter-in-law, sweet in public, sharp and cold, loud enough for everyone | look=lib:dil
+CAST Danny | voice=Puck | style=a 24-year-old young man who has lived on the street, quiet, polite | look=lib:youngman
+
+DESCRIPTION:
+My daughter-in-law told me to count the silverware before the homeless young man at our Thanksgiving table left. So I did. Out loud.
+
+Who showed up for you when nobody else did? Tell me in the comments.
+
+This story is a work of fiction for entertainment. Names, characters and events are fictional. Narration and visuals were made with the help of AI tools.
+
+#thanksgiving #familydrama #storytime #shorts
+END_DESCRIPTION
+
+[LIB] thanksgiving_table dil_smirk
+[SHORT] My Daughter-in-Law Said Count The Silverware
+TIFFANY: A homeless man at Thanksgiving? Mom, count the silverware before he leaves.
+[LIB] ym_accused
+LORRAINE: My daughter-in-law said it loud enough for Danny to hear. He put down his fork and reached for his coat.
+[LIB] place_city_winter ym_help_gm
+LORRAINE: Last January, Tiffany was supposed to pick me up from the eye doctor. She never came. Three hours at a bus stop, in the snow.
+LORRAINE: Danny gave me his only coat and walked me home.
+[LIB] gm_cellphone dil_shocked
+LORRAINE: So I showed the table one video. The pharmacy camera across the street. Tiffany's car, parked, all three hours, filming me. The care home application she mailed that night said: can't get home alone.
+[LIB] dil_exposed
+LORRAINE: My son put down his fork.
+[LIB] obj_keys ym_porch_coffee
+LORRAINE: Then I set my spare key on Danny's plate. He cried.
+LORRAINE: Tiffany told me to count the silverware. I counted who showed up in the snow.

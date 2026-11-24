@@ -7,7 +7,7 @@ from collections import defaultdict
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
-ROLE = {"long": "long-form", "s1": "s1 insult", "s2": "s2 plan", "s3": "s3 hidden card", "s4": "s4 payoff"}
+ROLE = {"long": "long-form", "s1": "s1 insult", "s2": "s2 plan", "s3": "s3 hidden card", "s4": "s4 payoff", "solo": "standalone Short"}
 ET = ZoneInfo("America/New_York")
 
 

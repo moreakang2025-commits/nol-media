@@ -2,7 +2,9 @@
 Uses the episode's own voice and pictures, so Shorts cost nothing extra.
 Each Short starts at a [SHORT] marker in the script (or at chapter starts if there are none),
 runs up to ~58 s, has the hook title on top, burned captions, and a 'full story' end card.
-usage: python3 tools/fps/shorts.py out/fps_ep02 [N]"""
+usage: python3 tools/fps/shorts.py out/fps_ep02 [N]
+Standalone Short (fps/shorts/shNNN.txt, KIND: short): the whole story becomes ONE Short (s1), with a
+'new story every day' end card and the script's own TITLE/DESCRIPTION."""
 import json, os, re, subprocess, sys
 from PIL import Image, ImageDraw, ImageFilter, ImageEnhance
 HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, os.path.join(HERE, "..", "mongki"))
@@ -52,8 +54,13 @@ def frame(img, k, title_imgs, cap):
     if cap: paste_center(im, cap, W / 2, 1460)
     return im
 
-def end_card(img, title):
+def end_card(img, title, solo=False):
     bg, _ = composite(img); im = bg.copy()
+    if solo:
+        paste_center(im, fit_text("A NEW STORY", "heavy", 120, 960, CREAM, 6), W / 2, 760)
+        paste_center(im, fit_text("EVERY DAY", "heavy", 130, 960, GOLD, 6), W / 2, 900)
+        paste_center(im, fit_text("Follow Front Porch Stories", "bold", 64, 960, CREAM), W / 2, 1080)
+        return im
     paste_center(im, fit_text("WANT TO KNOW", "heavy", 120, 960, CREAM, 6), W / 2, 760)
     paste_center(im, fit_text("WHAT HAPPENED NEXT?", "heavy", 120, 960, GOLD, 6), W / 2, 900)
     paste_center(im, fit_text("Full story on our channel", "bold", 64, 960, CREAM), W / 2, 1080)
@@ -65,14 +72,16 @@ def make(outdir, n=4):
     for i, l in enumerate(L):
         nxt = L[i + 1]["t"] if i + 1 < len(L) else tl["speech_end"]
         l["end"] = min(nxt, tl["line_end"][i]) if tl.get("line_end") else nxt
+    solo = tl.get("kind") == "short"
     starts = [(i, l["short"]) for i, l in enumerate(L) if l.get("short")]
+    if solo: starts = [(0, starts[0][1] if starts else tl["title"])]; n = 1
     if not starts:
         starts = [(i, l["chapter"]) for i, l in enumerate(L) if l.get("chapter")][::2]
     made = []
     for k, (i0, title) in enumerate(starts[:n], 1):
         seg = [L[i0]]
         for l in L[i0 + 1:]:
-            if l["end"] - L[i0]["t"] > MAX: break
+            if not solo and l["end"] - L[i0]["t"] > MAX: break
             seg.append(l)
         a = max(0.0, L[i0]["t"] - 0.1); b = seg[-1]["end"] + 0.5; dur = b - a; total = dur + END
         d = os.path.join(outdir, "shorts", f"s{k}"); os.makedirs(d, exist_ok=True)
@@ -91,7 +100,7 @@ def make(outdir, n=4):
             clip = next((c for c in tl["clips"] if c["a"] <= g < c["b"]), tl["clips"][-1])
             last_img = clip["img"] if tau < dur else last_img
             if tau >= dur:
-                im = end_card(last_img, title)
+                im = end_card(last_img, title, solo)
             else:
                 ci = next((j for j, (s0, e0, _) in enumerate(caps) if s0 <= tau < e0), None)
                 cap = None
@@ -106,6 +115,7 @@ def make(outdir, n=4):
         meta = {"title": f"{title} #Shorts"[:100],
                 "description": f"{title}\n\nWatch the full story: {{long}}\n\nFiction for entertainment. Narration and visuals made with the help of AI tools.\n\n#familydrama #storytime #shorts",
                 "tags": tl["tags"][:8] + ["shorts"], "duration": round(total, 1)}
+        if solo: meta.update({"title": f"{tl['title']} #Shorts"[:100], "description": tl.get("description") or meta["description"]})
         json.dump(meta, open(os.path.join(d, "meta.json"), "w"), indent=1)
         print(f"[shorts] s{k}: {total:.1f}s '{title}'", flush=True); made.append(d)
     return made

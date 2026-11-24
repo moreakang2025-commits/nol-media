@@ -43,9 +43,20 @@ Lanes B-F still need: spicy first line (an insult, accusation or shocking line f
 2. Add a row to `fps/episodes/LOG.md` and the date to `fps/schedule.json`.
 3. `fps/run.txt` = `epNN true YYYY-MM-DD full` → push → workflow fps-video builds, uploads and schedules everything.
 
-## Cadence (owner decision, 2026-11-23)
-Views collapsed after the first week (ep01-04: 60-160 views each; ep05-ep14: 0-17 each, one outlier). Five near-identical uploads a day were competing with each other and YouTube stopped testing them. From US date 2026-11-24: ONE episode every TWO days (11-24, 11-26, 11-28 ...). Day 1: long-form 10:00 ET + s1 20:30. Day 2: s4 12:30 + s2 20:30. s3 is still written and built but not uploaded. Use the freed time for quality: a sharper first 3 seconds, the strongest possible s1/s4 lines, and only publish on days where the Gemini engine works if possible (the backup engine changes faces and voice).
-Judge the change after 4 episodes on the new cadence (around 2026-12-02): views@48h per video vs ep05-ep14.
+## Cadence (owner decision 2026-11-24, replaces the 2026-11-23 every-2-days plan from US date 2026-11-28)
+Shorts get the views (Shorts 2.2 views/day vs long-form 1.3; s1 insult Shorts 26 views@48h), so the channel becomes Shorts-first:
+- **Long-form: twice a week**, US **Tuesday and Saturday** (ep16 = Sat 2026-11-28, then Tue 12-01, Sat 12-05 ...). Day 1: long 10:00 ET + s1 20:30. Day 2: s4 12:30. s2 and s3 are still written/built (lint wants 4 markers) but NOT uploaded. ep15 (Tue 11-24) keeps the old plan (s4 + s2 on 11-25).
+- **Standalone Short: one every day**, 18:30 ET (`fps/shorts/shNNN.txt`, workflow `fps-solo`, see below).
+- Uploads per day: at most 3 (long + s1 + solo). Judge after 2 weeks (around 2026-12-08): solo views@48h vs s1/s4, subscribers gained per week.
+
+## Standalone daily Short (fps/shorts/shNNN.txt)
+A complete one-minute story that works for a total stranger. Copy the layout of `fps/shorts/sh001.txt`:
+- `KIND: short` header, TITLE (first person, names the family role + the cruel act, max 90 chars, no outcome spoiled), VOICE_STYLE, TAGS, CAST (narrator Gacrux, 1-2 other voices, `look=lib:<role>`), DESCRIPTION (one-line tease, comment question, fiction + AI disclaimer, hashtags incl. #shorts). No THUMB fields, no chapters.
+- Exactly ONE `[SHORT] On-screen hook` marker right before the first line (shown on top of the video the whole time, under 50 chars).
+- **95-140 spoken words** (~45-58 s). Line 1 = the villain's insult in under 15 words, naming the target ("Mom, count the silverware before he leaves."). Then: who the narrator is (one line), the hidden card (one concrete piece of evidence: a camera, a receipt, a date, a key), the public exposure at the table/event, one tear line, and a sharp last line (사이다). All four of the ending rule still apply, in miniature.
+- 5-8 pictures: `[LIB]` only, existing library ids preferred (new ones only when the story needs them; no [SHOT]).
+- Rotate lanes A-F like the long-form, but lean on what the data says works for strangers: a FAMILY member (son, daughter, in-law, grandchild) says the cruel line. Seasonal hooks are welcome (holidays near the publish date).
+- Never adapt the same day's long-form; a solo is its own story. Log it in `fps/shorts/LOG.md`, add the date to `fps/shorts/schedule.json`, then set `fps/solo_run.txt` to `shNNN true YYYY-MM-DD` and push (build ~10 min, upload private, publish 18:30 ET that US date). Results: `fps/results/shNNN_upload.json`, `_engine.json`, `_frame.jpg`.
 
 ## What the data says (update every Monday from fps/results/insights.md)
 Data loop: workflow fps-stats runs daily 06:17 UTC (15:17 KST) → `fps/results/stats.json` (+ history in `fps/results/stats/`) → `tools/fps/analyze.py` → `fps/results/insights.md`. Read-only; changes nothing on YouTube.

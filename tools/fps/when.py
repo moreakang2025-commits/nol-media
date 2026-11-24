@@ -4,7 +4,10 @@ Slot experiment (from 2026-11-15): the four Shorts rotate through the four after
 so the stats can tell "which Short content works" apart from "which time works" (tools/fps/analyze.py).
 Cadence change (owner, 2026-11-23, from US date 2026-11-24): too many uploads were burying each other (5/day, ~0 views each).
 Now ONE episode every TWO days: day 1 = long 10:00 + s1 (insult) 20:30; day 2 = s4 (payoff) 12:30 + s2 20:30.
-s3 is no longer uploaded (dead in the data: 2.3 views@48h); at() returns "" for it. 15:30 ET (dead slot) is not used."""
+s3 is no longer uploaded (dead in the data: 2.3 views@48h); at() returns "" for it. 15:30 ET (dead slot) is not used.
+Owner decision 2026-11-24 (from US date 2026-11-28): long-form only TWICE a week (US Tuesday + Saturday);
+day 1 = long 10:00 + s1 20:30, day 2 = s4 12:30; s2/s3 not uploaded. Plus ONE standalone Short every day ("solo", 18:30 ET,
+fps/shorts/shNNN.txt, workflow fps-solo)."""
 import sys
 from datetime import date as D, datetime, timedelta
 from zoneinfo import ZoneInfo
@@ -13,6 +16,15 @@ SHORT_TIMES = ["12:30", "15:30", "18:30", "20:30"]
 ROTATE_FROM = D(2026, 11, 15)
 CADENCE_FROM = D(2026, 11, 24)
 CADENCE = {"long": (0, "10:00"), "s1": (0, "20:30"), "s4": (1, "12:30"), "s2": (1, "20:30")}   # slot -> (day offset, ET time)
+WEEKLY_FROM = D(2026, 11, 28)
+WEEKLY = {"long": (0, "10:00"), "s1": (0, "20:30"), "s4": (1, "12:30")}
+LONG_DAYS = (1, 5)          # US weekdays with a long-form episode: Tuesday, Saturday
+SOLO = (0, "18:30")         # standalone daily Short
+
+
+def long_day(date):
+    """True if this US date gets a long-form episode under the twice-a-week cadence"""
+    return D.fromisoformat(date).weekday() in LONG_DAYS
 
 
 def clock(date, slot):
@@ -24,9 +36,11 @@ def clock(date, slot):
 
 def at(date, slot):
     if not date or date == "-": return ""
-    if D.fromisoformat(date) >= CADENCE_FROM:
-        if slot not in CADENCE: return ""          # not uploaded under the every-2-days cadence
-        off, hm = CADENCE[slot]
+    if slot == "solo" or D.fromisoformat(date) >= CADENCE_FROM:
+        cad = WEEKLY if D.fromisoformat(date) >= WEEKLY_FROM else CADENCE
+        if slot == "solo": off, hm = SOLO
+        elif slot not in cad: return ""            # not uploaded under the current cadence
+        else: off, hm = cad[slot]
         t = datetime.strptime(f"{D.fromisoformat(date) + timedelta(days=off)} {hm}", "%Y-%m-%d %H:%M")
         return t.replace(tzinfo=ZoneInfo("America/New_York")).astimezone(ZoneInfo("UTC")).strftime("%Y-%m-%dT%H:%M:%SZ")
     t = datetime.strptime(f"{date} {clock(date, slot)}", "%Y-%m-%d %H:%M").replace(tzinfo=ZoneInfo("America/New_York"))

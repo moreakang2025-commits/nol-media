@@ -24,12 +24,16 @@ def episode_map():
         for line in open("fps/episodes/LOG.md"):
             c = [x.strip() for x in line.split("|")]
             if len(c) > 4 and re.match(r"ep\d+$", c[1]): themes[c[1]] = c[3]
+    if os.path.exists("fps/shorts/LOG.md"):
+        for line in open("fps/shorts/LOG.md"):
+            c = [x.strip() for x in line.split("|")]
+            if len(c) > 4 and re.match(r"sh\d+$", c[1]): themes[c[1]] = c[3]
     for f in sorted(os.listdir("fps/results")):
-        m = re.match(r"(ep\d+)(?:_(s\d))?_upload\.json$", f)
+        m = re.match(r"(ep\d+|sh\d+)(?:_(s\d))?_upload\.json$", f)
         if not m: continue
         d = json.load(open(f"fps/results/{f}"))
         if d.get("video_id"):
-            out[d["video_id"]] = {"ep": m[1], "kind": m[2] or "long", "theme": themes.get(m[1], "?"),
+            out[d["video_id"]] = {"ep": m[1], "kind": "solo" if m[1].startswith("sh") else (m[2] or "long"), "theme": themes.get(m[1], "?"),
                                   "publish_at": d.get("publish_at")}
     return out
 
