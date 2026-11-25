@@ -1,10 +1,10 @@
 {
- "collected": "2026-11-24T17:38:48Z",
+ "collected": "2026-11-25T17:10:33Z",
  "channel": {
-  "viewCount": "761",
+  "viewCount": "762",
   "subscriberCount": "7",
   "hiddenSubscriberCount": false,
-  "videoCount": "71"
+  "videoCount": "72"
  },
  "videos": [
   {
@@ -77,10 +77,10 @@
    "published": "2026-11-10T15:00:07Z",
    "privacy": "public",
    "seconds": 1907,
-   "views": 32,
+   "views": 33,
    "likes": 2,
    "comments": 0,
-   "like_rate": 0.0625
+   "like_rate": 0.0606
   },
   {
    "id": "g1tm4quo7HU",
@@ -632,10 +632,10 @@
    "published": "2026-11-18T20:30:20Z",
    "privacy": "public",
    "seconds": 50,
-   "views": 0,
+   "views": 1,
    "likes": 0,
    "comments": 0,
-   "like_rate": null
+   "like_rate": 0.0
   },
   {
    "id": "0s4_ZMAaOjE",
@@ -752,7 +752,7 @@
    "published": "2026-11-19T15:00:08Z",
    "privacy": "public",
    "seconds": 901,
-   "views": 1,
+   "views": 2,
    "likes": 0,
    "comments": 0,
    "like_rate": 0.0
@@ -827,10 +827,10 @@
    "published": "2026-11-20T15:00:12Z",
    "privacy": "public",
    "seconds": 814,
-   "views": 0,
+   "views": 1,
    "likes": 0,
    "comments": 0,
-   "like_rate": null
+   "like_rate": 0.0
   },
   {
    "id": "TXgKjIDZrQw",
@@ -1007,7 +1007,7 @@
    "published": "2026-11-23T23:30:36Z",
    "privacy": "public",
    "seconds": 54,
-   "views": 4,
+   "views": 6,
    "likes": 0,
    "comments": 0,
    "like_rate": 0.0
@@ -1052,10 +1052,10 @@
    "published": "2026-11-23T15:00:27Z",
    "privacy": "public",
    "seconds": 852,
-   "views": 1,
+   "views": 0,
    "likes": 0,
    "comments": 0,
-   "like_rate": 0.0
+   "like_rate": null
   },
   {
    "id": "VX6om1hMY_0",
@@ -1064,13 +1064,13 @@
    "theme": "A",
    "publish_at": "2026-11-24T23:30:00Z",
    "title": "My Daughter Said I'm Too Deaf To Decide #Shorts",
-   "published": "2026-11-23T08:43:40Z",
-   "privacy": "private",
+   "published": "2026-11-25T01:30:32Z",
+   "privacy": "public",
    "seconds": 37,
-   "views": 0,
+   "views": 1,
    "likes": 0,
    "comments": 0,
-   "like_rate": null
+   "like_rate": 0.0
   },
   {
    "id": "vLiMQJsu2mc",
