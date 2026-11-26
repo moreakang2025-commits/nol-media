@@ -1,10 +1,10 @@
 {
- "collected": "2026-11-25T17:10:33Z",
+ "collected": "2026-11-26T16:50:45Z",
  "channel": {
-  "viewCount": "762",
+  "viewCount": "769",
   "subscriberCount": "7",
   "hiddenSubscriberCount": false,
-  "videoCount": "72"
+  "videoCount": "75"
  },
  "videos": [
   {
@@ -1007,7 +1007,7 @@
    "published": "2026-11-23T23:30:36Z",
    "privacy": "public",
    "seconds": 54,
-   "views": 6,
+   "views": 7,
    "likes": 0,
    "comments": 0,
    "like_rate": 0.0
@@ -1067,7 +1067,7 @@
    "published": "2026-11-25T01:30:32Z",
    "privacy": "public",
    "seconds": 37,
-   "views": 1,
+   "views": 9,
    "likes": 0,
    "comments": 0,
    "like_rate": 0.0
@@ -1079,13 +1079,13 @@
    "theme": "A",
    "publish_at": "2026-11-25T01:30:00Z",
    "title": "My Daughter Said Talk Normal, He Can't Hear #Shorts",
-   "published": "2026-11-23T08:43:43Z",
-   "privacy": "private",
+   "published": "2026-11-26T01:30:13Z",
+   "privacy": "public",
    "seconds": 46,
-   "views": 0,
+   "views": 3,
    "likes": 0,
    "comments": 0,
-   "like_rate": null
+   "like_rate": 0.0
   },
   {
    "id": "JPBNap8Eb5k",
@@ -1109,8 +1109,8 @@
    "theme": "A",
    "publish_at": "2026-11-24T20:30:00Z",
    "title": "My Daughter Toasted Me. I Took The Mic. #Shorts",
-   "published": "2026-11-23T08:43:48Z",
-   "privacy": "private",
+   "published": "2026-11-25T17:30:27Z",
+   "privacy": "public",
    "seconds": 60,
    "views": 0,
    "likes": 0,
@@ -1139,8 +1139,8 @@
    "theme": "C",
    "publish_at": "2026-11-25T23:30:00Z",
    "title": "My Daughter-in-Law Said Count The Silverware Before The Homeless Man Leaves #Shorts",
-   "published": "2026-11-24T08:28:11Z",
-   "privacy": "private",
+   "published": "2026-11-25T23:30:18Z",
+   "privacy": "public",
    "seconds": 65,
    "views": 0,
    "likes": 0,
