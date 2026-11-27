@@ -1,8 +1,8 @@
 {
- "collected": "2026-11-26T16:50:45Z",
+ "collected": "2026-11-27T16:36:41Z",
  "channel": {
-  "viewCount": "769",
-  "subscriberCount": "7",
+  "viewCount": "817",
+  "subscriberCount": "8",
   "hiddenSubscriberCount": false,
   "videoCount": "75"
  },
@@ -557,7 +557,7 @@
    "published": "2026-11-17T17:30:11Z",
    "privacy": "public",
    "seconds": 33,
-   "views": 7,
+   "views": 11,
    "likes": 0,
    "comments": 0,
    "like_rate": 0.0
@@ -1067,7 +1067,7 @@
    "published": "2026-11-25T01:30:32Z",
    "privacy": "public",
    "seconds": 37,
-   "views": 9,
+   "views": 42,
    "likes": 0,
    "comments": 0,
    "like_rate": 0.0
@@ -1112,10 +1112,10 @@
    "published": "2026-11-25T17:30:27Z",
    "privacy": "public",
    "seconds": 60,
-   "views": 0,
+   "views": 1,
    "likes": 0,
    "comments": 0,
-   "like_rate": null
+   "like_rate": 0.0
   },
   {
    "id": "pSxQZpKJ2A4",
@@ -1142,10 +1142,10 @@
    "published": "2026-11-25T23:30:18Z",
    "privacy": "public",
    "seconds": 65,
-   "views": 0,
+   "views": 2,
    "likes": 0,
    "comments": 0,
-   "like_rate": null
+   "like_rate": 0.0
   }
  ],
  "analytics": {
